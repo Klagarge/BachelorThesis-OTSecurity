@@ -6,6 +6,7 @@
 
 #let page-title-thesis(
   title: none,
+  subtitle: subtitle,
   date: (),
   school: (),
   author: (),
@@ -43,6 +44,7 @@
   titlebox(
     title: title,
   )
+  align(center, [#text(size:small, [#subtitle])])
 
   [
     #v(2em)
