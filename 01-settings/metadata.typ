@@ -10,7 +10,7 @@
 
 #let author= (
   name: "Rémi Heredero",
-  email: "remi.heredero@hevs.ch",
+  email: "remi.heredero@students.hevs.ch",
   degree: "Bachelor",
   affiliation: "HEI-Vs",
   place: "Sion",

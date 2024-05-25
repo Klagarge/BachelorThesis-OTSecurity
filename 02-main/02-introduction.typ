@@ -4,13 +4,13 @@
 = Introduction <sec:intro>
 == Context Problem
 
-#acrfull(acr-ar)
+//#acrfull(acr-ar)
 
-#gls-scrum.name
-#gls-scrum.description
+//#gls-scrum.name
+//#gls-scrum.description
 
-#cite(<stateoftheArt>)
-#cite(<stateoftheArt>, supplement:[p.7ff])
+//#cite(<stateoftheArt>)
+//#cite(<stateoftheArt>, supplement:[p.7ff])
 
 ```rust
 fn main() {}
