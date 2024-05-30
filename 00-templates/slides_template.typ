@@ -11,7 +11,7 @@
   doc,
 ) = {
   
-  set text(font: "Inria Sans")
+  //set text(font: "Inria Sans")
 
 
   show: clean-theme.with(

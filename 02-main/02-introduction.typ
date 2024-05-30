@@ -9,8 +9,8 @@
 //#gls-scrum.name
 //#gls-scrum.description
 
-//#cite(<stateoftheArt>)
-//#cite(<stateoftheArt>, supplement:[p.7ff])
+#cite(<IEEEXplore-IntrusionDetectionIndustrial2017>)
+#cite(<Wikipedia-ReplayAttack2024>, supplement:[p.7ff])
 
 ```rust
 fn main() {}

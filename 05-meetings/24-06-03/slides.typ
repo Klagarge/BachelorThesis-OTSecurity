@@ -1,12 +1,12 @@
-#import "../00-templates/slides_template.typ": *
-#import "../01-settings/metadata.typ": *
+#import "../../00-templates/slides_template.typ": *
+#import "../../01-settings/metadata.typ": *
 
 
 #show: doc => slide_template(
   title: title,
   subtitle: subtitle,
   authors: author.name,
-  date: datetime.today().display("[day].[month].[year]"),
+  date: [Monday, 3th June #datetime.today().display("[year]")],
   //duration: 10,
   doc,
 )

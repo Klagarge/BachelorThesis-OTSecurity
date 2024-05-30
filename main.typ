@@ -24,6 +24,7 @@
 // Content
 //
 #include "02-main/00-acknowledgements.typ"
+#include "02-main/00-planning.typ"
 #include "02-main/01-abstract.typ"
 #include "02-main/02-introduction.typ"
 #include "02-main/03-analysis.typ"

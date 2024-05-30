@@ -1,3 +1,4 @@
+#import "../00-templates/helpers.typ": *
 
 #pagebreak()
 
@@ -34,14 +35,13 @@ Tâches
 - L'ensemble du code source et des outils
 - Une présentation
 
-Traduit avec DeepL.com (version gratuite)
-
 = Tâches
 - MODBUS: intercepter, modifier et réinjecter les paquets + surveiller et détecter des modification
 - Radio 862 MHz: scanner le réseau sans fil + intercepter et réinjecter des paquets + renforcer les protocoles sans fil
 - Capteurs: intercepter des données de capteurs, les modifiers pour compromettre le fonctionnement du contrôleur en raidon de donnée non valides + proposer une solution logiciel côté contrôleur pour se protéger contre de telles actions
 - PLC: s'introduire dans un automate + proposer des solutions pour renforcer les PLC contre de telles actions
 
+#todo([test])
 
 #v(2em)
 _*Keywords*_: _keyword 1_, _keyword 2_, _keyword 3_

@@ -78,14 +78,14 @@ open file_name=doc_name:
 
 @slides folder_name=doc_name:
   echo "--------------------------------------------------"
-  echo "-- Generate 05-presentations/{{folder_name}}/slides.pdf"
-  typst compile --root ./ 05-presentations/{{folder_name}}/slides.typ 
-  echo "-- Generate 05-presentations/{{folder_name}}/slides.pdfpc"
-  polylux2pdfpc --root ./ 05-presentations/{{folder_name}}/slides.typ 
+  echo "-- Generate 05-meetings/{{folder_name}}/slides.pdf"
+  typst compile --root ./ 05-meetings/{{folder_name}}/slides.typ 
+  echo "-- Generate 05-meetings/{{folder_name}}/slides.pdfpc"
+  polylux2pdfpc --root ./ 05-meetings/{{folder_name}}/slides.typ 
   echo "--"
 
 @open-slides folder_name=doc_name:
-  pdfpc 05-presentations/{{folder_name}}/slides.pdf # -s  
+  pdfpc 05-meetings/{{folder_name}}/slides.pdf -s
 
 # cleanup intermediate files
 [linux]
