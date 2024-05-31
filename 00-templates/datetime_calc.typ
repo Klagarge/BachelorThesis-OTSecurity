@@ -103,6 +103,16 @@
     digits: 2
   )
 }
+#let diff-weeks-workingday(start_date, finish_date) = {
+  let days = 0
+  while (start_date <= finish_date) {
+    if start_date.weekday() != 6 and start_date.weekday() != 7 {
+      days += 1
+    }
+    start_date = add(start_date, 1)
+  }
+  return days/5
+}
 #let diff-months(start_date, finish_date) = {
   calc.round(
     diff-days(
@@ -166,7 +176,18 @@
       day: get-month-days(date.month(), date.year())
     )
   )
-} 
+}
+
+#let remaining_week_on_month-workingday(date) ={
+  diff-weeks-workingday(
+    date,
+    datetime(
+      year: date.year(),
+      month: date.month(),
+      day: get-month-days(date.month(), date.year())
+    )
+  )
+}
 
 #let remaining_week_on_year(date) ={
   diff-weeks(

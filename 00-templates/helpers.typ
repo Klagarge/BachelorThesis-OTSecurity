@@ -10,6 +10,7 @@
 #import "../00-templates/tablex.typ": *
 #import "../00-templates/slides_template.typ": *
 #import "../00-templates/datetime_calc.typ": *
+#import "../00-templates/timeliney.typ"
 #import "../00-templates/gantt.typ" as gantt
 #import "../00-templates/project-features.typ": *
 #import "../01-settings/metadata.typ": *
@@ -18,7 +19,6 @@
 // External Plugins
 // Fancy pretty print with line numbers and stuff
 #import "@preview/codelst:2.0.1": sourcecode
-#import "@preview/timeliney:0.0.1"
 
 #let myref(label) = locate(loc =>{
     if query(label,loc).len() != 0 {

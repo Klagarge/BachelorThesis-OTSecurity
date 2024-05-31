@@ -1,12 +1,10 @@
-#import "../../00-templates/slides_template.typ": *
-#import "../../01-settings/metadata.typ": *
-
+#import "../../00-templates/helpers.typ": *
 
 #show: doc => slide_template(
   title: title,
   subtitle: subtitle,
   authors: author.name,
-  date: [Saturday, 18th May #datetime.today().display("[year]")],
+  date: datetime(year: 2024, month: 05, day: 18),
   //duration: 10, // time in minutes for presentation or counter timer if no field is given
   doc,
 )

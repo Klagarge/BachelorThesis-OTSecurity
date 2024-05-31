@@ -6,12 +6,23 @@
   title: [Title],
   subtitle: none,
   authors: [],
-  date: none,
+  date: datetime.today(),
   duration: none,
+  handout: false,
   doc,
 ) = {
   
   //set text(font: "Inria Sans")
+
+  let date-text = if date.day() == 1 {
+    date.display("[weekday], [day padding:none]st of [month repr:long] [year]")
+  } else if date.day() == 2 {
+    date.display("[weekday], [day padding:none]nd of [month repr:long] [year]")
+  } else if date.day() == 3 {
+    date.display("[weekday], [day padding:none]rd of [month repr:long] [year]")
+  } else {
+    date.display("[weekday], [day padding:none]th of [month repr:long] [year]")
+  }
 
 
   show: clean-theme.with(
@@ -21,6 +32,10 @@
     logo: image(resources-folder + "logos/FR-DE_HEI_rvb.png"),
     color: rgb("#ea366a"),
   )
+
+  if handout {
+    enable-handout-mode(true)
+  }
 
   if duration != none{
     pdfpc.config(
@@ -42,7 +57,7 @@
     title: [#title],
     subtitle: [#subtitle],
     authors: ([#authors]),
-    date: [#date],
+    date: [#date-text],
   )
 
   doc
