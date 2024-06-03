@@ -35,7 +35,9 @@
 )
 
 #let date= (
-  submission: "30 August " + datetime.today().display("[year]"),
+  start: datetime(year: 2024, month: 5, day: 27),
+  end: datetime(year: 2024, month: 8, day: 30),
+  submission: datetime(year: 2024, month: 8, day: 30),
   current: datetime.today().display("[day].[month].[year]"),
   year: datetime.today().display("[year]"),
 )

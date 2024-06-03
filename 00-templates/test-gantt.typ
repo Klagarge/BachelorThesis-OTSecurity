@@ -2,7 +2,9 @@
 
 #let date-beginning = datetime(year: 2024, month: 5, day: 13)
 #let date-finish = datetime(year: 2024, month: 9, day: 20)
-
+#set page(
+  flipped: true,
+)
 #show: doc => gantt.create(
   date-beginning: date-beginning,
   date-finish: date-finish,

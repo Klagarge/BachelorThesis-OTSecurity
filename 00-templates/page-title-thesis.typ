@@ -55,7 +55,7 @@
     #expert.name, #link("mailto:expert.email")[#expert.email]
     \ \
     _Submission date of the report_ \
-    #date.submission
+    #date.submission.display("[day] [month repr:long] [year]")
 
     #v(1fr)
   ]

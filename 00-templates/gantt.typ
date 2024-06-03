@@ -143,11 +143,6 @@
     }
   }
 
-  set page(
-    flipped: true,
-    //paper: "a3",
-  )
-
   timeliney.timeline(
     show-grid: true,
     {

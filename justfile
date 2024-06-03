@@ -85,7 +85,7 @@ open file_name=doc_name:
   echo "--"
 
 @open-slides folder_name=doc_name:
-  pdfpc 05-meetings/{{folder_name}}/slides.pdf -s
+  pdfpc 05-meetings/{{folder_name}}/slides.pdf # -s
 
 # cleanup intermediate files
 [linux]

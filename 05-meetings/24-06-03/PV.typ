@@ -16,7 +16,7 @@
   [ 
     #text(24pt, underline("PV kickoff")) \
     *Date :* 24/06/2024 \
-    *Houre :* xxhxx $arrow$ xxhxx \
+    *Houre :* 15h30 $arrow$ 16h30 \
     *Participants :* M. Rieder, M. Clausen et R. Heredero \
     //*Next meeting :*  \
 
