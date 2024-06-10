@@ -103,7 +103,7 @@
         let (date, eod) = arg
         
         let weeks = 0
-        let foo = date
+        let foo = date-beginning
         let task-week-duration = if type(eod) == datetime {
           dtc.count-weeks(date, eod)
         } else {
@@ -114,16 +114,16 @@
           foo = dtc.add(foo, 7)
         }
 
-        let duration = weeks + task-week-duration
         weeks = weeks - 1 + dtc.workingday_ratio(date)
+        let end = weeks + task-week-duration
         
-        complemented_task.push((weeks, duration))
+        complemented_task.push((weeks, end))
       }
     }
     
     timeliney.task(
       align(center, description),
-      complemented_task,
+      ..complemented_task,
       style: (stroke: 2pt + gray)
     )
   }
@@ -180,11 +180,7 @@
         _today(date-beginning)
       }
 
-      timeliney.task(
-      align(center, [foo]),
-      (0,1),
-      style: (stroke: 2pt + gray)
-    )
+      //timeliney.task(align(center, [foo]),(0,1),style: (stroke: 2pt + gray))
       
       doc2
       
