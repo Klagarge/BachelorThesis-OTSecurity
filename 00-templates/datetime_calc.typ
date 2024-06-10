@@ -80,6 +80,25 @@
   return add(dt, days)
 }
 
+#let add-week-workingdays(dt, weeks) = {
+  let int_part = int(weeks)
+  let float_part = int( (weeks - int_part)*5 + 0.01 )
+  let new_date = add(dt, int_part*7)
+
+  let i = 0
+  while i < float_part {
+    new_date = add(new_date, 1)
+    if new_date.weekday() == 6 {
+      new_date = add(new_date, 2)
+    }
+    if new_date.weekday() == 7 {
+      new_date = add(new_date, 1)
+    }
+    i += 1
+  }
+  return new_date
+}
+
 #let diff-days(a, b) = {
   let days = 0
   let neg = b < a

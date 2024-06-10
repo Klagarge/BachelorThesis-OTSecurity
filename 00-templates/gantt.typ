@@ -92,7 +92,7 @@
   today-line: true,
   doc
 ) = {
-  let gTask(start-date, endOrDuration, description) = {
+  let gTask(description, start-date, endOrDuration, ..lines) = {
     let weeks = 0
     let foo = date-beginning
     let task-week-duration = if type(endOrDuration) == datetime {
@@ -100,6 +100,28 @@
     } else {
       endOrDuration
     }
+
+    // let complemented_task = ()
+
+    // for line in lines.pos() {
+    //   if type(line) == dictionary {
+    //     complemented_task.push(line)
+    //   } else {
+    //     let (date, eod) = line
+    //     /*
+    //     let weeks2 = 0
+    //     let foo2 = date
+    //     while (foo2 <= date) {
+    //       weeks2 += 1
+    //       foo2 = dtc.add(foo2, 7)
+    //     }
+    //     let eod2 = weeks + eod
+    //     weeks2 = weeks2 - 1 + dtc.workingday_ratio(date)
+    //     */
+    //     complemented_task.push((weeks: date, eod: eod))
+    //   }
+    // }
+
     
     while (foo <= start-date) {
       weeks += 1
@@ -107,16 +129,17 @@
     }
     weeks = weeks - 1 + dtc.workingday_ratio(start-date)
     timeliney.task(
-      description,
+      align(center, description),
       (
         weeks,
         weeks + task-week-duration
       ),
+      //complemented_task,
       style: (stroke: 2pt + gray)
     )
   }
 
-  let gMilestone(date, description) = {
+  let gMilestone(description, date) = {
     let weeks = 0
     let foo = date-beginning
     
@@ -135,9 +158,9 @@
   let doc2 = ()
   for elmt in doc {
     if "type" in elmt and elmt.type == "gTask" {
-      doc2 += gTask(elmt.start-date, elmt.endOrDuration, elmt.description)
+      doc2 += gTask(elmt.description, elmt.start-date, elmt.endOrDuration, elmt.lines)
     } else if "type" in elmt and elmt.type == "gMilestone" {
-      doc2 += gMilestone(elmt.milestone-date, elmt.description)
+      doc2 += gMilestone(elmt.description, elmt.milestone-date)
     } else {
       doc2.push(elmt)
     }
@@ -174,14 +197,15 @@
   )
 }
 
-#let task(start-date, endOrDuration, description) = ((
+#let task(description, start-date, endOrDuration, ..lines) = ((
   type: "gTask",
   start-date: start-date,
   endOrDuration: endOrDuration,
   description: description,
+  lines: lines,
 ),)
 
-#let milestone(milestone-date, description) = ((
+#let milestone(description, milestone-date) = ((
   type: "gMilestone",
   milestone-date: milestone-date,
   description: description,
