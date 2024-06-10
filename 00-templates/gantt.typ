@@ -100,28 +100,6 @@
     } else {
       endOrDuration
     }
-
-    // let complemented_task = ()
-
-    // for line in lines.pos() {
-    //   if type(line) == dictionary {
-    //     complemented_task.push(line)
-    //   } else {
-    //     let (date, eod) = line
-    //     /*
-    //     let weeks2 = 0
-    //     let foo2 = date
-    //     while (foo2 <= date) {
-    //       weeks2 += 1
-    //       foo2 = dtc.add(foo2, 7)
-    //     }
-    //     let eod2 = weeks + eod
-    //     weeks2 = weeks2 - 1 + dtc.workingday_ratio(date)
-    //     */
-    //     complemented_task.push((weeks: date, eod: eod))
-    //   }
-    // }
-
     
     while (foo <= start-date) {
       weeks += 1
@@ -134,7 +112,6 @@
         weeks,
         weeks + task-week-duration
       ),
-      //complemented_task,
       style: (stroke: 2pt + gray)
     )
   }
