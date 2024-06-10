@@ -14,59 +14,53 @@
   {
 
     gantt.task(
-      datetime(year: 2024, month: 05, day: 13),
-      2,
-      [Trains investigation]
+      [Trains investigation],
+      (datetime(year: 2024, month: 05, day: 13), 2),
     )
 
     gantt.task(
-      datetime(year: 2024, month: 5, day: 27),
-      2,
-      [Communication technologies]
+      [Communication technologies],
+      (datetime(year: 2024, month: 5, day: 27), 2),
     )
     
     gantt.task(
-      datetime(year: 2024, month: 6, day: 10),
-      6,
-      [Simulations]
+      [Simulations],
+      (datetime(year: 2024, month: 6, day: 10), 6),
     )
 
     gantt.task(
-      datetime(year: 2024, month: 7, day: 22),
-      2,
-      [Discussing results]
-    )   
-
-    gantt.task(
-      datetime(year: 2024, month: 8, day: 03),
-      4,
-      [Proposals]
+      [Discussing results],
+      (datetime(year: 2024, month: 7, day: 22), 2),
     )
 
     gantt.task(
-      datetime(year: 2024, month: 09, day: 2),
-      1,
-      [Report]
-    )
-    gantt.task(
-      datetime(year: 2024, month: 09, day: 9),
-      1,
-      [Presentation]
+      [Proposals],
+      (datetime(year: 2024, month: 8, day: 03), 1),
+      (datetime(year: 2024, month: 8, day: 26), 1),
     )
 
+    gantt.task(
+      [Report],
+      (datetime(year: 2024, month: 09, day: 2), 1),
+    )
+    gantt.task(
+      [Presentation],
+      (datetime(year: 2024, month: 09, day: 9), 1),
+    )
+
+    // gantt.milestone(
+    //   [Mid-term \ report],
+    //   datetime(year: 2024, month: 06, day: 14)
+    // )
+  
     gantt.milestone(
-      datetime(year: 2024, month: 06, day: 14),
-      [Mid-term \ report]
+      [Mid-term \ presentation],
+      datetime(year: 2024, month: 06, day: 17)
     )
-
+    
     gantt.milestone(
-      datetime(year: 2024, month: 06, day: 17),
-      [Mid-term \ presentation]
-    )
-
-    gantt.milestone(
-      datetime(year: 2024, month: 09, day: 6),
-      [Final report]
+      [Final report],
+      datetime(year: 2024, month: 09, day: 6)
     )
   }
 )

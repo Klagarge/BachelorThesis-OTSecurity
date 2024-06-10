@@ -37,6 +37,7 @@
 #let date= (
   start: datetime(year: 2024, month: 5, day: 27),
   end: datetime(year: 2024, month: 8, day: 30),
+  mid-term-presentation: datetime(year: 2024, month: 7, day: 2),
   submission: datetime(year: 2024, month: 8, day: 30),
   current: datetime.today().display("[day].[month].[year]"),
   year: datetime.today().display("[year]"),
