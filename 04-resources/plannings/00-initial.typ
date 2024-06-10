@@ -44,20 +44,20 @@
     }
     */
 
-    gantt.task([Researchs about OT security], date.start, 1)
-    gantt.task([Define specifications], datetime(year: 2024, month: 06, day: 3), 1)
-    gantt.task([Familiarization with techs], datetime(year: 2024, month: 06, day: 10), 2)
-    gantt.task([Create simulation environnement], datetime(year: 2024, month: 06, day:24), 2)
-    gantt.task([Replay scenario], datetime(year: 2024, month: 07, day: 8), 2)
-    gantt.task([Dos scenario], datetime(year: 2024, month: 07, day: 22), 1)
-    gantt.task([MitM scenario], datetime(year: 2024, month: 07, day: 29), 2)
-    gantt.task([MitM enc. scenario], datetime(year: 2024, month: 08, day: 12), 3)
-    gantt.task([Other good practices], datetime(year: 2024, month: 08, day: 22), 0)
+    gantt.task([Researchs about OT security], (date.start, 1), (datetime(year: 2024, month: 06, day: 3), 1))
+    // gantt.task([Define specifications], datetime(year: 2024, month: 06, day: 3), 1)
+    // gantt.task([Familiarization with techs], datetime(year: 2024, month: 06, day: 10), 2)
+    // gantt.task([Create simulation environnement], datetime(year: 2024, month: 06, day:24), 2)
+    // gantt.task([Replay scenario], datetime(year: 2024, month: 07, day: 8), 2)
+    // gantt.task([Dos scenario], datetime(year: 2024, month: 07, day: 22), 1)
+    // gantt.task([MitM scenario], datetime(year: 2024, month: 07, day: 29), 2)
+    // gantt.task([MitM enc. scenario], datetime(year: 2024, month: 08, day: 12), 3)
+    // gantt.task([Other good practices], datetime(year: 2024, month: 08, day: 22), 0)
 
 
-    gantt.task([report], date.start, date.submission)
+    // gantt.task([report], date.start, date.submission)
 
-    gantt.task([Indepence week], datetime(year: 2024, month: 07, day: 15), 2)
+    // gantt.task([Indepence week], datetime(year: 2024, month: 07, day: 15), 2)
 
     gantt.milestone([Mid-term \ presentation], datetime(year: 2024, month: 07, day: 3))
     gantt.milestone([Final report], date.submission)

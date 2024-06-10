@@ -92,49 +92,38 @@
   today-line: true,
   doc
 ) = {
-  let gTask(description, start-date, endOrDuration, ..lines) = {
-    let weeks = 0
-    let foo = date-beginning
-    let task-week-duration = if type(endOrDuration) == datetime {
-      dtc.count-weeks(start-date, endOrDuration)
-    } else {
-      endOrDuration
-    }
-
-    // let complemented_task = ()
-
-    // for line in lines.pos() {
-    //   if type(line) == dictionary {
-    //     complemented_task.push(line)
-    //   } else {
-    //     let (date, eod) = line
-    //     /*
-    //     let weeks2 = 0
-    //     let foo2 = date
-    //     while (foo2 <= date) {
-    //       weeks2 += 1
-    //       foo2 = dtc.add(foo2, 7)
-    //     }
-    //     let eod2 = weeks + eod
-    //     weeks2 = weeks2 - 1 + dtc.workingday_ratio(date)
-    //     */
-    //     complemented_task.push((weeks: date, eod: eod))
-    //   }
-    // }
-
+  let gTask(description, ..args) = {
     
-    while (foo <= start-date) {
-      weeks += 1
-      foo = dtc.add(foo, 7)
+    let complemented_task = ()
+
+    for arg in args.pos() {
+      if type(line) == dictionary {
+        complemented_task.push(arg)
+      } else {
+        let (date, eod) = arg
+        
+        let weeks = 0
+        let foo = date
+        let task-week-duration = if type(eod) == datetime {
+          dtc.count-weeks(date, eod)
+        } else {
+          eod
+        }
+        while (foo <= date) {
+          weeks += 1
+          foo = dtc.add(foo, 7)
+        }
+
+        let duration = weeks + task-week-duration
+        weeks = weeks - 1 + dtc.workingday_ratio(date)
+        
+        complemented_task.push((weeks, duration))
+      }
     }
-    weeks = weeks - 1 + dtc.workingday_ratio(start-date)
+    
     timeliney.task(
       align(center, description),
-      (
-        weeks,
-        weeks + task-week-duration
-      ),
-      //complemented_task,
+      complemented_task,
       style: (stroke: 2pt + gray)
     )
   }
@@ -158,7 +147,7 @@
   let doc2 = ()
   for elmt in doc {
     if "type" in elmt and elmt.type == "gTask" {
-      doc2 += gTask(elmt.description, elmt.start-date, elmt.endOrDuration, elmt.lines)
+      doc2 += gTask(elmt.description, ..elmt.args)
     } else if "type" in elmt and elmt.type == "gMilestone" {
       doc2 += gMilestone(elmt.description, elmt.milestone-date)
     } else {
@@ -190,6 +179,12 @@
       if today-line {
         _today(date-beginning)
       }
+
+      timeliney.task(
+      align(center, [foo]),
+      (0,1),
+      style: (stroke: 2pt + gray)
+    )
       
       doc2
       
@@ -197,13 +192,12 @@
   )
 }
 
-#let task(description, start-date, endOrDuration, ..lines) = ((
-  type: "gTask",
-  start-date: start-date,
-  endOrDuration: endOrDuration,
-  description: description,
-  lines: lines,
-),)
+#let task(description, ..args) = ((
+    type: "gTask",
+    description: description,
+    args: args.pos(),
+  ),)
+
 
 #let milestone(description, milestone-date) = ((
   type: "gMilestone",
