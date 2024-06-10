@@ -92,6 +92,7 @@
   today-line: true,
   doc
 ) = {
+
   let gTask(description, ..args) = {
     
     let complemented_task = ()

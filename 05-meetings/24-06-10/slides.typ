@@ -4,7 +4,7 @@
   title: title,
   subtitle: [Presentation and choice of simulations scenarios],
   authors: author.name,
-  date: datetime(year: 2024, month: 06, day: 06),
+  date: datetime(year: 2024, month: 06, day: 10),
   //duration: 10,
   handout: true,
   doc,
@@ -144,5 +144,5 @@
 ]
 
 
-#slide(title: [Planning])[#include "../../04-resources/plannings/00-initial.typ"]
+//#slide(title: [Planning])[#include "../../04-resources/plannings/00-initial.typ"]
 
