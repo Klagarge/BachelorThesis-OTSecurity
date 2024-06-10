@@ -10,9 +10,6 @@
   doc,
 )
 
-
-#new-section-slide("OT attacks")
-
 #slide(
   title: [Sniffing]
 )[
@@ -28,7 +25,7 @@
       SOL : Use encryption like modbus over #underline("TLS")
     ]
   ][
-    #image("sniffing.png", width: 100%)
+    #image("../../04-resources/img/sniffing.png", width: 100%)
   ]
   
 
@@ -61,7 +58,7 @@
       SOL : Ban IP by the transport layer (or lower)
     ]
   ][
-    #image("mallory-connect.png", width: 100%)
+    #image("../../04-resources/img/mallory-connect.png", width: 100%)
   ]
 ]
 
@@ -80,7 +77,7 @@
       SOL : Rolling code
     ]
   ][
-    #image("eve.png", width: 100%)
+    #image("../../04-resources/img/eve.png", width: 100%)
   ]
 ]
 
@@ -96,7 +93,7 @@
       SOL : Use encryption with symetric key. Keys exchange with #underline("Diffie-Hellman")
     ]
   ][
-    #image("mallory-connect.png", width: 100%)
+    #image("../../04-resources/img/mallory-connect.png", width: 100%)
   ]
 ]
 
@@ -114,7 +111,7 @@
       SOL : Use encryption like modbus over #underline("TLS")
     ]
   ][
-    #image("mallory-middle.png", width: 100%)
+    #image("../../04-resources/img/mallory-middle.png", width: 100%)
   ]
 ]
 
@@ -127,7 +124,7 @@
   - Modbus over RS485
   - Modbus over TCP on Ethernet
   - Modbus over TCP on WiFi
-  - 862 MHz
+  - 868 MHz
   ]
 ]
 */
@@ -137,53 +134,34 @@
 )[
   #line-by-line[
   - DoS by external sensor (external temp by example)
-  - Wireless Replay attack (433-868 MHz)
+  - Wireless Replay attack (868 MHz)
   - Man in the middle on Modbus over TCP
   - Man in the middle on Modbus over TCP with standard encryption
   ]
 ]
 
-#new-section-slide("Simulation environnement")
-
 #slide(
-  title: [Factory I/O]
-)[
-  #side-by-side(gutter: 3mm, columns: (1fr, 1fr))[
-    #one-by-one[
-      - Simulation of a factory
-    ][
-      - Realistic
-    ][
-      - No integreted security
-    ]
-    
-  ][
-    #image("factoryio-palletizer.png", width: 100%)
-  ]
-]
-
-#slide(
-  title: [Minecraft]
-)[
-  #side-by-side(gutter: 3mm, columns: (1fr, 1fr))[
-    #one-by-one[
-      - Simulation of anything
-    ][
-      - Cross platforms
-    ][
-      - Security in Open Computer
-    ]
-    
-  ][
-    #image("minecraft-eln.jpg", width: 100%)
-  ]
-]
-
-#slide(
-  title: [Planning]
+  title: [Simulation environnement]
 )[
   #set text(
-    size: small
+    size: larger
   )
-  #include "../../04-resources/00-planning-initial.typ"
+  #side-by-side(gutter: 3mm, columns: (1fr, 1fr))[
+    == Factory I/O
+    - Simulation of a factory
+    - Realistic
+    - Some scenes already prepared
+    
+    #align(center, image("../../04-resources/img/factoryio-palletizer.png", width: 75%))
+  ][
+    == Minecraft
+    - Simulation of anything
+    - Cross platforms
+    - Security in Open Computer
+    #align(center, image("../../04-resources/img/minecraft-eln.jpg", width: 75%))
+    
+  ]
 ]
+
+
+//#slide(title: [Planning])[#include "../../04-resources/plannings/00-initial.typ"]
