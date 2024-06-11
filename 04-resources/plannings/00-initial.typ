@@ -9,7 +9,7 @@
   date-finish: date.end,
   header-months: true,
   header-week-number: true,
-  header-week-date: true,
+  header-week-date: false,
   {
 
     gantt.task(
@@ -66,7 +66,7 @@
 
     gantt.task(
       [Indepence week],
-      (datetime(year: 2024, month: 07, day: 15), 2),
+      (datetime(year: 2024, month: 07, day: 15), 3),
     )
 
     gantt.milestone(

@@ -144,5 +144,5 @@
 ]
 
 
-//#slide(title: [Planning])[#include "../../04-resources/plannings/00-initial.typ"]
+#slide(title: [Planning])[#include "../../04-resources/plannings/00-initial.typ"]
 
