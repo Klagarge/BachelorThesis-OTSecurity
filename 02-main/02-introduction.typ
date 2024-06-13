@@ -14,6 +14,8 @@
 #cite(<IEEEXplore-IntrusionDetectionIndustrial2017>)
 #cite(<Wikipedia-ReplayAttack2024>, supplement:[p.7ff])
 
+Here i'll talk about #gls("ot") and #gls("iiot"). #gls("ot") is an important topic for security. 
+
 ```rust
 fn main() {}
 ```
