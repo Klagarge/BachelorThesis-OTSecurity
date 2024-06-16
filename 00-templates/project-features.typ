@@ -41,3 +41,9 @@
     }
   })
 }
+
+#let subject(file, offset) = [
+  #set heading(offset: offset)
+  #include "../02-main/subjects/" + file + ".typ"
+  #set heading(offset: 0)
+]

@@ -22,21 +22,22 @@
   affiliation: "HEI-Vs",
 )
 #let expert= (
-  name: "Prof. Silvan Zahno",
-  email: "silvan.zahno@hevs.ch",
-  affiliation: "HEI-Vs",
+  name: "Rico Steiner",
+  email: "rico.steiner@hooc.ch",
+  affiliation: "HOOC AG, Visp",
 )
 #let school= (
   name: "University of Applied Sciences Western Switzerland, HES-SO Valais Wallis",
   shortname: "HEI-VS",
   orientation: "Systems Engineering",
   specialisation: "Infotronics",
-  dean: "Dr. Cyrille Beçencon",
+  dean: "Dr. Cyrille Bezençon",
 )
 
 #let date= (
   start: datetime(year: 2024, month: 5, day: 27),
   end: datetime(year: 2024, month: 8, day: 30),
+  mid-term-submission: datetime(year: 2024, month: 6, day: 28),
   mid-term-presentation: datetime(year: 2024, month: 7, day: 2),
   submission: datetime(year: 2024, month: 8, day: 30),
   current: datetime.today().display("[day].[month].[year]"),
@@ -50,6 +51,7 @@
   tol: false,
   toe: false,
 )
+#let depth = none
 
 #let icons = (
   topleft: resources-folder + "logos/hei-vs-light.svg",

@@ -7,6 +7,7 @@
 #let page-title-thesis(
   title: none,
   subtitle: subtitle,
+  midterm: false,
   date: (),
   school: (),
   author: (),
@@ -27,6 +28,12 @@
     [#if icons.topright != none {[#image(icons.topright, width:4cm)]} else {[]}],
   )
 
+  let page-title = if midterm {
+    [Midterm Report]
+  } else {
+    [BACHELOR'S THESIS]
+  }
+
   v(1fr)
   align(center, [#text(size:larger, "Degree Programme")])
   v(1em)
@@ -34,7 +41,7 @@
   v(1em)
   align(center, [#text(size:large, [Major #school.specialisation])])
   v(2em)
-  align(center, [#text(size:huge, [*BACHELOR'S THESIS*])])
+  align(center, [#text(size:huge, [*#page-title*])])
   v(1em)
   align(center, [#text(size:huge, [*DIPLOMA #date.year*])])
   v(1em)
@@ -55,7 +62,12 @@
     #expert.name, #link("mailto:expert.email")[#expert.email]
     \ \
     _Submission date of the report_ \
-    #date.submission.display("[day] [month repr:long] [year]")
+    #let submission-date = if midterm {
+      date.mid-term-submission
+    } else {
+      date.submission
+    }
+    #submission-date.display("[day] [month repr:long] [year]")
 
     #v(1fr)
   ]

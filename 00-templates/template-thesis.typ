@@ -9,6 +9,7 @@
 #let thesis(
   title: none,
   subtitle: none,
+  midterm: false,
   version: none,
   author: (),
   professor: (),
@@ -22,6 +23,7 @@
     tot: false,
     tol: false,
     toe: false,
+    indent: none,
   ),
   icons: (
     topleft: none,
@@ -42,7 +44,7 @@
     ]),
     footer: locate(loc => if loc.page() >=2 [
       #set text(small)
-      #h(1fr) #counter(page).display("1 / 1", both: true)
+      #h(1fr) #counter(page).display("I / 1", both: true)
     ]),
   )
 
@@ -118,12 +120,15 @@
   page-title-thesis(
     title: title,
     date: date,
+    midterm: midterm,
     school: school,
     author: author,
     professor: professor,
     expert: expert,
     icons: icons,
   )
+
+  include "/04-resources/specifications.typ"
 
   // Report info
   page-reportinfo(
@@ -137,10 +142,21 @@
   toc(
     lang: lang,
     tableof: tableof,
+    depth: depth,
   )
 
   // Main body
   set par(justify: true)
+  set page(
+    header: locate(loc => if loc.page() >=2 [
+    #set text(small)
+      #h(1fr) #smallcaps(title)
+    ]),
+    footer: locate(loc => if loc.page() >=2 [
+      #set text(small)
+      #h(1fr) #counter(page).display("1 / 1", both: true)
+    ]),
+  )
 
   body
 }

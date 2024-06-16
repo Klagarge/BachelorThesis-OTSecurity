@@ -32,19 +32,6 @@
 })
 
 //-------------------------------------
-// Acronym functions
-//
-#let acrshort(item) = {
-  item.abbr
-}
-#let acrlong(item) = {
-  [#item.long)]
-}
-#let acrfull(item) = {
-  [#item.long (#item.abbr)]
-}
-
-//-------------------------------------
 // Table of content
 //
 #let toc(
