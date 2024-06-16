@@ -1,0 +1,2751 @@
+H optimize N staggered N
+UNITS=MM
+$0 $NONE$
+$1 N2245591
+$2 N949687
+$3 GND
+$4 USB_VBUS
+$5 N3263468
+$6 N3167465
+$7 N2071733
+$8 5V0
+$9 XDS_VDD
+$10 SW_VDD
+$11 N3002303
+$12 ET_DVDD
+$13 ET_AVDD
+$14 VDDS
+$15 N3003137
+$16 N3003145
+$17 N3003461
+$18 ET_5V0
+$19 ET_3V3
+$20 ET_VREF
+$21 ET_1V8
+$22 N3002889
+$23 N3004061
+$24 N3003929
+$25 N3003761
+$26 N3004137
+$27 N3003833
+$28 N3003845
+$29 N3003937
+$30 N3003989
+$31 N3004141
+$32 N3004289
+$33 N3005293
+$34 N3005509
+$35 N3005457
+$36 N3005465
+$37 N3005381
+$38 N3005723
+$39 N3011605
+$40 N3011753
+$41 ET_FB
+$42 ET_VDD
+$43 VDDR
+$44 N2072219
+$45 N2075216
+$46 N1018954
+$47 N3157182
+$48 N3291400
+$49 N3291381
+$50 TCXO_OUTPUT
+$51 N1017630
+$52 N2074535
+$53 N2075665
+$54 N2076038
+$55 N2266542
+$56 N2078765
+$57 N1014101
+$58 VDDC
+$59 N952443
+$60 N949263
+$61 N950083
+$62 N1014113
+$63 WMCU_RESET
+$64 N2070550
+$65 LS_VDD
+$66 USB1V8
+$67 USBA1V8
+$68 N1580179
+$69 N1580186
+$70 N949699
+$71 N1105722
+$72 N1105771
+$73 N10368080
+$74 N10367920
+$75 N1031635
+$76 N3174121
+$77 USBDP
+$78 USBDM
+$79 XDS_RESET_LS
+$80 XDS_TDI_LS
+$81 XDS_TDO_LS
+$82 XDS_TCK_LS
+$83 XDS_TMS_LS
+$84 DIO17_TDI
+$85 DIO16_TDO
+$86 WMCU_TCK
+$87 WMCU_TMS
+$88 WMCU_VDD
+$89 N3156339
+$90 5V0_BP
+$91 DIO23_ANALOG
+$92 WMCU_RXD
+$93 DIO25_ANALOG
+$94 WMCU_TXD
+$95 DIO26_ANALOG
+$96 DIO22
+$97 DIO27_ANALOG
+$98 DIO24_ANALOG
+$99 DIO28_ANALOG
+$100 DIO10_SCLK
+$101 DIO29_ANALOG
+$102 DIO21
+$103 DIO30_ANALOG
+$104 DIO4_SCL
+$105 DIO5_SDA
+$106 DIO1
+$107 DIO7_GLED
+$108 DIO6_RLED
+$109 DIO12
+$110 DIO20_FLASH_CS
+$111 DIO11_CS
+$112 DIO19_CTS
+$113 WMCU_SWO
+$114 LP_RESET
+$115 BP_RESET
+$116 DIO9_MOSI
+$117 N3220034
+$118 DIO8_MISO
+$119 N1176548
+$120 DIO13_BTN1
+$121 N1176568
+$122 DIO14_BTN2
+$123 N1177007
+$124 DIO15
+$125 DCDC_SW
+$126 XDS_SWO_LS
+$127 XDS_RX_LS
+$128 XDS_TX_LS
+$129 TARGET_VDD
+$130 N1105824
+$131 N1106228
+$132 ITMS
+$133 ITCK
+$134 ITDO
+$135 ITDI
+$136 IRSTN
+$137 VCM
+$138 N3003889
+$139 N3003709
+$140 N3002897
+$141 N3003773
+$142 N3002611
+$143 N3002707
+$144 N3004269
+$145 ET_PN3
+$146 N3004389
+$147 N3004561
+$148 N3004593
+$149 N3004681
+$150 ET_CAL2
+$151 ET_CAL1
+$152 ET_CAL0
+$153 N3005629
+$154 N3012529
+$155 N3005369
+$156 N3003585
+$157 N3025885
+$158 N3261415
+$159 N3266724
+$160 N949215
+$161 N1004371
+$162 N1004534
+$163 N951017
+$164 N949375
+$165 N951013
+$166 N949243
+$167 N951001
+$168 N2239551
+$169 N1288065
+$170 N1288098
+$171 N1384129
+$172 XDS_RESET
+$173 N1409884
+$174 N2239563
+$175 N1409917
+$176 DIO30/TCXO_VCC
+$177 N3270349
+$178 N1553941
+$179 N1579665
+$180 N1644260
+$181 N1644363
+$182 VBUS_DET
+$183 N3002683
+$184 N3002679
+$185 ET_PM2
+$186 N3003349
+$187 N3003521
+$188 XDS_TMS_DIR
+$189 XDS_TMS
+$190 USBNXT
+$191 USBDIR
+$192 USBSTP
+$193 USBCLK
+$194 USBD7
+$195 USBD6
+$196 USBD5
+$197 USBD4
+$198 USBD3
+$199 USBD2
+$200 USBD1
+$201 USBD0
+$202 ET_BYPASS
+$203 N3002631
+$204 N3002671
+$205 ET_SSIFSS
+$206 ET_SSIDAT1
+$207 ET_SSIDAT0
+$208 ET_SSICLK
+$209 N3004851
+$210 ET_CALIBRATE
+$211 XDS_SWO
+$212 XDS_RX
+$213 XDS_TX
+$214 XDS_TCK
+$215 XDS_TDO
+$216 XDS_TDI
+$217 N2082297
+#
+#Netlist points
+#
+0 0.3 217.15 226.35 T e e staggered 0 0 0 
+0 0.3 238.19 278.85 T e e staggered 0 0 0 
+0 0.15 218.1 287.5 T e e staggered 0 0 0 
+0 0.175 231.95 275.65 T e e staggered 0 0 0 
+0 0.175 231.65 291.15 T e e staggered 0 0 0 
+0 0.15 243.85 276.1 T e e staggered 0 0 0 
+0 0.15 245.62 276.1 T e e staggered 0 0 0 
+0 0.125 255.15 264.45 T e e staggered 0 0 0 
+0 0.125 252.21 262.45 T e e staggered 0 0 0 
+0 0.7 210.462 292.65 T e e staggered 0 0 0 
+0 0.7 212.338 292.65 T e e staggered 0 0 0 
+0 0.725 208.938 290.35 T e e staggered 0 0 0 
+0 0.725 213.862 290.35 T e e staggered 0 0 0 
+0 0.375 245.41 249.75 T e e staggered 0 0 0 
+0 0.375 241.949 262.533 T e e staggered 0 0 0 
+0 0.15 210.65 286.3 T e e staggered 0 0 0 
+0 0.15 207.45 285.6 T e e staggered 0 0 0 
+0 0.15 207.45 285.1 T e e staggered 0 0 0 
+0 0.1 223.11 260.075 T e e staggered 0 0 0 
+0 0.1 219.11 260.075 T e e staggered 0 0 0 
+0 0.1 226.71 262.525 T e e staggered 0 0 0 
+0 0.4495 203.15 249.721 B e e staggered 0 0 0 
+0 0.4495 203.15 252.021 B e e staggered 0 0 0 
+0 0.4495 255.4 251.979 B e e staggered 0 0 0 
+0 0.4495 255.4 249.679 B e e staggered 0 0 0 
+0 0.4495 219.271 292.8 B e e staggered 0 0 0 
+0 0.4495 221.571 292.8 B e e staggered 0 0 0 
+0 0.15 226.5 281.5 T e e staggered 0 0 0 
+0 0.15 238.1 250.4 T e e staggered 0 0 0 
+0 0.15 237.8 261.1 T e e staggered 0 0 0 
+0 0.1995 212.28 261.65 T e e staggered 0 0 0 
+0 0.1995 214.48 261 T e e staggered 0 0 0 
+0 0.1995 214.48 262.3 T e e staggered 0 0 0 
+0 0.1005 205.3 263.9 T e e staggered 0 0 0 
+0 0.1005 205.699 263.9 T e e staggered 0 0 0 
+0 0.1005 206.9 263.9 T e e staggered 0 0 0 
+0 0.1005 207.299 263.9 T e e staggered 0 0 0 
+0 0.1005 209.3 263.9 T e e staggered 0 0 0 
+0 0.1005 210.101 263.9 T e e staggered 0 0 0 
+0 0.1005 210.499 263.9 T e e staggered 0 0 0 
+0 0.1005 210.901 263.9 T e e staggered 0 0 0 
+0 0.1005 212.1 263.9 T e e staggered 0 0 0 
+0 0.1005 212.501 263.9 T e e staggered 0 0 0 
+0 0.1005 212.9 263.9 T e e staggered 0 0 0 
+0 0.1005 213.301 263.9 T e e staggered 0 0 0 
+0 0.1005 213.7 263.9 T e e staggered 0 0 0 
+0 0.1005 215.699 263.9 T e e staggered 0 0 0 
+0 0.1005 216.499 263.9 T e e staggered 0 0 0 
+0 0.1005 216.9 263.9 T e e staggered 0 0 0 
+0 0.1005 217.299 263.9 T e e staggered 0 0 0 
+0 0.1005 217.7 263.9 T e e staggered 0 0 0 
+0 0.1005 219.199 268.599 T e e staggered 0 0 0 
+0 0.1005 219.199 269 T e e staggered 0 0 0 
+0 0.1005 219.199 269.399 T e e staggered 0 0 0 
+0 0.1005 219.199 269.8 T e e staggered 0 0 0 
+0 0.1005 219.199 270.199 T e e staggered 0 0 0 
+0 0.1005 219.199 270.6 T e e staggered 0 0 0 
+0 0.1005 219.199 271.799 T e e staggered 0 0 0 
+0 0.1005 219.199 272.201 T e e staggered 0 0 0 
+0 0.1005 219.199 273.4 T e e staggered 0 0 0 
+0 0.1005 219.199 273.801 T e e staggered 0 0 0 
+0 0.1005 219.199 274.601 T e e staggered 0 0 0 
+0 0.1005 219.199 275 T e e staggered 0 0 0 
+0 0.1005 217.7 279.3 T e e staggered 0 0 0 
+0 0.1005 216.9 279.3 T e e staggered 0 0 0 
+0 0.1005 215.3 279.3 T e e staggered 0 0 0 
+0 0.1005 214.901 279.3 T e e staggered 0 0 0 
+0 0.1005 213.7 279.3 T e e staggered 0 0 0 
+0 0.1005 206.499 279.3 T e e staggered 0 0 0 
+0 0.1005 206.1 279.3 T e e staggered 0 0 0 
+0 0.1005 203.799 275.8 T e e staggered 0 0 0 
+0 0.1005 203.799 273.801 T e e staggered 0 0 0 
+0 0.1005 203.799 273.4 T e e staggered 0 0 0 
+0 0.1005 203.799 273.001 T e e staggered 0 0 0 
+0 0.1005 203.799 272.201 T e e staggered 0 0 0 
+0 0.1005 203.799 271.799 T e e staggered 0 0 0 
+0 0.1005 203.799 270.199 T e e staggered 0 0 0 
+0 0.1005 203.799 269.8 T e e staggered 0 0 0 
+0 0.1005 203.799 269.399 T e e staggered 0 0 0 
+0 0.1005 203.799 269 T e e staggered 0 0 0 
+0 0.1005 203.799 266.6 T e e staggered 0 0 0 
+0 0.1005 203.799 266.201 T e e staggered 0 0 0 
+0 0.1005 203.799 265.8 T e e staggered 0 0 0 
+0 0.1005 203.799 265.401 T e e staggered 0 0 0 
+0 0.635 256.45 183 T e e staggered 0 0 0 
+0 0.635 202.15 183 T e e staggered 0 0 0 
+0 0.635 256.44 285.05 T e e staggered 0 0 0 
+0 1.6 221.725 198.325 B e e staggered 0 0 0 
+0 1.6 236.725 198.325 B e e staggered 0 0 0 
+0 1.6 202.5 178.5 B e e staggered 0 0 0 
+0 1.6 255.8 178.5 B e e staggered 0 0 0 
+0 0.4 203.37 286.01 D e e staggered 0 0 0 
+0 0.5 201.72 288.55 B e e staggered 0 0 0 
+0 0.5 202.735 280.93 B e e staggered 0 0 0 
+0 0.5 203.75 288.55 B e e staggered 0 0 0 
+0 0.525 252.123 236.84 B e e staggered 0 0 0 
+0 0.525 208.923 224.14 B e e staggered 0 0 0 
+0 0.635 202.15 183 D e e staggered 0 0 0 
+0 0.635 256.45 183 D e e staggered 0 0 0 
+0 0.635 256.45 285.05 D e e staggered 0 0 0 
+1 0.175 229.15 203.09 T e e staggered 0 0 0 
+1 0 229.15 201.8 T 2 1 e e staggered 0 0 0 
+1 0.1 210.35 187.55 B m e staggered 0 0 0 v 
+1 0.1 210.4 190.1 B m e staggered 0 0 0 v 
+1 0.1 210.45 177.8 B m e staggered 0 0 0 v 
+1 0.1 210.45 181.95 B m e staggered 0 0 0 v 
+1 0.1 210.5 193.95 B m e staggered 0 0 0 v 
+1 0.1 211.75 192.35 B m e staggered 0 0 0 v 
+1 0.1 211.8 180.6 B m e staggered 0 0 0 v 
+1 0.1 212.24 183.95 B m e staggered 0 0 0 v 
+1 0.1 212.45 188.9 B m e staggered 0 0 0 v 
+1 0.1 212.95 179.05 B m e staggered 0 0 0 v 
+1 0.1 213.5 193.95 B m e staggered 0 0 0 v 
+1 0.1 215 187.6 B m e staggered 0 0 0 v 
+1 0.1 215.15 177.7 B m e staggered 0 0 0 v 
+1 0.1 215.2 182.65 B m e staggered 0 0 0 v 
+1 0.1 217.25 192.55 B m e staggered 0 0 0 v 
+1 0.1 218 189 B m e staggered 0 0 0 v 
+1 0.1 218.1 184 B m e staggered 0 0 0 v 
+1 0.1 218.4 179.05 B m e staggered 0 0 0 v 
+1 0.1 220.2 194 B m e staggered 0 0 0 v 
+1 0.1 220.55 177.7 B m e staggered 0 0 0 v 
+1 0.1 220.6 187.6 B m e staggered 0 0 0 v 
+1 0.1 222.24 182.668 B m e staggered 0 0 0 v 
+1 0.1 222.75 192.668 B m e staggered 0 0 0 v 
+1 0.1 223.55 188.95 B m e staggered 0 0 0 v 
+1 0.1 223.85 179 B m e staggered 0 0 0 v 
+1 0.1 225.8 184.05 B m e staggered 0 0 0 v 
+1 0.1 226.2 177.6 B m e staggered 0 0 0 v 
+1 0.1 226.4 187.6 B m e staggered 0 0 0 v 
+1 0.1 226.55 194.05 B m e staggered 0 0 0 v 
+1 0.1 228.45 195.7 B m e staggered 0 0 0 v 
+1 0.1 228.45 200.95 B m e staggered 0 0 0 v 
+1 0.1 229.15 188.9 B m e staggered 0 0 0 v 
+1 0.1 229.75 192.65 B m e staggered 0 0 0 v 
+1 0.1 229.8 198.5 B m e staggered 0 0 0 v 
+1 0.1 230 182.65 B m e staggered 0 0 0 v 
+1 0.1 232.5 187.55 B m e staggered 0 0 0 v 
+1 0.1 232.75 183.95 B m e staggered 0 0 0 v 
+1 0.1 235.85 189 B m e staggered 0 0 0 v 
+1 0.1 237.4 182.7 B m e staggered 0 0 0 v 
+1 0.1 238.75 183.95 B m e staggered 0 0 0 v 
+1 0.1 239.4 187.668 B m e staggered 0 0 0 v 
+1 0.1 242.32 182.668 B m e staggered 0 0 0 v 
+1 0.1 242.65 189.05 B m e staggered 0 0 0 v 
+1 0.1 244.75 184 B m e staggered 0 0 0 v 
+1 0.1 245.4 187.668 B m e staggered 0 0 0 v 
+1 0.1 246.5 185.8 B m e staggered 0 0 0 v 
+1 0.1 247.7 189 B m e staggered 0 0 0 v 
+1 0.1 247.8 182.75 B m e staggered 0 0 0 v 
+2 0.25 204 283.3 T e e staggered 0 0 0 
+2 0.599 204.249 284.65 T e e staggered 0 0 0 
+2 0.1005 208.099 279.3 T e e staggered 0 0 0 
+2 0.1 205.4 284.35 B m e staggered 0 0 0 v 
+2 0.1 207.9 277.65 B m e staggered 0 0 0 v 
+3 0.32 255.9 282.9 T e e staggered 0 0 0 
+3 0.575 228.3 274.7 T e e staggered 0 0 0 
+3 0.4 222.95 286.85 T e e staggered 0 0 0 
+3 0.225 230.45 281.42 T e e staggered 0 0 0 
+3 0.3 217.15 224.7 T e e staggered 0 0 0 
+3 0.6 240.34 291.7 T e e staggered 0 0 0 
+3 0.2 247.6 262.65 T e e staggered 0 0 0 
+3 0.3 236.75 266.95 T e e staggered 0 0 0 
+3 0.3 253 275 T e e staggered 0 0 0 
+3 0.3 235.9 279.8 T e e staggered 0 0 0 
+3 0.225 251.3 280.1 T e e staggered 0 0 0 
+3 0.225 251.3 279.45 T e e staggered 0 0 0 
+3 0.3 248.1 270.11 T e e staggered 0 0 0 
+3 0.15 242.65 292.7 T e e staggered 0 0 0 
+3 0.15 218.1 288.5 T e e staggered 0 0 0 
+3 0 217.05 287.75 T 0.9 1.7 e e staggered 0 0 0 
+3 0.175 231.95 276.3 T e e staggered 0 0 0 
+3 0 233.45 275.975 T 1.65 2.5 e e staggered 0 0 0 
+3 0.175 232.3 291.15 T e e staggered 0 0 0 
+3 0 231.975 289.65 T 2.5 1.65 e e staggered 0 0 0 
+3 0.15 244.735 274.93 T e e staggered 0 0 0 
+3 0.125 230.85 261.61 T e e staggered 0 0 0 
+3 0.125 231.35 261.61 T e e staggered 0 0 0 
+3 0.125 231.85 261.61 T e e staggered 0 0 0 
+3 0.125 232.35 261.61 T e e staggered 0 0 0 
+3 0.125 232.85 261.61 T e e staggered 0 0 0 
+3 0.825 231.85 263.08 T e e staggered 0 0 0 
+3 0.125 252.21 264.45 T e e staggered 0 0 0 
+3 0.825 253.68 263.45 T e e staggered 0 0 0 
+3 0.1 232.5 269.25 T e e staggered 0 0 0 
+3 0.1 233.25 270.2 T e e staggered 0 0 0 
+3 0.1 233.25 270.6 T e e staggered 0 0 0 
+3 0.1 233.25 271 T e e staggered 0 0 0 
+3 0.15 245.55 282.55 T e e staggered 0 0 0 
+3 0.15 248.5 284.5 T e e staggered 0 0 0 
+3 0.15 248.5 286 T e e staggered 0 0 0 
+3 0.15 248.5 286.5 T e e staggered 0 0 0 
+3 0.15 246.55 288.95 T e e staggered 0 0 0 
+3 0.15 242.1 287 T e e staggered 0 0 0 
+3 0.15 242.1 285 T e e staggered 0 0 0 
+3 0.15 242.1 284.5 T e e staggered 0 0 0 
+3 1.175 227.8 293.65 T e e staggered 0 0 0 
+3 0.15 211.75 287.75 T e e staggered 0 0 0 
+3 0.225 212.7 290 T e e staggered 0 0 0 
+3 0.375 242.87 249.75 T e e staggered 0 0 0 
+3 0.375 244.14 249.75 T e e staggered 0 0 0 
+3 0.375 246.68 249.75 T e e staggered 0 0 0 
+3 0.375 244.489 262.533 T e e staggered 0 0 0 
+3 0.375 243.219 262.533 T e e staggered 0 0 0 
+3 0.375 240.679 262.533 T e e staggered 0 0 0 
+3 0.575 227.35 266.65 T e e staggered 0 0 0 
+3 0.175 203.7 280.6 T e e staggered 0 0 0 
+3 0.175 203.65 281.4 T e e staggered 0 0 0 
+3 0.175 214.04 286.55 T e e staggered 0 0 0 
+3 0.175 210.86 259.4 T e e staggered 0 0 0 
+3 0.3 230.13 204.45 T e e staggered 0 0 0 
+3 0.175 214.01 281.3 T e e staggered 0 0 0 
+3 0.175 205.74 281.7 T e e staggered 0 0 0 
+3 0.175 214.01 284.8 T e e staggered 0 0 0 
+3 0.175 207.19 287.8 T e e staggered 0 0 0 
+3 0.175 214.01 282.1 T e e staggered 0 0 0 
+3 0.175 205.74 282.6 T e e staggered 0 0 0 
+3 0.175 214.01 283.9 T e e staggered 0 0 0 
+3 0.40001 222.9899 225.6899 T e e staggered 0 0 0 
+3 0.40001 221.2222 225.4778 T e e staggered 0 0 0 
+3 1 240.5 205.05 T e e staggered 0 0 0 
+3 1 246.1 205.05 T e e staggered 0 0 0 
+3 1 246.1 210.65 T e e staggered 0 0 0 
+3 1 240.5 210.65 T e e staggered 0 0 0 
+3 0 229.475 228.2 T 5.25 5.25 e e staggered 0 0 0 
+3 0.475 233.4 283.3 T e e staggered 0 0 0 
+3 0.475 239.95 265.85 T e e staggered 0 0 0 
+3 0.475 238.75 275.5 T e e staggered 0 0 0 
+3 0.475 222.5 282.9 T e e staggered 0 0 0 
+3 0.475 226.375 234.75 T e e staggered 0 0 0 
+3 0.475 225.775 236.25 T e e staggered 0 0 0 
+3 0.475 224.75 290 T e e staggered 0 0 0 
+3 0.32 213.95 288.55 T e e staggered 0 0 0 
+3 0.32 219.2 289.75 T e e staggered 0 0 0 
+3 0.32 235.5 268.5 T e e staggered 0 0 0 
+3 0.32 248.6 271.95 T e e staggered 0 0 0 
+3 0.32 248.45 280.5 T e e staggered 0 0 0 
+3 0.32 251.4 273.15 T e e staggered 0 0 0 
+3 0.32 232.9 268.1 T e e staggered 0 0 0 
+3 0.32 233.8 272.3 T e e staggered 0 0 0 
+3 0.32 230.7 267.25 T e e staggered 0 0 0 
+3 0.32 231.7 285.4 T e e staggered 0 0 0 
+3 0.32 234.35 268.5 T e e staggered 0 0 0 
+3 0.32 237.3 276.3 T e e staggered 0 0 0 
+3 0.32 233.45 281.75 T e e staggered 0 0 0 
+3 0.32 240.65 280.05 T e e staggered 0 0 0 
+3 0.32 236.75 269.7 T e e staggered 0 0 0 
+3 0.32 237.95 263.1 T e e staggered 0 0 0 
+3 0.3200375 220.0636 226.8136 T e e staggered 0 0 0 
+3 0.3200375 219.9136 225.0864 T e e staggered 0 0 0 
+3 0.32 232.85 286.6 T e e staggered 0 0 0 
+3 0.32 217.65 289.7 T e e staggered 0 0 0 
+3 0.32 230.05 272.4 T e e staggered 0 0 0 
+3 0.32 229.55 269 T e e staggered 0 0 0 
+3 0.32 237.1 274 T e e staggered 0 0 0 
+3 0.32 201.35 268.2 T e e staggered 0 0 0 
+3 0.32 228.45 283.6 T e e staggered 0 0 0 
+3 0.32 223.8 283.6 T e e staggered 0 0 0 
+3 0.575 235.8 272.3 T e e staggered 0 0 0 
+3 0.575 237.3 282.8 T e e staggered 0 0 0 
+3 0.575 249.3 277.1 T e e staggered 0 0 0 
+3 0.575 253.95 277.7 T e e staggered 0 0 0 
+3 0.575 254.85 272.45 T e e staggered 0 0 0 
+3 0.575 238.85 288.7 T e e staggered 0 0 0 
+3 0.575 216.95 282.55 T e e staggered 0 0 0 
+3 0.575 218.95 285.05 T e e staggered 0 0 0 
+3 0.15 211.65 286.3 T e e staggered 0 0 0 
+3 0.15 211.15 286.3 T e e staggered 0 0 0 
+3 0 209.9 283.85 T 3.25 3.25 e e staggered 0 0 0 
+3 0.25 236.676 270.8 T e e staggered 0 0 0 
+3 0.25 216.726 227.3 T e e staggered 0 0 0 
+3 0.25 231.724 286.5 T e e staggered 0 0 0 
+3 0.25 241.15 269.774 T e e staggered 0 0 0 
+3 0.25 233.426 280.65 T e e staggered 0 0 0 
+3 0.25 238.95 263.576 T e e staggered 0 0 0 
+3 0.25 236.676 268.6 T e e staggered 0 0 0 
+3 0.25 239.65 280.026 T e e staggered 0 0 0 
+3 0.25 236.15 276.326 T e e staggered 0 0 0 
+3 0.25 237.074 275.05 T e e staggered 0 0 0 
+3 0.25 249.174 275.75 T e e staggered 0 0 0 
+3 0.25 233.95 232.124 T e e staggered 0 0 0 
+3 0.25 249.9 265.676 T e e staggered 0 0 0 
+3 0.25 249.85 264.4 T e e staggered 0 0 0 
+3 0.25 256.3 260.726 T e e staggered 0 0 0 
+3 0.25 247.974 293.7 T e e staggered 0 0 0 
+3 0.25 240.4 287.574 T e e staggered 0 0 0 
+3 0.25 241.25 266.6 T e e staggered 0 0 0 
+3 0.25 250 283.076 T e e staggered 0 0 0 
+3 0.25 233.45 266.674 T e e staggered 0 0 0 
+3 0.25 220.2 289.324 T e e staggered 0 0 0 
+3 0.25 212.85 288.524 T e e staggered 0 0 0 
+3 0.25 256.75 275.226 T e e staggered 0 0 0 
+3 0.25 225.15 259.926 T e e staggered 0 0 0 
+3 0.25 225.576 223 T e e staggered 0 0 0 
+3 0.25 228.4 221.376 T e e staggered 0 0 0 
+3 0.25 233.9 219.524 T e e staggered 0 0 0 
+3 0.25 227.874 220.55 T e e staggered 0 0 0 
+3 0.25 226.026 218.2 T e e staggered 0 0 0 
+3 0.25 227.874 215.75 T e e staggered 0 0 0 
+3 0.25 228.226 205.35 T e e staggered 0 0 0 
+3 0.25 233.95 220.676 T e e staggered 0 0 0 
+3 0.25 201.45 285.276 T e e staggered 0 0 0 
+3 0.25 210.964 262.2 T e e staggered 0 0 0 
+3 0.25 227.475 234.074 T e e staggered 0 0 0 
+3 0.25 234.924 230 T e e staggered 0 0 0 
+3 0.25 235.224 224.75 T e e staggered 0 0 0 
+3 0.25 224.8 223.976 T e e staggered 0 0 0 
+3 0.25 223.576 226.95 T e e staggered 0 0 0 
+3 0.25 223.576 227.65 T e e staggered 0 0 0 
+3 0.25 204 282.376 T e e staggered 0 0 0 
+3 0.25 222.25 232.424 T e e staggered 0 0 0 
+3 0.25 215.1 281.4 T e e staggered 0 0 0 
+3 0.25 215 285.7 T e e staggered 0 0 0 
+3 0.25 257.2 282.624 T e e staggered 0 0 0 
+3 0.25 240.5 282.676 T e e staggered 0 0 0 
+3 0.25 220.2 281.5 T e e staggered 0 0 0 
+3 0.25 215.7 283.3 T e e staggered 0 0 0 
+3 0.25 242.2 280.076 T e e staggered 0 0 0 
+3 0.25 251.124 285 T e e staggered 0 0 0 
+3 0.25 231.85 273.174 T e e staggered 0 0 0 
+3 0.25 240.55 289.674 T e e staggered 0 0 0 
+3 0.25 243.1 280.076 T e e staggered 0 0 0 
+3 0.25 221.1 263.024 T e e staggered 0 0 0 
+3 0.25 225.15 262.874 T e e staggered 0 0 0 
+3 0.25 232.876 293.75 T e e staggered 0 0 0 
+3 0.25 246.4 280.026 T e e staggered 0 0 0 
+3 0.25 222.276 289.6 T e e staggered 0 0 0 
+3 0.25 221.1 289.324 T e e staggered 0 0 0 
+3 0.25 244.3 277.9 T e e staggered 0 0 0 
+3 0.25 249.9 270.55 T e e staggered 0 0 0 
+3 0.25 242.8 217.826 T e e staggered 0 0 0 
+3 0.25 215.076 280.6 T e e staggered 0 0 0 
+3 0.25 220.7 271.676 T e e staggered 0 0 0 
+3 0.25 201.376 270.4 T e e staggered 0 0 0 
+3 0.25 217.824 280.6 T e e staggered 0 0 0 
+3 0.25 229.1 260.076 T e e staggered 0 0 0 
+3 0.25 229.1 263.074 T e e staggered 0 0 0 
+3 0.25 221.15 260.076 T e e staggered 0 0 0 
+3 0.25 221.7 271.676 T e e staggered 0 0 0 
+3 0.25 207.8 261.476 T e e staggered 0 0 0 
+3 0.25 201.376 269.35 T e e staggered 0 0 0 
+3 0.25 216.674 262.4 T e e staggered 0 0 0 
+3 0.25 201.316 271.55 T e e staggered 0 0 0 
+3 0.25 201.356 276.2 T e e staggered 0 0 0 
+3 0.25 206.85 261.476 T e e staggered 0 0 0 
+3 0.25 210.964 261.25 T e e staggered 0 0 0 
+3 0.25 235.1 290.55 T e e staggered 0 0 0 
+3 0.25 234.55 265.15 T e e staggered 0 0 0 
+3 0.25 244.7 291.5 T e e staggered 0 0 0 
+3 0.25 251.1 288 T e e staggered 0 0 0 
+3 0.25 251.1 287 T e e staggered 0 0 0 
+3 0.25 257.25 279.75 T e e staggered 0 0 0 
+3 0.25 230.9 278.3 T e e staggered 0 0 0 
+3 0.25 243.45 271.55 T e e staggered 0 0 0 
+3 0.25 239.426 284.7 T e e staggered 0 0 0 
+3 0.25 205.7 289.3 T e e staggered 0 0 0 
+3 0.25 222.024 276.6 T e e staggered 0 0 0 
+3 0.25 222.024 275.7 T e e staggered 0 0 0 
+3 0.25 220.8 280.374 T e e staggered 0 0 0 
+3 0.25 222 274.85 T e e staggered 0 0 0 
+3 0.25 226.25 280.3 T e e staggered 0 0 0 
+3 0.25 218.08 259.05 T e e staggered 0 0 0 
+3 0.25 234.7 259.1 T e e staggered 0 0 0 
+3 0.25 242.3 256.3 T e e staggered 0 0 0 
+3 0.25 247.16 258.25 T e e staggered 0 0 0 
+3 0.525 211.463 257.16 B e e staggered 0 0 0 
+3 0.525 211.463 254.62 B e e staggered 0 0 0 
+3 0.1 223.11 262.525 T e e staggered 0 0 0 
+3 0.1 222.495 261.9 T e e staggered 0 0 0 
+3 0.1 222.495 261.5 T e e staggered 0 0 0 
+3 0.1 222.495 261.1 T e e staggered 0 0 0 
+3 0.1 222.495 260.7 T e e staggered 0 0 0 
+3 0.1 223.91 260.075 T e e staggered 0 0 0 
+3 0.1 220 260.7 T e e staggered 0 0 0 
+3 0.1 219.91 262.525 T e e staggered 0 0 0 
+3 0.1 219.11 262.525 T e e staggered 0 0 0 
+3 0.1 218.495 261.5 T e e staggered 0 0 0 
+3 0.1 218.495 261.1 T e e staggered 0 0 0 
+3 0.1 219.91 260.075 T e e staggered 0 0 0 
+3 0.1 228 260.7 T e e staggered 0 0 0 
+3 0.1 227.91 262.525 T e e staggered 0 0 0 
+3 0.1 226.495 261.5 T e e staggered 0 0 0 
+3 0.1 226.495 261.1 T e e staggered 0 0 0 
+3 0.1 226.71 260.075 T e e staggered 0 0 0 
+3 0.1 227.91 260.075 T e e staggered 0 0 0 
+3 0.15 245.4 216.25 T e e staggered 0 0 0 
+3 0 244.65 217.45 T 1.7 0.3 e e staggered 0 0 0 
+3 0.525 206.4 213.96 B e e staggered 0 0 0 
+3 0.525 206.4 216.5 B e e staggered 0 0 0 
+3 0.525 252.1 213.96 B e e staggered 0 0 0 
+3 0.525 252.1 216.5 B e e staggered 0 0 0 
+3 0.5 202.55 254.25 T e e staggered 0 0 0 
+3 0.5 202.55 247.5 T e e staggered 0 0 0 
+3 0.45 204.35 252.975 T e e staggered 0 0 0 
+3 0.5 256 247.45 T e e staggered 0 0 0 
+3 0.5 256 254.2 T e e staggered 0 0 0 
+3 0.45 254.2 252.925 T e e staggered 0 0 0 
+3 0.5 223.8 293.4 T e e staggered 0 0 0 
+3 0.5 217.05 293.4 T e e staggered 0 0 0 
+3 0.45 218.325 291.6 T e e staggered 0 0 0 
+3 0.15 225.85 281.5 T e e staggered 0 0 0 
+3 0 226.175 283 T 2.5 1.65 e e staggered 0 0 0 
+3 0.55 203 257.6 B e e staggered 0 0 0 
+3 0.15 239.35 251.15 T e e staggered 0 0 0 
+3 0.15 238.55 259.85 T e e staggered 0 0 0 
+3 0.599 202.55 284.65 T e e staggered 0 0 0 
+3 0.599 204.249 286.85 T e e staggered 0 0 0 
+3 0.1995 212.28 262.3 T e e staggered 0 0 0 
+3 0.1005 208.899 263.9 T e e staggered 0 0 0 
+3 0.1005 211.701 263.9 T e e staggered 0 0 0 
+3 0.1005 219.199 271.401 T e e staggered 0 0 0 
+3 0.1005 219.199 274.2 T e e staggered 0 0 0 
+3 0.1005 219.199 275.401 T e e staggered 0 0 0 
+3 0.1005 219.199 277.799 T e e staggered 0 0 0 
+3 0.1005 217.299 279.3 T e e staggered 0 0 0 
+3 0.1005 211.701 279.3 T e e staggered 0 0 0 
+3 0.1005 203.799 270.999 T e e staggered 0 0 0 
+3 0.376 202.2 266.7 T e e staggered 0 0 0 
+3 0.376 218.15 214.85 T e e staggered 0 0 0 
+3 0.376 201.25 266.7 T e e staggered 0 0 0 
+3 0.376 215.65 214.85 T e e staggered 0 0 0 
+3 1.6 202.5 292.7 B e e staggered 0 0 0 
+3 1.6 255.8 292.7 B e e staggered 0 0 0 
+3 0.4 202.1 284.74 D e e staggered 0 0 0 
+3 0.4 202.1 287.28 D e e staggered 0 0 0 
+3 0.4 203.37 283.47 D e e staggered 0 0 0 
+3 0.525 252.123 244.46 B e e staggered 0 0 0 
+3 0.525 208.923 241.92 B e e staggered 0 0 0 
+3 0.1 200.7 207.8 B m e staggered 0 0 0 v 
+3 0.1 200.7 211.45 B m e staggered 0 0 0 v 
+3 0.1 200.75 204.95 B m e staggered 0 0 0 v 
+3 0.1 200.75 215.55 B m e staggered 0 0 0 v 
+3 0.1 200.767 276.2 B m e staggered 0 0 0 v 
+3 0.1 200.8 233.3 B m e staggered 0 0 0 v 
+3 0.1 200.8 272.95 B m e staggered 0 0 0 v 
+3 0.1 200.84 242.95 B m e staggered 0 0 0 v 
+3 0.1 200.85 227.05 B m e staggered 0 0 0 v 
+3 0.1 200.85 268.95 B m e staggered 0 0 0 v 
+3 0.1 200.88 239.55 B m e staggered 0 0 0 v 
+3 0.1 200.9 220.1 B m e staggered 0 0 0 v 
+3 0.1 200.9 269.95 B m e staggered 0 0 0 v 
+3 0.1 200.9 274.85 B m e staggered 0 0 0 v 
+3 0.1 200.92 223.5 B m e staggered 0 0 0 v 
+3 0.1 200.92 237.35 B m e staggered 0 0 0 v 
+3 0.1 200.95 245.8 B m e staggered 0 0 0 v 
+3 0.1 200.95 267.5 B m e staggered 0 0 0 v 
+3 0.1 200.96 270.986 B m e staggered 0 0 0 v 
+3 0.1 201.25 261.35 B m e staggered 0 0 0 v 
+3 0.1 201.375 284.68 B m e staggered 0 0 0 v 
+3 0.1 201.6 203.05 B m e staggered 0 0 0 v 
+3 0.1 201.7 265.95 B m e staggered 0 0 0 v 
+3 0.1 201.85 213.55 B m e staggered 0 0 0 v 
+3 0.1 202.1 273.4 B m e staggered 0 0 0 v 
+3 0.1 202.45 274.8 B m e staggered 0 0 0 v 
+3 0.1 202.48 221.4 B m e staggered 0 0 0 v 
+3 0.1 202.5 216.8 B m e staggered 0 0 0 v 
+3 0.1 202.5 225.7 B m e staggered 0 0 0 v 
+3 0.1 202.5 241.3 B m e staggered 0 0 0 v 
+3 0.1 202.5 289.75 B m e staggered 0 0 0 v 
+3 0.1 202.6 228.65 B m e staggered 0 0 0 v 
+3 0.1 202.6 231 B m e staggered 0 0 0 v 
+3 0.1 202.6 236.8 B m e staggered 0 0 0 v 
+3 0.1 202.7 233.85 B m e staggered 0 0 0 v 
+3 0.1 202.7 244.5 B m e staggered 0 0 0 v 
+3 0.1 202.85 253 B m e staggered 0 0 0 v 
+3 0.1 202.85 282.85 B m e staggered 0 0 0 v 
+3 0.1 203.05 246.2 B m e staggered 0 0 0 v 
+3 0.1 203.05 279.95 B m e staggered 0 0 0 v 
+3 0.1 203.2 204.9 B m e staggered 0 0 0 v 
+3 0.1 203.25 207.85 B m e staggered 0 0 0 v 
+3 0.1 203.25 262.9 B m e staggered 0 0 0 v 
+3 0.1 203.3 264.65 B m e staggered 0 0 0 v 
+3 0.1 203.55 211.35 B m e staggered 0 0 0 v 
+3 0.1 203.55 261.25 B m e staggered 0 0 0 v 
+3 0.1 203.65 247.5 B m e staggered 0 0 0 v 
+3 0.1 204.05 254.5 B m e staggered 0 0 0 v 
+3 0.1 204.3 250 B m e staggered 0 0 0 v 
+3 0.1 204.35 251.75 B m e staggered 0 0 0 v 
+3 0.1 204.65 215.05 B m e staggered 0 0 0 v 
+3 0.1 204.7 223.65 B m e staggered 0 0 0 v 
+3 0.1 204.8 234.75 B m e staggered 0 0 0 v 
+3 0.1 204.8 262.95 B m e staggered 0 0 0 v 
+3 0.1 204.85 227.25 B m e staggered 0 0 0 v 
+3 0.1 204.85 229.6 B m e staggered 0 0 0 v 
+3 0.1 205 237.35 B m e staggered 0 0 0 v 
+3 0.1 205.05 206.45 B m e staggered 0 0 0 v 
+3 0.1 205.08 287.65 B m e staggered 0 0 0 v 
+3 0.1 205.08 289.3 B m e staggered 0 0 0 v 
+3 0.1 205.12 251.05 B m e staggered 0 0 0 v 
+3 0.1 205.15 239.8 B m e staggered 0 0 0 v 
+3 0.1 205.173 283.525 B m e staggered 0 0 0 v 
+3 0.1 205.2 204.25 B m e staggered 0 0 0 v 
+3 0.1 205.2 276.65 B m e staggered 0 0 0 v 
+3 0.1 205.2 278 B m e staggered 0 0 0 v 
+3 0.1 205.2 281.7 B m e staggered 0 0 0 v 
+3 0.1 205.2 282.5 B m e staggered 0 0 0 v 
+3 0.1 205.24 273.55 B m e staggered 0 0 0 v 
+3 0.1 205.3 224.95 B m e staggered 0 0 0 v 
+3 0.1 205.35 265.65 B m e staggered 0 0 0 v 
+3 0.1 205.4 271.1 B m e staggered 0 0 0 v 
+3 0.1 205.45 270.05 B m e staggered 0 0 0 v 
+3 0.1 205.65 218.2 B m e staggered 0 0 0 v 
+3 0.1 205.65 253.05 B m e staggered 0 0 0 v 
+3 0.1 205.68 288.7 B m e staggered 0 0 0 v 
+3 0.1 206 208.5 B m e staggered 0 0 0 v 
+3 0.1 206.15 278 B m e staggered 0 0 0 v 
+3 0.1 206.24 276.9 B m e staggered 0 0 0 v 
+3 0.1 206.4 257.75 B m e staggered 0 0 0 v 
+3 0.1 206.4 267 B m e staggered 0 0 0 v 
+3 0.1 206.45 272.9 B m e staggered 0 0 0 v 
+3 0.1 206.48 275.6 B m e staggered 0 0 0 v 
+3 0.1 206.5 287.85 B m e staggered 0 0 0 v 
+3 0.1 206.7 269.7 B m e staggered 0 0 0 v 
+3 0.1 206.85 219.4 B m e staggered 0 0 0 v 
+3 0.1 206.88 260.887 B m e staggered 0 0 0 v 
+3 0.1 207 254.1 B m e staggered 0 0 0 v 
+3 0.1 207.2 265.5 B m e staggered 0 0 0 v 
+3 0.1 207.65 228 B m e staggered 0 0 0 v 
+3 0.1 207.65 232.9 B m e staggered 0 0 0 v 
+3 0.1 207.65 268.75 B m e staggered 0 0 0 v 
+3 0.1 207.7 220.5 B m e staggered 0 0 0 v 
+3 0.1 207.7 238.15 B m e staggered 0 0 0 v 
+3 0.1 207.7 239.85 B m e staggered 0 0 0 v 
+3 0.1 207.75 225.55 B m e staggered 0 0 0 v 
+3 0.1 207.75 245.9 B m e staggered 0 0 0 v 
+3 0.1 207.75 270.9 B m e staggered 0 0 0 v 
+3 0.1 207.84 260.887 B m e staggered 0 0 0 v 
+3 0.1 208 202.95 B m e staggered 0 0 0 v 
+3 0.1 208.15 253.4 B m e staggered 0 0 0 v 
+3 0.1 208.2 216.5 B m e staggered 0 0 0 v 
+3 0.1 208.24 273.65 B m e staggered 0 0 0 v 
+3 0.1 208.3 214.35 B m e staggered 0 0 0 v 
+3 0.1 208.4 275.55 B m e staggered 0 0 0 v 
+3 0.1 208.5 267.35 B m e staggered 0 0 0 v 
+3 0.1 208.55 271.6 B m e staggered 0 0 0 v 
+3 0.1 208.6 259.4 B m e staggered 0 0 0 v 
+3 0.1 208.65 205.9 B m e staggered 0 0 0 v 
+3 0.1 208.65 255.85 B m e staggered 0 0 0 v 
+3 0.1 208.65 269.7 B m e staggered 0 0 0 v 
+3 0.1 208.7 209.4 B m e staggered 0 0 0 v 
+3 0.1 208.7 285 B m e staggered 0 0 0 v 
+3 0.1 208.899 265.199 B m e staggered 0 0 0 v 
+3 0.1 209.05 283 B m e staggered 0 0 0 v 
+3 0.1 209.1 211.85 B m e staggered 0 0 0 v 
+3 0.1 209.2 254.15 B m e staggered 0 0 0 v 
+3 0.1 209.45 219.35 B m e staggered 0 0 0 v 
+3 0.1 209.65 268.75 B m e staggered 0 0 0 v 
+3 0.1 209.75 270.9 B m e staggered 0 0 0 v 
+3 0.1 209.85 278 B m e staggered 0 0 0 v 
+3 0.1 209.9 247.35 B m e staggered 0 0 0 v 
+3 0.1 209.9 275.65 B m e staggered 0 0 0 v 
+3 0.1 209.9 283.85 B m e staggered 0 0 0 v 
+3 0.1 209.95 272.95 B m e staggered 0 0 0 v 
+3 0.1 210.05 235.25 B m e staggered 0 0 0 v 
+3 0.1 210.1 255.95 B m e staggered 0 0 0 v 
+3 0.1 210.2 207.55 B m e staggered 0 0 0 v 
+3 0.1 210.35 217.15 B m e staggered 0 0 0 v 
+3 0.1 210.35 225.5 B m e staggered 0 0 0 v 
+3 0.1 210.35 232.65 B m e staggered 0 0 0 v 
+3 0.1 210.45 222.6 B m e staggered 0 0 0 v 
+3 0.1 210.5 274.15 B m e staggered 0 0 0 v 
+3 0.1 210.55 267.55 B m e staggered 0 0 0 v 
+3 0.1 210.6 215.25 B m e staggered 0 0 0 v 
+3 0.1 210.6 236.55 B m e staggered 0 0 0 v 
+3 0.1 210.6 243.05 B m e staggered 0 0 0 v 
+3 0.1 210.65 228 B m e staggered 0 0 0 v 
+3 0.1 210.75 269.7 B m e staggered 0 0 0 v 
+3 0.1 210.84 229.95 B m e staggered 0 0 0 v 
+3 0.1 210.9 266.05 B m e staggered 0 0 0 v 
+3 0.1 210.9 283.025 B m e staggered 0 0 0 v 
+3 0.1 210.95 238.45 B m e staggered 0 0 0 v 
+3 0.1 210.95 284.9 B m e staggered 0 0 0 v 
+3 0.1 211 234.3 B m e staggered 0 0 0 v 
+3 0.1 211.05 204.65 B m e staggered 0 0 0 v 
+3 0.1 211.05 271.6 B m e staggered 0 0 0 v 
+3 0.1 211.05 276.8 B m e staggered 0 0 0 v 
+3 0.1 211.2 246.2 B m e staggered 0 0 0 v 
+3 0.1 211.3 241.1 B m e staggered 0 0 0 v 
+3 0.1 211.4 244.3 B m e staggered 0 0 0 v 
+3 0.1 211.4 261.777 B m e staggered 0 0 0 v 
+3 0.1 211.4 275.6 B m e staggered 0 0 0 v 
+3 0.1 211.56 258.9 B m e staggered 0 0 0 v 
+3 0.1 211.6 278.1 B m e staggered 0 0 0 v 
+3 0.1 211.7 211.35 B m e staggered 0 0 0 v 
+3 0.1 211.7 265.1 B m e staggered 0 0 0 v 
+3 0.1 211.7 268.75 B m e staggered 0 0 0 v 
+3 0.1 211.75 287.223 B m e staggered 0 0 0 v 
+3 0.1 211.9 247.35 B m e staggered 0 0 0 v 
+3 0.1 211.92 270.7 B m e staggered 0 0 0 v 
+3 0.1 212.2 222.15 B m e staggered 0 0 0 v 
+3 0.1 212.25 231.25 B m e staggered 0 0 0 v 
+3 0.1 212.25 281.5 B m e staggered 0 0 0 v 
+3 0.1 212.3 272.9 B m e staggered 0 0 0 v 
+3 0.1 212.3 274.75 B m e staggered 0 0 0 v 
+3 0.1 212.45 236.75 B m e staggered 0 0 0 v 
+3 0.1 212.5 244.85 B m e staggered 0 0 0 v 
+3 0.1 212.55 218.4 B m e staggered 0 0 0 v 
+3 0.1 212.55 234.6 B m e staggered 0 0 0 v 
+3 0.1 212.55 276.2 B m e staggered 0 0 0 v 
+3 0.1 212.6 232.6 B m e staggered 0 0 0 v 
+3 0.1 212.6 258.65 B m e staggered 0 0 0 v 
+3 0.1 212.65 225.8 B m e staggered 0 0 0 v 
+3 0.1 212.72 255.95 B m e staggered 0 0 0 v 
+3 0.1 212.75 215.5 B m e staggered 0 0 0 v 
+3 0.1 212.76 259.5 B m e staggered 0 0 0 v 
+3 0.1 212.8 238.7 B m e staggered 0 0 0 v 
+3 0.1 212.8 286.75 B m e staggered 0 0 0 v 
+3 0.1 212.85 220.65 B m e staggered 0 0 0 v 
+3 0.1 213 248.6 B m e staggered 0 0 0 v 
+3 0.1 213 269.75 B m e staggered 0 0 0 v 
+3 0.1 213.05 242.25 B m e staggered 0 0 0 v 
+3 0.1 213.08 262.3 B m e staggered 0 0 0 v 
+3 0.1 213.2 273.75 B m e staggered 0 0 0 v 
+3 0.1 213.24 240.35 B m e staggered 0 0 0 v 
+3 0.1 213.25 271.7 B m e staggered 0 0 0 v 
+3 0.1 213.3 268.75 B m e staggered 0 0 0 v 
+3 0.1 213.4 247.65 B m e staggered 0 0 0 v 
+3 0.1 213.4 288.7 B m e staggered 0 0 0 v 
+3 0.1 213.45 209.2 B m e staggered 0 0 0 v 
+3 0.1 213.55 202.95 B m e staggered 0 0 0 v 
+3 0.1 213.55 223.55 B m e staggered 0 0 0 v 
+3 0.1 213.55 275.1 B m e staggered 0 0 0 v 
+3 0.1 213.55 277.2 B m e staggered 0 0 0 v 
+3 0.1 213.6 205.8 B m e staggered 0 0 0 v 
+3 0.1 213.64 246.35 B m e staggered 0 0 0 v 
+3 0.1 213.7 227.25 B m e staggered 0 0 0 v 
+3 0.1 213.75 212.45 B m e staggered 0 0 0 v 
+3 0.1 213.85 231.45 B m e staggered 0 0 0 v 
+3 0.1 213.95 217.1 B m e staggered 0 0 0 v 
+3 0.1 214 237.15 B m e staggered 0 0 0 v 
+3 0.1 214.05 243.2 B m e staggered 0 0 0 v 
+3 0.1 214.05 286.023 B m e staggered 0 0 0 v 
+3 0.1 214.15 273.25 B m e staggered 0 0 0 v 
+3 0.1 214.15 276.1 B m e staggered 0 0 0 v 
+3 0.1 214.2 232.95 B m e staggered 0 0 0 v 
+3 0.1 214.25 234.9 B m e staggered 0 0 0 v 
+3 0.1 214.28 285.313 B m e staggered 0 0 0 v 
+3 0.1 214.4 214.9 B m e staggered 0 0 0 v 
+3 0.1 214.4 248.8 B m e staggered 0 0 0 v 
+3 0.1 214.48 266.75 B m e staggered 0 0 0 v 
+3 0.1 214.5 270.85 B m e staggered 0 0 0 v 
+3 0.1 214.517 283.925 B m e staggered 0 0 0 v 
+3 0.1 214.523 281.157 B m e staggered 0 0 0 v 
+3 0.1 214.7 226.4 B m e staggered 0 0 0 v 
+3 0.1 214.75 224.65 B m e staggered 0 0 0 v 
+3 0.1 214.8 228.4 B m e staggered 0 0 0 v 
+3 0.1 214.8 274.4 B m e staggered 0 0 0 v 
+3 0.1 215 239.15 B m e staggered 0 0 0 v 
+3 0.1 215.05 241.6 B m e staggered 0 0 0 v 
+3 0.1 215.05 275.5 B m e staggered 0 0 0 v 
+3 0.1 215.1 277.5 B m e staggered 0 0 0 v 
+3 0.1 215.15 244.3 B m e staggered 0 0 0 v 
+3 0.1 215.2 230.05 B m e staggered 0 0 0 v 
+3 0.1 215.2 247.7 B m e staggered 0 0 0 v 
+3 0.1 215.2 255.45 B m e staggered 0 0 0 v 
+3 0.1 215.28 265.85 B m e staggered 0 0 0 v 
+3 0.1 215.3 259.4 B m e staggered 0 0 0 v 
+3 0.1 215.4 236.05 B m e staggered 0 0 0 v 
+3 0.1 215.5 276.65 B m e staggered 0 0 0 v 
+3 0.1 215.52 267.85 B m e staggered 0 0 0 v 
+3 0.1 215.6 269.8 B m e staggered 0 0 0 v 
+3 0.1 215.6 271.7 B m e staggered 0 0 0 v 
+3 0.1 215.65 260.65 B m e staggered 0 0 0 v 
+3 0.1 215.75 249.25 B m e staggered 0 0 0 v 
+3 0.1 215.85 207.95 B m e staggered 0 0 0 v 
+3 0.1 215.85 273.2 B m e staggered 0 0 0 v 
+3 0.1 215.95 231.2 B m e staggered 0 0 0 v 
+3 0.1 216.05 233.2 B m e staggered 0 0 0 v 
+3 0.1 216.2 225.85 B m e staggered 0 0 0 v 
+3 0.1 216.2 226.85 B m e staggered 0 0 0 v 
+3 0.1 216.2 266.75 B m e staggered 0 0 0 v 
+3 0.1 216.2 283.3 B m e staggered 0 0 0 v 
+3 0.1 216.25 240.7 B m e staggered 0 0 0 v 
+3 0.1 216.35 205.15 B m e staggered 0 0 0 v 
+3 0.1 216.35 224.85 B m e staggered 0 0 0 v 
+3 0.1 216.4 275.5 B m e staggered 0 0 0 v 
+3 0.1 216.45 237.55 B m e staggered 0 0 0 v 
+3 0.1 216.457 227.825 B m e staggered 0 0 0 v 
+3 0.1 216.48 246.35 B m e staggered 0 0 0 v 
+3 0.1 216.55 248.35 B m e staggered 0 0 0 v 
+3 0.1 216.6 292.5 B m e staggered 0 0 0 v 
+3 0.1 216.6 294.4 B m e staggered 0 0 0 v 
+3 0.1 216.65 274.45 B m e staggered 0 0 0 v 
+3 0.1 216.65 276.65 B m e staggered 0 0 0 v 
+3 0.1 216.72 267.9 B m e staggered 0 0 0 v 
+3 0.1 216.75 211.7 B m e staggered 0 0 0 v 
+3 0.1 216.75 214.25 B m e staggered 0 0 0 v 
+3 0.1 216.75 270.85 B m e staggered 0 0 0 v 
+3 0.1 216.76 261.823 B m e staggered 0 0 0 v 
+3 0.1 216.9 218.85 B m e staggered 0 0 0 v 
+3 0.1 217 234.2 B m e staggered 0 0 0 v 
+3 0.1 217 265.8 B m e staggered 0 0 0 v 
+3 0.1 217.04 236.2 B m e staggered 0 0 0 v 
+3 0.1 217.05 232 B m e staggered 0 0 0 v 
+3 0.1 217.05 287.2 B m e staggered 0 0 0 v 
+3 0.1 217.05 288.25 B m e staggered 0 0 0 v 
+3 0.1 217.1 223.975 B m e staggered 0 0 0 v 
+3 0.1 217.15 225.55 B m e staggered 0 0 0 v 
+3 0.1 217.24 244.35 B m e staggered 0 0 0 v 
+3 0.1 217.25 239 B m e staggered 0 0 0 v 
+3 0.1 217.317 278.233 B m e staggered 0 0 0 v 
+3 0.1 217.44 259.05 B m e staggered 0 0 0 v 
+3 0.1 217.45 291.4 B m e staggered 0 0 0 v 
+3 0.1 217.5 273.15 B m e staggered 0 0 0 v 
+3 0.1 217.6 242.85 B m e staggered 0 0 0 v 
+3 0.1 217.75 249.25 B m e staggered 0 0 0 v 
+3 0.1 217.8 261.4 B m e staggered 0 0 0 v 
+3 0.1 217.8 276.65 B m e staggered 0 0 0 v 
+3 0.1 217.8 283.3 B m e staggered 0 0 0 v 
+3 0.1 217.84 266.75 B m e staggered 0 0 0 v 
+3 0.1 217.85 269.75 B m e staggered 0 0 0 v 
+3 0.1 217.9 267.95 B m e staggered 0 0 0 v 
+3 0.1 217.95 247.8 B m e staggered 0 0 0 v 
+3 0.1 218.05 213.8 B m e staggered 0 0 0 v 
+3 0.1 218.05 241.05 B m e staggered 0 0 0 v 
+3 0.1 218.08 233.1 B m e staggered 0 0 0 v 
+3 0.1 218.1 202.9 B m e staggered 0 0 0 v 
+3 0.1 218.1 274.35 B m e staggered 0 0 0 v 
+3 0.1 218.1 275.45 B m e staggered 0 0 0 v 
+3 0.1 218.1 277.5 B m e staggered 0 0 0 v 
+3 0.1 218.137 271.4 B m e staggered 0 0 0 v 
+3 0.1 218.2 289.2 B m e staggered 0 0 0 v 
+3 0.1 218.24 235.3 B m e staggered 0 0 0 v 
+3 0.1 218.25 293.4 B m e staggered 0 0 0 v 
+3 0.1 218.3 225.6 B m e staggered 0 0 0 v 
+3 0.1 218.32 237.05 B m e staggered 0 0 0 v 
+3 0.1 218.35 280.65 B m e staggered 0 0 0 v 
+3 0.1 218.44 239.05 B m e staggered 0 0 0 v 
+3 0.1 218.44 286.077 B m e staggered 0 0 0 v 
+3 0.1 218.65 212.15 B m e staggered 0 0 0 v 
+3 0.1 218.8 205.35 B m e staggered 0 0 0 v 
+3 0.1 218.85 207.45 B m e staggered 0 0 0 v 
+3 0.1 218.85 294.4 B m e staggered 0 0 0 v 
+3 0.1 218.92 246.45 B m e staggered 0 0 0 v 
+3 0.1 219.05 210.3 B m e staggered 0 0 0 v 
+3 0.1 219.2 261.45 B m e staggered 0 0 0 v 
+3 0.1 219.2 290.402 B m e staggered 0 0 0 v 
+3 0.1 219.2 291.6 B m e staggered 0 0 0 v 
+3 0.1 219.3 248.6 B m e staggered 0 0 0 v 
+3 0.1 219.35 216.3 B m e staggered 0 0 0 v 
+3 0.1 219.35 217.9 B m e staggered 0 0 0 v 
+3 0.1 219.35 226.4 B m e staggered 0 0 0 v 
+3 0.1 219.4 244.95 B m e staggered 0 0 0 v 
+3 0.1 219.48 225.6 B m e staggered 0 0 0 v 
+3 0.1 219.48 231.9 B m e staggered 0 0 0 v 
+3 0.1 219.48 234.2 B m e staggered 0 0 0 v 
+3 0.1 219.48 235.95 B m e staggered 0 0 0 v 
+3 0.1 219.48 237.85 B m e staggered 0 0 0 v 
+3 0.1 219.48 239.15 B m e staggered 0 0 0 v 
+3 0.1 219.52 242.85 B m e staggered 0 0 0 v 
+3 0.1 219.55 214.8 B m e staggered 0 0 0 v 
+3 0.1 219.6 227.35 B m e staggered 0 0 0 v 
+3 0.1 219.7 218.95 B m e staggered 0 0 0 v 
+3 0.1 220 285.6 B m e staggered 0 0 0 v 
+3 0.1 220.05 259.3 B m e staggered 0 0 0 v 
+3 0.1 220.2 289.95 B m e staggered 0 0 0 v 
+3 0.1 220.25 213.05 B m e staggered 0 0 0 v 
+3 0.1 220.3 291.95 B m e staggered 0 0 0 v 
+3 0.1 220.35 211.6 B m e staggered 0 0 0 v 
+3 0.1 220.35 222.25 B m e staggered 0 0 0 v 
+3 0.1 220.36 240.85 B m e staggered 0 0 0 v 
+3 0.1 220.48 232.85 B m e staggered 0 0 0 v 
+3 0.1 220.48 237.15 B m e staggered 0 0 0 v 
+3 0.1 220.5 247.85 B m e staggered 0 0 0 v 
+3 0.1 220.5 249.25 B m e staggered 0 0 0 v 
+3 0.1 220.52 231.4 B m e staggered 0 0 0 v 
+3 0.1 220.56 235.25 B m e staggered 0 0 0 v 
+3 0.1 220.56 239.2 B m e staggered 0 0 0 v 
+3 0.1 220.6 263.5 B m e staggered 0 0 0 v 
+3 0.1 220.64 226.1 B m e staggered 0 0 0 v 
+3 0.1 220.72 220.2 B m e staggered 0 0 0 v 
+3 0.1 220.72 281 B m e staggered 0 0 0 v 
+3 0.1 220.9 215.65 B m e staggered 0 0 0 v 
+3 0.1 220.9 217.15 B m e staggered 0 0 0 v 
+3 0.1 220.95 289.95 B m e staggered 0 0 0 v 
+3 0.1 221.04 269.675 B m e staggered 0 0 0 v 
+3 0.1 221.16 259.487 B m e staggered 0 0 0 v 
+3 0.1 221.2 271.15 B m e staggered 0 0 0 v 
+3 0.1 221.25 218.9 B m e staggered 0 0 0 v 
+3 0.1 221.25 221.75 B m e staggered 0 0 0 v 
+3 0.1 221.25 246.4 B m e staggered 0 0 0 v 
+3 0.1 221.3 286.25 B m e staggered 0 0 0 v 
+3 0.1 221.32 264.6 B m e staggered 0 0 0 v 
+3 0.1 221.4 280.35 B m e staggered 0 0 0 v 
+3 0.1 221.44 232.4 B m e staggered 0 0 0 v 
+3 0.1 221.45 207.5 B m e staggered 0 0 0 v 
+3 0.1 221.48 233.7 B m e staggered 0 0 0 v 
+3 0.1 221.6 210.35 B m e staggered 0 0 0 v 
+3 0.1 221.6 212.65 B m e staggered 0 0 0 v 
+3 0.1 221.65 205 B m e staggered 0 0 0 v 
+3 0.1 221.673 282.9 B m e staggered 0 0 0 v 
+3 0.1 221.7 289.7 B m e staggered 0 0 0 v 
+3 0.1 221.72 244.8 B m e staggered 0 0 0 v 
+3 0.1 221.84 240.85 B m e staggered 0 0 0 v 
+3 0.1 221.88 242.35 B m e staggered 0 0 0 v 
+3 0.1 221.92 234.85 B m e staggered 0 0 0 v 
+3 0.1 221.92 239.5 B m e staggered 0 0 0 v 
+3 0.1 221.96 238.15 B m e staggered 0 0 0 v 
+3 0.1 221.975 286.85 B m e staggered 0 0 0 v 
+3 0.1 222 222.4 B m e staggered 0 0 0 v 
+3 0.1 222 236.5 B m e staggered 0 0 0 v 
+3 0.1 222.04 219.8 B m e staggered 0 0 0 v 
+3 0.1 222.05 294.5 B m e staggered 0 0 0 v 
+3 0.1 222.1 225.6 B m e staggered 0 0 0 v 
+3 0.1 222.15 202.95 B m e staggered 0 0 0 v 
+3 0.1 222.15 214.2 B m e staggered 0 0 0 v 
+3 0.1 222.24 221.15 B m e staggered 0 0 0 v 
+3 0.1 222.277 271.65 B m e staggered 0 0 0 v 
+3 0.1 222.28 259.55 B m e staggered 0 0 0 v 
+3 0.1 222.45 279.4 B m e staggered 0 0 0 v 
+3 0.1 222.45 281.4 B m e staggered 0 0 0 v 
+3 0.1 222.52 217.3 B m e staggered 0 0 0 v 
+3 0.1 222.553 274.45 B m e staggered 0 0 0 v 
+3 0.1 222.56 235.45 B m e staggered 0 0 0 v 
+3 0.1 222.613 275.65 B m e staggered 0 0 0 v 
+3 0.1 222.613 276.6 B m e staggered 0 0 0 v 
+3 0.1 222.84 223.8 B m e staggered 0 0 0 v 
+3 0.1 222.85 216.15 B m e staggered 0 0 0 v 
+3 0.1 222.9 227.5 B m e staggered 0 0 0 v 
+3 0.1 222.96 218.55 B m e staggered 0 0 0 v 
+3 0.1 223.085 261.4 B m e staggered 0 0 0 v 
+3 0.1 223.1 233.5 B m e staggered 0 0 0 v 
+3 0.1 223.12 249.15 B m e staggered 0 0 0 v 
+3 0.1 223.15 228.2 B m e staggered 0 0 0 v 
+3 0.1 223.16 221.75 B m e staggered 0 0 0 v 
+3 0.1 223.2 204.25 B m e staggered 0 0 0 v 
+3 0.1 223.2 209.45 B m e staggered 0 0 0 v 
+3 0.1 223.2 211.45 B m e staggered 0 0 0 v 
+3 0.1 223.2 248 B m e staggered 0 0 0 v 
+3 0.1 223.25 213.2 B m e staggered 0 0 0 v 
+3 0.1 223.3 206.9 B m e staggered 0 0 0 v 
+3 0.1 223.35 215 B m e staggered 0 0 0 v 
+3 0.1 223.4 220.25 B m e staggered 0 0 0 v 
+3 0.1 223.6 224.5 B m e staggered 0 0 0 v 
+3 0.1 223.6 290.95 B m e staggered 0 0 0 v 
+3 0.1 223.65 267 B m e staggered 0 0 0 v 
+3 0.1 223.72 222.6 B m e staggered 0 0 0 v 
+3 0.1 223.72 285.95 B m e staggered 0 0 0 v 
+3 0.1 223.8 282.85 B m e staggered 0 0 0 v 
+3 0.1 223.85 292.45 B m e staggered 0 0 0 v 
+3 0.1 223.852 286.85 B m e staggered 0 0 0 v 
+3 0.1 223.9 265.925 B m e staggered 0 0 0 v 
+3 0.1 223.9 281.85 B m e staggered 0 0 0 v 
+3 0.1 224 238.4 B m e staggered 0 0 0 v 
+3 0.1 224.05 203 B m e staggered 0 0 0 v 
+3 0.1 224.05 239.45 B m e staggered 0 0 0 v 
+3 0.1 224.12 217.5 B m e staggered 0 0 0 v 
+3 0.1 224.12 240.8 B m e staggered 0 0 0 v 
+3 0.1 224.15 215.9 B m e staggered 0 0 0 v 
+3 0.1 224.15 237.3 B m e staggered 0 0 0 v 
+3 0.1 224.2 246.45 B m e staggered 0 0 0 v 
+3 0.1 224.223 223.75 B m e staggered 0 0 0 v 
+3 0.1 224.24 244 B m e staggered 0 0 0 v 
+3 0.1 224.35 205.3 B m e staggered 0 0 0 v 
+3 0.1 224.35 208.9 B m e staggered 0 0 0 v 
+3 0.1 224.36 218.7 B m e staggered 0 0 0 v 
+3 0.1 224.36 242.25 B m e staggered 0 0 0 v 
+3 0.1 224.5 210.45 B m e staggered 0 0 0 v 
+3 0.1 224.5 294.55 B m e staggered 0 0 0 v 
+3 0.1 224.56 221.25 B m e staggered 0 0 0 v 
+3 0.1 224.56 259.5 B m e staggered 0 0 0 v 
+3 0.1 224.6 212.75 B m e staggered 0 0 0 v 
+3 0.1 224.64 220 B m e staggered 0 0 0 v 
+3 0.1 224.65 214.2 B m e staggered 0 0 0 v 
+3 0.1 224.75 290.802 B m e staggered 0 0 0 v 
+3 0.1 224.8 265 B m e staggered 0 0 0 v 
+3 0.1 224.8 293.45 B m e staggered 0 0 0 v 
+3 0.1 224.9 223.1 B m e staggered 0 0 0 v 
+3 0.1 224.945 272.45 B m e staggered 0 0 0 v 
+3 0.1 224.945 273.4 B m e staggered 0 0 0 v 
+3 0.1 224.945 274.35 B m e staggered 0 0 0 v 
+3 0.1 224.95 275.5 B m e staggered 0 0 0 v 
+3 0.1 224.95 276.6 B m e staggered 0 0 0 v 
+3 0.1 225 216.55 B m e staggered 0 0 0 v 
+3 0.1 225 222.3 B m e staggered 0 0 0 v 
+3 0.1 225.04 238.2 B m e staggered 0 0 0 v 
+3 0.1 225.05 206.45 B m e staggered 0 0 0 v 
+3 0.1 225.05 286.05 B m e staggered 0 0 0 v 
+3 0.1 225.1 239.35 B m e staggered 0 0 0 v 
+3 0.1 225.1 263.463 B m e staggered 0 0 0 v 
+3 0.1 225.2 207.95 B m e staggered 0 0 0 v 
+3 0.1 225.2 287.4 B m e staggered 0 0 0 v 
+3 0.1 225.25 282.45 B m e staggered 0 0 0 v 
+3 0.1 225.25 283.55 B m e staggered 0 0 0 v 
+3 0.1 225.3 204.05 B m e staggered 0 0 0 v 
+3 0.1 225.32 271 B m e staggered 0 0 0 v 
+3 0.1 225.437 218.2 B m e staggered 0 0 0 v 
+3 0.1 225.44 224.4 B m e staggered 0 0 0 v 
+3 0.1 225.45 219.35 B m e staggered 0 0 0 v 
+3 0.1 225.45 234.35 B m e staggered 0 0 0 v 
+3 0.1 225.45 237.15 B m e staggered 0 0 0 v 
+3 0.1 225.5 235.2 B m e staggered 0 0 0 v 
+3 0.1 225.6 223.7 B m e staggered 0 0 0 v 
+3 0.1 225.6 267.05 B m e staggered 0 0 0 v 
+3 0.1 225.65 248.8 B m e staggered 0 0 0 v 
+3 0.1 225.7 211.2 B m e staggered 0 0 0 v 
+3 0.1 225.7 222.05 B m e staggered 0 0 0 v 
+3 0.1 225.72 221.15 B m e staggered 0 0 0 v 
+3 0.1 225.75 246.6 B m e staggered 0 0 0 v 
+3 0.1 225.85 264.05 B m e staggered 0 0 0 v 
+3 0.1 225.88 224.85 B m e staggered 0 0 0 v 
+3 0.1 225.9 212.45 B m e staggered 0 0 0 v 
+3 0.1 225.9 213.7 B m e staggered 0 0 0 v 
+3 0.1 225.9 214.95 B m e staggered 0 0 0 v 
+3 0.1 225.9 294.45 B m e staggered 0 0 0 v 
+3 0.1 225.92 237.95 B m e staggered 0 0 0 v 
+3 0.1 225.92 245 B m e staggered 0 0 0 v 
+3 0.1 225.95 292.95 B m e staggered 0 0 0 v 
+3 0.1 226 218.777 B m e staggered 0 0 0 v 
+3 0.1 226.05 217.623 B m e staggered 0 0 0 v 
+3 0.1 226.08 240.85 B m e staggered 0 0 0 v 
+3 0.1 226.08 243.05 B m e staggered 0 0 0 v 
+3 0.1 226.1 285.55 B m e staggered 0 0 0 v 
+3 0.1 226.15 202.9 B m e staggered 0 0 0 v 
+3 0.1 226.15 215.6 B m e staggered 0 0 0 v 
+3 0.1 226.15 220.2 B m e staggered 0 0 0 v 
+3 0.1 226.15 282.5 B m e staggered 0 0 0 v 
+3 0.1 226.2 216.6 B m e staggered 0 0 0 v 
+3 0.1 226.2 283.55 B m e staggered 0 0 0 v 
+3 0.1 226.28 259.55 B m e staggered 0 0 0 v 
+3 0.1 226.45 239.45 B m e staggered 0 0 0 v 
+3 0.1 226.5 235.7 B m e staggered 0 0 0 v 
+3 0.1 226.55 206.25 B m e staggered 0 0 0 v 
+3 0.1 226.55 210.15 B m e staggered 0 0 0 v 
+3 0.1 226.72 272.35 B m e staggered 0 0 0 v 
+3 0.1 226.8 208.8 B m e staggered 0 0 0 v 
+3 0.1 226.8 264.65 B m e staggered 0 0 0 v 
+3 0.1 226.85 290.35 B m e staggered 0 0 0 v 
+3 0.1 226.95 204.2 B m e staggered 0 0 0 v 
+3 0.1 226.95 211.3 B m e staggered 0 0 0 v 
+3 0.1 227 277.8 B m e staggered 0 0 0 v 
+3 0.1 227.04 275.5 B m e staggered 0 0 0 v 
+3 0.1 227.04 276.65 B m e staggered 0 0 0 v 
+3 0.1 227.05 247.7 B m e staggered 0 0 0 v 
+3 0.1 227.08 243.85 B m e staggered 0 0 0 v 
+3 0.1 227.1 207.6 B m e staggered 0 0 0 v 
+3 0.1 227.1 282.5 B m e staggered 0 0 0 v 
+3 0.1 227.1 283.55 B m e staggered 0 0 0 v 
+3 0.1 227.12 238.5 B m e staggered 0 0 0 v 
+3 0.1 227.2 273.95 B m e staggered 0 0 0 v 
+3 0.1 227.24 261.325 B m e staggered 0 0 0 v 
+3 0.1 227.55 234.9 B m e staggered 0 0 0 v 
+3 0.1 227.55 289.05 B m e staggered 0 0 0 v 
+3 0.1 227.6 217.2 B m e staggered 0 0 0 v 
+3 0.1 227.637 205.35 B m e staggered 0 0 0 v 
+3 0.1 227.65 219.2 B m e staggered 0 0 0 v 
+3 0.1 227.65 265.748 B m e staggered 0 0 0 v 
+3 0.1 227.68 240.8 B m e staggered 0 0 0 v 
+3 0.1 227.7 218.25 B m e staggered 0 0 0 v 
+3 0.1 227.8 255.8 B m e staggered 0 0 0 v 
+3 0.1 227.84 239.45 B m e staggered 0 0 0 v 
+3 0.1 227.84 242.15 B m e staggered 0 0 0 v 
+3 0.1 227.85 216.327 B m e staggered 0 0 0 v 
+3 0.1 227.85 219.973 B m e staggered 0 0 0 v 
+3 0.1 227.88 237.9 B m e staggered 0 0 0 v 
+3 0.1 227.88 245 B m e staggered 0 0 0 v 
+3 0.1 227.9 291.9 B m e staggered 0 0 0 v 
+3 0.1 228 263.5 B m e staggered 0 0 0 v 
+3 0.1 228.05 202.95 B m e staggered 0 0 0 v 
+3 0.1 228.05 203.7 B m e staggered 0 0 0 v 
+3 0.1 228.05 207 B m e staggered 0 0 0 v 
+3 0.1 228.05 210.2 B m e staggered 0 0 0 v 
+3 0.1 228.05 214 B m e staggered 0 0 0 v 
+3 0.1 228.05 215.173 B m e staggered 0 0 0 v 
+3 0.1 228.1 204.75 B m e staggered 0 0 0 v 
+3 0.1 228.1 205.95 B m e staggered 0 0 0 v 
+3 0.1 228.1 208.45 B m e staggered 0 0 0 v 
+3 0.1 228.28 259.55 B m e staggered 0 0 0 v 
+3 0.1 228.3 290.4 B m e staggered 0 0 0 v 
+3 0.1 228.4 212.9 B m e staggered 0 0 0 v 
+3 0.1 228.4 246.45 B m e staggered 0 0 0 v 
+3 0.1 228.45 217.65 B m e staggered 0 0 0 v 
+3 0.1 228.45 218.9 B m e staggered 0 0 0 v 
+3 0.1 228.463 215.8 B m e staggered 0 0 0 v 
+3 0.1 228.463 220.55 B m e staggered 0 0 0 v 
+3 0.1 228.55 216.6 B m e staggered 0 0 0 v 
+3 0.1 228.85 219.75 B m e staggered 0 0 0 v 
+3 0.1 228.9 282.9 B m e staggered 0 0 0 v 
+3 0.1 228.903 268.8 B m e staggered 0 0 0 v 
+3 0.1 228.92 236.75 B m e staggered 0 0 0 v 
+3 0.1 228.95 250.75 B m e staggered 0 0 0 v 
+3 0.1 228.977 221.4 B m e staggered 0 0 0 v 
+3 0.1 229 265.7 B m e staggered 0 0 0 v 
+3 0.1 229.05 220.8 B m e staggered 0 0 0 v 
+3 0.1 229.08 263.7 B m e staggered 0 0 0 v 
+3 0.1 229.15 222.35 B m e staggered 0 0 0 v 
+3 0.1 229.2 218.45 B m e staggered 0 0 0 v 
+3 0.1 229.2 283.65 B m e staggered 0 0 0 v 
+3 0.1 229.25 214.7 B m e staggered 0 0 0 v 
+3 0.1 229.3 213.65 B m e staggered 0 0 0 v 
+3 0.1 229.4 211.85 B m e staggered 0 0 0 v 
+3 0.1 229.45 289.05 B m e staggered 0 0 0 v 
+3 0.1 229.5 216.8 B m e staggered 0 0 0 v 
+3 0.1 229.65 290.45 B m e staggered 0 0 0 v 
+3 0.1 229.657 259.7 B m e staggered 0 0 0 v 
+3 0.1 229.7 292.55 B m e staggered 0 0 0 v 
+3 0.1 229.7 294.4 B m e staggered 0 0 0 v 
+3 0.1 229.75 238.75 B m e staggered 0 0 0 v 
+3 0.1 229.8 220.4 B m e staggered 0 0 0 v 
+3 0.1 229.8 221.65 B m e staggered 0 0 0 v 
+3 0.1 229.8 287.1 B m e staggered 0 0 0 v 
+3 0.1 229.85 219.3 B m e staggered 0 0 0 v 
+3 0.1 229.9 212.8 B m e staggered 0 0 0 v 
+3 0.1 229.95 244.95 B m e staggered 0 0 0 v 
+3 0.1 230 217.8 B m e staggered 0 0 0 v 
+3 0.1 230 243.6 B m e staggered 0 0 0 v 
+3 0.1 230.053 267.1 B m e staggered 0 0 0 v 
+3 0.1 230.1 215.95 B m e staggered 0 0 0 v 
+3 0.1 230.15 211.1 B m e staggered 0 0 0 v 
+3 0.1 230.2 202.9 B m e staggered 0 0 0 v 
+3 0.1 230.2 203.798 B m e staggered 0 0 0 v 
+3 0.1 230.2 205.1 B m e staggered 0 0 0 v 
+3 0.1 230.2 207 B m e staggered 0 0 0 v 
+3 0.1 230.2 278.25 B m e staggered 0 0 0 v 
+3 0.1 230.24 275.1 B m e staggered 0 0 0 v 
+3 0.1 230.25 209.75 B m e staggered 0 0 0 v 
+3 0.1 230.278 269.309 B m e staggered 0 0 0 v 
+3 0.1 230.36 248.9 B m e staggered 0 0 0 v 
+3 0.1 230.45 273.043 B m e staggered 0 0 0 v 
+3 0.1 230.55 218.5 B m e staggered 0 0 0 v 
+3 0.1 230.55 254.1 B m e staggered 0 0 0 v 
+3 0.1 230.6 213.8 B m e staggered 0 0 0 v 
+3 0.1 230.7 212.25 B m e staggered 0 0 0 v 
+3 0.1 230.75 221.2 B m e staggered 0 0 0 v 
+3 0.1 230.757 204.5 B m e staggered 0 0 0 v 
+3 0.1 230.85 217.4 B m e staggered 0 0 0 v 
+3 0.1 231 250.5 B m e staggered 0 0 0 v 
+3 0.1 231 289.1 B m e staggered 0 0 0 v 
+3 0.1 231 290.15 B m e staggered 0 0 0 v 
+3 0.1 231.1 215 B m e staggered 0 0 0 v 
+3 0.1 231.1 276.3 B m e staggered 0 0 0 v 
+3 0.1 231.2 222.246 B m e staggered 0 0 0 v 
+3 0.1 231.2 273.05 B m e staggered 0 0 0 v 
+3 0.1 231.28 262.5 B m e staggered 0 0 0 v 
+3 0.1 231.28 263.6 B m e staggered 0 0 0 v 
+3 0.1 231.3 216.55 B m e staggered 0 0 0 v 
+3 0.1 231.32 281.6 B m e staggered 0 0 0 v 
+3 0.1 231.35 208.95 B m e staggered 0 0 0 v 
+3 0.1 231.4 210.55 B m e staggered 0 0 0 v 
+3 0.1 231.4 211.6 B m e staggered 0 0 0 v 
+3 0.1 231.5 248.1 B m e staggered 0 0 0 v 
+3 0.1 231.64 260.95 B m e staggered 0 0 0 v 
+3 0.1 231.7 202.95 B m e staggered 0 0 0 v 
+3 0.1 231.7 220.2 B m e staggered 0 0 0 v 
+3 0.1 231.8 206.75 B m e staggered 0 0 0 v 
+3 0.1 231.84 263.1 B m e staggered 0 0 0 v 
+3 0.1 231.95 266.45 B m e staggered 0 0 0 v 
+3 0.1 231.95 290.2 B m e staggered 0 0 0 v 
+3 0.1 232 289.1 B m e staggered 0 0 0 v 
+3 0.1 232.1 215.7 B m e staggered 0 0 0 v 
+3 0.1 232.2 213.8 B m e staggered 0 0 0 v 
+3 0.1 232.25 286 B m e staggered 0 0 0 v 
+3 0.1 232.25 287 B m e staggered 0 0 0 v 
+3 0.1 232.25 293.75 B m e staggered 0 0 0 v 
+3 0.1 232.3 217.7 B m e staggered 0 0 0 v 
+3 0.1 232.36 247.1 B m e staggered 0 0 0 v 
+3 0.1 232.5 204.9 B m e staggered 0 0 0 v 
+3 0.1 232.55 210.15 B m e staggered 0 0 0 v 
+3 0.1 232.65 212.5 B m e staggered 0 0 0 v 
+3 0.1 232.72 262.55 B m e staggered 0 0 0 v 
+3 0.1 232.76 263.6 B m e staggered 0 0 0 v 
+3 0.1 232.85 294.4 B m e staggered 0 0 0 v 
+3 0.1 232.9 293.173 B m e staggered 0 0 0 v 
+3 0.1 232.95 215.05 B m e staggered 0 0 0 v 
+3 0.1 232.95 275 B m e staggered 0 0 0 v 
+3 0.1 232.95 276.9 B m e staggered 0 0 0 v 
+3 0.1 232.95 282.25 B m e staggered 0 0 0 v 
+3 0.1 232.95 289.1 B m e staggered 0 0 0 v 
+3 0.1 232.95 290.2 B m e staggered 0 0 0 v 
+3 0.1 233.05 280.05 B m e staggered 0 0 0 v 
+3 0.1 233.1 220.15 B m e staggered 0 0 0 v 
+3 0.1 233.16 267.55 B m e staggered 0 0 0 v 
+3 0.1 233.2 246.25 B m e staggered 0 0 0 v 
+3 0.1 233.3 222.1 B m e staggered 0 0 0 v 
+3 0.1 233.35 208.95 B m e staggered 0 0 0 v 
+3 0.1 233.35 250.1 B m e staggered 0 0 0 v 
+3 0.1 233.4 216.45 B m e staggered 0 0 0 v 
+3 0.1 233.4 231.9 B m e staggered 0 0 0 v 
+3 0.1 233.45 275.95 B m e staggered 0 0 0 v 
+3 0.1 233.523 267.217 B m e staggered 0 0 0 v 
+3 0.1 233.55 202.9 B m e staggered 0 0 0 v 
+3 0.1 233.55 211.35 B m e staggered 0 0 0 v 
+3 0.1 233.56 233.95 B m e staggered 0 0 0 v 
+3 0.1 233.56 238.3 B m e staggered 0 0 0 v 
+3 0.1 233.6 240.3 B m e staggered 0 0 0 v 
+3 0.1 233.64 235.1 B m e staggered 0 0 0 v 
+3 0.1 233.75 212.8 B m e staggered 0 0 0 v 
+3 0.1 233.8 217.75 B m e staggered 0 0 0 v 
+3 0.1 233.8 241.25 B m e staggered 0 0 0 v 
+3 0.1 233.8 273.05 B m e staggered 0 0 0 v 
+3 0.1 233.84 236.65 B m e staggered 0 0 0 v 
+3 0.1 233.85 206.55 B m e staggered 0 0 0 v 
+3 0.1 233.92 245.55 B m e staggered 0 0 0 v 
+3 0.1 233.92 248.25 B m e staggered 0 0 0 v 
+3 0.1 233.96 232.75 B m e staggered 0 0 0 v 
+3 0.1 234 214 B m e staggered 0 0 0 v 
+3 0.1 234 275 B m e staggered 0 0 0 v 
+3 0.1 234 276.9 B m e staggered 0 0 0 v 
+3 0.1 234.114 258.8 B m e staggered 0 0 0 v 
+3 0.1 234.2 271 B m e staggered 0 0 0 v 
+3 0.1 234.25 204 B m e staggered 0 0 0 v 
+3 0.1 234.25 283.15 B m e staggered 0 0 0 v 
+3 0.1 234.28 270.4 B m e staggered 0 0 0 v 
+3 0.1 234.3 271.7 B m e staggered 0 0 0 v 
+3 0.1 234.55 210.3 B m e staggered 0 0 0 v 
+3 0.1 234.6 219.55 B m e staggered 0 0 0 v 
+3 0.1 234.65 220.65 B m e staggered 0 0 0 v 
+3 0.1 234.65 222.1 B m e staggered 0 0 0 v 
+3 0.1 234.72 239.95 B m e staggered 0 0 0 v 
+3 0.1 234.75 232.7 B m e staggered 0 0 0 v 
+3 0.1 234.8 216.35 B m e staggered 0 0 0 v 
+3 0.1 234.8 273 B m e staggered 0 0 0 v 
+3 0.1 234.85 212.55 B m e staggered 0 0 0 v 
+3 0.1 234.85 215.05 B m e staggered 0 0 0 v 
+3 0.1 234.92 231.55 B m e staggered 0 0 0 v 
+3 0.1 234.95 268.15 B m e staggered 0 0 0 v 
+3 0.1 235.05 230.6 B m e staggered 0 0 0 v 
+3 0.1 235.1 271.4 B m e staggered 0 0 0 v 
+3 0.1 235.127 265.3 B m e staggered 0 0 0 v 
+3 0.1 235.2 217.75 B m e staggered 0 0 0 v 
+3 0.1 235.2 234.55 B m e staggered 0 0 0 v 
+3 0.1 235.24 238.15 B m e staggered 0 0 0 v 
+3 0.1 235.25 221.55 B m e staggered 0 0 0 v 
+3 0.1 235.28 244.15 B m e staggered 0 0 0 v 
+3 0.1 235.3 225.4 B m e staggered 0 0 0 v 
+3 0.1 235.35 218.8 B m e staggered 0 0 0 v 
+3 0.1 235.4 205.15 B m e staggered 0 0 0 v 
+3 0.1 235.45 203 B m e staggered 0 0 0 v 
+3 0.1 235.55 208.95 B m e staggered 0 0 0 v 
+3 0.1 235.55 265.8 B m e staggered 0 0 0 v 
+3 0.1 235.6 256.55 B m e staggered 0 0 0 v 
+3 0.1 235.7 229.95 B m e staggered 0 0 0 v 
+3 0.1 235.7 290.75 B m e staggered 0 0 0 v 
+3 0.1 235.8 213.45 B m e staggered 0 0 0 v 
+3 0.1 235.8 232.75 B m e staggered 0 0 0 v 
+3 0.1 235.85 211.45 B m e staggered 0 0 0 v 
+3 0.1 235.85 224.85 B m e staggered 0 0 0 v 
+3 0.1 235.92 231.2 B m e staggered 0 0 0 v 
+3 0.1 236 250.55 B m e staggered 0 0 0 v 
+3 0.1 236 270.75 B m e staggered 0 0 0 v 
+3 0.1 236.04 239.6 B m e staggered 0 0 0 v 
+3 0.1 236.05 248.95 B m e staggered 0 0 0 v 
+3 0.1 236.08 236.7 B m e staggered 0 0 0 v 
+3 0.1 236.099 270.05 B m e staggered 0 0 0 v 
+3 0.1 236.1 220.75 B m e staggered 0 0 0 v 
+3 0.1 236.12 241.3 B m e staggered 0 0 0 v 
+3 0.1 236.147 268.3 B m e staggered 0 0 0 v 
+3 0.1 236.3 216.35 B m e staggered 0 0 0 v 
+3 0.1 236.3 260.1 B m e staggered 0 0 0 v 
+3 0.1 236.3 282.75 B m e staggered 0 0 0 v 
+3 0.1 236.55 219.35 B m e staggered 0 0 0 v 
+3 0.1 236.68 275.85 B m e staggered 0 0 0 v 
+3 0.1 236.7 265 B m e staggered 0 0 0 v 
+3 0.1 236.75 206.65 B m e staggered 0 0 0 v 
+3 0.1 236.75 217.85 B m e staggered 0 0 0 v 
+3 0.1 236.75 222.3 B m e staggered 0 0 0 v 
+3 0.1 236.75 265.948 B m e staggered 0 0 0 v 
+3 0.1 236.76 233.6 B m e staggered 0 0 0 v 
+3 0.1 236.84 230.15 B m e staggered 0 0 0 v 
+3 0.1 236.84 231.65 B m e staggered 0 0 0 v 
+3 0.1 236.84 235.1 B m e staggered 0 0 0 v 
+3 0.1 236.9 210.4 B m e staggered 0 0 0 v 
+3 0.1 236.95 212.6 B m e staggered 0 0 0 v 
+3 0.1 236.95 279.8 B m e staggered 0 0 0 v 
+3 0.1 237 215.05 B m e staggered 0 0 0 v 
+3 0.1 237 278.4 B m e staggered 0 0 0 v 
+3 0.1 237 280.8 B m e staggered 0 0 0 v 
+3 0.1 237.3 204 B m e staggered 0 0 0 v 
+3 0.1 237.35 221.2 B m e staggered 0 0 0 v 
+3 0.1 237.5 292.85 B m e staggered 0 0 0 v 
+3 0.1 237.64 238.15 B m e staggered 0 0 0 v 
+3 0.1 237.76 275.6 B m e staggered 0 0 0 v 
+3 0.1 237.8 274.9 B m e staggered 0 0 0 v 
+3 0.1 237.84 225.05 B m e staggered 0 0 0 v 
+3 0.1 237.84 240.25 B m e staggered 0 0 0 v 
+3 0.1 237.95 211.6 B m e staggered 0 0 0 v 
+3 0.1 237.95 213.7 B m e staggered 0 0 0 v 
+3 0.1 238.05 208.95 B m e staggered 0 0 0 v 
+3 0.1 238.05 236.55 B m e staggered 0 0 0 v 
+3 0.1 238.05 265.85 B m e staggered 0 0 0 v 
+3 0.1 238.12 230.05 B m e staggered 0 0 0 v 
+3 0.1 238.16 231.35 B m e staggered 0 0 0 v 
+3 0.1 238.2 205.3 B m e staggered 0 0 0 v 
+3 0.1 238.2 217.55 B m e staggered 0 0 0 v 
+3 0.1 238.2 219.35 B m e staggered 0 0 0 v 
+3 0.1 238.25 285.75 B m e staggered 0 0 0 v 
+3 0.1 238.32 254.35 B m e staggered 0 0 0 v 
+3 0.1 238.373 263.723 B m e staggered 0 0 0 v 
+3 0.1 238.4 222.15 B m e staggered 0 0 0 v 
+3 0.1 238.52 232.95 B m e staggered 0 0 0 v 
+3 0.1 238.6 203.05 B m e staggered 0 0 0 v 
+3 0.1 238.65 215.6 B m e staggered 0 0 0 v 
+3 0.1 238.68 259.15 B m e staggered 0 0 0 v 
+3 0.1 238.7 268.25 B m e staggered 0 0 0 v 
+3 0.1 238.75 289.602 B m e staggered 0 0 0 v 
+3 0.1 238.85 284.9 B m e staggered 0 0 0 v 
+3 0.1 238.9 210.65 B m e staggered 0 0 0 v 
+3 0.1 238.95 274.6 B m e staggered 0 0 0 v 
+3 0.1 239 256.9 B m e staggered 0 0 0 v 
+3 0.1 239.04 280 B m e staggered 0 0 0 v 
+3 0.1 239.08 239.5 B m e staggered 0 0 0 v 
+3 0.1 239.1 212.7 B m e staggered 0 0 0 v 
+3 0.1 239.123 265.85 B m e staggered 0 0 0 v 
+3 0.1 239.15 292.75 B m e staggered 0 0 0 v 
+3 0.1 239.2 218.55 B m e staggered 0 0 0 v 
+3 0.1 239.28 235 B m e staggered 0 0 0 v 
+3 0.1 239.3 206.7 B m e staggered 0 0 0 v 
+3 0.1 239.3 220.75 B m e staggered 0 0 0 v 
+3 0.1 239.36 225.35 B m e staggered 0 0 0 v 
+3 0.1 239.72 230.65 B m e staggered 0 0 0 v 
+3 0.1 239.75 216.9 B m e staggered 0 0 0 v 
+3 0.1 239.8 289.65 B m e staggered 0 0 0 v 
+3 0.1 239.85 222.3 B m e staggered 0 0 0 v 
+3 0.1 239.9 273.7 B m e staggered 0 0 0 v 
+3 0.1 239.9 288.15 B m e staggered 0 0 0 v 
+3 0.1 239.95 215.1 B m e staggered 0 0 0 v 
+3 0.1 240.077 251.2 B m e staggered 0 0 0 v 
+3 0.1 240.08 236.55 B m e staggered 0 0 0 v 
+3 0.1 240.12 238.2 B m e staggered 0 0 0 v 
+3 0.1 240.2 219.2 B m e staggered 0 0 0 v 
+3 0.1 240.2 253 B m e staggered 0 0 0 v 
+3 0.1 240.45 212.05 B m e staggered 0 0 0 v 
+3 0.1 240.48 232.45 B m e staggered 0 0 0 v 
+3 0.1 240.65 264.4 B m e staggered 0 0 0 v 
+3 0.1 240.7 208.9 B m e staggered 0 0 0 v 
+3 0.1 240.7 292.8 B m e staggered 0 0 0 v 
+3 0.1 240.75 213.65 B m e staggered 0 0 0 v 
+3 0.1 240.75 234.35 B m e staggered 0 0 0 v 
+3 0.1 240.88 241.35 B m e staggered 0 0 0 v 
+3 0.1 241 272.55 B m e staggered 0 0 0 v 
+3 0.1 241.04 239.9 B m e staggered 0 0 0 v 
+3 0.1 241.05 203.4 B m e staggered 0 0 0 v 
+3 0.1 241.05 245.5 B m e staggered 0 0 0 v 
+3 0.1 241.08 225.05 B m e staggered 0 0 0 v 
+3 0.1 241.12 230.3 B m e staggered 0 0 0 v 
+3 0.1 241.127 289.65 B m e staggered 0 0 0 v 
+3 0.1 241.15 270.45 B m e staggered 0 0 0 v 
+3 0.1 241.2 276.15 B m e staggered 0 0 0 v 
+3 0.1 241.25 265.95 B m e staggered 0 0 0 v 
+3 0.1 241.28 221.8 B m e staggered 0 0 0 v 
+3 0.1 241.28 282.2 B m e staggered 0 0 0 v 
+3 0.1 241.3 220.45 B m e staggered 0 0 0 v 
+3 0.1 241.36 280.1 B m e staggered 0 0 0 v 
+3 0.1 241.56 291.75 B m e staggered 0 0 0 v 
+3 0.1 241.64 255.875 B m e staggered 0 0 0 v 
+3 0.1 241.7 206.45 B m e staggered 0 0 0 v 
+3 0.1 241.933 292.7 B m e staggered 0 0 0 v 
+3 0.1 242.1 246.55 B m e staggered 0 0 0 v 
+3 0.1 242.24 213.7 B m e staggered 0 0 0 v 
+3 0.1 242.25 231 B m e staggered 0 0 0 v 
+3 0.1 242.28 222.25 B m e staggered 0 0 0 v 
+3 0.1 242.35 204.8 B m e staggered 0 0 0 v 
+3 0.1 242.36 233.15 B m e staggered 0 0 0 v 
+3 0.1 242.4 235.1 B m e staggered 0 0 0 v 
+3 0.1 242.44 236.45 B m e staggered 0 0 0 v 
+3 0.1 242.44 238.15 B m e staggered 0 0 0 v 
+3 0.1 242.44 239.5 B m e staggered 0 0 0 v 
+3 0.1 242.48 240.8 B m e staggered 0 0 0 v 
+3 0.1 242.64 274.5 B m e staggered 0 0 0 v 
+3 0.1 242.64 279.75 B m e staggered 0 0 0 v 
+3 0.1 242.9 271.05 B m e staggered 0 0 0 v 
+3 0.1 242.92 247.75 B m e staggered 0 0 0 v 
+3 0.1 242.95 272 B m e staggered 0 0 0 v 
+3 0.1 243.05 203.05 B m e staggered 0 0 0 v 
+3 0.1 243.05 210.6 B m e staggered 0 0 0 v 
+3 0.1 243.2 264.385 B m e staggered 0 0 0 v 
+3 0.1 243.2 284.8 B m e staggered 0 0 0 v 
+3 0.1 243.3 206.2 B m e staggered 0 0 0 v 
+3 0.1 243.35 212.6 B m e staggered 0 0 0 v 
+3 0.1 243.35 245.3 B m e staggered 0 0 0 v 
+3 0.1 243.35 286.95 B m e staggered 0 0 0 v 
+3 0.1 243.4 217.95 B m e staggered 0 0 0 v 
+3 0.1 243.4 222.9 B m e staggered 0 0 0 v 
+3 0.1 243.55 293.25 B m e staggered 0 0 0 v 
+3 0.1 243.6 209.4 B m e staggered 0 0 0 v 
+3 0.1 243.9 277.35 B m e staggered 0 0 0 v 
+3 0.1 244 217.45 B m e staggered 0 0 0 v 
+3 0.1 244.16 247.75 B m e staggered 0 0 0 v 
+3 0.1 244.2 274.55 B m e staggered 0 0 0 v 
+3 0.1 244.25 284.45 B m e staggered 0 0 0 v 
+3 0.1 244.4 221.1 B m e staggered 0 0 0 v 
+3 0.1 244.5 264.385 B m e staggered 0 0 0 v 
+3 0.1 244.75 208 B m e staggered 0 0 0 v 
+3 0.1 244.8 267 B m e staggered 0 0 0 v 
+3 0.1 244.84 223.05 B m e staggered 0 0 0 v 
+3 0.1 244.84 224.55 B m e staggered 0 0 0 v 
+3 0.1 244.85 293.65 B m e staggered 0 0 0 v 
+3 0.1 245.08 270.5 B m e staggered 0 0 0 v 
+3 0.1 245.16 213.6 B m e staggered 0 0 0 v 
+3 0.1 245.25 274.55 B m e staggered 0 0 0 v 
+3 0.1 245.25 286.5 B m e staggered 0 0 0 v 
+3 0.1 245.3 217.45 B m e staggered 0 0 0 v 
+3 0.1 245.4 291.6 B m e staggered 0 0 0 v 
+3 0.1 245.44 221.5 B m e staggered 0 0 0 v 
+3 0.1 245.48 256.1 B m e staggered 0 0 0 v 
+3 0.1 245.5 246.55 B m e staggered 0 0 0 v 
+3 0.1 245.56 283.65 B m e staggered 0 0 0 v 
+3 0.1 245.65 207 B m e staggered 0 0 0 v 
+3 0.1 245.8 203.05 B m e staggered 0 0 0 v 
+3 0.1 245.8 285.15 B m e staggered 0 0 0 v 
+3 0.1 245.88 267.8 B m e staggered 0 0 0 v 
+3 0.1 245.9 212.3 B m e staggered 0 0 0 v 
+3 0.1 245.9 277.2 B m e staggered 0 0 0 v 
+3 0.1 245.92 214.75 B m e staggered 0 0 0 v 
+3 0.1 245.96 216.25 B m e staggered 0 0 0 v 
+3 0.1 246.1 245.3 B m e staggered 0 0 0 v 
+3 0.1 246.24 224.75 B m e staggered 0 0 0 v 
+3 0.1 246.44 223.2 B m e staggered 0 0 0 v 
+3 0.1 246.52 266.95 B m e staggered 0 0 0 v 
+3 0.1 246.55 247.7 B m e staggered 0 0 0 v 
+3 0.1 246.55 287.8 B m e staggered 0 0 0 v 
+3 0.1 246.6 226.25 B m e staggered 0 0 0 v 
+3 0.1 246.64 220.8 B m e staggered 0 0 0 v 
+3 0.1 246.68 270.7 B m e staggered 0 0 0 v 
+3 0.1 246.72 218.35 B m e staggered 0 0 0 v 
+3 0.1 246.9 274.5 B m e staggered 0 0 0 v 
+3 0.1 247 279.75 B m e staggered 0 0 0 v 
+3 0.1 247.15 277.15 B m e staggered 0 0 0 v 
+3 0.1 247.24 256.15 B m e staggered 0 0 0 v 
+3 0.1 247.3 216.3 B m e staggered 0 0 0 v 
+3 0.1 247.32 213.3 B m e staggered 0 0 0 v 
+3 0.1 247.4 209.35 B m e staggered 0 0 0 v 
+3 0.1 247.4 284.5 B m e staggered 0 0 0 v 
+3 0.1 247.45 286.3 B m e staggered 0 0 0 v 
+3 0.1 247.55 211.75 B m e staggered 0 0 0 v 
+3 0.1 247.7 206.5 B m e staggered 0 0 0 v 
+3 0.1 247.725 257.9 B m e staggered 0 0 0 v 
+3 0.1 247.75 249.8 B m e staggered 0 0 0 v 
+3 0.1 247.76 222.1 B m e staggered 0 0 0 v 
+3 0.1 247.8 247.15 B m e staggered 0 0 0 v 
+3 0.1 247.9 245.25 B m e staggered 0 0 0 v 
+3 0.1 248 204.3 B m e staggered 0 0 0 v 
+3 0.1 248 214.6 B m e staggered 0 0 0 v 
+3 0.1 248 270.737 B m e staggered 0 0 0 v 
+3 0.1 248.05 294.45 B m e staggered 0 0 0 v 
+3 0.1 248.15 274 B m e staggered 0 0 0 v 
+3 0.1 248.2 220.05 B m e staggered 0 0 0 v 
+3 0.1 248.32 218.35 B m e staggered 0 0 0 v 
+3 0.1 248.35 262.5 B m e staggered 0 0 0 v 
+3 0.1 248.36 229.75 B m e staggered 0 0 0 v 
+3 0.1 248.48 228.5 B m e staggered 0 0 0 v 
+3 0.1 248.65 293.7 B m e staggered 0 0 0 v 
+3 0.1 248.84 216.2 B m e staggered 0 0 0 v 
+3 0.1 248.88 213.45 B m e staggered 0 0 0 v 
+3 0.1 249.1 235.5 B m e staggered 0 0 0 v 
+3 0.1 249.102 280.75 B m e staggered 0 0 0 v 
+3 0.1 249.12 211.8 B m e staggered 0 0 0 v 
+3 0.1 249.15 246.2 B m e staggered 0 0 0 v 
+3 0.1 249.247 271.6 B m e staggered 0 0 0 v 
+3 0.1 249.25 210.05 B m e staggered 0 0 0 v 
+3 0.1 249.25 283.05 B m e staggered 0 0 0 v 
+3 0.1 249.335 270.9 B m e staggered 0 0 0 v 
+3 0.1 249.45 207.75 B m e staggered 0 0 0 v 
+3 0.1 249.6 217.25 B m e staggered 0 0 0 v 
+3 0.1 249.7 204.95 B m e staggered 0 0 0 v 
+3 0.1 249.8 250.3 B m e staggered 0 0 0 v 
+3 0.1 249.8 252.9 B m e staggered 0 0 0 v 
+3 0.1 249.9 275.95 B m e staggered 0 0 0 v 
+3 0.1 249.95 218.4 B m e staggered 0 0 0 v 
+3 0.1 250.05 282.45 B m e staggered 0 0 0 v 
+3 0.1 250.05 293.25 B m e staggered 0 0 0 v 
+3 0.1 250.08 210.8 B m e staggered 0 0 0 v 
+3 0.1 250.08 215.25 B m e staggered 0 0 0 v 
+3 0.1 250.439 264.45 B m e staggered 0 0 0 v 
+3 0.1 250.44 219.75 B m e staggered 0 0 0 v 
+3 0.1 250.477 265.65 B m e staggered 0 0 0 v 
+3 0.1 250.753 273.3 B m e staggered 0 0 0 v 
+3 0.1 250.85 240.55 B m e staggered 0 0 0 v 
+3 0.1 250.9 243 B m e staggered 0 0 0 v 
+3 0.1 250.9 251.45 B m e staggered 0 0 0 v 
+3 0.1 251 235.9 B m e staggered 0 0 0 v 
+3 0.1 251.1 261.4 B m e staggered 0 0 0 v 
+3 0.1 251.15 288.65 B m e staggered 0 0 0 v 
+3 0.1 251.2 291.9 B m e staggered 0 0 0 v 
+3 0.1 251.3 289.95 B m e staggered 0 0 0 v 
+3 0.1 251.35 203.05 B m e staggered 0 0 0 v 
+3 0.1 251.48 259.15 B m e staggered 0 0 0 v 
+3 0.1 251.7 250.15 B m e staggered 0 0 0 v 
+3 0.1 251.75 208.85 B m e staggered 0 0 0 v 
+3 0.1 251.75 285 B m e staggered 0 0 0 v 
+3 0.1 251.75 288 B m e staggered 0 0 0 v 
+3 0.1 251.8 287 B m e staggered 0 0 0 v 
+3 0.1 251.85 256 B m e staggered 0 0 0 v 
+3 0.1 251.9 275 B m e staggered 0 0 0 v 
+3 0.1 252.05 248.05 B m e staggered 0 0 0 v 
+3 0.1 252.15 246.75 B m e staggered 0 0 0 v 
+3 0.1 252.2 219.6 B m e staggered 0 0 0 v 
+3 0.1 252.3 252.7 B m e staggered 0 0 0 v 
+3 0.1 252.45 206.6 B m e staggered 0 0 0 v 
+3 0.1 252.45 294.1 B m e staggered 0 0 0 v 
+3 0.1 252.5 279.45 B m e staggered 0 0 0 v 
+3 0.1 252.5 280.1 B m e staggered 0 0 0 v 
+3 0.1 252.65 281.4 B m e staggered 0 0 0 v 
+3 0.1 252.9 290.1 B m e staggered 0 0 0 v 
+3 0.1 253 284.75 B m e staggered 0 0 0 v 
+3 0.1 253.048 277.05 B m e staggered 0 0 0 v 
+3 0.1 253.08 250.6 B m e staggered 0 0 0 v 
+3 0.1 253.1 262.55 B m e staggered 0 0 0 v 
+3 0.1 253.15 264.35 B m e staggered 0 0 0 v 
+3 0.1 253.15 286.05 B m e staggered 0 0 0 v 
+3 0.1 253.16 268.2 B m e staggered 0 0 0 v 
+3 0.1 253.2 203.5 B m e staggered 0 0 0 v 
+3 0.1 253.2 257.05 B m e staggered 0 0 0 v 
+3 0.1 253.45 288.25 B m e staggered 0 0 0 v 
+3 0.1 253.5 218.65 B m e staggered 0 0 0 v 
+3 0.1 253.6 280.4 B m e staggered 0 0 0 v 
+3 0.1 253.64 263.3 B m e staggered 0 0 0 v 
+3 0.1 254.08 262.55 B m e staggered 0 0 0 v 
+3 0.1 254.1 204.85 B m e staggered 0 0 0 v 
+3 0.1 254.15 275 B m e staggered 0 0 0 v 
+3 0.1 254.2 264.4 B m e staggered 0 0 0 v 
+3 0.1 254.25 281.4 B m e staggered 0 0 0 v 
+3 0.1 254.28 222.85 B m e staggered 0 0 0 v 
+3 0.1 254.3 273.502 B m e staggered 0 0 0 v 
+3 0.1 254.3 279.5 B m e staggered 0 0 0 v 
+3 0.1 254.35 225.9 B m e staggered 0 0 0 v 
+3 0.1 254.35 229.05 B m e staggered 0 0 0 v 
+3 0.1 254.35 258.45 B m e staggered 0 0 0 v 
+3 0.1 254.4 220 B m e staggered 0 0 0 v 
+3 0.1 254.4 232.85 B m e staggered 0 0 0 v 
+3 0.1 254.45 214.2 B m e staggered 0 0 0 v 
+3 0.1 254.5 209.95 B m e staggered 0 0 0 v 
+3 0.1 254.6 217.15 B m e staggered 0 0 0 v 
+3 0.1 254.7 285.5 B m e staggered 0 0 0 v 
+3 0.1 254.75 237.5 B m e staggered 0 0 0 v 
+3 0.1 254.75 259.9 B m e staggered 0 0 0 v 
+3 0.1 254.85 244.6 B m e staggered 0 0 0 v 
+3 0.1 254.9 241.55 B m e staggered 0 0 0 v 
+3 0.1 254.9 254.25 B m e staggered 0 0 0 v 
+3 0.1 255.05 257 B m e staggered 0 0 0 v 
+3 0.1 255.1 207.9 B m e staggered 0 0 0 v 
+3 0.1 255.2 289.4 B m e staggered 0 0 0 v 
+3 0.1 255.32 250.85 B m e staggered 0 0 0 v 
+3 0.1 255.45 211.35 B m e staggered 0 0 0 v 
+3 0.1 255.75 205.1 B m e staggered 0 0 0 v 
+3 0.1 255.752 272.35 B m e staggered 0 0 0 v 
+3 0.1 255.76 248.7 B m e staggered 0 0 0 v 
+3 0.1 255.95 255.25 B m e staggered 0 0 0 v 
+3 0.1 255.95 275.15 B m e staggered 0 0 0 v 
+3 0.1 256.1 267.75 B m e staggered 0 0 0 v 
+3 0.1 256.1 287.65 B m e staggered 0 0 0 v 
+3 0.1 256.15 258.95 B m e staggered 0 0 0 v 
+3 0.1 256.15 270.85 B m e staggered 0 0 0 v 
+3 0.1 256.2 265.05 B m e staggered 0 0 0 v 
+3 0.1 256.25 203.05 B m e staggered 0 0 0 v 
+3 0.1 256.3 260.137 B m e staggered 0 0 0 v 
+3 0.1 256.6 282.95 B m e staggered 0 0 0 v 
+3 0.1 256.75 272.2 B m e staggered 0 0 0 v 
+3 0.1 256.9 211.5 B m e staggered 0 0 0 v 
+3 0.1 257 260.7 B m e staggered 0 0 0 v 
+3 0.1 257.05 257.45 B m e staggered 0 0 0 v 
+3 0.1 257.16 234.35 B m e staggered 0 0 0 v 
+3 0.1 257.2 229.2 B m e staggered 0 0 0 v 
+3 0.1 257.25 283.25 B m e staggered 0 0 0 v 
+3 0.1 257.25 289.45 B m e staggered 0 0 0 v 
+3 0.1 257.3 279.15 B m e staggered 0 0 0 v 
+3 0.1 257.35 218.6 B m e staggered 0 0 0 v 
+3 0.1 257.35 275.2 B m e staggered 0 0 0 v 
+3 0.1 257.36 216.15 B m e staggered 0 0 0 v 
+3 0.1 257.36 238.25 B m e staggered 0 0 0 v 
+3 0.1 257.4 213.15 B m e staggered 0 0 0 v 
+3 0.1 257.4 221 B m e staggered 0 0 0 v 
+3 0.1 257.4 223.6 B m e staggered 0 0 0 v 
+3 0.1 257.45 204.65 B m e staggered 0 0 0 v 
+3 0.1 257.5 208.95 B m e staggered 0 0 0 v 
+3 0.1 257.5 226.25 B m e staggered 0 0 0 v 
+3 0.1 257.5 232.25 B m e staggered 0 0 0 v 
+3 0.1 257.5 236.25 B m e staggered 0 0 0 v 
+3 0.1 257.5 240.25 B m e staggered 0 0 0 v 
+3 0.1 257.5 261.95 B m e staggered 0 0 0 v 
+3 0.1 257.5 270.75 B m e staggered 0 0 0 v 
+3 0.1 257.55 243.35 B m e staggered 0 0 0 v 
+3 0.1 257.55 273.05 B m e staggered 0 0 0 v 
+3 0.1 257.6 245.5 B m e staggered 0 0 0 v 
+3 0.1005 227.425 226.15 B m e staggered 0 0 0 v 
+3 0.1005 227.425 227.15 B m e staggered 0 0 0 v 
+3 0.1005 227.425 228.15 B m e staggered 0 0 0 v 
+3 0.1005 227.425 229.15 B m e staggered 0 0 0 v 
+3 0.1005 227.425 230.15 B m e staggered 0 0 0 v 
+3 0.1005 228.425 226.15 B m e staggered 0 0 0 v 
+3 0.1005 228.425 227.15 B m e staggered 0 0 0 v 
+3 0.1005 228.425 228.15 B m e staggered 0 0 0 v 
+3 0.1005 228.425 229.15 B m e staggered 0 0 0 v 
+3 0.1005 228.425 230.15 B m e staggered 0 0 0 v 
+3 0.1005 229.425 226.15 B m e staggered 0 0 0 v 
+3 0.1005 229.425 227.15 B m e staggered 0 0 0 v 
+3 0.1005 229.425 228.15 B m e staggered 0 0 0 v 
+3 0.1005 229.425 229.15 B m e staggered 0 0 0 v 
+3 0.1005 229.425 230.15 B m e staggered 0 0 0 v 
+3 0.1005 230.425 226.15 B m e staggered 0 0 0 v 
+3 0.1005 230.425 227.15 B m e staggered 0 0 0 v 
+3 0.1005 230.425 228.15 B m e staggered 0 0 0 v 
+3 0.1005 230.425 229.15 B m e staggered 0 0 0 v 
+3 0.1005 230.425 230.15 B m e staggered 0 0 0 v 
+3 0.1005 231.425 226.15 B m e staggered 0 0 0 v 
+3 0.1005 231.425 227.15 B m e staggered 0 0 0 v 
+3 0.1005 231.425 228.15 B m e staggered 0 0 0 v 
+3 0.1005 231.425 229.15 B m e staggered 0 0 0 v 
+3 0.1005 231.425 230.15 B m e staggered 0 0 0 v 
+4 0.15 216 287.5 T e e staggered 0 0 0 
+4 0.15 216 287 T e e staggered 0 0 0 
+4 0.15 210.75 288.34 T e e staggered 0 0 0 
+4 0.225 210.1 290 T e e staggered 0 0 0 
+4 0.25 212.85 287.6 T e e staggered 0 0 0 
+4 0.25 214.95 286.65 T e e staggered 0 0 0 
+4 0.1 210.1 288.65 B m e staggered 0 0 0 v 
+4 0.1 210.1 289.05 B m e staggered 0 0 0 v 
+4 0.1 213.55 287.6 B m e staggered 0 0 0 v 
+4 0.1 216 286.1 B m e staggered 0 0 0 v 
+4 0.1 216 286.6 B m e staggered 0 0 0 v 
+5 0.15 216 288.5 T e e staggered 0 0 0 
+5 0.32 216.75 289.7 T e e staggered 0 0 0 
+6 0.4 219.45 286.85 T e e staggered 0 0 0 
+6 0.15 218.1 287 T e e staggered 0 0 0 
+6 0.25 220.2 288.4 T e e staggered 0 0 0 
+6 0.25 221.1 288.4 T e e staggered 0 0 0 
+6 0.376 222.1 288.55 T e e staggered 0 0 0 
+7 0.25 226.526 223.7 T e e staggered 0 0 0 
+7 0.25 226.5 222.3 T e e staggered 0 0 0 
+7 0.15 226.725 224.75 T e e staggered 0 0 0 
+7 0.25 226.5 223 T e e staggered 0 0 0 
+8 0.3 237.7 266.95 T e e staggered 0 0 0 
+8 0.3 235.8 266.95 T e e staggered 0 0 0 
+8 0.3 235.9 280.75 T e e staggered 0 0 0 
+8 0.3 235.9 278.85 T e e staggered 0 0 0 
+8 0.175 234.95 275 T e e staggered 0 0 0 
+8 0.175 234.95 275.65 T e e staggered 0 0 0 
+8 0.175 231.95 275 T e e staggered 0 0 0 
+8 0.175 231 288.15 T e e staggered 0 0 0 
+8 0.175 231.65 288.15 T e e staggered 0 0 0 
+8 0.175 231 291.15 T e e staggered 0 0 0 
+8 1.175 227.8 287.45 T e e staggered 0 0 0 
+8 0.175 209.96 288.06 T e e staggered 0 0 0 
+8 0.175 210.88 260.2 T e e staggered 0 0 0 
+8 0.475 224.75 288.4 T e e staggered 0 0 0 
+8 0.32 239.05 272 T e e staggered 0 0 0 
+8 0.32 230.8 285.4 T e e staggered 0 0 0 
+8 0.32 234.35 281.75 T e e staggered 0 0 0 
+8 0.32 237.65 269.7 T e e staggered 0 0 0 
+8 0.32 236.2 274 T e e staggered 0 0 0 
+8 0.32 228.45 284.5 T e e staggered 0 0 0 
+8 0.575 237.6 272.3 T e e staggered 0 0 0 
+8 0.25 237.6 270.8 T e e staggered 0 0 0 
+8 0.25 230.8 286.5 T e e staggered 0 0 0 
+8 0.25 234.35 280.65 T e e staggered 0 0 0 
+8 0.25 237.6 268.6 T e e staggered 0 0 0 
+8 0.25 236.15 275.05 T e e staggered 0 0 0 
+8 0.25 223.2 289.6 T e e staggered 0 0 0 
+8 0.376 223.5 288.55 T e e staggered 0 0 0 
+8 0.525 214.003 257.16 B e e staggered 0 0 0 
+8 0.15 227.15 284.5 T e e staggered 0 0 0 
+8 0.15 226.5 284.5 T e e staggered 0 0 0 
+8 0.15 227.15 281.5 T e e staggered 0 0 0 
+8 0.1 206.4 288.6 B m e staggered 0 0 0 v 
+8 0.1 211.5 260.2 B m e staggered 0 0 0 v 
+8 0.1 212.95 265.7 B m e staggered 0 0 0 v 
+8 0.1 212.95 266.55 B m e staggered 0 0 0 v 
+8 0.1 227.15 280.7 B m e staggered 0 0 0 v 
+8 0.1 227.7 285.8 B m e staggered 0 0 0 v 
+8 0.1 228.6 285.8 B m e staggered 0 0 0 v 
+8 0.1 230.72 287.25 B m e staggered 0 0 0 v 
+8 0.1 231 291.8 B m e staggered 0 0 0 v 
+8 0.1 231.15 274.8 B m e staggered 0 0 0 v 
+8 0.1 234.6 274 B m e staggered 0 0 0 v 
+8 0.1 235.102 281.45 B m e staggered 0 0 0 v 
+8 0.1 235.25 274 B m e staggered 0 0 0 v 
+8 0.1 238.35 273.4 B m e staggered 0 0 0 v 
+8 0.1 238.7 269.7 B m e staggered 0 0 0 v 
+8 0.1 238.7 270.5 B m e staggered 0 0 0 v 
+9 0.175 208.56 287.8 T e e staggered 0 0 0 
+9 0.175 213.45 281.3 T e e staggered 0 0 0 
+9 0.175 206.3 281.7 T e e staggered 0 0 0 
+9 0.175 213.45 284.8 T e e staggered 0 0 0 
+9 0.175 207.75 287.8 T e e staggered 0 0 0 
+9 0.475 222.5 284.5 T e e staggered 0 0 0 
+9 0.32 208.85 261.45 T e e staggered 0 0 0 
+9 0.32 219.05 280.3 T e e staggered 0 0 0 
+9 0.32 223.8 284.5 T e e staggered 0 0 0 
+9 0.15 209.15 286.3 T e e staggered 0 0 0 
+9 0.15 207.45 282.1 T e e staggered 0 0 0 
+9 0.15 212.35 282.1 T e e staggered 0 0 0 
+9 0.15 212.35 284.6 T e e staggered 0 0 0 
+9 0.15 212.35 285.1 T e e staggered 0 0 0 
+9 0.25 221.1 262.1 T e e staggered 0 0 0 
+9 0.25 225.15 261.95 T e e staggered 0 0 0 
+9 0.25 216 280.6 T e e staggered 0 0 0 
+9 0.25 220.7 272.6 T e e staggered 0 0 0 
+9 0.25 229.1 262.15 T e e staggered 0 0 0 
+9 0.25 221.7 272.6 T e e staggered 0 0 0 
+9 0.25 207.8 262.4 T e e staggered 0 0 0 
+9 0.25 215.75 262.4 T e e staggered 0 0 0 
+9 0.25 202.24 271.55 T e e staggered 0 0 0 
+9 0.25 202.28 276.2 T e e staggered 0 0 0 
+9 0.25 206.85 262.4 T e e staggered 0 0 0 
+9 0.25 224.3 279.4 T e e staggered 0 0 0 
+9 0.25 221.9 277.5 T e e staggered 0 0 0 
+9 0.25 221.9 278.4 T e e staggered 0 0 0 
+9 0.25 221.3 267.176 T e e staggered 0 0 0 
+9 0.25 218.324 281.3 T e e staggered 0 0 0 
+9 0.25 224.276 280.35 T e e staggered 0 0 0 
+9 0.1 224.125 261.5 T e e staggered 0 0 0 
+9 0.1 224.125 261.9 T e e staggered 0 0 0 
+9 0.1 220.125 261.5 T e e staggered 0 0 0 
+9 0.1 220.125 261.9 T e e staggered 0 0 0 
+9 0.1 228.125 261.5 T e e staggered 0 0 0 
+9 0.1 228.125 261.9 T e e staggered 0 0 0 
+9 0.15 225.85 284.5 T e e staggered 0 0 0 
+9 0.15 225.2 284.5 T e e staggered 0 0 0 
+9 0.1005 207.7 263.9 T e e staggered 0 0 0 
+9 0.1005 208.099 263.9 T e e staggered 0 0 0 
+9 0.1005 211.3 263.9 T e e staggered 0 0 0 
+9 0.1005 215.3 263.9 T e e staggered 0 0 0 
+9 0.1005 216.1 263.9 T e e staggered 0 0 0 
+9 0.1005 219.199 267.799 T e e staggered 0 0 0 
+9 0.1005 219.199 270.999 T e e staggered 0 0 0 
+9 0.1005 219.199 272.6 T e e staggered 0 0 0 
+9 0.1005 219.199 273.001 T e e staggered 0 0 0 
+9 0.1005 216.1 279.3 T e e staggered 0 0 0 
+9 0.1005 212.1 279.3 T e e staggered 0 0 0 
+9 0.1005 207.7 279.3 T e e staggered 0 0 0 
+9 0.1005 203.799 276.201 T e e staggered 0 0 0 
+9 0.1005 203.799 271.401 T e e staggered 0 0 0 
+9 0.1005 203.799 267.799 T e e staggered 0 0 0 
+9 0.4 202.1 282.2 D e e staggered 0 0 0 
+9 0.1 201.9 272.15 B m e staggered 0 0 0 v 
+9 0.1 201.9 281.5 B m e staggered 0 0 0 v 
+9 0.1 202.28 275.623 B m e staggered 0 0 0 v 
+9 0.1 204.899 267.799 B m e staggered 0 0 0 v 
+9 0.1 206.2 262.1 B m e staggered 0 0 0 v 
+9 0.1 206.3 281.173 B m e staggered 0 0 0 v 
+9 0.1 207.403 278.05 B m e staggered 0 0 0 v 
+9 0.1 208.12 288.3 B m e staggered 0 0 0 v 
+9 0.1 208.85 260.9 B m e staggered 0 0 0 v 
+9 0.1 211.3 262.838 B m e staggered 0 0 0 v 
+9 0.1 212.948 281.205 B m e staggered 0 0 0 v 
+9 0.1 213.355 285.355 B m e staggered 0 0 0 v 
+9 0.1 215.75 261.8 B m e staggered 0 0 0 v 
+9 0.1 216 281.1 B m e staggered 0 0 0 v 
+9 0.1 218.8 281.3 B m e staggered 0 0 0 v 
+9 0.1 220.3 270.9 B m e staggered 0 0 0 v 
+9 0.1 221.05 284.5 B m e staggered 0 0 0 v 
+9 0.1 221.197 273.077 B m e staggered 0 0 0 v 
+9 0.1 221.6 284.5 B m e staggered 0 0 0 v 
+9 0.1 221.75 262.35 B m e staggered 0 0 0 v 
+9 0.1 221.776 267.176 B m e staggered 0 0 0 v 
+9 0.1 222.354 277.95 B m e staggered 0 0 0 v 
+9 0.1 224.276 280.927 B m e staggered 0 0 0 v 
+9 0.1 224.68 285.15 B m e staggered 0 0 0 v 
+9 0.1 225.75 262.2 B m e staggered 0 0 0 v 
+9 0.1 228.45 262.65 B m e staggered 0 0 0 v 
+10 0.2 249.52 263.3 T e e staggered 0 0 0 
+10 0.3 237.7 264.66 T e e staggered 0 0 0 
+10 0.125 232.85 264.55 T e e staggered 0 0 0 
+10 0.125 255.15 262.45 T e e staggered 0 0 0 
+10 0.1 232.1 271.15 T e e staggered 0 0 0 
+10 0.32 235.9 263.1 T e e staggered 0 0 0 
+10 0.32 237.05 263.1 T e e staggered 0 0 0 
+10 0.25 238.95 264.5 T e e staggered 0 0 0 
+10 0.25 248.926 264.4 T e e staggered 0 0 0 
+10 0.25 256.3 261.65 T e e staggered 0 0 0 
+10 0.25 233.45 265.75 T e e staggered 0 0 0 
+10 0.25 231.85 272.25 T e e staggered 0 0 0 
+10 0.1 231.05 272.25 B m e staggered 0 0 0 v 
+10 0.1 233.44 264.15 B m e staggered 0 0 0 v 
+10 0.1 234 267.7 B m e staggered 0 0 0 v 
+10 0.1 234.16 262.46 B m e staggered 0 0 0 v 
+10 0.1 236.48 261.78 B m e staggered 0 0 0 v 
+10 0.1 236.48 262.46 B m e staggered 0 0 0 v 
+10 0.1 246.96 260.75 B m e staggered 0 0 0 v 
+10 0.1 247.56 264.2 B m e staggered 0 0 0 v 
+11 0.575 235.35 293.85 T e e staggered 0 0 0 
+11 0.6 237.8 293.9 T e e staggered 0 0 0 
+11 0.15 245.75 293.2 T e e staggered 0 0 0 
+11 0.15 245.75 293.7 T e e staggered 0 0 0 
+11 0.15 245.75 294.2 T e e staggered 0 0 0 
+11 0.25 247.05 293.7 T e e staggered 0 0 0 
+11 0.25 233.8 293.75 T e e staggered 0 0 0 
+11 0.1 236.48 294.45 B m e staggered 0 0 0 v 
+11 0.1 246.55 294.25 B m e staggered 0 0 0 v 
+12 0.575 237.05 287.05 T e e staggered 0 0 0 
+12 0.575 235.35 292.05 T e e staggered 0 0 0 
+12 0.6 237.8 291.7 T e e staggered 0 0 0 
+12 0.15 242.1 286.5 T e e staggered 0 0 0 
+12 0.575 238.85 286.9 T e e staggered 0 0 0 
+12 0.25 240.4 286.65 T e e staggered 0 0 0 
+12 0.25 239.45 285.6 T e e staggered 0 0 0 
+12 0.25 251.1 285.95 T e e staggered 0 0 0 
+12 0.25 248.6 290.65 T e e staggered 0 0 0 
+12 0.1 234.13 292.05 B m e staggered 0 0 0 v 
+12 0.1 236.72 288.3 B m e staggered 0 0 0 v 
+12 0.1 249.35 290.65 B m e staggered 0 0 0 v 
+12 0.1 251.95 285.95 B m e staggered 0 0 0 v 
+13 0.575 237 284.85 T e e staggered 0 0 0 
+13 0.15 246.05 282.55 T e e staggered 0 0 0 
+13 0.15 242.1 284 T e e staggered 0 0 0 
+13 0.575 239.1 282.8 T e e staggered 0 0 0 
+13 0.575 249.3 278.9 T e e staggered 0 0 0 
+13 0.25 240.5 283.6 T e e staggered 0 0 0 
+13 0.25 246.4 280.95 T e e staggered 0 0 0 
+13 0.25 249.85 280.3 T e e staggered 0 0 0 
+13 0.1 242.28 282.95 B m e staggered 0 0 0 v 
+13 0.1 245.95 280.55 B m e staggered 0 0 0 v 
+13 0.1 249.24 279.85 B m e staggered 0 0 0 v 
+14 0.15 232.925 225.45 T e e staggered 0 0 0 
+14 0.15 232.925 229.95 T e e staggered 0 0 0 
+14 0.15 227.725 231.65 T e e staggered 0 0 0 
+14 0.15 226.025 227.45 T e e staggered 0 0 0 
+14 0.475 226.375 233.15 T e e staggered 0 0 0 
+14 0.25 227.475 233.15 T e e staggered 0 0 0 
+14 0.25 234 230 T e e staggered 0 0 0 
+14 0.25 234.3 224.75 T e e staggered 0 0 0 
+14 0.25 224.5 227.65 T e e staggered 0 0 0 
+14 0.25 223.4 232.374 T e e staggered 0 0 0 
+14 0.376 224.2 233.9 T e e staggered 0 0 0 
+14 0.1 224.075 228.225 B m e staggered 0 0 0 v 
+14 0.1 224.2 233 B m e staggered 0 0 0 v 
+14 0.1 224.24 232.374 B m e staggered 0 0 0 v 
+14 0.1 225.35 233.15 B m e staggered 0 0 0 v 
+14 0.1 233.4 224.85 B m e staggered 0 0 0 v 
+14 0.1 234.2 230.45 B m e staggered 0 0 0 v 
+15 0.15 243.85 275.1 T e e staggered 0 0 0 
+15 0.32 243.25 273.75 T e e staggered 0 0 0 
+15 0.32 244.35 273.75 T e e staggered 0 0 0 
+15 0.25 242.6 275.3 T e e staggered 0 0 0 
+16 0.15 243.85 276.6 T e e staggered 0 0 0 
+16 0.32 242.95 278.05 T e e staggered 0 0 0 
+16 0.25 242.6 276.224 T e e staggered 0 0 0 
+17 0.3 248.1 268.84 T e e staggered 0 0 0 
+17 0.25 249.9 268.65 T e e staggered 0 0 0 
+17 0.25 249.9 269.626 T e e staggered 0 0 0 
+17 0.25 250.95 268.55 T e e staggered 0 0 0 
+18 0.475 239.95 269 T e e staggered 0 0 0 
+18 0.3 243.15 267.57 T e e staggered 0 0 0 
+18 0.475 239.95 267.45 T e e staggered 0 0 0 
+18 0.25 241.15 268.85 T e e staggered 0 0 0 
+18 0.25 241.25 267.524 T e e staggered 0 0 0 
+19 0.575 235.2 284.85 T e e staggered 0 0 0 
+19 0.575 235.25 287.05 T e e staggered 0 0 0 
+19 0.3 255.29 275.95 T e e staggered 0 0 0 
+19 0.225 255.6 279.45 T e e staggered 0 0 0 
+19 0.225 255.6 280.1 T e e staggered 0 0 0 
+19 0.175 234.95 276.3 T e e staggered 0 0 0 
+19 0.175 234.95 276.95 T e e staggered 0 0 0 
+19 0.15 243.85 275.6 T e e staggered 0 0 0 
+19 0.15 244.735 276.7 T e e staggered 0 0 0 
+19 0.475 238.75 277.1 T e e staggered 0 0 0 
+19 0.32 237.3 277.2 T e e staggered 0 0 0 
+19 0.575 255.75 277.7 T e e staggered 0 0 0 
+19 0.25 236.15 277.25 T e e staggered 0 0 0 
+19 0.25 233.8 279.35 T e e staggered 0 0 0 
+19 0.25 256.75 276.15 T e e staggered 0 0 0 
+19 0.25 245.224 277.9 T e e staggered 0 0 0 
+19 0.25 233.824 278.35 T e e staggered 0 0 0 
+19 0.1 235.24 283.8 B m e staggered 0 0 0 v 
+19 0.1 238 277.55 B m e staggered 0 0 0 v 
+19 0.1 241.05 277.1 B m e staggered 0 0 0 v 
+19 0.1 245.813 277.9 B m e staggered 0 0 0 v 
+19 0.1 257 277.7 B m e staggered 0 0 0 v 
+20 0.225 251.3 281.4 T e e staggered 0 0 0 
+20 0.225 251.3 280.75 T e e staggered 0 0 0 
+20 0.15 248.5 284 T e e staggered 0 0 0 
+20 0.32 250.3 274.95 T e e staggered 0 0 0 
+20 0.575 251.6 283.2 T e e staggered 0 0 0 
+20 0.25 250 284 T e e staggered 0 0 0 
+20 0.1 250.85 278.75 B m e staggered 0 0 0 v 
+20 0.1 251.52 284.35 B m e staggered 0 0 0 v 
+21 0.3 238.19 280.75 T e e staggered 0 0 0 
+21 0.15 243.55 282.55 T e e staggered 0 0 0 
+21 0.32 240.65 280.95 T e e staggered 0 0 0 
+21 0.25 239.65 280.95 T e e staggered 0 0 0 
+21 0.25 242.2 281 T e e staggered 0 0 0 
+22 0.32 241.7 278.05 T e e staggered 0 0 0 
+22 0.32 242.15 272.85 T e e staggered 0 0 0 
+22 0.32 243.25 272.85 T e e staggered 0 0 0 
+22 0.32 244.35 272.6 T e e staggered 0 0 0 
+23 0.32 247.45 272.85 T e e staggered 0 0 0 
+23 0.32 246.35 272.85 T e e staggered 0 0 0 
+23 0.32 248.6 272.85 T e e staggered 0 0 0 
+23 0.32 247.75 278.05 T e e staggered 0 0 0 
+23 0.32 245.25 272.6 T e e staggered 0 0 0 
+24 0.15 245.62 275.1 T e e staggered 0 0 0 
+24 0.32 246.35 273.75 T e e staggered 0 0 0 
+24 0.32 245.25 273.75 T e e staggered 0 0 0 
+24 0.25 246.88 275.3 T e e staggered 0 0 0 
+25 0.15 244.55 282.55 T e e staggered 0 0 0 
+25 0.32 244.15 279.85 T e e staggered 0 0 0 
+25 0.32 244.35 281 T e e staggered 0 0 0 
+26 0.15 245.05 282.55 T e e staggered 0 0 0 
+26 0.32 245.35 279.85 T e e staggered 0 0 0 
+26 0.32 245.25 281 T e e staggered 0 0 0 
+27 0.3 248.1 267.57 T e e staggered 0 0 0 
+27 0.25 249.9 266.6 T e e staggered 0 0 0 
+27 0.25 249.9 267.726 T e e staggered 0 0 0 
+27 0.25 250.95 267.55 T e e staggered 0 0 0 
+28 0.15 245.62 275.6 T e e staggered 0 0 0 
+28 0.25 248.25 275.75 T e e staggered 0 0 0 
+28 0.25 248.25 274.75 T e e staggered 0 0 0 
+28 0.1 246.324 275.697 B m e staggered 0 0 0 v 
+28 0.1 248.15 275.25 B m e staggered 0 0 0 v 
+29 0.15 245.62 276.6 T e e staggered 0 0 0 
+29 0.32 246.55 278.05 T e e staggered 0 0 0 
+29 0.25 246.88 276.224 T e e staggered 0 0 0 
+30 0.15 244.05 282.55 T e e staggered 0 0 0 
+30 0.25 243.1 281 T e e staggered 0 0 0 
+31 0.15 248.5 285 T e e staggered 0 0 0 
+31 0.25 250.2 285 T e e staggered 0 0 0 
+32 0.15 242.1 287.5 T e e staggered 0 0 0 
+32 0.25 240.55 288.75 T e e staggered 0 0 0 
+33 0.575 228.3 271.7 T e e staggered 0 0 0 
+33 0.1 231.35 271 T e e staggered 0 0 0 
+33 0.32 230.05 271.5 T e e staggered 0 0 0 
+34 0.1 231.35 270.2 T e e staggered 0 0 0 
+34 0.575 227.35 269.65 T e e staggered 0 0 0 
+34 0.32 229.55 269.9 T e e staggered 0 0 0 
+35 0.225 255.6 281.4 T e e staggered 0 0 0 
+35 0.25 257.2 281.7 T e e staggered 0 0 0 
+36 0.32 255 282.9 T e e staggered 0 0 0 
+36 0.575 253.4 283.2 T e e staggered 0 0 0 
+37 0.3 253 274.05 T e e staggered 0 0 0 
+37 0.32 250.3 274.05 T e e staggered 0 0 0 
+37 0.32 251.4 274.05 T e e staggered 0 0 0 
+37 0.575 253.05 272.45 T e e staggered 0 0 0 
+38 0.1 233.25 269.4 T e e staggered 0 0 0 
+38 0.32 235.5 269.4 T e e staggered 0 0 0 
+38 0.32 234.35 269.4 T e e staggered 0 0 0 
+39 0.175 231.95 276.95 T e e staggered 0 0 0 
+39 0.25 232.876 279.35 T e e staggered 0 0 0 
+39 0.25 232.9 278.35 T e e staggered 0 0 0 
+39 0.25 231.824 278.3 T e e staggered 0 0 0 
+40 0.175 232.95 291.15 T e e staggered 0 0 0 
+40 0.25 236.25 290.05 T e e staggered 0 0 0 
+40 0.25 235.15 289.574 T e e staggered 0 0 0 
+40 0.25 234.176 290.55 T e e staggered 0 0 0 
+40 0.25 234.15 289.5 T e e staggered 0 0 0 
+40 0.25 236.226 289.05 T e e staggered 0 0 0 
+41 0.2 247.6 262 T e e staggered 0 0 0 
+41 0.2 249.52 262 T e e staggered 0 0 0 
+41 0.25 237.174 290.05 T e e staggered 0 0 0 
+41 0.25 237.15 289.05 T e e staggered 0 0 0 
+41 0.1 237.65 289.6 B m e staggered 0 0 0 v 
+41 0.1 250.55 261.85 B m e staggered 0 0 0 v 
+42 0.225 230.45 283.7 T e e staggered 0 0 0 
+42 0.175 232.3 288.15 T e e staggered 0 0 0 
+42 0.175 232.95 288.15 T e e staggered 0 0 0 
+42 0.475 233.4 284.9 T e e staggered 0 0 0 
+42 0.32 233.75 286.6 T e e staggered 0 0 0 
+42 0.25 235.15 288.65 T e e staggered 0 0 0 
+42 0.25 234.15 288.576 T e e staggered 0 0 0 
+42 0.525 249.9 259.7 B e e staggered 0 0 0 
+42 0.1 231.35 282.75 B m e staggered 0 0 0 v 
+42 0.1 231.35 283.67 B m e staggered 0 0 0 v 
+43 0.575 228.9 235.45 T e e staggered 0 0 0 
+43 0.15 226.025 226.95 T e e staggered 0 0 0 
+43 0.15 226.025 225.45 T e e staggered 0 0 0 
+43 0.475 227.375 236.25 T e e staggered 0 0 0 
+43 0.25 224.8 224.9 T e e staggered 0 0 0 
+43 0.25 224.5 226.95 T e e staggered 0 0 0 
+43 0.1 224.2 226.375 B m e staggered 0 0 0 v 
+43 0.1 224.25 224.9 B m e staggered 0 0 0 v 
+43 0.1 226.8 237.2 B m e staggered 0 0 0 v 
+43 0.1 227.52 237.2 B m e staggered 0 0 0 v 
+44 0.25 227.45 223.7 T e e staggered 0 0 0 
+44 0.25 227.45 223 T e e staggered 0 0 0 
+44 0.15 227.225 224.75 T e e staggered 0 0 0 
+44 0.25 227.45 222.3 T e e staggered 0 0 0 
+45 0.25 226.5 221.376 T e e staggered 0 0 0 
+45 0.25 226.95 219.85 T e e staggered 0 0 0 
+45 0.25 227.45 221.376 T e e staggered 0 0 0 
+45 0.25 226.95 220.55 T e e staggered 0 0 0 
+46 0.40001 222 224.7 T e e staggered 0 0 0 
+46 0.3200375 220.55 224.45 T e e staggered 0 0 0 
+46 0.2499625 221.2466 223.8534 T e e staggered 0 0 0 
+47 0.40001 222.2121 226.4678 T e e staggered 0 0 0 
+47 0.3200375 220.7 227.45 T e e staggered 0 0 0 
+47 0.2499625 221.3966 226.8466 T e e staggered 0 0 0 
+48 0.3 218.28 226.35 T e e staggered 0 0 0 
+48 0.25 217.65 227.3 T e e staggered 0 0 0 
+48 0.25 218.45 227.3 T e e staggered 0 0 0 
+49 0.3 218.28 224.7 T e e staggered 0 0 0 
+49 0.3200375 219.75 223.9 T e e staggered 0 0 0 
+50 0.3200375 220.3864 223.2636 T e e staggered 0 0 0 
+50 0.2499625 221.25 222.55 T e e staggered 0 0 0 
+51 0.475 241.5 218.55 T e e staggered 0 0 0 
+51 0.25 242.8 218.75 T e e staggered 0 0 0 
+51 0.15 243.9 218.65 T e e staggered 0 0 0 
+52 0.25 228.374 223 T e e staggered 0 0 0 
+52 0.15 227.725 224.75 T e e staggered 0 0 0 
+52 0.25 228.4 222.3 T e e staggered 0 0 0 
+53 0.25 226.95 218.926 T e e staggered 0 0 0 
+53 0.25 226.95 217.5 T e e staggered 0 0 0 
+53 0.25 226.95 218.2 T e e staggered 0 0 0 
+54 0.25 226.95 216.576 T e e staggered 0 0 0 
+54 0.25 229.15 208.65 T e e staggered 0 0 0 
+54 0.25 226.95 215.75 T e e staggered 0 0 0 
+54 0.25 229.15 208.65 T e e staggered 0 0 0 
+55 0.25 229.15 207 T e e staggered 0 0 0 
+55 0.25 229.15 207.726 T e e staggered 0 0 0 
+56 0.9 243.3 207.85 T e e staggered 0 0 0 
+56 0.25 230.074 208.65 T e e staggered 0 0 0 
+57 0.5 232.15 218.9 T e e staggered 0 0 0 
+57 0.15 228.225 224.75 T e e staggered 0 0 0 
+57 0.25 233.9 218.6 T e e staggered 0 0 0 
+58 0.32 202.25 268.2 T e e staggered 0 0 0 
+58 0.25 202.3 270.4 T e e staggered 0 0 0 
+58 0.25 202.3 269.35 T e e staggered 0 0 0 
+58 0.1005 208.899 279.3 T e e staggered 0 0 0 
+58 0.1005 203.799 270.6 T e e staggered 0 0 0 
+59 0.25 216.9 280.6 T e e staggered 0 0 0 
+59 0.25 217.4 281.3 T e e staggered 0 0 0 
+59 0.1005 216.499 279.3 T e e staggered 0 0 0 
+60 0.25 225.224 279.4 T e e staggered 0 0 0 
+60 0.25 225.2 280.35 T e e staggered 0 0 0 
+60 0.25 226.25 279.376 T e e staggered 0 0 0 
+60 0.15 225.2 281.5 T e e staggered 0 0 0 
+61 0.32 208.85 262.35 T e e staggered 0 0 0 
+61 0.25 210.04 262.2 T e e staggered 0 0 0 
+61 0.25 210.04 261.25 T e e staggered 0 0 0 
+61 0.1995 212.28 261 T e e staggered 0 0 0 
+61 0.1005 208.5 263.9 T e e staggered 0 0 0 
+62 0.5 232.15 221.4 T e e staggered 0 0 0 
+62 0.15 228.725 224.75 T e e staggered 0 0 0 
+62 0.25 233.95 221.6 T e e staggered 0 0 0 
+63 0.375 246.68 253.6 T e e staggered 0 0 0 
+63 0.475 250.85 248.9 T e e staggered 0 0 0 
+63 0.475 249.36 248.9 T e e staggered 0 0 0 
+63 0.15 227.225 231.65 T e e staggered 0 0 0 
+63 0.25 222.25 231.5 T e e staggered 0 0 0 
+63 0.25 223.4 231.45 T e e staggered 0 0 0 
+63 0.525 224.163 254.62 B e e staggered 0 0 0 
+63 0.15 238.6 250.4 T e e staggered 0 0 0 
+63 0.1 221 242.95 B m e staggered 0 0 0 v 
+63 0.1 221.5 231.5 B m e staggered 0 0 0 v 
+63 0.1 224.163 248.813 B m e staggered 0 0 0 v 
+63 0.1 225 243.4 B m e staggered 0 0 0 v 
+63 0.1 238.038 249.471 B m e staggered 0 0 0 v 
+63 0.1 247.525 253.325 B m e staggered 0 0 0 v 
+64 0.15 232.925 230.45 T e e staggered 0 0 0 
+64 0.25 233.95 231.2 T e e staggered 0 0 0 
+65 0.125 255.15 263.45 T e e staggered 0 0 0 
+65 0.125 252.21 262.95 T e e staggered 0 0 0 
+65 0.375 245.759 262.533 T e e staggered 0 0 0 
+65 0.25 225.15 260.85 T e e staggered 0 0 0 
+65 0.25 229.1 261 T e e staggered 0 0 0 
+65 0.25 221.15 261 T e e staggered 0 0 0 
+65 0.1 224.125 261.1 T e e staggered 0 0 0 
+65 0.1 220.125 261.1 T e e staggered 0 0 0 
+65 0.1 228.125 261.1 T e e staggered 0 0 0 
+65 0.525 249.9 257.16 B e e staggered 0 0 0 
+65 0.15 238.55 261.35 T e e staggered 0 0 0 
+65 0.1 221.694 261.556 B m e staggered 0 0 0 v 
+65 0.1 225.638 261.35 B m e staggered 0 0 0 v 
+65 0.1 228.95 261.5 B m e staggered 0 0 0 v 
+65 0.1 230.55 260.35 B m e staggered 0 0 0 v 
+65 0.1 238.56 262.2 B m e staggered 0 0 0 v 
+65 0.1 245.759 264.341 B m e staggered 0 0 0 v 
+65 0.1 251.2 262.5 B m e staggered 0 0 0 v 
+65 0.1 255.85 263.45 B m e staggered 0 0 0 v 
+66 0.175 213.45 282.1 T e e staggered 0 0 0 
+66 0.175 206.3 282.6 T e e staggered 0 0 0 
+66 0.15 207.45 282.6 T e e staggered 0 0 0 
+66 0.15 212.35 282.6 T e e staggered 0 0 0 
+66 0.25 215.1 282.324 T e e staggered 0 0 0 
+66 0.1 206.75 282.6 B m e staggered 0 0 0 v 
+66 0.1 214.5 282.6 B m e staggered 0 0 0 v 
+67 0.175 213.45 283.9 T e e staggered 0 0 0 
+67 0.15 212.35 284.1 T e e staggered 0 0 0 
+67 0.25 215 284.776 T e e staggered 0 0 0 
+68 0.575 216.95 285.05 T e e staggered 0 0 0 
+68 0.15 212.35 283.6 T e e staggered 0 0 0 
+68 0.25 215.7 284.224 T e e staggered 0 0 0 
+68 0.25 220.2 284.324 T e e staggered 0 0 0 
+69 0.575 218.95 282.55 T e e staggered 0 0 0 
+69 0.15 212.35 283.1 T e e staggered 0 0 0 
+69 0.25 220.2 282.424 T e e staggered 0 0 0 
+69 0.25 220.2 283.4 T e e staggered 0 0 0 
+69 0.1 215.975 282.35 B m e staggered 0 0 0 v 
+69 0.1 220.8 282.4 B m e staggered 0 0 0 v 
+70 0.25 201.45 286.2 T e e staggered 0 0 0 
+70 0.599 202.55 286.85 T e e staggered 0 0 0 
+70 0.1005 208.5 279.3 T e e staggered 0 0 0 
+70 0.1 206.2 285.725 B m e staggered 0 0 0 v 
+70 0.1 207.25 276.65 B m e staggered 0 0 0 v 
+71 0.25 218.175 217.2 T e e staggered 0 0 0 
+71 0.376 218.15 216.351 T e e staggered 0 0 0 
+72 0.25 215.625 217.25 T e e staggered 0 0 0 
+72 0.376 215.65 216.351 T e e staggered 0 0 0 
+73 0.25 201.25 264 T e e staggered 0 0 0 
+73 0.376 201.25 265.199 T e e staggered 0 0 0 
+74 0.25 202.2 264 T e e staggered 0 0 0 
+74 0.376 202.2 265.199 T e e staggered 0 0 0 
+75 0.15 210.75 287.75 T e e staggered 0 0 0 
+75 0.3 207.45 292.65 B e e staggered 0 0 0 
+75 0.3 215.35 292.65 B e e staggered 0 0 0 
+75 0.25 206.624 289.3 T e e staggered 0 0 0 
+75 0.1 207.16 291.2 B m e staggered 0 0 0 v 
+75 0.1 207.44 290.25 B m e staggered 0 0 0 v 
+75 0.1 207.8 289.45 B m e staggered 0 0 0 v 
+75 0.1 210.55 287.226 B m e staggered 0 0 0 v 
+76 0.15 211.25 287.75 T e e staggered 0 0 0 
+76 0.225 212.05 290 T e e staggered 0 0 0 
+76 0.1 211.1 287.15 B m e staggered 0 0 0 v 
+76 0.1 212.25 289 B m e staggered 0 0 0 v 
+77 0.15 211.75 288.34 T e e staggered 0 0 0 
+77 0.225 211.4 290 T e e staggered 0 0 0 
+77 0.15 208.65 286.3 T e e staggered 0 0 0 
+77 0.1 206.96 287.2 B m e staggered 0 0 0 v 
+77 0.1 211.55 289 B m e staggered 0 0 0 v 
+78 0.15 211.25 288.34 T e e staggered 0 0 0 
+78 0.225 210.75 290 T e e staggered 0 0 0 
+78 0.15 208.15 286.3 T e e staggered 0 0 0 
+78 0.1 207.52 286.45 B m e staggered 0 0 0 v 
+78 0.1 210.9 288.95 B m e staggered 0 0 0 v 
+79 0.375 240.679 258.683 T e e staggered 0 0 0 
+79 0.25 221.576 290.4 T e e staggered 0 0 0 
+79 0.525 224.163 257.16 B e e staggered 0 0 0 
+79 0.1 223.51 260.075 T e e staggered 0 0 0 
+79 0.15 237.8 260.6 T e e staggered 0 0 0 
+79 0.1 221.576 290.977 B m e staggered 0 0 0 v 
+79 0.1 223.04 271.5 B m e staggered 0 0 0 v 
+79 0.1 223.749 258.75 B m e staggered 0 0 0 v 
+79 0.1 225.325 265.925 B m e staggered 0 0 0 v 
+79 0.1 234.35 260.225 B m e staggered 0 0 0 v 
+79 0.1 236.96 260.198 B m e staggered 0 0 0 v 
+79 0.1 239.977 258.683 B m e staggered 0 0 0 v 
+80 0.375 241.949 258.683 T e e staggered 0 0 0 
+80 0.525 234.323 257.16 B e e staggered 0 0 0 
+80 0.1 227.11 260.075 T e e staggered 0 0 0 
+80 0.15 237.8 260.1 T e e staggered 0 0 0 
+80 0.1 237.8 259.2 B m e staggered 0 0 0 v 
+80 0.1 241.75 256.831 B m e staggered 0 0 0 v 
+81 0.375 243.219 258.683 T e e staggered 0 0 0 
+81 0.25 243.224 256.3 T e e staggered 0 0 0 
+81 0.525 231.783 257.16 B e e staggered 0 0 0 
+81 0.1 226.495 260.7 T e e staggered 0 0 0 
+81 0.15 239.3 260.1 T e e staggered 0 0 0 
+81 0.1 225.64 258.05 B m e staggered 0 0 0 v 
+81 0.1 239.88 259.8 B m e staggered 0 0 0 v 
+81 0.1 243.219 256.877 B m e staggered 0 0 0 v 
+82 0.375 244.489 258.683 T e e staggered 0 0 0 
+82 0.525 229.243 257.16 B e e staggered 0 0 0 
+82 0.1 227.51 260.075 T e e staggered 0 0 0 
+82 0.15 239.3 260.6 T e e staggered 0 0 0 
+82 0.1 244.489 256.5 B m e staggered 0 0 0 v 
+83 0.375 245.759 258.683 T e e staggered 0 0 0 
+83 0.25 247.16 259.174 T e e staggered 0 0 0 
+83 0.525 226.703 257.16 B e e staggered 0 0 0 
+83 0.1 222.71 260.075 T e e staggered 0 0 0 
+83 0.15 239.3 261.1 T e e staggered 0 0 0 
+83 0.1 239.954 261.1 B m e staggered 0 0 0 v 
+83 0.1 246.4 260.15 B m e staggered 0 0 0 v 
+84 0.375 245.41 253.6 T e e staggered 0 0 0 
+84 0.475 235.25 246.95 T e e staggered 0 0 0 
+84 0.15 231.225 231.65 T e e staggered 0 0 0 
+84 0.525 234.323 254.62 B e e staggered 0 0 0 
+84 0.15 239.1 250.4 T e e staggered 0 0 0 
+84 0.1 231.225 242.3 B m e staggered 0 0 0 v 
+84 0.1 235.25 247.752 B m e staggered 0 0 0 v 
+84 0.1 238.999 249.349 B m e staggered 0 0 0 v 
+84 0.1 244.76 251.8 B m e staggered 0 0 0 v 
+85 0.375 244.14 253.6 T e e staggered 0 0 0 
+85 0.475 236.7 246.95 T e e staggered 0 0 0 
+85 0.15 231.725 231.65 T e e staggered 0 0 0 
+85 0.525 231.783 254.62 B e e staggered 0 0 0 
+85 0.15 239.1 251.9 T e e staggered 0 0 0 
+85 0.1 231.72 241.45 B m e staggered 0 0 0 v 
+85 0.1 234 247 B m e staggered 0 0 0 v 
+85 0.1 236.72 247.7 B m e staggered 0 0 0 v 
+85 0.1 243.5 251.7 B m e staggered 0 0 0 v 
+86 0.375 242.87 253.6 T e e staggered 0 0 0 
+86 0.475 238.15 246.95 T e e staggered 0 0 0 
+86 0.15 232.225 231.65 T e e staggered 0 0 0 
+86 0.525 229.243 254.62 B e e staggered 0 0 0 
+86 0.15 238.6 251.9 T e e staggered 0 0 0 
+86 0.1 232.225 240.7 B m e staggered 0 0 0 v 
+86 0.1 238.16 247.65 B m e staggered 0 0 0 v 
+86 0.1 239.7 252.345 B m e staggered 0 0 0 v 
+86 0.1 239.7 255.45 B m e staggered 0 0 0 v 
+86 0.1 239.72 252.325 B m e staggered 0 0 0 v 
+87 0.375 241.6 253.6 T e e staggered 0 0 0 
+87 0.475 239.6 246.95 T e e staggered 0 0 0 
+87 0.15 232.925 230.95 T e e staggered 0 0 0 
+87 0.525 226.703 254.62 B e e staggered 0 0 0 
+87 0.15 238.1 251.9 T e e staggered 0 0 0 
+87 0.1 232.925 240.55 B m e staggered 0 0 0 v 
+87 0.1 236.8 251.35 B m e staggered 0 0 0 v 
+87 0.1 240.243 247.72 B m e staggered 0 0 0 v 
+87 0.1 240.65 253.55 B m e staggered 0 0 0 v 
+88 0.375 241.6 249.75 T e e staggered 0 0 0 
+88 0.475 241.5 216.95 T e e staggered 0 0 0 
+88 0.32 242.8 215.2 T e e staggered 0 0 0 
+88 0.2499625 202.7466 219.2466 T e e staggered 0 0 0 
+88 0.2499625 203.3466 218.6466 T e e staggered 0 0 0 
+88 0.25 243.976 215.15 T e e staggered 0 0 0 
+88 0.25 243.476 219.35 T e e staggered 0 0 0 
+88 0.376 224.2 235.3 T e e staggered 0 0 0 
+88 0.525 216.543 254.62 B e e staggered 0 0 0 
+88 0.525 249.9 254.62 B e e staggered 0 0 0 
+88 0.525 252.1 211.42 B e e staggered 0 0 0 
+88 0.15 237.85 251.15 T e e staggered 0 0 0 
+88 0.525 206.383 244.46 B e e staggered 0 0 0 
+88 0.1 202.15 219.844 B m e staggered 0 0 0 v 
+88 0.1 222.95 236.65 B m e staggered 0 0 0 v 
+88 0.1 222.95 237.45 B m e staggered 0 0 0 v 
+88 0.1 237.05 250.45 B m e staggered 0 0 0 v 
+88 0.1 241.5 215.5 B m e staggered 0 0 0 v 
+88 0.1 241.6 247.8 B m e staggered 0 0 0 v 
+88 0.1 243.15 220 B m e staggered 0 0 0 v 
+89 0.475 239.95 270.6 T e e staggered 0 0 0 
+89 0.32 239.95 272 T e e staggered 0 0 0 
+90 0.525 214.003 254.62 B e e staggered 0 0 0 
+90 0.525 206.4 211.42 B e e staggered 0 0 0 
+90 0.525 208.923 244.46 B e e staggered 0 0 0 
+91 0.15 226.725 231.65 T e e staggered 0 0 0 
+91 0.525 206.383 241.92 B e e staggered 0 0 0 
+91 0.1 210.2 240.2 B m e staggered 0 0 0 v 
+92 0.15 229.725 224.75 T e e staggered 0 0 0 
+92 0.525 219.083 254.62 B e e staggered 0 0 0 
+92 0.525 206.383 239.38 B e e staggered 0 0 0 
+92 0.1 213.76 249.75 B m e staggered 0 0 0 v 
+93 0.15 226.025 230.45 T e e staggered 0 0 0 
+93 0.525 208.923 239.38 B e e staggered 0 0 0 
+94 0.15 230.225 224.75 T e e staggered 0 0 0 
+94 0.525 221.623 254.62 B e e staggered 0 0 0 
+94 0.525 206.383 236.84 B e e staggered 0 0 0 
+94 0.1 223.45 250.35 B m e staggered 0 0 0 v 
+94 0.1 227.15 250.7 B m e staggered 0 0 0 v 
+95 0.15 226.025 229.95 T e e staggered 0 0 0 
+95 0.525 208.923 236.84 B e e staggered 0 0 0 
+96 0.15 228.725 231.65 T e e staggered 0 0 0 
+96 0.525 206.383 234.3 B e e staggered 0 0 0 
+96 0.1 210 248.4 B m e staggered 0 0 0 v 
+96 0.1 226.44 245.625 B m e staggered 0 0 0 v 
+96 0.1 228.725 232.475 B m e staggered 0 0 0 v 
+97 0.15 226.025 229.45 T e e staggered 0 0 0 
+97 0.525 208.923 234.3 B e e staggered 0 0 0 
+98 0.15 226.025 230.95 T e e staggered 0 0 0 
+98 0.525 206.383 231.76 B e e staggered 0 0 0 
+98 0.1 218.35 230.6 B m e staggered 0 0 0 v 
+99 0.15 226.025 228.95 T e e staggered 0 0 0 
+99 0.525 208.923 231.76 B e e staggered 0 0 0 
+100 0.15 232.925 226.95 T e e staggered 0 0 0 
+100 0.15 244.9 218.65 T e e staggered 0 0 0 
+100 0.525 206.383 229.22 B e e staggered 0 0 0 
+100 0.1 239.88 226.95 B m e staggered 0 0 0 v 
+100 0.1 244.9 220.25 B m e staggered 0 0 0 v 
+101 0.15 226.025 228.45 T e e staggered 0 0 0 
+101 0.525 208.923 229.22 B e e staggered 0 0 0 
+102 0.15 229.225 231.65 T e e staggered 0 0 0 
+102 0.525 206.383 226.68 B e e staggered 0 0 0 
+102 0.1 210.75 249.35 B m e staggered 0 0 0 v 
+102 0.1 225.2 247.8 B m e staggered 0 0 0 v 
+102 0.1 229.28 232.575 B m e staggered 0 0 0 v 
+103 0.25 217.526 228.25 T e e staggered 0 0 0 
+103 0.525 208.923 226.68 B e e staggered 0 0 0 
+104 0.15 230.725 224.75 T e e staggered 0 0 0 
+104 0.2499625 203.4 219.9 T e e staggered 0 0 0 
+104 0.525 206.383 224.14 B e e staggered 0 0 0 
+105 0.15 231.225 224.75 T e e staggered 0 0 0 
+105 0.2499625 204 219.3 T e e staggered 0 0 0 
+105 0.525 206.383 221.6 B e e staggered 0 0 0 
+106 0.15 229.225 224.75 T e e staggered 0 0 0 
+106 0.525 208.923 221.6 B e e staggered 0 0 0 
+106 0.1 230.225 223.2 B m e staggered 0 0 0 v 
+107 0.15 232.225 224.75 T e e staggered 0 0 0 
+107 0.525 218.178 222.313 B e e staggered 0 0 0 
+107 0.525 249.583 244.46 B e e staggered 0 0 0 
+107 0.1 220 239.85 B m e staggered 0 0 0 v 
+107 0.1 230.2 239.815 B m e staggered 0 0 0 v 
+107 0.1 244.85 241.9 B m e staggered 0 0 0 v 
+108 0.15 231.725 224.75 T e e staggered 0 0 0 
+108 0.525 215.638 222.313 B e e staggered 0 0 0 
+108 0.525 249.583 241.92 B e e staggered 0 0 0 
+108 0.1 218.98 241.25 B m e staggered 0 0 0 v 
+108 0.1 230.065 241.535 B m e staggered 0 0 0 v 
+108 0.1 245.375 241.3 B m e staggered 0 0 0 v 
+109 0.15 232.925 227.95 T e e staggered 0 0 0 
+109 0.525 252.123 241.92 B e e staggered 0 0 0 
+109 0.1 243.85 240.7 B m e staggered 0 0 0 v 
+110 0.15 229.725 231.65 T e e staggered 0 0 0 
+110 0.32 242.8 216.1 T e e staggered 0 0 0 
+110 0.15 243.9 216.25 T e e staggered 0 0 0 
+110 0.525 249.583 239.38 B e e staggered 0 0 0 
+110 0.1 229.68 237.75 B m e staggered 0 0 0 v 
+110 0.1 242.2 216.1 B m e staggered 0 0 0 v 
+111 0.15 232.925 227.45 T e e staggered 0 0 0 
+111 0.525 252.123 239.38 B e e staggered 0 0 0 
+111 0.1 243.9 238.25 B m e staggered 0 0 0 v 
+112 0.15 230.225 231.65 T e e staggered 0 0 0 
+112 0.525 249.583 236.84 B e e staggered 0 0 0 
+112 0.1 230.225 236.795 B m e staggered 0 0 0 v 
+113 0.15 230.725 231.65 T e e staggered 0 0 0 
+113 0.525 236.863 254.62 B e e staggered 0 0 0 
+113 0.525 249.583 234.3 B e e staggered 0 0 0 
+113 0.1 230.73 235.7 B m e staggered 0 0 0 v 
+113 0.1 230.73 242.9 B m e staggered 0 0 0 v 
+113 0.1 235 248.7 B m e staggered 0 0 0 v 
+114 0.475 250.85 247.3 T e e staggered 0 0 0 
+114 0.525 252.123 234.3 B e e staggered 0 0 0 
+115 0.475 249.36 247.3 T e e staggered 0 0 0 
+115 0.525 249.583 231.76 B e e staggered 0 0 0 
+116 0.15 232.925 226.45 T e e staggered 0 0 0 
+116 0.15 245.4 218.65 T e e staggered 0 0 0 
+116 0.525 252.123 231.76 B e e staggered 0 0 0 
+116 0.1 241.04 226.45 B m e staggered 0 0 0 v 
+116 0.1 244.7 233.05 B m e staggered 0 0 0 v 
+116 0.1 245.55 219.3 B m e staggered 0 0 0 v 
+117 0.475 239.6 245.35 T e e staggered 0 0 0 
+117 0.525 249.583 229.22 B e e staggered 0 0 0 
+118 0.15 232.925 225.95 T e e staggered 0 0 0 
+118 0.15 244.4 216.25 T e e staggered 0 0 0 
+118 0.525 252.123 229.22 B e e staggered 0 0 0 
+118 0.1 242.486 225.95 B m e staggered 0 0 0 v 
+118 0.1 244.7 228.164 B m e staggered 0 0 0 v 
+118 0.1 246.45 216.95 B m e staggered 0 0 0 v 
+119 0.475 238.15 245.35 T e e staggered 0 0 0 
+119 0.525 249.583 226.68 B e e staggered 0 0 0 
+120 0.15 232.925 228.45 T e e staggered 0 0 0 
+120 0.25 206.774 249.5 T e e staggered 0 0 0 
+120 0.525 252.123 226.68 B e e staggered 0 0 0 
+120 0.1 207.68 250.335 B m e staggered 0 0 0 v 
+120 0.1 214.95 249.85 B m e staggered 0 0 0 v 
+120 0.1 242.55 229.35 B m e staggered 0 0 0 v 
+121 0.475 236.7 245.35 T e e staggered 0 0 0 
+121 0.525 249.583 224.14 B e e staggered 0 0 0 
+122 0.15 232.925 228.95 T e e staggered 0 0 0 
+122 0.25 256.474 245.75 T e e staggered 0 0 0 
+122 0.525 252.123 224.14 B e e staggered 0 0 0 
+122 0.1 241.48 228.95 B m e staggered 0 0 0 v 
+123 0.475 235.25 245.35 T e e staggered 0 0 0 
+123 0.525 249.583 221.6 B e e staggered 0 0 0 
+124 0.15 232.925 229.45 T e e staggered 0 0 0 
+124 0.525 252.123 221.6 B e e staggered 0 0 0 
+124 0.1 240.2 229.45 B m e staggered 0 0 0 v 
+125 0.575 228.9 233.65 T e e staggered 0 0 0 
+125 0.15 228.225 231.65 T e e staggered 0 0 0 
+126 0.25 235.624 259.1 T e e staggered 0 0 0 
+126 0.525 236.863 257.16 B e e staggered 0 0 0 
+126 0.1 218.495 260.7 T e e staggered 0 0 0 
+126 0.1 217.5 258.215 B m e staggered 0 0 0 v 
+126 0.1 233.49 259.69 B m e staggered 0 0 0 v 
+127 0.25 219.004 259.05 T e e staggered 0 0 0 
+127 0.525 221.623 257.16 B e e staggered 0 0 0 
+127 0.1 218.71 260.075 T e e staggered 0 0 0 
+128 0.525 219.083 257.16 B e e staggered 0 0 0 
+128 0.1 219.51 260.075 T e e staggered 0 0 0 
+129 0.125 230.85 264.55 T e e staggered 0 0 0 
+129 0.525 216.543 257.16 B e e staggered 0 0 0 
+129 0.1 230.45 265.5 B m e staggered 0 0 0 v 
+129 0.1 230.45 265.9 B m e staggered 0 0 0 v 
+130 0.25 215.625 218.174 T e e staggered 0 0 0 
+130 0.525 215.638 219.773 B e e staggered 0 0 0 
+131 0.25 218.175 218.124 T e e staggered 0 0 0 
+131 0.525 218.178 219.773 B e e staggered 0 0 0 
+132 0.1005 203.799 276.999 T e e staggered 0 0 0 
+132 0.4 202.1 283.47 D e e staggered 0 0 0 
+132 0.1 201.6 278 B m e staggered 0 0 0 v 
+133 0.1005 203.799 276.6 T e e staggered 0 0 0 
+133 0.4 202.1 286.01 D e e staggered 0 0 0 
+133 0.1 201.1 277.25 B m e staggered 0 0 0 v 
+134 0.1005 203.799 277.799 T e e staggered 0 0 0 
+134 0.4 203.37 287.28 D e e staggered 0 0 0 
+134 0.1 202.7 288.85 B m e staggered 0 0 0 v 
+135 0.1005 203.799 277.4 T e e staggered 0 0 0 
+135 0.4 203.37 284.74 D e e staggered 0 0 0 
+135 0.1 202.25 277.8 B m e staggered 0 0 0 v 
+135 0.1 203.68 279.95 B m e staggered 0 0 0 v 
+135 0.1 205.36 286.4 B m e staggered 0 0 0 v 
+136 0.25 219.95 280.324 T e e staggered 0 0 0 
+136 0.4 203.37 282.2 D e e staggered 0 0 0 
+136 0.1 219.738 281 B m e staggered 0 0 0 v 
+137 0.3 253 275.95 T e e staggered 0 0 0 
+137 0.32 247.45 271.95 T e e staggered 0 0 0 
+137 0.25 249.174 274.75 T e e staggered 0 0 0 
+137 0.25 256.75 273.1 T e e staggered 0 0 0 
+137 0.25 246.35 271.55 T e e staggered 0 0 0 
+137 0.1 247.44 271.298 B m e staggered 0 0 0 v 
+137 0.1 249.15 274.173 B m e staggered 0 0 0 v 
+137 0.1 251.75 276.247 B m e staggered 0 0 0 v 
+137 0.1 255.88 273.1 B m e staggered 0 0 0 v 
+138 0.3 243.15 270.11 T e e staggered 0 0 0 
+138 0.25 244.374 271.55 T e e staggered 0 0 0 
+138 0.25 245.426 271.55 T e e staggered 0 0 0 
+139 0.3 243.15 268.84 T e e staggered 0 0 0 
+139 0.32 242.15 271.95 T e e staggered 0 0 0 
+140 0.32 241.7 278.95 T e e staggered 0 0 0 
+140 0.32 242.95 278.95 T e e staggered 0 0 0 
+140 0.32 244.15 278.95 T e e staggered 0 0 0 
+141 0.15 244.05 288.95 T e e staggered 0 0 0 
+141 0.25 244.7 290.576 T e e staggered 0 0 0 
+142 0.575 255.05 269.5 T e e staggered 0 0 0 
+142 0.125 255.15 262.95 T e e staggered 0 0 0 
+142 0.25 251.874 268.55 T e e staggered 0 0 0 
+142 0.1 257.2 262.95 B m e staggered 0 0 0 v 
+142 0.1 257.2 268.35 B m e staggered 0 0 0 v 
+143 0.575 255.05 266.6 T e e staggered 0 0 0 
+143 0.2 247.6 263.3 T e e staggered 0 0 0 
+143 0.125 231.85 264.55 T e e staggered 0 0 0 
+143 0.125 252.21 263.95 T e e staggered 0 0 0 
+143 0.25 251.874 267.55 T e e staggered 0 0 0 
+143 0.1 231.948 265.551 B m e staggered 0 0 0 v 
+143 0.1 250.92 270.1 B m e staggered 0 0 0 v 
+143 0.1 251.35 264.1 B m e staggered 0 0 0 v 
+143 0.1 252 266.55 B m e staggered 0 0 0 v 
+143 0.1 255.16 270.95 B m e staggered 0 0 0 v 
+144 0.32 246.55 278.95 T e e staggered 0 0 0 
+144 0.32 245.35 278.95 T e e staggered 0 0 0 
+144 0.32 247.75 278.95 T e e staggered 0 0 0 
+145 0.15 242.1 286 T e e staggered 0 0 0 
+145 0.25 240.374 285.6 T e e staggered 0 0 0 
+145 0.1005 203.799 272.6 T e e staggered 0 0 0 
+145 0.1 202.65 272.6 B m e staggered 0 0 0 v 
+145 0.1 226.55 278.6 B m e staggered 0 0 0 v 
+145 0.1 226.7 272.95 B m e staggered 0 0 0 v 
+145 0.1 243.5 285.8 B m e staggered 0 0 0 v 
+146 0.15 246.55 282.55 T e e staggered 0 0 0 
+146 0.32 247.55 280.5 T e e staggered 0 0 0 
+147 0.15 248.5 287.5 T e e staggered 0 0 0 
+147 0.25 250.176 288 T e e staggered 0 0 0 
+148 0.15 248.5 287 T e e staggered 0 0 0 
+148 0.25 250.176 287 T e e staggered 0 0 0 
+149 0.15 248.5 285.5 T e e staggered 0 0 0 
+149 0.25 250.176 285.95 T e e staggered 0 0 0 
+150 0.1 232.1 269.25 T e e staggered 0 0 0 
+150 0.32 232 268.1 T e e staggered 0 0 0 
+150 0.1005 214.101 263.9 T e e staggered 0 0 0 
+150 0.1 214.25 265.25 B m e staggered 0 0 0 v 
+150 0.1 231.55 266.9 B m e staggered 0 0 0 v 
+151 0.1 231.35 269.4 T e e staggered 0 0 0 
+151 0.32 230.7 268.15 T e e staggered 0 0 0 
+151 0.1005 214.5 279.3 T e e staggered 0 0 0 
+151 0.1 214.651 276.55 B m e staggered 0 0 0 v 
+151 0.1 230.174 268.5 B m e staggered 0 0 0 v 
+152 0.1 232.5 271.15 T e e staggered 0 0 0 
+152 0.32 232.9 272.3 T e e staggered 0 0 0 
+152 0.1005 214.101 279.3 T e e staggered 0 0 0 
+152 0.1 214.101 278 B m e staggered 0 0 0 v 
+152 0.1 232.9 272.95 B m e staggered 0 0 0 v 
+153 0.3 255.29 274.05 T e e staggered 0 0 0 
+153 0.25 256.75 274.024 T e e staggered 0 0 0 
+154 0.3 235.8 264.66 T e e staggered 0 0 0 
+154 0.32 235 263.1 T e e staggered 0 0 0 
+154 0.25 234.55 264.226 T e e staggered 0 0 0 
+155 0.225 255.6 280.75 T e e staggered 0 0 0 
+155 0.25 257.25 280.674 T e e staggered 0 0 0 
+156 0.3 243.15 266.3 T e e staggered 0 0 0 
+156 0.32 246.8 265.05 T e e staggered 0 0 0 
+157 0.3 248.1 266.3 T e e staggered 0 0 0 
+157 0.32 247.7 265.05 T e e staggered 0 0 0 
+158 0.15 216 288 T e e staggered 0 0 0 
+158 0.32 214.85 288.55 T e e staggered 0 0 0 
+158 0.25 214.95 287.574 T e e staggered 0 0 0 
+159 0.15 218.1 288 T e e staggered 0 0 0 
+159 0.32 219.2 288.85 T e e staggered 0 0 0 
+160 0.32 219.05 279.4 T e e staggered 0 0 0 
+160 0.25 219.95 279.4 T e e staggered 0 0 0 
+160 0.25 220.8 279.45 T e e staggered 0 0 0 
+160 0.1005 215.699 279.3 T e e staggered 0 0 0 
+160 0.1 215.699 278.238 B m e staggered 0 0 0 v 
+160 0.1 221.25 279.4 B m e staggered 0 0 0 v 
+161 0.25 201.25 263.076 T e e staggered 0 0 0 
+161 0.1005 206.1 263.9 T e e staggered 0 0 0 
+162 0.25 202.2 263.076 T e e staggered 0 0 0 
+162 0.1005 206.499 263.9 T e e staggered 0 0 0 
+163 0.25 220.976 277.5 T e e staggered 0 0 0 
+163 0.1005 219.199 276.999 T e e staggered 0 0 0 
+164 0.25 221.076 274.85 T e e staggered 0 0 0 
+164 0.1005 219.199 275.8 T e e staggered 0 0 0 
+165 0.25 221.1 276.6 T e e staggered 0 0 0 
+165 0.1005 219.199 276.6 T e e staggered 0 0 0 
+166 0.25 221.1 275.7 T e e staggered 0 0 0 
+166 0.1005 219.199 276.201 T e e staggered 0 0 0 
+167 0.25 220.976 278.4 T e e staggered 0 0 0 
+167 0.1005 219.199 277.4 T e e staggered 0 0 0 
+168 0.15 226.025 225.95 T e e staggered 0 0 0 
+168 0.2499625 221.9034 223.2034 T e e staggered 0 0 0 
+168 0.2499625 221.9 223.2 T e e staggered 0 0 0 
+169 0.25 255.55 245.75 T e e staggered 0 0 0 
+169 0.45 254.2 248.725 T e e staggered 0 0 0 
+170 0.25 205.85 249.5 T e e staggered 0 0 0 
+170 0.45 204.35 248.775 T e e staggered 0 0 0 
+171 0.25 222.5 290.4 T e e staggered 0 0 0 
+171 0.45 222.525 291.6 T e e staggered 0 0 0 
+172 0.25 221.3 268.1 T e e staggered 0 0 0 
+172 0.1 224 260.7 T e e staggered 0 0 0 
+172 0.1 223.51 262.525 T e e staggered 0 0 0 
+172 0.1005 219.199 268.2 T e e staggered 0 0 0 
+172 0.1 222.5 265.9 B m e staggered 0 0 0 v 
+172 0.1 223.24 263.5 B m e staggered 0 0 0 v 
+173 0.25 244.9 215.15 T e e staggered 0 0 0 
+173 0.15 244.9 216.25 T e e staggered 0 0 0 
+174 0.15 226.025 226.45 T e e staggered 0 0 0 
+174 0.2499625 222.05 227.5 T e e staggered 0 0 0 
+175 0.25 244.4 219.35 T e e staggered 0 0 0 
+175 0.15 244.4 218.65 T e e staggered 0 0 0 
+176 0.15 226.025 227.95 T e e staggered 0 0 0 
+176 0.25 218.45 228.224 T e e staggered 0 0 0 
+176 0.25 218.45 228.25 T e e staggered 0 0 0 
+177 0.175 209.96 287.5 T e e staggered 0 0 0 
+177 0.15 210.15 286.3 T e e staggered 0 0 0 
+178 0.175 209.12 287.8 T e e staggered 0 0 0 
+178 0.15 209.65 286.3 T e e staggered 0 0 0 
+179 0.175 213.48 286.55 T e e staggered 0 0 0 
+179 0.15 212.35 285.6 T e e staggered 0 0 0 
+180 0.175 204.21 281.4 T e e staggered 0 0 0 
+180 0.1005 205.699 279.3 T e e staggered 0 0 0 
+181 0.175 204.26 280.6 T e e staggered 0 0 0 
+181 0.1005 205.3 279.3 T e e staggered 0 0 0 
+182 0.175 210.32 260.2 T e e staggered 0 0 0 
+182 0.175 210.3 259.4 T e e staggered 0 0 0 
+182 0.1005 209.699 263.9 T e e staggered 0 0 0 
+182 0.1 209.699 262.838 B m e staggered 0 0 0 v 
+182 0.1 209.915 260.235 B m e staggered 0 0 0 v 
+183 0.15 243.55 288.95 T e e staggered 0 0 0 
+183 0.32 243.55 290.55 T e e staggered 0 0 0 
+184 0.15 245.75 292.7 T e e staggered 0 0 0 
+184 0.32 243.55 291.45 T e e staggered 0 0 0 
+185 0.15 247.05 288.95 T e e staggered 0 0 0 
+185 0.25 247.676 290.65 T e e staggered 0 0 0 
+185 0.1005 213.301 279.3 T e e staggered 0 0 0 
+185 0.1 213.5 278.15 B m e staggered 0 0 0 v 
+185 0.1 247.05 290.438 B m e staggered 0 0 0 v 
+186 0.15 242.1 285.5 T e e staggered 0 0 0 
+186 0.25 240.35 284.7 T e e staggered 0 0 0 
+187 0.15 247.05 282.55 T e e staggered 0 0 0 
+187 0.25 249.85 281.224 T e e staggered 0 0 0 
+188 0.1 223.91 262.525 T e e staggered 0 0 0 
+188 0.1005 214.5 263.9 T e e staggered 0 0 0 
+188 0.1 218.6 263.6 B m e staggered 0 0 0 v 
+188 0.1 223.91 263.55 B m e staggered 0 0 0 v 
+189 0.1 222.71 262.525 T e e staggered 0 0 0 
+189 0.1005 219.199 266.6 T e e staggered 0 0 0 
+190 0.15 207.45 284.6 T e e staggered 0 0 0 
+190 0.1005 203.799 275.401 T e e staggered 0 0 0 
+190 0.1 205.4 275.7 B m e staggered 0 0 0 v 
+190 0.1 205.7 285.3 B m e staggered 0 0 0 v 
+191 0.15 207.45 284.1 T e e staggered 0 0 0 
+191 0.1005 203.799 275 T e e staggered 0 0 0 
+191 0.1 205.9 275.026 B m e staggered 0 0 0 v 
+191 0.1 206.379 284.071 B m e staggered 0 0 0 v 
+192 0.15 207.45 283.6 T e e staggered 0 0 0 
+192 0.1005 207.299 279.3 T e e staggered 0 0 0 
+192 0.1 206.7 283.525 B m e staggered 0 0 0 v 
+192 0.1 207.299 281.251 B m e staggered 0 0 0 v 
+193 0.15 207.45 283.1 T e e staggered 0 0 0 
+193 0.1005 206.9 279.3 T e e staggered 0 0 0 
+194 0.15 208.15 281.4 T e e staggered 0 0 0 
+194 0.1005 203.799 274.601 T e e staggered 0 0 0 
+194 0.1 207.1 274.9 B m e staggered 0 0 0 v 
+194 0.1 207.724 280.55 B m e staggered 0 0 0 v 
+195 0.15 208.65 281.4 T e e staggered 0 0 0 
+195 0.1005 203.799 274.2 T e e staggered 0 0 0 
+195 0.1 208.1 276.5 B m e staggered 0 0 0 v 
+195 0.1 208.65 280.55 B m e staggered 0 0 0 v 
+196 0.15 209.15 281.4 T e e staggered 0 0 0 
+196 0.1005 209.3 279.3 T e e staggered 0 0 0 
+197 0.15 209.65 281.4 T e e staggered 0 0 0 
+197 0.1005 209.699 279.3 T e e staggered 0 0 0 
+198 0.15 210.15 281.4 T e e staggered 0 0 0 
+198 0.1005 210.101 279.3 T e e staggered 0 0 0 
+199 0.15 210.65 281.4 T e e staggered 0 0 0 
+199 0.1005 210.499 279.3 T e e staggered 0 0 0 
+200 0.15 211.15 281.4 T e e staggered 0 0 0 
+200 0.1005 210.901 279.3 T e e staggered 0 0 0 
+201 0.15 211.65 281.4 T e e staggered 0 0 0 
+201 0.1005 211.3 279.3 T e e staggered 0 0 0 
+202 0.125 255.15 263.95 T e e staggered 0 0 0 
+202 0.125 252.21 263.45 T e e staggered 0 0 0 
+202 0.1005 212.501 279.3 T e e staggered 0 0 0 
+202 0.1 212.35 278.15 B m e staggered 0 0 0 v 
+202 0.1 251.15 263.25 B m e staggered 0 0 0 v 
+202 0.1 255.895 264.255 B m e staggered 0 0 0 v 
+203 0.6 240.34 293.9 T e e staggered 0 0 0 
+203 0.15 242.65 294.2 T e e staggered 0 0 0 
+204 0.15 242.65 293.7 T e e staggered 0 0 0 
+204 0.15 242.65 293.2 T e e staggered 0 0 0 
+205 0.15 246.05 288.95 T e e staggered 0 0 0 
+205 0.1005 203.799 268.2 T e e staggered 0 0 0 
+205 0.1 205.75 268.299 B m e staggered 0 0 0 v 
+205 0.1 223.75 272.25 B m e staggered 0 0 0 v 
+205 0.1 223.75 278.55 B m e staggered 0 0 0 v 
+205 0.1 246.05 290.05 B m e staggered 0 0 0 v 
+206 0.15 245.55 288.95 T e e staggered 0 0 0 
+206 0.1005 203.799 266.999 T e e staggered 0 0 0 
+206 0.1 205.15 266.45 B m e staggered 0 0 0 v 
+206 0.1 225.64 278.65 B m e staggered 0 0 0 v 
+206 0.1 226.1 272.3 B m e staggered 0 0 0 v 
+206 0.1 245.55 287.9 B m e staggered 0 0 0 v 
+207 0.15 245.05 288.95 T e e staggered 0 0 0 
+207 0.1005 203.799 267.4 T e e staggered 0 0 0 
+207 0.1 205.3 267.25 B m e staggered 0 0 0 v 
+207 0.1 224.28 277.8 B m e staggered 0 0 0 v 
+207 0.1 224.52 271.8 B m e staggered 0 0 0 v 
+207 0.1 245.05 289.95 B m e staggered 0 0 0 v 
+208 0.15 244.55 288.95 T e e staggered 0 0 0 
+208 0.1005 203.799 268.599 T e e staggered 0 0 0 
+208 0.1 205.375 269.125 B m e staggered 0 0 0 v 
+208 0.1 222.375 270.525 B m e staggered 0 0 0 v 
+208 0.1 225.04 278.05 B m e staggered 0 0 0 v 
+208 0.1 244.55 287.9 B m e staggered 0 0 0 v 
+209 0.125 232.35 264.55 T e e staggered 0 0 0 
+209 0.1 231.35 270.6 T e e staggered 0 0 0 
+209 0.1 231.35 269.8 T e e staggered 0 0 0 
+209 0.1 233.25 269.8 T e e staggered 0 0 0 
+209 0.1 232.25 270.1 B m e staggered 0 0 0 v 
+209 0.1 232.52 267 B m e staggered 0 0 0 v 
+210 0.125 231.35 264.55 T e e staggered 0 0 0 
+210 0.1005 212.9 279.3 T e e staggered 0 0 0 
+210 0.1 212 277 B m e staggered 0 0 0 v 
+210 0.1 229.3 266.95 B m e staggered 0 0 0 v 
+210 0.1 231.35 266.2 B m e staggered 0 0 0 v 
+211 0.1 218.495 261.9 T e e staggered 0 0 0 
+211 0.1005 214.901 263.9 T e e staggered 0 0 0 
+212 0.1 218.71 262.525 T e e staggered 0 0 0 
+212 0.1005 219.199 265.401 T e e staggered 0 0 0 
+213 0.1 219.51 262.525 T e e staggered 0 0 0 
+213 0.1005 219.199 265.8 T e e staggered 0 0 0 
+214 0.1 227.51 262.525 T e e staggered 0 0 0 
+214 0.1005 219.199 266.201 T e e staggered 0 0 0 
+214 0.1 220.7 265.2 B m e staggered 0 0 0 v 
+214 0.1 223.3 265.2 B m e staggered 0 0 0 v 
+215 0.1 226.495 261.9 T e e staggered 0 0 0 
+215 0.1005 219.199 266.999 T e e staggered 0 0 0 
+216 0.1 227.11 262.525 T e e staggered 0 0 0 
+216 0.1005 219.199 267.4 T e e staggered 0 0 0 
+217 0.3 229.15 204.45 T e e staggered 0 0 0 
+217 0.25 229.15 206.076 T e e staggered 0 0 0 
+217 0.175 229.15 203.65 T e e staggered 0 0 0 
+217 0.25 229.15 205.35 T e e staggered 0 0 0 

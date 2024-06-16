@@ -1,0 +1,40 @@
+(---------------------------------------------------------------------)
+(                                                                     )
+(    Shape Dynamic Status Report                                      )
+(                                                                     )
+(    Drawing          : LAUNCHXL-CC1312R1.brd                         )
+(    Software Version : 17.2S024                                      )
+(    Date/Time        : Wed Oct 10 11:11:05 2018                      )
+(                                                                     )
+(---------------------------------------------------------------------)
+
+
+  Dynamic shapes out of date: 0 out of 16
+  Current fill mode         : SMOOTH
+
+
+  <<<  ETCH  >>>
+
+    Layer = TOP
+       State: Smooth       Point on shape: (200.5010 290.1000)  Net: GND
+       State: Smooth       Point on shape: (240.0000 215.2500)  Net: GND
+       State: Smooth       Point on shape: (223.5000 236.9500)  Net: WMCU_VDD
+       State: Smooth       Point on shape: (223.5000 234.5000)  Net: VDDS
+       State: Smooth       Point on shape: (227.8500 235.7000)  Net: VDDR
+       State: Smooth       Point on shape: (257.9990 244.5510)  Net: GND
+       State: Smooth       Point on shape: (238.4960 259.3560)  Net: GND
+       State: Smooth       Point on shape: (253.3000 290.2000)  Net: GND
+       State: Smooth       Point on shape: (206.8000 288.9000)  Net: N1031635
+
+    Layer = L2
+       State: Smooth       Point on shape: (200.5010 202.5500)  Net: GND
+       State: Smooth       Point on shape: (206.8000 288.9000)  Net: N1031635
+
+    Layer = L3
+       State: Smooth       Point on shape: (200.6010 202.6000)  Net: GND
+
+    Layer = BOTTOM
+       State: Smooth       Point on shape: (206.8000 288.9000)  Net: N1031635
+       State: Smooth       Point on shape: (253.3000 290.2000)  Net: GND
+       State: Smooth       Point on shape: (200.5010 290.3000)  Net: GND
+       State: Smooth       Point on shape: (200.5010 202.5500)  Net: GND
