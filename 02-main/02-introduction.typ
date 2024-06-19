@@ -9,7 +9,12 @@
 //#gls-scrum.name
 //#gls-scrum.description
 
-//#bibliography("../03-tail/bibliography.bib", style:bibstyle)
+#context {
+  if bib-state.get() != true {
+    bib-state.update(true)
+    bibliography("/03-tail/bibliography.bib", style:bibstyle)
+  }
+}
 
 #cite(<IEEEXplore-IntrusionDetectionIndustrial2017>)
 #cite(<Wikipedia-ReplayAttack2024>, supplement:[p.7ff])

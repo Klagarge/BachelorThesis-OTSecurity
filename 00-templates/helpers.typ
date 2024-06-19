@@ -269,3 +269,5 @@
   #if option.type == type {text(size:size, style:style, fill:fill)[#body]
   }
 ]}
+
+#let bib-state = state("bibliography", false)

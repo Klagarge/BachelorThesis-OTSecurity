@@ -20,6 +20,10 @@
   icons: icons,
 )
 
+#if bib == true {
+  bib-state.update(true)
+}
+
 //-------------------------------------
 // Content
 //
