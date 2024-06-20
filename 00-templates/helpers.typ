@@ -14,10 +14,12 @@
 #import "../00-templates/gantt.typ" as gantt
 #import "../00-templates/project-features.typ": *
 #import "../01-settings/metadata.typ": *
-//#import "../03-tail/glossary.typ": *
 
 #import "../00-templates/glossarium.typ": *
 #show: make-glossary
+
+// Private packages
+#import "/00-packages/rivet/src/lib.typ" as rivet: schema
 
 // External Plugins
 // Fancy pretty print with line numbers and stuff
