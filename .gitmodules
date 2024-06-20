@@ -4,3 +4,6 @@
 [submodule "00-packages/chronos"]
 	path = 00-packages/chronos
 	url = https://git.kb28.ch/HEL/chronos.git
+[submodule "00-packages/elegantt"]
+	path = 00-packages/elegantt
+	url = git@git.kb28.ch:Klagarge/elegantt.git

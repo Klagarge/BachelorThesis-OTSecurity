@@ -9,9 +9,6 @@
 #import "../00-templates/sections.typ": *
 #import "../00-templates/tablex.typ": *
 #import "../00-templates/slides_template.typ": *
-#import "../00-templates/datetime_calc.typ": *
-#import "../00-templates/timeliney.typ"
-#import "../00-templates/gantt.typ" as gantt
 #import "../00-templates/project-features.typ": *
 #import "../01-settings/metadata.typ": *
 
@@ -21,6 +18,7 @@
 // Private packages
 #import "/00-packages/rivet/src/lib.typ" as rivet: schema
 #import "/00-packages/chronos/src/lib.typ" as chronos
+#import "/00-packages/elegantt/src/lib.typ" as gantt
 
 // External Plugins
 // Fancy pretty print with line numbers and stuff
