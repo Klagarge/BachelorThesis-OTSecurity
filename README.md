@@ -76,16 +76,30 @@ cargo install typst
 
 #### Windows
 
+Open a Windows Powershell as Administrator
+
+![](04-resources/windows-powershell.png)
+
 ```powershell
 # [chocolatey](https://chocolatey.org)
 # ensure to use a administrative powershell
-Set-ExecutionPolicy Bypass -Scope Process - Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New- Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/ install.ps1'))
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+```
 
+Open a new Windows Powershell as Administrator
+
+```powershell
 # [just](https://just.systems)
 choco install just
 
 # [typst](https://github.com/typst/typst)
 choco install typst
+
+# [vscode](https://code.visualstudio.com/)
+choco install vscode vscli
+
+# [git](https://git-scm.com/downloads)
+choco install git.install
 ```
 
 ### How to use
@@ -136,8 +150,7 @@ choco install typst
 
 [(Back to top)](#table-of-contents)
 
-[![Read Guide to Typst](https://img.shields.io/badge/Read-Guide_to_Typst-blue)](https://github.com/tschinz/hevs-typsttemplate-thesis/blob/master/guite-to-typst.pdf) [![Download Guide to Typst](https://img.shields.io/badge/Download-Guide_to_Typst-brightgreen)](https://github.com/tschinz/hevs-typsttemplate-thesis/raw/master/guide-to.typst.pdf)
-
+[![Read Guide to Typst](https://img.shields.io/badge/Read-Guide_to_Typst-blue)](https://github.com/tschinz/hevs-typsttemplate-thesis/blob/master/guide-to-typst.pdf) [![Download Guide to Typst](https://img.shields.io/badge/Download-Guide_to_Typst-brightgreen)](https://github.com/tschinz/hevs-typsttemplate-thesis/raw/master/guide-to-typst.pdf)
 ## Credits
 
 [(Back to top)](#table-of-contents)
