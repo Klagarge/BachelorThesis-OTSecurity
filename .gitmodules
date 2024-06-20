@@ -1,3 +1,6 @@
 [submodule "00-packages/rivet"]
 	path = 00-packages/rivet
 	url = https://git.kb28.ch/HEL/rivet-typst.git
+[submodule "00-packages/chronos"]
+	path = 00-packages/chronos
+	url = https://git.kb28.ch/HEL/chronos.git

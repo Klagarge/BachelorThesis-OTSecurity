@@ -20,6 +20,7 @@
 
 // Private packages
 #import "/00-packages/rivet/src/lib.typ" as rivet: schema
+#import "/00-packages/chronos/src/lib.typ" as chronos
 
 // External Plugins
 // Fancy pretty print with line numbers and stuff
