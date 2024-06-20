@@ -84,6 +84,15 @@
     let num = numbering(it.numbering, ..counter(heading).at(it.location()))
     unshift_prefix(num + h(0.8em), it.body)
   }
+
+  show heading: (it) => {
+    if (depth != none) and (it.level >= depth) {
+      h(0.8em)*(it.level - depth + 1) + it.body + linebreak()
+    } else {
+      it
+    }
+  }
+
   //show heading.where(level: 1): set text(size:huge)
   //show heading.where(level: 1): set pad(size:huge)
 
