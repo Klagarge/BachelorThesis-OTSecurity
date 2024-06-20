@@ -1,4 +1,13 @@
-#import "../00-templates/helpers.typ": *
+// HEADER
+#import "/00-templates/helpers.typ": *
+#context {
+  if bib-state.get() != true {
+    bib-state.update(true)
+    show bibliography: none
+    bibliography("/03-tail/bibliography.bib", style:bibstyle)
+  }
+}
+// END OF HEADER
 
 #pagebreak()
 = Analysis <sec:analysis>
@@ -10,9 +19,7 @@
 
 
 
-== Section 1
-
-#lorem(50)
+#subject("wireless-protocol", 1)
 
 == Section 2
 

@@ -1,0 +1,57 @@
+//
+// Description: Main document to stitch everything together
+//
+#import "00-templates/template-thesis.typ": *
+#import "01-settings/metadata.typ": *
+
+//-------------------------------------
+// Template config
+//
+
+
+//#{date.submission = date.mid-term-submission}
+#show: thesis.with(
+  title: title,
+  midterm: true,
+  subtitle: subtitle,
+  version: version,
+  author: author,
+  professor: professor,
+  expert: expert,
+  school: school,
+  date: date,
+  tableof: tableof,
+  icons: icons,
+)
+#counter(page).update(1)
+
+//-------------------------------------
+// Content
+//
+
+#if bib == true {
+  bib-state.update(true)
+}
+
+//#include "02-main/00-acknowledgements.typ"
+//#include "02-main/planning.typ"
+//#include "02-main/01-abstract.typ"
+//#include "02-main/02-introduction.typ"
+#include "02-main/03-analysis.typ"
+#include "02-main/04-design.typ"
+//#include "02-main/05-implementation.typ"
+//#include "02-main/06-validation.typ"
+//#include "02-main/07-conclusion.typ"
+
+#include "03-tail/glossary.typ"
+//-------------------------------------
+// Appendix
+//
+#include "03-tail/a-appendix.typ"
+
+//-------------------------------------
+// Bibliography
+//
+#if bib == true {
+  include "03-tail/bibliography.typ"
+}
