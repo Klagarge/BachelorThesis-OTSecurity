@@ -104,7 +104,8 @@
   before: none,
   addline: true,
   stroke: 0.5pt,
-  length: 100%
+  length: 100%,
+  depth: depth,
 ) = {
   v(2em)
   text(large, [*Contents*])
@@ -115,7 +116,8 @@
     title: none,
     target: selector(heading)
       .after(after)
-      .before(before, inclusive: false)
+      .before(before, inclusive: false),
+    depth: depth,
   )
   if addline == true {
     line(length:length, stroke:stroke)
