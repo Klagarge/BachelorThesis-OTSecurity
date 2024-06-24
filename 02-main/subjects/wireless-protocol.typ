@@ -6,8 +6,7 @@
     show bibliography: none
     bibliography("/03-tail/bibliography.bib", style:bibstyle)
   }
-}
-// END OF HEADER
+} // END OF HEADER
 
 #import "/04-resources/rivet.typ": *
 
@@ -51,5 +50,9 @@ Chipset OOK for 434 MHz. On 433.92 MHz in OOK modulation. SYN115 is the transmit
 - Pagers: 
 - HDN_1 : 
 
-#let c = rivet.config.config( all-bit-i: false)
+#let c = rivet.config.config(
+  all-bit-i: false,
+  bit-width: 40,
+  bit-height: 40,
+)
 //#rivet.schema.render(test-typ, config: c)

@@ -22,6 +22,7 @@
 // External Plugins
 // Fancy pretty print with line numbers and stuff
 #import "@preview/codelst:2.0.1": sourcecode
+#import "@preview/wrap-it:0.1.0": wrap-content
 
 #let myref(label) = locate(loc =>{
     if query(label,loc).len() != 0 {

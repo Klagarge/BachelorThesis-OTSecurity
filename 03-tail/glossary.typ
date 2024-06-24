@@ -5,6 +5,12 @@
 #print-glossary(
   (
     (
+      key: "it",
+      short: "IT",
+      long: "Information Technology",
+      description: [Information Technology (IT) is the use of computers to store, retrieve, transmit, and manipulate data or information.],
+    ),
+    (
       key: "iot",
       short: "IoT",
       long: "Internet of Things",

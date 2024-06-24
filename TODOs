@@ -1,10 +1,43 @@
-// HEADER
-#import "/00-templates/helpers.typ": *
-#context {
-  if bib-state.get() != true {
-    bib-state.update(true)
-    show bibliography: none
-    bibliography("/03-tail/bibliography.bib", style:bibstyle)
-  }
-}
-// END OF HEADER
+1. Introduction
+2. Analysis
+  2.1 Types of attacks
+    2.1.1 Sniffing
+    2.1.2 Spoofing
+    2.1.3 DoS
+    2.1.4 Replay
+    2.1.5 Man in the Middle - Connected
+    2.1.6 Man in the Middle - Full interception
+  2.2 Communication medium
+    2.2.1 Modbus
+    2.2.2 Canbus
+    2.2.3 DigiMesh
+    2.2.4 Zigbee
+    2.2.5 Wireless Meter Bus
+      
+  2.3 Cryptography
+    2.3.1 
+    2.3.2
+3. Design
+  3.1 
+  3.2 Simulation environnement
+    3.2.1 Factory I/O
+    3.2.2 Home I/O
+    3.2.3 Minecraft
+  3.3 
+4. Implementation
+  4.1
+    4.1.1
+    4.1.2
+  4.2
+    4.2.1
+    4.2.2
+5. Validation
+  5.1
+    5.1.1
+    5.1.2
+  5.2
+    5.2.1
+    5.2.2
+6. Conclusion
+  6.1
+  6.2

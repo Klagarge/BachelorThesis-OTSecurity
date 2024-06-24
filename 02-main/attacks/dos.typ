@@ -6,20 +6,7 @@
     show bibliography: none
     bibliography("/03-tail/bibliography.bib", style:bibstyle)
   }
-}
-// END OF HEADER
+} // END OF HEADER
 
-= 
-#todo("")
-
-= Simulation environnement
-#todo("")
-== Factory I/O
-#todo("")
-== Home I/O
-#todo("")
-== Minecraft
-#todo("")
-
-= Conclusion
+= Denial of Service  <subj:attack-dos>
 #todo("")
