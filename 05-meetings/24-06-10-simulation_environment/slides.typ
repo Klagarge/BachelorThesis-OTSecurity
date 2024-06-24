@@ -129,18 +129,9 @@
 #slide(
   title: [Summary]
 )[
-  //#set text(size: large)
+  #set text(size: large)
+  #include "/02-main/simu-env/comparison.typ"
   
-  #tablex(
-    columns: (1fr, 1fr, 1fr, 1fr, 1fr),
-    align: center + horizon,
-    [],               [*Price*],  [*Security*],     [*Customization*],  [*Cross-patform*],
-    //[*Winter Sim. 2*],[\~350.-],  [by third soft],  [no],               [no],
-    [*Factory I/O*],  [\~4300.-], [by third soft],  [yes],              [no],
-    [*Home I/O*],     [\~300.-],  [by third soft],  [no],               [no],
-    [*Minecraft*],    [-],        [OC or new mod],  [full],             [yes],
-
-  )
 ]
 
 

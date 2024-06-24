@@ -36,7 +36,7 @@
     )
   ),
   // show all term even if they are not referenced, default to true
-  show-all: true,
+  show-all: false,
   // disable the back ref at the end of the descriptions
   disable-back-references: false,
 )
