@@ -83,7 +83,7 @@
   }
 
   show heading: (it) => {
-    if (depth != none) and (it.level >= depth) {
+    if (depth != none) and (it.level > depth) {
       h(0.8em)*(it.level - depth + 1) + it.body + linebreak()
     } else {
       it

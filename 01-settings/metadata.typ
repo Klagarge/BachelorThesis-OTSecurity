@@ -51,7 +51,7 @@
   tol: false,
   toe: false,
 )
-#let depth = 4
+#let depth = 3
 
 #let icons = (
   topleft: resources-folder + "logos/hei-vs-light.svg",
