@@ -1,0 +1,9 @@
+@startuml
+loop every 200ms
+    Alice -> Bob: Standard request
+    Bob --> Alice: Standard Response
+end
+loop every 1ms
+    Mallory -> Bob: DoS attack request
+end
+@enduml

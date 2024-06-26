@@ -10,19 +10,19 @@
 // END OF HEADER
 
 = Attacks
-#todo([
-  Attacks in the context of OT security are numerous and can be classified in different categories. The most common attacks are the following:
-])
+Attacks in the context of OT security are numerous and can be classified in different categories. This thesis covers some attack as following bust a lot of other exist. 
 
 #subject("attacks/sniffing", heading-offset: 2)
 #subject("attacks/spoofing", heading-offset: 2)
+#pagebreak()
 #subject("attacks/dos", heading-offset: 2)
 #subject("attacks/replay", heading-offset: 2)
 #subject("attacks/mitm", heading-offset: 2)
 
+#pagebreak()
 = Communication medium
 #todo([
-  Those attacks can be performed on different communication medium. This is an important difference between #gls("it") and #gls("ot")
+  Those attacks can be performed on different communication medium. This is an important difference between #gls("it") and #gls("ot"). On #gls("ot") Security, the communication is a very sensible part. During long time, no security was implemented or even possible to be implemented. 
 ])
 
 #subject("comm/modbus", heading-offset: 2)

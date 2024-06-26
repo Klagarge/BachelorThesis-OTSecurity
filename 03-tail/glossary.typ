@@ -47,7 +47,41 @@
       short: "ICS",
       long: "Industrial Control Systems",
       description: [Industrial Control Systems (ICS) are integrated hardware and software designed to monitor and control the operation of machinery and associated devices in industrial environments.],
-    )
+    ),
+    (
+      key: "dos",
+      short: "DoS",
+      long: "Denial of Service",
+      description: [A denial-of-service (DoS) attack is a cyber-attack in which the perpetrator seeks to make a machine or network resource unavailable to its intended users by temporarily or indefinitely disrupting services of a host connected to the Internet.],
+      group: "Attacks",
+    ),
+    (
+      key: "ddos",
+      short: "DDoS",
+      long: "Distributed Denial of Service",
+      description: [A distributed #gls("dos") is basically the same as a #gls("dos") attack, but the attack comes from multiple sources.],
+      group: "Attacks",
+    ),
+    (
+      key: "mitm",
+      short: "MitM",
+      long: "Man in the Middle",
+      description: [A Man in the Middle (MitM) attack is a form of eavesdropping in which communication between two users is monitored and modified by an unauthorized party.],
+      group: "Attacks",
+    ),
+    (
+      key: "d-h",
+      short: "Diffie-Hellman",
+      description: [Diffie-Hellman key exchange is a method of securely exchanging cryptographic keys over a public channel.],
+      group: "Cryptography",
+    ),
+    (
+      key: "x509",
+      short: "X.509",
+      description: [X.509 is a standard that defines the format of public key certificates.],
+      group: "Cryptography",
+    ),
+
   ),
   // show all term even if they are not referenced, default to true
   show-all: false,
