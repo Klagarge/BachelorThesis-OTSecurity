@@ -45,16 +45,33 @@
     tol: false,
     toe: false,
   ),
+  before: <sec:glossary>,
   indent: true,
   depth: none,
 ) = {
   // Table of content
   if tableof.toc == true {
-    outline(
-      title: [#if lang == "de" {"Inhalt"} else if lang == "fr" {"Contenu"} else {"Contents"}],
-      indent: indent,
-      depth: depth,
-    )
+    let title = [#if lang == "de" {
+      "Inhalt"
+    } else if lang == "fr" {
+      "Contenu"
+    } else {
+        "Contents"
+    }]
+    if before != none {
+      outline(
+        title: title,
+        target: selector(heading).before(before, inclusive: true),
+        indent: indent,
+        depth: depth,
+      )
+    } else {
+      outline(
+        title: title,
+        indent: indent,
+        depth: depth,
+      )
+    }
   }
 
   // Table of figures
@@ -106,18 +123,31 @@
   stroke: 0.5pt,
   length: 100%,
   depth: depth,
+  indent: false,
 ) = {
   v(2em)
   text(large, [*Contents*])
   if addline == true {
     line(length:length, stroke:stroke)
   }
+  let h = selector(heading.where(level: 2))
+    .or(heading.where(level: 3))
+    .or(heading.where(level: 4))
+    .or(heading.where(level: 5))
+    .or(heading.where(level: 6))
+    .or(heading.where(level: 7))
+    .or(heading.where(level: 8))
+    .or(heading.where(level: 9))
+    .or(heading.where(level: 10))
+
   outline(
+    
     title: none,
-    target: selector(heading)
+    target: selector(h)
       .after(after)
       .before(before, inclusive: false),
     depth: depth,
+    indent: indent,
   )
   if addline == true {
     line(length:length, stroke:stroke)
@@ -326,7 +356,7 @@
   before: none,
 ) = [
   #if (after != none and before != none) {
-    minitoc(after:after, before:before)
+    minitoc(after:after, before:before, indent: true)
     pagebreak()
   }
   #set heading(offset: heading-offset)
