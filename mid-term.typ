@@ -39,12 +39,13 @@
   "03-analysis",
   heading-offset: 1,
   after:<sec:analysis>,
-  before:<sec:design>,
+  before:<sec:conclusion>,
 )
 
 //----------
 //- DESIGN -
 //----------
+/*
 #pagebreak()
 = Design <sec:design>
 
@@ -56,13 +57,15 @@
   after:<sec:design>,
   before:<sec:conclusion>,
 )
+*/
 
 //--------------
 //- CONCLUSION -
 //--------------
 #pagebreak()
 = Conclusion <sec:conclusion>
-#todo("")
+#todo([
+])
 
 
 #include "03-tail/glossary.typ"

@@ -81,6 +81,51 @@
       description: [X.509 is a standard that defines the format of public key certificates.],
       group: "Cryptography",
     ),
+    (
+      key: "aes",
+      short: "AES",
+      description: [The Advanced Encryption Standard (AES) is a symmetric encryption algorithm.],
+      group: "Cryptography",
+    ),
+    (
+      key: "rtu",
+      short: "RTU",
+      long: "Remote Terminal Unit",
+      group: "Communications",
+    ),
+    (
+      key: "tcp",
+      short: "TCP",
+      long: "Transmission Control Protocol",
+      group: "Communications",
+    ),
+    (
+      key: "ip",
+      short: "IP",
+      long: "Internet Protocol",
+      group: "Communications",
+    ),
+    (
+      key: "crc",
+      short: "CRC",
+      long: "Cyclic Redundancy Check",
+      group: "Communications",
+    ),
+    (
+      key: "can",
+      short: "CAN",
+      long: "Controller Area Network",
+    ),
+    (
+      key: "m-bus",
+      short: "M-Bus",
+      long: "Meter-Bus",
+    ),
+    (
+      key: "wm-bus",
+      short: [w#gls-short("m-bus")],
+      long: [Wireless #gls-long("m-bus")],
+    )
 
   ),
   // show all term even if they are not referenced, default to true
