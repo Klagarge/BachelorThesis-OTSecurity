@@ -5,7 +5,7 @@
 #import "../00-templates/constants.typ": *
 
 #let title= "OT Security"
-#let subtitle= "PEN-testing and security about embedded device"
+#let subtitle= "PEN-testing and security about embedded devices"
 #let version= "v0.1"
 
 #let author= (
