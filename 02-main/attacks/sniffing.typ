@@ -11,12 +11,12 @@
 = Sniffing Attack  <subj:attack-sniffing>
 
 #let body = [
-  This attack consists in listening to the communication between two devices #cite(<Wikipedia-SniffingAttack2023>). Sniffing attack can be perform on every communication medium with more or less simplicity. The most vunerable are wireless communication because everybody can listen what's on the air. For example in @fig-attack-sniffing Alice send a message to Bob over the air without any encryption. Eve can listen to the message and read it. She know that Alice send a message to Bob and what the message is.
+  This attack consists in listening to the communication between two devices #cite(<Wikipedia-SniffingAttack2023>). Sniffing attack can be performed on every communication medium with more or less simplicity. The most vulnerable are wireless communication because everybody can listen to what's on the air. For example, in @fig-attack-sniffing Alice sends a message to Bob over the air without any encryption. Eve can listen to the message and read it. She knew that Alice sends a message to Bob and what the message was.
   
-  A sniffing attack can be perform for get a secret information or understand a chemical recipe for example. The attack want in most case understand the message. This attack can also be use for other attacks.
+  A sniffing attack can be performed to get secret information or understand a chemical recipe, for example. The attack wants in most case to understand the message. This attack can also be use for other attacks.
 
   == Security Measures
-  To protect against sniffing attack, the communication must be encrypted. The encryption must be strong enough to not be broken by the attacker. A simple encryption by simetrical key worth it. A specific attention to the key exchange must be done. At least an exchange with Diffie-Hellman protocol is recommanded for been protected againt sniffing attack.
+  To protect against sniffing attack, the communication must be encrypted. The encryption must be strong enough to not be broken by the attacker. A simple encryption by symmetrical key, worth it. A specific attention to the key exchange must be done. At least an exchange with Diffie-Hellman protocol is recommanded for be protected against sniffing attack.
 ]
 
 #let fig = [

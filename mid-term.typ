@@ -26,9 +26,9 @@
 //- INTRODUCTION -
 //----------------
 = Introduction
-At #school.shortname, students in #school.specialisation specialisation have a course on #gls("ot") Security. This course is getting a bit old and will be redone for next year. The aim of my Bachelor thesis is too create some attack scenario that can be use on this course for made an laboratory with students. This cases could also be used for industrial formation partenership with #school.shortname. I should implement between 3 and 4 attack scenario with at least one wireless and one with modbus.
+At #school.shortname, students in #school.specialisation specialisation have a course on #gls("ot") Security. This course is getting a bit old and will be redone for next year. The aim of my Bachelor's thesis is to create some attack scenario that can be used on this course for made a laboratory with students. These cases could also be used for industrial formation partnership with #school.shortname. I should implement between 3 and 4 attack scenarios with at least one wireless and one with modbus.
 
-I choose this Thesis due ok my keen interest in Security and PEN-testing. I already did some basic hetickal hacking for fun and would like to specialise in security of embedded systems during the remainder of my studies. This Thesis is a good opportunity to start in this field and I already enrolled for a master's degree to continue on this way.
+I chose this Thesis due to my keen interest in Security and PEN-testing. Furthermore, I already did some basic ethical hacking for fun and would like to specialize in security of embedded systems during the remainder of my studies. This Thesis is a good opportunity to start in this field and I already enrolled for a master's degree to continue on this way.
 
 This midterm report will present the planning of the Thesis, an analysis of some attacks, some communication medium and some simulation environments and finally a conclusion and next steps of my Thesis. 
 
@@ -43,8 +43,8 @@ This midterm report will present the planning of the Thesis, an analysis of some
 //------------
 #pagebreak() 
 = Analysis <sec:analysis>
-This section will abord some attacks, communication medium and simulation environments that could be used in the laboratory.
-This section is helpful for choosing the right attack on the right medium and the right simulation environment been usefull for the futur laboratory. For the communication medium, it was on the brief of this Thesis to use modbus. For wireless medium, it have to keep it mind that the aim is to perform an attack with the #gls("flipper")
+This section will aboard some attacks, communication mediums and simulation environments that could be used in the laboratory.
+This section is helpful for selecting the right attack on the right medium and the right simulation environment, been useful for the future laboratory. For the communication medium, it was on the brief of this Thesis to use modbus. For wireless medium, it has to keep it in mind that the aim is to perform an attack with the #gls("flipper")
 
 #subject(
   "03-analysis",

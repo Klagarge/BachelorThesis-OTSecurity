@@ -9,5 +9,5 @@
 } // END OF HEADER
 
 = Spoofing  <subj:attack-spoofing>
-This attack is escpecially in the context of network security. A spoofing attack is when an attack can impersonnate another device. This attack is mainly use in combination of other attacks. For example it's escpecially used on wifi communication with fake wifi hotspot.
-This attack is less interresting in the context of OT security. We won't takl more about this attack in the followinf pages.
+This attack is especially in the context of network security. A spoofing attack is when an attack can impersonate another device. This attack is mainly used in combination of other attacks. For example, it's especially used for Wi-Fi communication with fake Wi-Fi hotspot.
+This attack is less interesting in the context of OT security. We won't take more about this attack in the following pages.

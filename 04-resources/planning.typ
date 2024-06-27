@@ -84,7 +84,7 @@
     )
 
     gantt.task(
-      [Indepence weeks],
+      [Independence weeks],
       (datetime(year: 2024, month: 07, day: 15), 3, false),
     )
     

@@ -40,7 +40,7 @@
       key: "ot",
       short: "OT",
       long: "Operational Technology",
-      description: [Operational Technology (OT) is hardware and software that detects or causes a change through the direct monitoring and/or control of physical devices, processes and events in the enterprise.],
+      description: [Operational Technology (OT) is hardware and software that detects or causes a change through the direct monitoring and/or control of physical devices, processes, and events in the enterprise.],
     ),
     (
       key: "ics",
@@ -141,7 +141,7 @@
       short: "ASK",
       long: "Amplitude-Shift Keying",
       group: "Communications",
-      description: [Amplitude-shift keying (ASK) is a form of modulation in which the amplitude of a carrier wave is varied in proportion to that of a modulating signal.],
+      description: [Amplitude-shift keying (ASK) is a form of modulation in which the amplitude of a carrier wave is varied proportionally to that of a modulating signal.],
     ),
     (
       key: "fsk",
