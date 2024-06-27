@@ -9,4 +9,5 @@
 } // END OF HEADER
 
 = Canbus  <subj:comm-canbus>
-#todo("")
+Canbus is a communication protocol developed by Bosch in 1986. It is widely used in automobile industry. 
+#todo([])
