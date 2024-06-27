@@ -13,7 +13,8 @@
   An attack by #gls("dos") is an attack that aims to make a service anavailable #cite(<Wikipedia-DenialofserviceAttack2024>). To reach this goal, a device send an large amount of message to surcharge a device or a network. In @fig-attack-dos we can see that Mallory want surcharge Bob with message. Bob can't answer to all the message and become unavailable. In #gls("it") world, it more often a #gls("ddos") because usually severs are more powerfull than a computer. The attacker distribute the attack on multiple device to make the attack more difficult to block. In #gls("ot") world, it's useless to perform a #gls("ddos") for make a device unavailable, a #gls("dos") with a capable computer is enough. An other point of view is that #gls("ot") world is usually in closed loop network and not accessible from outside.
 
   #infobox()[
-    Did you know that when the Apollo 11 mission landed on the moon, the navigation system was so overloaded due to a defect sensor that the navigation system crashed #cite(<-LunarMissionsApollo>), forcing Neil Armstrong to take manual control of the landing ? This is an example of an unintentional #gls("dos").
+    Did you know that when the Apollo 11 mission landed on the moon, the navigation system was so overloaded due to a defect sensor that the navigation system crashed #cite(<-LunarMissionsApollo>), forcing Neil Armstrong to take manual control of the landing ? \
+    This is an example of an unintentional #gls("dos").
   ]
 
   == Security Measures
