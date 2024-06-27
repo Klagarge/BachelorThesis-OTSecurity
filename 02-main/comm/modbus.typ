@@ -12,7 +12,7 @@
 Modbus is a communication protocol developed by Modicon in 1979. The device requesting the information is called the Modbus Master and the devices supplying information are Modbus Slaves. The client (master) sends a request to read or write data to a server (slave). Modbus was originally designed for serial communication (call Modbus #gls-short("rtu")). It has since been adapted for use over #gls-short("tcp")/#gls-short("ip") (call Modbus #gls-short("tcp")).
 
 == Modbus #gls-short("rtu")
-Modbus with #gls("rtu") is a serial communication, compated, binary representation of the data. It transported on physical layer RS232 or RS485 #cite(<-SNIEC6276911522020>). For add a bit of error-detecting, Modbu gls("rtu") use a #gls("crc")-16 bits checksum. 
+Modbus with #gls("rtu") is a serial communication, compated, binary representation of the data. It transported on physical layer RS232 or RS485 #cite(<ISO74981>). For add a bit of error-detecting, Modbu gls("rtu") use a #gls("crc")-16 bits checksum. 
 
 #tablex(
   columns: (1fr, 1fr),
