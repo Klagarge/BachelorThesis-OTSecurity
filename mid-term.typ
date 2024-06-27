@@ -22,6 +22,16 @@
 // Content
 //
 
+//----------------
+//- INTRODUCTION -
+//----------------
+= Introduction
+At #school.shortname, students in #school.specialisation specialisation have a course on #gls("ot") Security. This course is getting a bit old and will be redone for next year. The aim of my Bachelor thesis is too create some attack scenario that can be use on this course for made an laboratory with students. This cases could also be used for industrial formation partenership with #school.shortname. I should implement between 3 and 4 attack scenario with at least one wireless and one with modbus.
+
+I choose this Thesis due ok my keen interest in Security and PEN-testing. I already did some basic hetickal hacking for fun and would like to specialise in security of embedded systems during the remainder of my studies. This Thesis is a good opportunity to start in this field and I already enrolled for a master's degree to continue on this way.
+
+This midterm report will present the planning of the Thesis, an analysis of some attacks, some communication medium and some simulation environments and finally a conclusion and next steps of my Thesis. 
+
 //------------
 //- PLANNING -
 //------------
@@ -42,23 +52,6 @@ This section is helpful for choosing the right attack on the right medium and th
   after:<sec:analysis>,
   before:<sec:conclusion>,
 )
-
-//----------
-//- DESIGN -
-//----------
-/*
-#pagebreak()
-= Design <sec:design>
-
-#todo("")
-
-#subject(
-  "04-design",
-  heading-offset: 1,
-  after:<sec:design>,
-  before:<sec:conclusion>,
-)
-*/
 
 //--------------
 //- CONCLUSION -
