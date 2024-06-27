@@ -23,7 +23,7 @@
 
 #let fig = [
   #figure(
-    image("dos.svg", width: 15em),
+    image("dos.svg", width: size-fig.attacks),
     caption: [#gls-short("dos") attack]
   ) <fig-attack-dos>
 ] 

@@ -53,6 +53,11 @@
 )
 #let depth = 3
 
+#let size-fig = (
+  attacks: 15em,
+  simu-env: 80%,
+)
+
 #let icons = (
   topleft: resources-folder + "logos/hei-vs-light.svg",
   topright: resources-folder + "logos/hesso-logo.svg",
