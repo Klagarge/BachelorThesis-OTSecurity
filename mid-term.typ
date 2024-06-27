@@ -33,7 +33,8 @@
 //------------
 #pagebreak() 
 = Analysis <sec:analysis>
-#todo("")
+This section will abord some attacks, communication medium and simulation environments that could be used in the laboratory.
+This section is helpful for choosing the right attack on the right medium and the right simulation environment been usefull for the futur laboratory. For the communication medium, it was on the brief of this Thesis to use modbus. For wireless medium, it have to keep it mind that the aim is to perform an attack with the #gls("flipper")
 
 #subject(
   "03-analysis",
