@@ -44,6 +44,11 @@
   year: datetime.today().display("[year]"),
 )
 
+#let planning = (
+  today: false,
+  filip: false,
+)
+
 #let tableof = (
   toc: true,
   tof: false,

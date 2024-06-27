@@ -22,11 +22,11 @@
 // Content
 //
 
+//------------
+//- PLANNING -
+//------------
+#subject("planning", heading-offset: 0)
 
-//#include "02-main/00-acknowledgements.typ"
-//#include "02-main/planning.typ"
-//#include "02-main/01-abstract.typ"
-//#include "02-main/02-introduction.typ"
 
 //------------
 //- ANALYSIS -

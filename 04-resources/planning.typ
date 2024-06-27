@@ -30,7 +30,7 @@
   header-months: true,
   header-week-number: true,
   header-week-date: true,
-  today-line: true,
+  today-line: planning.today,
   {
 
     gantt.task(
@@ -40,33 +40,28 @@
     
     gantt.task(
       [Define specifications], // 1
-      (datetime(year: 2024, month: 06, day: 3),1),
+      (datetime(year: 2024, month: 06, day: 5),1),
     )
 
     gantt.task(
       [Familiarization with wireless], // 2
-      (datetime(year: 2024, month: 06, day: 6), 1.8),
-      //(datetime(year: 2024, month: 06, day: 10), 0.4), // environnement
-      //(datetime(year: 2024, month: 06, day: 26), 0.4), // replay
-      //(datetime(year: 2024, month: 07, day: 12), 0.2), // dos
-      //(datetime(year: 2024, month: 07, day: 22), 0.4), // mitm
-      //(datetime(year: 2024, month: 08, day: 7), 0.6), // mitm enc.
+      (datetime(year: 2024, month: 06, day: 12), 1.6),
     )
 
     gantt.task(
       [Create simulation environnement], // 2
-      (datetime(year: 2024, month: 07, day:02), 1.4),
+      (datetime(year: 2024, month: 07, day:01), 1),
+      (datetime(year: 2024, month: 07, day:15), 1),
     )
     
     gantt.task(
-      [MitM scenario], // 2
-      (datetime(year: 2024, month: 06, day: 21), 1),
-      (datetime(year: 2024, month: 07, day: 11), 1),
+      [#gls-short("mitm") scenario], // 2
+      (datetime(year: 2024, month: 07, day: 1), 2),
     )
 
     gantt.task(
-      [MitM enc. scenario], // 3
-      (datetime(year: 2024, month: 07, day: 18), 2.4),
+      [#gls-short("mitm") enc. scenario], // 3
+      (datetime(year: 2024, month: 07, day: 22), 2),
     )
 
     gantt.task(
@@ -75,25 +70,32 @@
     )
     
     gantt.task(
-      [Dos scenario], // 1
+      [#gls-short("dos") scenario], // 1
       (datetime(year: 2024, month: 08, day: 19), 1),
     )
 
-    //gantt.task([Other good practices], (datetime(year: 2024, month: 08, day: 22), 0))
-
     gantt.task(
-      [report],
+      [Report / Presentation],
       (date.start, date.submission, true),
-      (datetime(year: 2024, month: 06, day: 19), datetime(year: 2024, month: 06, day: 24), false),
-      (datetime(year: 2024, month: 06, day: 21), datetime(year: 2024, month: 06, day: 26), false, true),
-      (datetime(year: 2024, month: 06, day: 28), datetime(year: 2024, month: 07, day: 01)),
+      (datetime(year: 2024, month: 06, day: 24), 1),
+      (datetime(year: 2024, month: 08, day: 26), 1),
+      //(datetime(year: 2024, month: 06, day: 21), datetime(year: 2024, month: 06, day: 26), false, true),
       //(datetime(year: 2024, month: 07, day: 02), date.submission),
     )
 
     gantt.task(
-      [Indepence week],
-      (datetime(year: 2024, month: 07, day: 15), 3),
+      [Indepence weeks],
+      (datetime(year: 2024, month: 07, day: 15), 3, false),
     )
+    
+    if planning.filip {
+      gantt.task(
+        [Filip],
+        (datetime(year: 2024, month: 07, day: 14),
+        datetime(year: 2024, month: 07, day: 19),
+        true)
+      )
+    }
 
     gantt.milestone(
       [Mid-term \ presentation],
