@@ -19,6 +19,13 @@
 #print-glossary(
   (
     (
+      key: "sdg",
+      short: "SDG",
+      long: "Sustainable Development Goal",
+      plural: "SDGs",
+      longpural: "Sustainable Development Goals"
+    ),
+    (
       key: "it",
       short: "IT",
       long: "Information Technology",

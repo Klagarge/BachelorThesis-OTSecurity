@@ -37,6 +37,10 @@ This midterm report presents the planning of the thesis, an analysis of various 
 //------------
 #subject("planning", heading-offset: 0)
 
+//------------------
+//- SUSTAINABILITY -
+//------------------
+#subject("sustainability", heading-offset: 0)
 
 //------------
 //- ANALYSIS -
