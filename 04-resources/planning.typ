@@ -55,12 +55,12 @@
     )
     
     gantt.task(
-      [#gls-short("mitm") scenario], // 2
+      [#gls("mitm", long: false) scenario], // 2
       (datetime(year: 2024, month: 07, day: 1), 2),
     )
 
     gantt.task(
-      [#gls-short("mitm") enc. scenario], // 3
+      [#gls("mitm", long: false) enc. scenario], // 3
       (datetime(year: 2024, month: 07, day: 22), 2),
     )
 
@@ -70,7 +70,7 @@
     )
     
     gantt.task(
-      [#gls-short("dos") scenario], // 1
+      [#gls("dos", long: false) scenario], // 1
       (datetime(year: 2024, month: 08, day: 19), 1),
     )
 

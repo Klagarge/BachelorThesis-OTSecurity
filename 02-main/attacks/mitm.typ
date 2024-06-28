@@ -11,16 +11,16 @@
 
 = #gls-long("mitm") - Connected  <subj:attack-mitm>
 #let body-mitm = [
-  A #gls("mitm") attack occurs when a third party can intercept actively, modified or send packets on a network #cite(<Wikipedia-ManinthemiddleAttack2024>). Most common #gls("mitm") attack are done with a new device connected in star or bus network topology. Once connected to the network, Mallory (@fig-attack-mitm) can perform a sniffing attack or send a message. The aim is often to understand an Alice message, modified it and send it to Bob.
+  A #gls("mitm") attack occurs when a third party can intercept actively, modified or send packets on a network #cite(<Wikipedia-ManinthemiddleAttack2024>). Commonly, this involves connecting a new device to a star or bus network topology. Once connected to the network, Mallory (@fig-attack-mitm) can perform a sniffing attack or send a message. The aim is often to understand an Alice message, modified it and send it to Bob.
 
   == Security Measures
-  For protect messages to being intercepted, modified or impersonated, an encryption with a symmetric key can be used. The key can be exchanged with a standard #gls("d-h") exchange.
+  Encryption with a symmetrical key can be used to protect the message from being intercepted, modified or impersonated. The key can be exchanged with a standard #gls("d-h") exchange.
 ]
 
 #let fig-mitm = [
   #figure(
     image("mitm-connected.png", width: size-fig.attacks),
-    caption: [#gls-short("mitm") on a connected network]
+    caption: [#gls("mitm", long: false) on a connected network]
   ) <fig-attack-mitm>
 ]
 #wrap-content(
@@ -35,13 +35,13 @@
   Even with the security measures see on @subj:attack-mitm, Mallory was able to impersonate Alice and Bob with create its own key with each other. This is why a #gls("mitm") attack is so dangerous.
 
   == Security Measures
-  When a Mallory attacker can intercept all messages exchanged since the beginning of the communication, it isn't possible to be sure that the message is from the right person. We need to trust someone before. That's what certificates are for. Certificate are signed by a trusted third party and can be used to verify the identity of the person. The most common certificate is #gls("x509") certificate.
+  When a Mallory attacker can intercept all messages exchanged since the beginning of the communication, it isn't possible to be sure that the message is from the right person. We need to trust someone before. Certificates are made for that. There are signed by a trusted third party and can be used to verify the identity of the person or device. The most common certificate is #gls("x509") certificate.
 ]
 
 #let fig-mitm-full = [
   #figure(
     image("mitm-full.png", width: size-fig.attacks),
-    caption: [#gls-short("mitm") intercept everything]
+    caption: [#gls("mitm", long: false) intercept everything]
   ) <fig-attack-mitm-full>
 ]
 

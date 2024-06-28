@@ -23,8 +23,8 @@
   columns: (1fr, 0.5fr, 1fr),
   stroke: none,
   [
-    Before starting the implementation of some attacks, it's important to be well-informed about all the topics around this project. This is why the first step is to do some research about #gls("ot") security. The simulation environment is essential so that this Bachelor's thesis can be re-used in the laboratory. It's why I also spent a week on it (Hide on "Define Specifications"). Wireless communication is another non-trivial point that needs to be dealt with properly. \
-    After all this research, I have to properly explain everything in the first part of this report in @sec:analysis. It's a dedicated time for the report, but a bit of it is also done all along the project.
+    Before beginning the implementation of some attacks, it's crucial to be well-informed about all aspects of this project. Hence, the first step involves thorough research on #gls("ot") security. The simulation environment is essential so that this Bachelor's thesis can be reused in the laboratory. Consequently, I spent a week on it (Hide on "Define Specifications"). Wireless communication is another non-trivial point that needs to be handled properly. \
+    After conducting the research, I have to properly explain everything in the first part of this report in @sec:analysis. There is a time dedicated to the report, but a bit of it is also done all along the project.
   ]
 )
 

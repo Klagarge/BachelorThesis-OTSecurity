@@ -151,6 +151,20 @@
       description: [Frequency-shift keying (FSK) is a frequency modulation scheme in which digital information is transmitted through discrete frequency changes of a carrier wave.],
     ),
     (
+      key: "2fsk",
+      short: "2FSK",
+      long: "2-Level Frequency-Shift Keying",
+      group: "Communications",
+      description: [2-Level Frequency-Shift Keying (2-FSK) is a form of #gls("fsk") modulation that uses two levels of frequency to encode digital data.],
+    ),
+    (
+      key: "4gfsk",
+      short: "4GFSK",
+      long: "4-Level Gaussian Frequency-Shift Keying",
+      group: "Communications",
+      description: [4-Level Gaussian Frequency-Shift Keying (4-GFSK) is a form of #gls("fsk") modulation that uses four levels of Gaussian filtering to encode digital data.],
+    ),
+    (
       key: "2gfsk",
       short: "2-GFSK",
       long: "2-Level Gaussian Frequency-Shift Keying",
@@ -161,6 +175,27 @@
       key: "flipper",
       short: "Flipper Zero",
       description: [Flipper Zero is a portable multi-tool for pentesters and geeks in a toy-like body.],
+    ),
+    (
+      key: "plc",
+      short: "PLC",
+      long: "Programmable Logic Controller",
+      plural: "PLCs",
+      longplural: "Programmable Logic Controllers",
+      description: [A programmable logic controller (PLC) is an industrial digital computer that has been ruggedized and adapted for the control of manufacturing processes, such as assembly lines, robotic devices, or any activity that requires high-reliability control and ease of programming.],
+    ),
+    (
+      key: "tls",
+      short: "TLS",
+      long: "Transport Layer Security",
+      description: [Transport Layer Security (TLS) is a cryptographic protocol that provides communications security over a computer network.],
+      group: "Cryptography",
+    ),
+    (
+      key: "hmi",
+      short: "HMI",
+      long: "Human-Machine Interface",
+      description: [A human-machine interface (HMI) is a user interface or dashboard that connects a person to a machine, system, or device.],
     )
 
   ),

@@ -16,12 +16,13 @@
 )
 
 = Factory I/O  <subj:simu-env-factoryio>
-Factory I/O is made by Real Games. It's a realistic simulation software that can be used to simulate a factory. It's possible to create custom scenes. This software has an expensive licence that as to be considered for choosing the simulation environment. Factory I/O might also be interesting for Power & Control. This software can be interfaced with modbus over #gls("tcp") but a third software is needed to add a security layer. The software is only available on Windows, but it works quite well with wine on Linux.
-
-== Scenario idea
-A scenario could be that the PLC controls the #link("https://www.youtube.com/watch?v=ZpwXXEYDZsY")[palletizer scene] (@fig-simu-env-factoryio-palletizer). A Wireless sensor could indicate the presence of a truck to be loaded. The Wireless replay attack could be done on this sensor. The DoS attack could be done on the same sensor. The MitM attacks could be made on the Modbus/TCP communication between the PLC and the palletizer, and the goal would be to control the clamp.
+Factory I/O, developed by Real Games, is a realistic simulation software designed to emulate a factory environment. It allows for the creation of custom scenes, providing flexibility for various industrial scenarios. 
+However, the software comes with an expensive licence, which must be considered when selecting the simulation environment. Factory I/O could also be beneficial for Power & Control specialization. This software can interface with modbus over #gls("tcp"), but an additional third-party software is required to implement a security layer. While Factory I/O is only available on Windows, it operates effectively on Linux using Wine.
 
 #figure(
   image("factoryio-palletizer.png", width: size-fig.simu-env),
   caption: [Factory I/O palletizer scene]
 ) <fig-simu-env-factoryio-palletizer>
+
+== Scenario idea
+In this scenario, a #gls("plc") could control the #link("https://www.youtube.com/watch?v=ZpwXXEYDZsY")[palletizer scene] (@fig-simu-env-factoryio-palletizer). A Wireless sensor could indicate the presence of a truck to be loaded. The Wireless replay attack could target this sensor. The #gls("dos") attack could be executed on the same sensor. The #gls("mitm") attacks could be conducted on the Modbus/#gls("tcp") communication between the #gls("plc") and the palletizer, with the objective of gaining control over the clamp.
