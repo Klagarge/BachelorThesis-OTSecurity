@@ -15,6 +15,8 @@
 //   unshift_prefix("", it.body)
 // }
 
+//#set page(columns: 2)
+//#set text(smaller)
 = Glossary <sec:glossary>
 #print-glossary(
   (
@@ -210,4 +212,5 @@
   show-all: false,
   // disable the back ref at the end of the descriptions
   disable-back-references: false,
+  
 )

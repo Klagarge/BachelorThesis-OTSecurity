@@ -27,7 +27,7 @@
   v(5em)
 
   [
-    *Declaration of honor*
+    *Declaration of honor* \
     I, undersigned, #author.name, hereby declare that the work submitted is the result of a personal work. I certify that I have not resorted to plagiarism or other forms of fraud. All sources of information used and the author quotes were clearly mentioned.
   ]
 
