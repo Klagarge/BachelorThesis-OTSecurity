@@ -30,7 +30,7 @@ Different communication mediums are vulnerable to these attacks, highlighting th
 #subject("comm/wmbus", heading-offset: 2)
 
 = Simulation environments <sec:analysis-simu-env>
-As this thesis is part of the preparation of a new laboratory, the simulation environment must extend beyond abstract communication. The objective is to have a real physical controller interfaced with a simulated process. A simulated environment remains necessary because a fully physical setup is prohibitively expensive and far less flexible than a simulated one.
+As this thesis is part of the preparation of a new laboratory, the simulation environment must extend beyond abstract communication. The objective is to have a real physical controller interfaced with a simulated process. This simulated process remains necessary because a fully physical setup is prohibitively expensive and far less flexible than a simulated one.
 
 #subject("simu-env/factoryio", heading-offset: 2)
 //#pagebreak()
@@ -46,7 +46,7 @@ The planned attacks include a replay attack on a wireless control or sensor, a #
 
 Wired communication will be carried out using Modbus, a widely used protocol in #gls("ot") systems, which aligns with the brief for this thesis. 
 
-For the Replay attack on a wireless control or sensor, the idea is to use the #gls("flipper") to record and replay a message. This attack will be performed only on the physical layer. The #gls("flipper") can only execute such ab attack on basic wireless protocols, as it cannot perform a replay attack on frequency hopping protocols. The wireless protocol must employ #gls("ook"), #gls("ask") (with 270 or 650 kHz Bandwidth) or #gls("2fsk") modulation.
+For the Replay attack on a wireless control or sensor, the idea is to use the #gls("flipper") to record and replay a message. This attack will be performed only on the physical layer. The #gls("flipper") can only execute such an attack on basic wireless protocols, as it cannot perform a replay attack on frequency hopping protocols. The wireless protocol must employ #gls("ook"), #gls("ask") (with 270 or 650 kHz Bandwidth) or #gls("2fsk") modulation.
 Consequently, protocols like Zigbee or DigiMesh are not suitable for this attack and were not explored in depth.
 
 #gls("wmbus") is a single canal #gls("2gfsk") protocol, is well-suited for replay attacks using the #gls("flipper"). Given that typical #gls("wmbus") T-mode application include electricity or water meters, incorporating such meters into the simulation would be relevant with a replay attack targeting these devices. \
