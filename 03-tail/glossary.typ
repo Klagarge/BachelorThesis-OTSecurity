@@ -8,7 +8,7 @@
   }
 } // END OF HEADER
 
-#pagebreak()
+//#pagebreak()
 // #show heading.where(level: 1): (it) => {
 //   set text(size: huge)
 //   set block(above: 1.2em, below: 1.2em)
@@ -17,7 +17,7 @@
 
 //#set page(columns: 2)
 //#set text(smaller)
-= Glossary <sec:glossary>
+//= Glossary <sec:glossary>
 #print-glossary(
   (
     (

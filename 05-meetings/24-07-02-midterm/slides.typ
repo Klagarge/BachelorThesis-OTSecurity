@@ -34,5 +34,10 @@
 ]
 
 
-#slide(title: [Planning])[#include "../../04-resources/plannings/00-initial.typ"]
+#slide(title: [Planning])[#include "/04-resources/planning.typ"]
+#slide(title: [Glossary])[
+  #set text(size: 15pt)
+  #include "/03-tail/glossary.typ"
+  ]
+
 

@@ -16,7 +16,7 @@
 )
 
 = Home I/O  <subj:simu-env-homeio>
-Home I/O is also developed by Real Games, simulates a House equipped with extensive home automation features (@fig-simu-env-homeio). This software is available at a lower organizational licence cost and could be of interest to ETE students. Home I/O offers a REST API for interfacing with all sensors and actuators. Similar to Factory I/O, it runs well on Linux using Wine.
+Home I/O is also developed by Real Games, simulates a House (@fig-simu-env-homeio) equipped with extensive home automation features. This software is available at a lower organizational licence cost and could be of interest to ETE students. Home I/O offers a REST API for interfacing with all sensors and actuators. Similar to Factory I/O, it runs well on Linux using Wine.
 
 #figure(
   image("home-io.jpg", width: size-fig.simu-env),

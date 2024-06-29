@@ -60,12 +60,8 @@ It aids in selecting the appropriate attack on the right medium and simulation e
 //--------------
 //- CONCLUSION -
 //--------------
-// #pagebreak()
-// = Conclusion <sec:conclusion>
-// #todo([
-// ])
-
-
+#pagebreak()
+= Glossary <sec:glossary>
 #include "03-tail/glossary.typ"
 
 //#include "03-tail/a-appendix.typ"
