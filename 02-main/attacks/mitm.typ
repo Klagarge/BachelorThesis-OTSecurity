@@ -29,6 +29,7 @@
   align: top + right,
 )
 
+#pagebreak()
 = #gls-long("mitm") - Full interception <subj:attack-mitm-full>
 #let body-mimt-full = [
   When Mallory is on the gateway or between Alice and Bob like in @fig-attack-mitm-full Mallory can intercept all messages and neither Alice nor Bob can be sure that they send and receive messages to the right person. This is the most dangerous attack because Mallory can impersonate Alice and Bob and send a message to the other person.

@@ -14,11 +14,12 @@ Numerous attacks can occur in the context of OT security and can be classified i
 
 #subject("attacks/sniffing", heading-offset: 2)
 #subject("attacks/spoofing", heading-offset: 2)
+#pagebreak()
 #subject("attacks/dos", heading-offset: 2)
+#pagebreak()
 #subject("attacks/replay", heading-offset: 2)
 #subject("attacks/mitm", heading-offset: 2)
 
-//#pagebreak()
 = Communications medium <sec:analysis-comm>
 Different communication mediums are vulnerable to these attacks, highlighting the critical distinction between #gls("it") and #gls("ot") security. In #gls("ot") security, communication is a highly sensitive aspect, and historically, security measures were minimal or non-existent #cite(<OldWaysOT>).
 
@@ -29,11 +30,12 @@ Different communication mediums are vulnerable to these attacks, highlighting th
 //#subject("comm/zigbee", heading-offset: 2)
 #subject("comm/wmbus", heading-offset: 2)
 
+#pagebreak()
 = Simulation environments <sec:analysis-simu-env>
 As this thesis is part of the preparation of a new laboratory, the simulation environment must extend beyond abstract communication. The objective is to have a real physical controller interfaced with a simulated process. This simulated process remains necessary because a fully physical setup is prohibitively expensive and far less flexible than a simulated one.
 
 #subject("simu-env/factoryio", heading-offset: 2)
-//#pagebreak()
+#pagebreak()
 #subject("simu-env/homeio", heading-offset: 2)
 #subject("simu-env/minecraft", heading-offset: 2)
 

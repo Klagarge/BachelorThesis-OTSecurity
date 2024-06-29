@@ -59,7 +59,8 @@
 #let depth = 3
 
 #let size-fig = (
-  dsg: 8em,
+  dsg: 7em,
+  dsg-side: left,
   attacks: 15em,
   simu-env: 70%,
 )

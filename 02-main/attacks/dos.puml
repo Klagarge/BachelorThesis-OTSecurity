@@ -1,9 +1,12 @@
 @startuml
-loop every 200ms
-    Alice -> Bob: Standard request
-    Bob --> Alice: Standard Response
-end
-loop every 1ms
-    Mallory -> Bob: DoS attack request
-end
+Alice ->  Bob ++: Standard request
+Bob --> Alice--: Standard Response
+Alice -> Bob++: Standard request
+Bob --> Alice--: Standard Response
+
+Mallory -> Bob++: DoS attack
+
+Alice -> Bob: Standard request
+Alice -> Bob: Standard request
+
 @enduml
