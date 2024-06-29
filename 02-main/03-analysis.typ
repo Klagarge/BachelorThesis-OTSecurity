@@ -20,7 +20,7 @@ Numerous attacks can occur in the context of OT security and can be classified i
 
 //#pagebreak()
 = Communications medium <sec:analysis-comm>
-Different communication mediums are vulnerable to these attacks, highlighting the critical distinction between #gls("it") and #gls("ot") security. In #gls("ot") security, communication is a highly sensitive aspect, and historically, security measures were minimal or non-existent.
+Different communication mediums are vulnerable to these attacks, highlighting the critical distinction between #gls("it") and #gls("ot") security. In #gls("ot") security, communication is a highly sensitive aspect, and historically, security measures were minimal or non-existent #cite(<OldWaysOT>).
 
 #subject("comm/modbus", heading-offset: 2)
 //#subject("comm/canbus", heading-offset: 2)
