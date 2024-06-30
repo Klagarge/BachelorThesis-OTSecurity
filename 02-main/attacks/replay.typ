@@ -18,7 +18,7 @@
  
  When both devices communicate together in a bidirectional transmission, it is possible to add a timestamp to the message and sign the hash.
 
- When communication is broadcast, the sender device is often not directly connected to other devices. In this case, it is not possible to have a timestamp. Using rolling codes is a good way to secure against replay attacks. The rolling code is a value that changes at each message. Both devices use a pseudo-random number generator. The receiver device can check whether the code matches the next in the sequence. 
+ When communication is broadcast, the sender device is often not directly connected to other devices. In this case, it is not possible to have a timestamp. Using rolling codes is a good way to secure against replay attacks. The rolling code is a value that changes at each message. Both devices use a pseudo-random number generator. The receiver device can check whether it is a valid subsequent code. 
 ]
 
 #let fig = [
