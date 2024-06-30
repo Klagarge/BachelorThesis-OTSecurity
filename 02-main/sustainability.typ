@@ -10,7 +10,7 @@
 // END OF HEADER
 
 = Impact on Sustainability
-This section explores the impact of this thesis on sustainability, with a specific focus on the United Nations #glspl("sdg") /*(@fig-SDG)*/. By examining the intersection of OT security and sustainability, this section demonstrates how securing industrial and home automation systems contributes to achieving global sustainability targets.
+This section explores the impact of this thesis on sustainability, with a specific focus on the United Nations' #glspl("sdg") /*(@fig-SDG)*/. By examining the intersection of OT security and sustainability, this section demonstrates how securing industrial and home automation systems contributes to achieving global sustainability targets.
 /*
 #align(
   center,
