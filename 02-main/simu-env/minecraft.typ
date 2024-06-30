@@ -16,7 +16,7 @@
 )
 
 = Minecraft  <subj:simu-env-minecraft>
-Another suitable approach would be to use the Electrical Age world of Minecraft (@fig-simu-env-minecraft-eln-world) which was previously utilized in a Telecommunication course. The goal of this lab was to control a Factory and an energy system to maximize production. Continuing this lab could provide valuable opportunities for students to explore and secure communication systems. In Minecraft, security can be implemented using Open Computers or by creating an extension mod for Modbus over #gls("tls"), which might be simpler than using Lua with Open Computers.
+Another suitable approach would be to use the Electrical Age world in Minecraft (@fig-simu-env-minecraft-eln-world) which was previously featured in a telecommunication course. The goal of this lab was to control a factory and energy system to maximize production. Continuing this laboratory could provide valuable opportunities for students to explore and secure communication systems. In Minecraft, security can be implemented using the Open Computers mod or by creating an extension mod for Modbus over #gls("tls"), which might be simpler than using Lua with Open Computers.
 
 #figure(
   image("minecraft-eln-world.png", width: size-fig.simu-env),
@@ -24,4 +24,4 @@ Another suitable approach would be to use the Electrical Age world of Minecraft 
 ) <fig-simu-env-minecraft-eln-world>
 
 == Scenario idea
-The scenario involves reusing the #gls("plc") from the previous lab, which controls various operations. A physical #gls("hmi") could be constructed to manage the factory and coal production, similar to the HTLM interface used in the previous lab. A wind wireless sensor could be added to the setup. Wireless replay and #gls("dos") attack could be targeting this sensor. The #gls("mitm") attacks could be executed on the Modbus/#gls("tcp") communication between the #gls("plc") and the Factory, with the goal of gaining control over the Factory operations.
+The scenario involves reusing the #gls("plc") from the previous lab, which controls various operations. A physical #gls("hmi") could be constructed to manage the factory and coal production, similar to the HTML interface used in the previous lab. A wind wireless sensor could be added to the setup. Wireless replay and #gls("dos") attacks could target this sensor. #gls("mitm") attacks could be executed on the Modbus/#gls("tcp") communication between the #gls("plc") and the factory, with the goal of gaining control over the factory's operations.
