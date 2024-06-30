@@ -34,10 +34,6 @@
 ]
 
 
-#slide(title: [Planning])[#include "/04-resources/planning.typ"]
-#slide(title: [Glossary])[
-  #set text(size: 15pt)
-  #include "/03-tail/glossary.typ"
-  ]
+#slide(title: [Planning])[#include "/04-resources/planning.typ";#set text(size: 0pt);#include "/03-tail/glossary.typ"]
 
 
