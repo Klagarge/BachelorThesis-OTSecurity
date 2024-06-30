@@ -33,5 +33,6 @@ Modbus with #gls("rtu") is a serial, compacted, binary representation of the dat
   ]
 )
 
+#pagebreak()
 == Modbus #gls("tcp", long: false)
 Modbus over #gls("tcp") is a modern adaptation of Modbus. It is also a binary protocol, but transported over #gls("tcp"). This adaptation eliminates the need for #gls("crc") due to inherent error detection in #gls("tcp"). The rest of the frame is composed like Modbus #gls("rtu") and the default port for Modbus #gls("tcp") is 502.

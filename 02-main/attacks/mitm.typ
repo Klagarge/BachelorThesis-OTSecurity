@@ -14,7 +14,7 @@
   A #gls("mitm") attack occurs when a third party can actively intercept, modify or send packets on a network #cite(<Wikipedia-ManinthemiddleAttack2024>). Usually, this involves connecting a new device to a star or bus network topology. Once connected to the network, Mallory (@fig-attack-mitm) can perform a sniffing attack or send a message. The aim is often to intercept an message from Alice, modify it and send it to Bob.
 
   == Security Measures
-  Encryption with a symmetrical key can be used to protect the message from being intercepted, modified or impersonated. The key can be exchanged with the standard #gls("d-h") protocol.
+  Encryption with a symmetrical key can be used to protect the message from being intercepted, modified or impersonated. The key can be exchanged with the standard #gls("d-h") algorithm.
 ]
 
 #let fig-mitm = [
