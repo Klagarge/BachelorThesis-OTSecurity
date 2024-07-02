@@ -40,3 +40,8 @@
 #show link: underline
 
 = 
+matrice de risque
+parler de reverse engeenering
+Plus de contexte
+Expliquer pourquoi tel choix
+Montrer quel couche
