@@ -45,7 +45,7 @@
 )
 
 #let planning = (
-  today: false,
+  today: true,
   filip: false,
 )
 
