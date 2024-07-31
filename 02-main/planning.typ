@@ -28,7 +28,7 @@
   ]
 )
 
-#include "../04-resources/planning.typ"
+#include "/04-resources/planning.typ"
 
 #tablex(
   columns: (1fr, 0.5fr, 1fr),

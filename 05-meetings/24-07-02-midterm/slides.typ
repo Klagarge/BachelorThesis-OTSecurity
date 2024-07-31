@@ -63,7 +63,7 @@
       - On physical layer
     ]
   ][
-    #align(center,image("/02-main/attacks/replay.png", width: 90%))
+    #align(center,image("/02-main/attacks/replay/abm.png", width: 90%))
   ]
 
   #pdfpc.speaker-note(
@@ -87,7 +87,7 @@
       - Valid request
     ]
   ][
-    #align(center,image("/02-main/attacks/dos.svg", width: 60%))
+    #align(center,image("/02-main/attacks/dos/sequence.svg", width: 60%))
   ]
 
   #pdfpc.speaker-note(
@@ -137,7 +137,7 @@
       - Encryption with symetric key (#gls("d-h"))
     ]
   ][
-    #align(center, image("/02-main/attacks/mitm-connected.png", width: 80%))
+    #align(center, image("/02-main/attacks/mitm/abm-connected.png", width: 80%))
   ]
 
   #pdfpc.speaker-note(
@@ -161,7 +161,7 @@
       - Use modbus over #gls("tls", long: false)
     ]
   ][
-    #align(center,image("/02-main/attacks/mitm-full.png", width: 80%))
+    #align(center,image("/02-main/attacks/mitm/abm-full.png", width: 80%))
   ]
 
   #pdfpc.speaker-note(

@@ -9,15 +9,13 @@
 }
 // END OF HEADER
 
+#set page(
+  //paper: "a3",
+  width: 420mm,
+  height: auto,
+  //flipped: true
+)
 
-= Section 1
+#include "/04-resources/planning.typ"
+#include "/04-resources/planningreel.typ"
 
-#lorem(50)
-
-= Section 2
-
-#lorem(50)
-
-= Conclusion
-
-#lorem(50)

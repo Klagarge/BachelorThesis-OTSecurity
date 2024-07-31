@@ -28,7 +28,7 @@
 
 #let fig = [
   #figure(
-    image("dos.svg", width: size-fig.attacks),
+    image("sequence.svg", width: size-fig.attacks),
     caption: [#gls("dos", long: false) attack]
   ) <fig-attack-dos>
 ] 

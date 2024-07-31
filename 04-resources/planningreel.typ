@@ -9,7 +9,8 @@
 
   }
 }
-/*
+
+
 #show: doc => context {
   if bib-state.get() != true {
     bib-state.update(true)
@@ -18,11 +19,10 @@
     doc
   }
 }
-*/
+
 // END OF HEADER
 
 #set text(size: tiny)
-
 
 #show: doc => gantt.create(
   date-beginning: date.start,
@@ -51,17 +51,17 @@
     gantt.task(
       [Create simulation environnement], // 2
       (datetime(year: 2024, month: 07, day:01), 1),
-      (datetime(year: 2024, month: 07, day:15), 1),
+      (datetime(year: 2024, month: 07, day:29), 1),
     )
     
     gantt.task(
-      [MitM scenario], // 2
+      [Mitm scenario], // 2
       (datetime(year: 2024, month: 07, day: 1), 2),
     )
 
     gantt.task(
       [MitM enc. scenario], // 3
-      (datetime(year: 2024, month: 07, day: 22), 2),
+      (datetime(year: 2024, month: 07, day: 15), 2),
     )
 
     gantt.task(
@@ -91,9 +91,9 @@
     if planning.filip {
       gantt.task(
         [Filip],
-        (datetime(year: 2024, month: 07, day: 14),
-        datetime(year: 2024, month: 07, day: 19),
-        true)
+        (datetime(year: 2024, month: 07, day: 13),
+        datetime(year: 2024, month: 07, day: 16),
+        false)
       )
     }
 

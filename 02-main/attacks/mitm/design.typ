@@ -5,19 +5,7 @@
     bib-state.update(true)
     show bibliography: none
     bibliography("/03-tail/bibliography.bib", style:bibstyle)
+    set heading(numbering: "1.")
   }
-}
-// END OF HEADER
+} // END OF HEADER
 
-
-= Section 1
-
-#lorem(50)
-
-= Section 2
-
-#lorem(50)
-
-= Conclusion
-
-#lorem(50)

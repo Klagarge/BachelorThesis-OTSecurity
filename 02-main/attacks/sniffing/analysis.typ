@@ -21,7 +21,7 @@
 
 #let fig = [
   #figure(
-    image("sniffing.png", width: size-fig.attacks),
+    image("abe.png", width: size-fig.attacks),
     caption: [Sniffing attack]
   ) <fig-attack-sniffing>
 ] 

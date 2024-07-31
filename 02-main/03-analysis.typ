@@ -12,13 +12,13 @@
 = Attacks <sec:analysis-attacks>
 Numerous attacks can occur in the context of OT security and can be classified into different categories. This thesis covers some attack as following, though many others exist. 
 
-#subject("attacks/sniffing", heading-offset: 2)
+#subject("attacks/sniffing/analysis", heading-offset: 2)
 #subject("attacks/spoofing", heading-offset: 2)
 #pagebreak()
-#subject("attacks/dos", heading-offset: 2)
+#subject("attacks/dos/analysis", heading-offset: 2)
 #pagebreak()
-#subject("attacks/replay", heading-offset: 2)
-#subject("attacks/mitm", heading-offset: 2)
+#subject("attacks/replay/analysis", heading-offset: 2)
+#subject("attacks/mitm/analysis", heading-offset: 2)
 
 = Communication media <sec:analysis-comm>
 Different communication media are vulnerable to these attacks, highlighting the critical distinction between #gls("it") and #gls("ot") security. In #gls("ot") security, communication is a highly sensitive aspect, and historically, security measures were minimal or non-existent #cite(<OldWaysOT>).

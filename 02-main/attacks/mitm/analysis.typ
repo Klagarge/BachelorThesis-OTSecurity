@@ -19,7 +19,7 @@
 
 #let fig-mitm = [
   #figure(
-    image("mitm-connected.png", width: size-fig.attacks),
+    image("abm-connected.png", width: size-fig.attacks),
     caption: [#gls("mitm", long: false) on a connected network]
   ) <fig-attack-mitm>
 ]
@@ -41,7 +41,7 @@
 
 #let fig-mitm-full = [
   #figure(
-    image("mitm-full.png", width: size-fig.attacks),
+    image("abm-full.png", width: size-fig.attacks),
     caption: [#gls("mitm", long: false) intercept everything]
   ) <fig-attack-mitm-full>
 ]

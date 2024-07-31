@@ -23,7 +23,7 @@
 
 #let fig = [
   #figure(
-    image("replay.png", width: size-fig.attacks),
+    image("abm.png", width: size-fig.attacks),
     caption: [Replay attack]
   ) <fig-attack-replay>
 ]
