@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+
+<svg
+   width="231.5779"
+   height="400"
+   viewBox="0 0 21.9999 38"
+   version="1.1"
+   enable-background="new 0 0 76.00 76.00"
+   xml:space="preserve"
+   id="svg4"
+   sodipodi:docname="bender.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><defs
+   id="defs8" /><sodipodi:namedview
+   id="namedview6"
+   pagecolor="#ffffff"
+   bordercolor="#000000"
+   borderopacity="0.25"
+   inkscape:showpageshadow="2"
+   inkscape:pageopacity="0.0"
+   inkscape:pagecheckerboard="0"
+   inkscape:deskcolor="#d1d1d1"
+   showgrid="false"
+   inkscape:zoom="1.04875"
+   inkscape:cx="72.943981"
+   inkscape:cy="124.43385"
+   inkscape:window-width="1920"
+   inkscape:window-height="998"
+   inkscape:window-x="0"
+   inkscape:window-y="32"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="svg4" />
+	<path
+   fill="#000000"
+   fill-opacity="1"
+   stroke-width="0.2"
+   stroke-linejoin="round"
+   d="m 11,0 c 1.1046,0 2,0.8954 2,2 0,0.8215 -0.7453,1.5274 -1.4536,1.8352 l 0.537,5.1653 C 15.9109,9.0452 18.9999,12.1619 18.9999,16 L 19,19 h -1.0001 c 2.2092,0 4,1.7909 4,4 v 2 c 0,2.2091 -1.7907,3.9999 -3.9997,4 H 19 v 7.6003 C 17.1755,37.4503 14.2712,38 11,38 7.7288,38 4.8245,37.4503 3,36.6003 V 29 H 3.9997 C 1.7907,28.9999 0,27.2091 0,25 V 23 C 0,20.7909 1.7908,19 4,19 H 3 V 16 C 3,12.1619 6.089,9.0452 9.9166,9.0005 l 0.537,-5.1653 C 9.7453,3.5274 9,2.8215 9,2 9,0.8954 9.8954,0 11,0 Z m 6.9999,20.0001 h -14 c -1.6568,0 -3,1.3431 -3,3 v 2 c 0,1.6568 1.3432,3 3,3 h 14 c 1.6568,0 3,-1.3432 3,-3 v -2 c 0,-1.6569 -1.3432,-3 -3,-3 z M 11,30.25 10,30.0145 V 32 h 2 V 30.0145 Z M 17.9999,32 C 18,30 17.2371,30.323 16,29.9954 V 32 Z M 13,30.0609 V 32 h 2 V 30.0331 Z M 7,30.0331 V 32 H 9 V 30.0609 Z M 4,32 H 6 V 29.9954 C 4.7628,30.323 4,30 4,32 Z m 7,3 1,-0.0228 V 33 h -2 v 1.9772 z m 6.6475,-2 H 16 v 1.1936 C 16.7917,33.8545 17.3305,33.4373 17.6475,33 Z M 13,33 v 1.9024 c 0.7607,-0.0794 1.4253,-0.2043 2,-0.363 V 33 Z m -6,0 v 1.5 H 6.8616 C 7.4673,34.6776 8.1774,34.8165 9,34.9024 V 33 Z M 4.3523,33 C 4.6694,33.4373 5.2082,33.8545 6,34.1936 V 33 Z M 6,23 h 2 v 2 H 6 Z m 8,0 h 2 v 2 H 14 Z M 3.9999,21.0001 H 5.1961 C 4.1797,21.6125 3.5,22.7269 3.5,24 c 0,1.2732 0.6798,2.3876 1.6963,3.0001 H 3.9999 c -1.1045,0 -2,-0.8955 -2,-2 v -2 c 0,-1.1046 0.8955,-2 2,-2 z m 14,0 c 1.1045,0 2,0.8954 2,2 v 2 c 0,1.1045 -0.8955,2 -2,2 H 16.8037 C 17.8202,26.3876 18.5,25.2732 18.5,24 c 0,-1.2731 -0.6798,-2.3875 -1.6961,-2.9999 z m -9.1962,6 C 9.8202,26.3876 10.5,25.2732 10.5,24 10.5,22.7269 9.8202,21.6125 8.8039,21.0001 h 4.3922 C 12.1797,21.6125 11.5,22.7269 11.5,24 c 0,1.2732 0.6798,2.3876 1.6963,3.0001 z"
+   id="path2" />
+</svg>
