@@ -7,7 +7,7 @@
   <br>
 </h1>
 
-This repo host the mine Bachelor Thesis about OT Security
+This repo hosts my Bachelor's thesis about OT Security.
 
 
 # Table of contents
