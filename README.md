@@ -66,6 +66,7 @@ Main repo for this part are:
 <a href="https://typst.app/" target="_blank" rel="noreferrer"> <img src="https://typst.app/assets/favicon.ico" alt="typst" width="60" height="60"/> </a>
 <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="60" height="60"/> </a>
 <a href="https://www.kali.org/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Kali-dragon-icon.svg/1200px-Kali-dragon-icon.svg.png" alt="kali linux" width="60" height="60"/> </a>
+<a href="https://www.wireshark.org/" target="_blank" rel="noreferrer"> <img src="https://static-00.iconduck.com/assets.00/wireshark-alt-icon-2048x2048-4ex8a9zk.png" alt="wireshark" width="60" height="60"/> </a>
 <a href="https://www.ettercap-project.org/" target="_blank" rel="noreferrer"><img src="https://www.kali.org/tools/ettercap/images/ettercap-logo.svg" alt="ettercap" width="60" height="60"/> </a>
 <a href="https://linux.die.net/man/8/iptables" target="_blank" rel="noreferrer"><img src="https://projects.task.gda.pl/uploads/-/system/project/avatar/286/iptables-logo.png" alt="iptables" width="60" height="60"/> </a>
 <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="60" height="60"/> </a>
