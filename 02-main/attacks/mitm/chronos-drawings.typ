@@ -108,10 +108,10 @@
     _sync({
         _seq("a", "c", end-tip: ">>", comment: highlight(fill:white)[
             ARP | #get_ip("s") = #get_mac("a")
-        ])
+        ], comment-align: "start")
         _seq("a", "s", end-tip: ">>", comment: highlight(fill:white)[
             ARP | #get_ip("c") = #get_mac("a")
-        ])
+        ], comment-align: "start")
     })
 
     msg("c", "a", "Ask value of sensor #15",
@@ -205,10 +205,10 @@
     _sync({
         _seq("a", "c", end-tip: ">>", comment: highlight(fill:white)[
             ARP | #get_ip("s") = #get_mac("a")
-        ])
+        ], comment-align: "start")
         _seq("a", "s", end-tip: ">>", comment: highlight(fill:white)[
             ARP | #get_ip("c") = #get_mac("a")
-        ])
+        ], comment-align: "start")
     })
 })
 
