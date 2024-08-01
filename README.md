@@ -29,9 +29,20 @@ This repo hosts my Bachelor's thesis about OT Security.
   - Attacks (Sniffing, Spoofing, Denial of Service, Replay, Man in the Middle)
   - Communication media (Modbus, wireless M-bus)
   - Simulation environments (Factory I/O, Home I/O, Minecraft)
-- Design
-- Implementation
-- Validation
+- Attack by Man in the Middle
+- Attack by Replay
+- Attack by Denial of Service
+
+### Man in the Middle attack
+Main repo for this part are: 
+- [Modbus interface for HomeIO simulation](https://github.com/Klagarge/Modbus2HomeIO)
+- [Controller for HomeIO simulation](https://github.com/Klagarge/ControllerHomeIo)
+- [MitM on Modbus/TCP](https://github.com/Klagarge/MitM-TCP-HomeIO)
+- [MitM on Modbus/TLS without certificat verification](https://github.com/Klagarge/MitM-TLS-HomeIO)
+
+### Replay attack
+
+### DoS attack
 
 ## Abstract
 
