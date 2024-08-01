@@ -13,10 +13,11 @@ This repo hosts my Bachelor's thesis about OT Security.
 # Table of contents
 
 <p align="center">
-  <a href="#content-of-the-thesis">Content of the Thesis</a> •
-  <a href="#abstract">Abstract</a> •
-  <a href="#credits">Credits</a> •
-  <a href="#license">License</a>
+<a href="#content-of-the-thesis">Content of the Thesis</a> • 
+<a href="#abstract">Abstract</a> • 
+<a href="#credits">Credits</a> • 
+<a href="#stack">Stack</a> • 
+<a href="#license">License</a>
 </p>
 
 ## Content of the Thesis
@@ -45,6 +46,23 @@ This repo hosts my Bachelor's thesis about OT Security.
 * [Silvan Zahno](https://github.com/tschinz) for the template
 * [Rémi Heredero](https://github.com/Klagarge) for the Thesis
 * [Yann Sierro](https://github.com/Fastium), [Louis Heredero](https://github.com/LordBaryhobal) for proofreading
+
+
+## Stack
+
+[(Back to top)](#table-of-contents)
+<p align="left">
+<a href="https://typst.app/" target="_blank" rel="noreferrer"> <img src="https://typst.app/assets/favicon.ico" alt="typst" width="60" height="60"/> </a>
+<a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="60" height="60"/> </a>
+<a href="https://www.kali.org/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Kali-dragon-icon.svg/1200px-Kali-dragon-icon.svg.png" alt="kali linux" width="60" height="60"/> </a>
+<a href="https://www.ettercap-project.org/" target="_blank" rel="noreferrer"><img src="https://www.kali.org/tools/ettercap/images/ettercap-logo.svg" alt="ettercap" width="60" height="60"/> </a>
+<a href="https://linux.die.net/man/8/iptables" target="_blank" rel="noreferrer"><img src="https://projects.task.gda.pl/uploads/-/system/project/avatar/286/iptables-logo.png" alt="iptables" width="60" height="60"/> </a>
+<a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="60" height="60"/> </a>
+<a href="https://scapy.net/" target="_blank" rel="noreferrer"><img src="https://www.kali.org/tools/scapy/images/scapy-logo.svg" alt="scapy" width="60" height="60"/> </a>
+<a href="https://go.dev/" target="_blank" rel="noreferrer"> <img src="https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_go_gopher_icon_130571.png" alt="go" width="60" height="60"/> </a>
+</p>
+
+
 
 ## License
 
