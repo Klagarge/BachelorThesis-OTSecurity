@@ -1,0 +1,533 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<HomeIO Name="OT" Year="2024" Month="6" Day="24" Hour="10" Minute="44" Second="30" Version="1.7.2">
+  <Character>
+    <Position X="-9.115759" Y="5.788369" Z="-0.8299829" />
+    <EulerXY X="57.15837" Y="0.5683233" />
+  </Character>
+  <H_LightSwitch_1 DeviceMode="External" />
+  <F_BrightnessSensor DeviceMode="External" />
+  <N_Light_2 Intensity="0" DeviceMode="External" />
+  <L_LightSwitchDimmer_1 DeviceMode="External" />
+  <N_RollerShades Open="False" Close="False" AnimationTime="0.008" CurrentSpeed="0" DeviceMode="External">
+    <TextureScale X="1" Y="0.9968333" />
+  </N_RollerShades>
+  <I_LightSwitch_1 DeviceMode="External" />
+  <L_MotionDetectorInterior DeviceMode="External" IsOn="False" ElapsedTime="0" />
+  <E_LightSwitch_2 DeviceMode="External" />
+  <L_LightSwitch_1 DeviceMode="External" />
+  <H_DoorDetector_1 DeviceMode="External" />
+  <SmokeManager IsOn="False">
+    <Position X="11.41155" Y="8.029499" Z="15.32341" />
+  </SmokeManager>
+  <G_LightSwitch_1 DeviceMode="External" />
+  <DomoticsManager>
+    <SecurityIntrusionScheduleScenario Key="0" Name="" Enabled="False">
+      <ArmingTimeStamp Days="0" Hours="12" Minutes="0" Seconds="0" />
+    </SecurityIntrusionScheduleScenario>
+  </DomoticsManager>
+  <Wind Angle="165" Velocity="17" />
+  <A_LightSwitchDimmer_1 DeviceMode="External" />
+  <A_Heater DeviceMode="External" />
+  <G_Light Intensity="0" DeviceMode="External" />
+  <F_Gate State="Stopped" Run="False" Reverse="True" AnimationTime="0" DeviceMode="External" />
+  <H_MotionDetectorInterior DeviceMode="External" IsOn="False" ElapsedTime="0" />
+  <A_InteriorMotionSensor DeviceMode="External" IsOn="False" ElapsedTime="0" />
+  <K_Thermostat Eco="291.149993896484" Confort="293.149993896484" Mode="Eco" DeviceMode="External" />
+  <H_Heater DeviceMode="External" />
+  <E_RollerShades Open="False" Close="False" AnimationTime="0.008" CurrentSpeed="0" DeviceMode="External">
+    <TextureScale X="1" Y="0.9968333" />
+  </E_RollerShades>
+  <F_Light_1 Intensity="0" DeviceMode="External" />
+  <A_Thermostat Eco="291.149993896484" Confort="293.149993896484" Mode="Confort" DeviceMode="External" />
+  <F_UpDownSwitch_2 DeviceMode="External" />
+  <F_LightSwitch_1 DeviceMode="External" />
+  <L_Light Intensity="0" DeviceMode="External" />
+  <N_DoorDetector_2 DeviceMode="External" />
+  <H_Window_2 Opened="False">
+    <Position1 X="0.3591884" Y="6.875309" Z="8.558462" />
+    <Position2 X="0.2844233" Y="6.875309" Z="7.223027" />
+    <HandleRotation X="-6.18172E-08" Y="-0.7071068" Z="-6.181719E-08" W="-0.7071068" />
+  </H_Window_2>
+  <C_Door>
+    <Position X="18.54917" Y="6.497259" Z="11.08677" />
+  </C_Door>
+  <I_Light_1 Intensity="0" DeviceMode="External" />
+  <M_BrightnessSensor DeviceMode="External" />
+  <J_DoorDetector_1 DeviceMode="External" />
+  <F_RollerShades Open="False" Close="False" AnimationTime="0.008" CurrentSpeed="0" DeviceMode="External">
+    <TextureScale X="1" Y="0.9968333" />
+  </F_RollerShades>
+  <TimeLocationManager>
+    <DateTime Year="2024" Month="6" Day="25" Hour="15" Minute="59" Second="34" />
+    <Location Latitude="49.25861" Longitude="4.033056" />
+    <DST Value="False" />
+  </TimeLocationManager>
+  <A_DoorDetector_2 DeviceMode="External" />
+  <D_Heater DeviceMode="External" />
+  <N_LightSwitchDimmer_1 DeviceMode="External" />
+  <J_LightSwitch_2 DeviceMode="External" />
+  <M_Light Intensity="0" DeviceMode="External" />
+  <J_Thermostat Eco="291.149993896484" Confort="293.149993896484" Mode="Eco" DeviceMode="External" />
+  <N_LightSwitchDimmer_2 DeviceMode="External" />
+  <I_Door_2>
+    <Position X="3.04862" Y="6.497259" Z="10.64998" />
+  </I_Door_2>
+  <D_Thermostat Eco="291.149993896484" Confort="293.149993896484" Mode="Eco" DeviceMode="External" />
+  <A_RollerShades_4 Open="False" Close="False" AnimationTime="0.008" CurrentSpeed="0" DeviceMode="External">
+    <TextureScale X="1" Y="0.9968333" />
+  </A_RollerShades_4>
+  <Remote DeviceMode="External" />
+  <N_BrightnessSensor DeviceMode="External" />
+  <E_LightSwitch_4 DeviceMode="External" />
+  <E_DoorDetector_R DeviceMode="External" />
+  <A_LightSwitchDimmer_2 DeviceMode="External" />
+  <F_UpDownSwitch_1 DeviceMode="External" />
+  <M_RollerShades Open="False" Close="False" AnimationTime="0.008" CurrentSpeed="0" DeviceMode="External">
+    <TextureScale X="1" Y="0.9968333" />
+  </M_RollerShades>
+  <Door-ET-EXT Opened="False">
+    <Position X="-4.351284" Y="5.905" Z="-1.703494" />
+    <Rotation X="0" Y="0.9999998" Z="0" W="-0.0006794067" />
+  </Door-ET-EXT>
+  <D_DoorDetector DeviceMode="External" />
+  <D_MotionDetectorInterior DeviceMode="External" IsOn="False" ElapsedTime="0" />
+  <J_SmokeDetector DeviceMode="External" IsActive="False" ElapsedTime="0" />
+  <J_Heater DeviceMode="External" />
+  <J_UpDownSwitch DeviceMode="External" />
+  <G2_Heater DeviceMode="External" />
+  <E_LightSwitchDimmer_2 DeviceMode="External" />
+  <H_RollerShades Open="False" Close="False" AnimationTime="0.008" CurrentSpeed="0" DeviceMode="External">
+    <TextureScale X="1" Y="0.9968333" />
+  </H_RollerShades>
+  <D_Light_1 Intensity="0" DeviceMode="External" />
+  <A_LightSwitchDimmer_3 DeviceMode="External" />
+  <N_DoorDetector_1 DeviceMode="External" />
+  <G_SmokeDetector DeviceMode="External" IsActive="False" ElapsedTime="0" />
+  <E_LightSwitch_1 DeviceMode="External" />
+  <N_SmokeDetector DeviceMode="External" IsActive="False" ElapsedTime="0" />
+  <G_MotionDetectorInterior DeviceMode="External" IsOn="False" ElapsedTime="0" />
+  <K_Light Intensity="0" DeviceMode="External" />
+  <K_LightSwitchDimmer DeviceMode="External" />
+  <A_Window_1 Opened="False">
+    <Position1 X="26.4816" Y="6.875309" Z="7.555553" />
+    <HandleRotation X="-3.208316E-13" Y="0.7071068" Z="3.28368E-13" W="-0.7071068" />
+  </A_Window_1>
+  <M_DoorDetector_1 DeviceMode="External" />
+  <I_LightSwitchDimmer DeviceMode="External" />
+  <F_LightSwitch_2 DeviceMode="External" />
+  <D_Window Opened="False">
+    <Position1 X="16.24613" Y="6.875309" Z="13.29265" />
+    <HandleRotation X="-1.443225E-11" Y="1" Z="7.587258E-13" W="-4.371163E-08" />
+  </D_Window>
+  <A_LightSwitch_1 DeviceMode="External" />
+  <C_LightSwitch DeviceMode="External" />
+  <N_LightSwitch_2 DeviceMode="External" />
+  <G_LightSwitch_5 DeviceMode="External" />
+  <G_LightSwitch_4 DeviceMode="External" />
+  <E_MotionDetectorExterior DeviceMode="External" IsOn="False" ElapsedTime="0" />
+  <A_RollerShades_3 Open="False" Close="False" AnimationTime="0.008" CurrentSpeed="0" DeviceMode="External">
+    <TextureScale X="1" Y="0.9968333" />
+  </A_RollerShades_3>
+  <L_Window_2 Opened="True">
+    <Position1 X="0.3591884" Y="6.875309" Z="18.09119" />
+    <Position2 X="0.2844233" Y="6.875309" Z="17.34555" />
+    <HandleRotation X="-0.5" Y="0.5" Z="-0.5" W="0.5" />
+  </L_Window_2>
+  <L_Thermostat Eco="291.149993896484" Confort="293.149993896484" Mode="Eco" DeviceMode="External" />
+  <E_Door Opened="False">
+    <Position X="11.04755" Y="6.505482" Z="6.518491" />
+    <Rotation X="0" Y="0.0005969558" Z="0" W="0.9999999" />
+  </E_Door>
+  <O_LightPorch_2 Intensity="0" DeviceMode="External" />
+  <N_Light_3 Intensity="0" DeviceMode="External" />
+  <A_RollerShades_1 Open="False" Close="False" AnimationTime="0.008" CurrentSpeed="0" DeviceMode="External">
+    <TextureScale X="1" Y="0.9968333" />
+  </A_RollerShades_1>
+  <B_Door_1>
+    <Position X="19.13608" Y="6.497259" Z="8.371794" />
+  </B_Door_1>
+  <E_BrightnessSensor DeviceMode="External" />
+  <B_LightSwitch_2 DeviceMode="External" />
+  <N_Light_1 Intensity="0" DeviceMode="External" />
+  <H_Thermostat Eco="291.149993896484" Confort="293.149993896484" Mode="Confort" DeviceMode="External" />
+  <L_RollerShades Open="False" Close="False" AnimationTime="0.008" CurrentSpeed="0" DeviceMode="External">
+    <TextureScale X="1" Y="0.9968333" />
+  </L_RollerShades>
+  <M_Thermostat Eco="291.149993896484" Confort="293.149993896484" Mode="Eco" DeviceMode="External" />
+  <H_SmokeDetector DeviceMode="External" IsActive="False" ElapsedTime="0" />
+  <H_BrightnessSensor DeviceMode="External" />
+  <H_UpDownSwitch DeviceMode="External" />
+  <I_Thermostat Eco="291.149993896484" Confort="293.149993896484" Mode="Eco" DeviceMode="External" />
+  <A_Window_3 Opened="False">
+    <Position1 X="24.9626" Y="6.875309" Z="13.28979" />
+    <HandleRotation X="-8.012268E-12" Y="1" Z="-1.021418E-13" W="-1.629207E-07" />
+  </A_Window_3>
+  <K_InteriorMotionSensor DeviceMode="External" IsOn="False" ElapsedTime="0" />
+  <J_MotionDetectorInterior DeviceMode="External" IsOn="False" ElapsedTime="0" />
+  <M_UpDownSwitch DeviceMode="External" />
+  <O_LightEntrance Intensity="0" DeviceMode="External" />
+  <N_Heater DeviceMode="External" />
+  <E_LightSwitch_3 DeviceMode="External" />
+  <B_Light_2 Intensity="0" DeviceMode="External" />
+  <O_Siren On="False" DeviceMode="External" />
+  <E_Heater DeviceMode="External" />
+  <N_LightSwitchDimmer_3 DeviceMode="External" />
+  <K_Heater DeviceMode="External" />
+  <G_LightSwitch_2 DeviceMode="External" />
+  <N_Window_1 Opened="True">
+    <Position1 X="11.28376" Y="9.75" Z="0.4377136" />
+    <Position2 X="11.58951" Y="9.75" Z="0.3629494" />
+    <HandleRotation X="-1.18071E-13" Y="-4.371138E-13" Z="-0.7071068" W="0.7071068" />
+  </N_Window_1>
+  <G_UpDownSwitch DeviceMode="External" />
+  <I_Light_2 Intensity="0" DeviceMode="External" />
+  <A_LightSwitch_3 DeviceMode="External" />
+  <D_Light_2 Intensity="0" DeviceMode="External" />
+  <E_Siren On="False" DeviceMode="External" />
+  <A_SmokeDetector DeviceMode="External" IsActive="False" ElapsedTime="0" />
+  <B_LightSwitch_1 DeviceMode="External" />
+  <H_DoorDetector_2 DeviceMode="External" />
+  <G1_Heater DeviceMode="External" />
+  <K_Window Opened="False">
+    <Position X="3.004845" Y="6.20943" Z="15.37279" />
+    <Rotation X="5.609156E-11" Y="-4.804622E-12" Z="-0.001625015" W="0.9999987" />
+    <HandleRotation X="-6.181725E-08" Y="-0.7071068" Z="6.181725E-08" W="0.7071068" />
+  </K_Window>
+  <J_LightSwitch_1 DeviceMode="External" />
+  <A_LightSwitch_2 DeviceMode="External" />
+  <J_Window_2 Opened="False">
+    <Position1 X="0.3598434" Y="6.875309" Z="13.54279" />
+    <Position2 X="0.2843516" Y="6.875309" Z="12.18518" />
+    <HandleRotation X="-6.181723E-08" Y="-0.7071068" Z="-6.181722E-08" W="-0.7071068" />
+  </J_Window_2>
+  <A_DoorDetector_1 DeviceMode="External" />
+  <O_LightGarden Intensity="0" DeviceMode="External" />
+  <M_DoorDetector_2 DeviceMode="External" />
+  <J_LightSwitchDimmer_1 DeviceMode="External" />
+  <H_Door Opened="False">
+    <Position X="4.948298" Y="6.496245" Z="9.342126" />
+    <Rotation X="0" Y="-0.0006648118" Z="0" W="0.9999998" />
+  </H_Door>
+  <B_InteriorMotionSensor DeviceMode="External" IsOn="False" ElapsedTime="0" />
+  <J_RollerShades Open="False" Close="False" AnimationTime="0.008" CurrentSpeed="0" DeviceMode="External">
+    <TextureScale X="1" Y="0.9968333" />
+  </J_RollerShades>
+  <L_LightSwitchDimmer_2 DeviceMode="External" />
+  <L_Heater DeviceMode="External" />
+  <E_UpDownSwitch DeviceMode="External" />
+  <J_Door Opened="False">
+    <Position X="4.946175" Y="6.496246" Z="11.40569" />
+    <Rotation X="0" Y="0.0006868147" Z="0" W="0.9999998" />
+  </J_Door>
+  <M_Window_2 Opened="False">
+    <Position1 X="6.708571" Y="6.875309" Z="19.3193" />
+    <Position2 X="5.86869" Y="6.875309" Z="19.39406" />
+    <HandleRotation X="-8.747092E-08" Y="-1" Z="7.113199E-14" W="1.629193E-07" />
+  </M_Window_2>
+  <D_UpDownSwitch DeviceMode="External" />
+  <L_LightSwitch_2 DeviceMode="External" />
+  <M_Door Opened="False">
+    <Position X="6.554195" Y="6.496245" Z="16.40608" />
+    <Rotation X="0" Y="0" Z="0" W="1" />
+  </M_Door>
+  <N_LightSwitch_1 DeviceMode="External" />
+  <O_LightPorch_1 Intensity="0" DeviceMode="External" />
+  <L_DoorDetector_1 DeviceMode="External" />
+  <H_LightSwitch_2 DeviceMode="External" />
+  <Foundation DeviceMode="Wired" />
+  <E_LightSwitchDimmer_1 DeviceMode="Domotics" />
+  <O_LightPool Intensity="0" DeviceMode="External" />
+  <N_LightSwitch_3 DeviceMode="External" />
+  <A_Light Intensity="0" DeviceMode="External" />
+  <A_RollerShades_2 Open="False" Close="False" AnimationTime="0.008" CurrentSpeed="0" DeviceMode="External">
+    <TextureScale X="1" Y="0.9968333" />
+  </A_RollerShades_2>
+  <H_Light Intensity="0" DeviceMode="External" />
+  <B_Door_2>
+    <Position X="19.14525" Y="6.497259" Z="9.366792" />
+  </B_Door_2>
+  <J_DoorDetector_2 DeviceMode="External" />
+  <G_Thermostat Eco="291.149993896484" Confort="293.149993896484" Mode="Eco" DeviceMode="External" />
+  <M_Heater DeviceMode="External" />
+  <A_UpDownSwitch_2 DeviceMode="External" />
+  <L_DoorDetector_2 DeviceMode="External" />
+  <L_UpDownSwitch DeviceMode="External" />
+  <D_BrightnessSensor DeviceMode="External" />
+  <K_Door>
+    <Position X="1.124712" Y="6.497259" Z="16.36354" />
+  </K_Door>
+  <O_BrightnessSensor DeviceMode="External" />
+  <E_Thermostat Eco="291.149993896484" Confort="293.149993896484" Mode="Confort" DeviceMode="External" />
+  <E_LightSwitch_5 DeviceMode="External" />
+  <N_UpDownSwitch DeviceMode="External" />
+  <J_Light Intensity="0" DeviceMode="External" />
+  <A_BrightnessSensor DeviceMode="External" />
+  <I_Door_1>
+    <Position X="4.302496" Y="6.497259" Z="10.63555" />
+  </I_Door_1>
+  <B_Light_1 Intensity="0" DeviceMode="External" />
+  <I_Heater DeviceMode="External" />
+  <G_LightSwitch_3 DeviceMode="External" />
+  <L_Door Opened="False">
+    <Position X="4.499205" Y="6.496245" Z="16.40511" />
+    <Rotation X="0" Y="0" Z="0" W="1" />
+  </L_Door>
+  <O_Gate State="Stopped" Run="False" Reverse="True" AnimationTime="0" DeviceMode="External" />
+  <F_Door Opened="False">
+    <Position X="8.567211" Y="6.505482" Z="6.518663" />
+    <Rotation X="0" Y="0.02183608" Z="0" W="0.9997616" />
+  </F_Door>
+  <D_LightSwitchDimmer_1 DeviceMode="External" />
+  <N_MotionDetectorInterior DeviceMode="External" IsOn="False" ElapsedTime="0" />
+  <E_Light Intensity="0" DeviceMode="External" />
+  <N_Thermostat Eco="291.149993896484" Confort="293.149993896484" Mode="Confort" DeviceMode="External" />
+  <M_MotionDetectorInterior DeviceMode="External" IsOn="False" ElapsedTime="0" />
+  <F_MotionDetectorInterior DeviceMode="External" IsOn="False" ElapsedTime="0" />
+  <C_Light Intensity="0" DeviceMode="External" />
+  <L_SmokeDetector DeviceMode="External" IsActive="False" ElapsedTime="0" />
+  <A_UpDownSwitch_1 DeviceMode="External" />
+  <E_MotionDetectorInterior DeviceMode="External" IsOn="False" ElapsedTime="0" />
+  <G_RollerShades Open="False" Close="False" AnimationTime="0.008" CurrentSpeed="0" DeviceMode="External">
+    <TextureScale X="1" Y="0.9968333" />
+  </G_RollerShades>
+  <E_DoorDetector_L DeviceMode="External" />
+  <Sky Cloudiness="0.01" />
+  <H_LightSwitchDimmer_1 DeviceMode="External" />
+  <D_RollerShades Open="False" Close="False" AnimationTime="0.008" CurrentSpeed="0" DeviceMode="External">
+    <TextureScale X="1" Y="0.9968333" />
+  </D_RollerShades>
+  <L_BrightnessSensor DeviceMode="External" />
+  <I_InteriorMotionSensor DeviceMode="External" IsOn="False" ElapsedTime="0" />
+  <D_LightSwitchDimmer_2 DeviceMode="External" />
+  <F_Light_2 Intensity="0" DeviceMode="External" />
+  <E_AlarmKeyPad State="Armed" DeviceMode="External" />
+  <M_LightSwitch DeviceMode="External" />
+  <J_BrightnessSensor DeviceMode="External" />
+  <Statistics CurrentHourEnergyConsumption="40492.49" CurrentDayEnergyConsumption="1.025544E+07" CurrentWeekEnergyConsumption="8.335376E+07" CurrentMonthEnergyConsumption="1.14238E+08" LastHourEnergyConsumption="0" LastDayEnergyConsumption="2.527987E+07" LastWeekEnergyConsumption="3.206775E+07" LastMonthEnergyConsumption="0">
+    <Last24Hours>
+      <Hour Index="0" Value="0.2202028" />
+      <Hour Index="1" Value="0.2218243" />
+      <Hour Index="2" Value="0.2245403" />
+      <Hour Index="3" Value="0.2237018" />
+      <Hour Index="4" Value="0.2210212" />
+      <Hour Index="5" Value="0.2202921" />
+      <Hour Index="6" Value="0.2218252" />
+      <Hour Index="7" Value="0.2203627" />
+      <Hour Index="8" Value="0.2258559" />
+      <Hour Index="9" Value="0.2203838" />
+      <Hour Index="10" Value="0.21888" />
+      <Hour Index="11" Value="0.2199402" />
+      <Hour Index="12" Value="0.2216694" />
+      <Hour Index="13" Value="0.1476667" />
+      <Hour Index="14" Value="0" />
+      <Hour Index="15" Value="0" />
+      <Hour Index="16" Value="0.2205509" />
+      <Hour Index="17" Value="0.2207857" />
+      <Hour Index="18" Value="0.2205884" />
+      <Hour Index="19" Value="0.2258301" />
+      <Hour Index="20" Value="0.2203519" />
+      <Hour Index="21" Value="0.221003" />
+      <Hour Index="22" Value="0.220529" />
+      <Hour Index="23" Value="0.2204377" />
+      <Hour Index="24" Value="0" />
+    </Last24Hours>
+  </Statistics>
+  <HeatSolver Name="HeatSolver" AtmosphericPressure="0" RelativeHumidity="0.400000005960464" MinAirTemperature="273.149993896484" MaxAirTemperature="291.149993896484" AirTemperature="285.24640250206" DewPointTemperature="272.061080288091" VaporPressure="1411.34518757294" SkyTemperature="284.197823968358">
+    <HeatBlocks>
+      <HeatBlock Key="0" Temperature="290.681870311348" HeatFlow="-0.0569787323202808" />
+      <HeatBlock Key="1" Temperature="290.392333934924" HeatFlow="-1.15409803961782" />
+      <HeatBlock Key="2" Temperature="289.875109518468" HeatFlow="44.2106882181116" />
+      <HeatBlock Key="3" Temperature="289.896225632325" HeatFlow="35.1521532371395" />
+      <HeatBlock Key="4" Temperature="291.371797370178" HeatFlow="8.44798780662634" />
+      <HeatBlock Key="5" Temperature="291.268058086793" HeatFlow="-38.3879395787723" />
+      <HeatBlock Key="6" Temperature="292.15164063672" HeatFlow="-382.026411950497" />
+      <HeatBlock Key="7" Temperature="292.360799848563" HeatFlow="-289.035842287336" />
+      <HeatBlock Key="8" Temperature="289.788783472722" HeatFlow="5.76026996918741" />
+      <HeatBlock Key="9" Temperature="290.546267910502" HeatFlow="1.83133643368409" />
+      <HeatBlock Key="10" Temperature="289.134418636552" HeatFlow="-245.301248983179" />
+      <HeatBlock Key="11" Temperature="290.469743918941" HeatFlow="1.05748238313462" />
+      <HeatBlock Key="12" Temperature="290.471948436458" HeatFlow="3.90345321302384" />
+      <HeatBlock Key="13" Temperature="290.557703017492" HeatFlow="7.31963814540415" />
+      <HeatBlock Key="14" Temperature="290.353320951417" HeatFlow="0.0534984957428448" />
+      <HeatBlock Key="15" Temperature="290.173738416427" HeatFlow="0.0529908237806851" />
+      <HeatBlock Key="16" Temperature="289.270447823814" HeatFlow="52.1652901551229" />
+      <HeatBlock Key="17" Temperature="289.390492611349" HeatFlow="41.9204200200946" />
+      <HeatBlock Key="18" Temperature="290.990855275797" HeatFlow="17.5412526227718" />
+      <HeatBlock Key="19" Temperature="290.211239587443" HeatFlow="8.59046628890085" />
+      <HeatBlock Key="20" Temperature="292.164733845182" HeatFlow="-240.714006318051" />
+      <HeatBlock Key="21" Temperature="290.11161311552" HeatFlow="3.56699801735924" />
+      <HeatBlock Key="22" Temperature="290.029407023044" HeatFlow="11.982372903974" />
+      <HeatBlock Key="23" Temperature="290.202595938806" HeatFlow="8.94144190879511" />
+      <HeatBlock Key="24" Temperature="291.378662478799" HeatFlow="-3.41731947962289" />
+      <HeatBlock Key="25" Temperature="290.244580043027" HeatFlow="42.2794817839329" />
+      <HeatBlock Key="26" Temperature="289.402605756772" HeatFlow="-324.058140564787" />
+      <HeatBlock Key="27" Temperature="291.765834241862" HeatFlow="-16.9860647049578" />
+      <HeatBlock Key="28" Temperature="292.558098487613" HeatFlow="-902.794165524121" />
+      <HeatBlock Key="29" Temperature="290.242144698066" HeatFlow="12.3382972202372" />
+      <HeatBlock Key="30" Temperature="290.917863219291" HeatFlow="6.53597589757344" />
+      <HeatBlock Key="31" Temperature="291.061696510821" HeatFlow="0.67891577896494" />
+      <HeatBlock Key="32" Temperature="291.063554707009" HeatFlow="1.59696454562366" />
+      <HeatBlock Key="33" Temperature="290.180140674446" HeatFlow="-4.63465641925419" />
+      <HeatBlock Key="34" Temperature="289.820513998159" HeatFlow="32.7793890186362" />
+      <HeatBlock Key="35" Temperature="289.051477886069" HeatFlow="-317.462821980784" />
+      <HeatBlock Key="36" Temperature="292.025272014216" HeatFlow="-1007.93971798782" />
+      <HeatBlock Key="37" Temperature="291.114501814668" HeatFlow="-122.229321704021" />
+      <HeatBlock Key="38" Temperature="289.450097915623" HeatFlow="10.2449713126138" />
+      <HeatBlock Key="39" Temperature="289.088873040613" HeatFlow="-517.567217114537" />
+      <HeatBlock Key="40" Temperature="290.274724679591" HeatFlow="-22.1777828836584" />
+      <HeatBlock Key="41" Temperature="290.198810773351" HeatFlow="-10.5799817565567" />
+      <HeatBlock Key="42" Temperature="290.399407293752" HeatFlow="2.42169734737601" />
+      <HeatBlock Key="43" Temperature="290.78945864543" HeatFlow="-15.0842153041056" />
+      <HeatBlock Key="44" Temperature="289.908427715208" HeatFlow="-1.36879902686701" />
+      <HeatBlock Key="45" Temperature="291.379551077487" HeatFlow="-1021.41219851615" />
+      <HeatBlock Key="46" Temperature="289.54434137591" HeatFlow="-274.030963200431" />
+      <HeatBlock Key="47" Temperature="290.007789619085" HeatFlow="-653.069342668996" />
+      <HeatBlock Key="48" Temperature="291.416718748045" HeatFlow="-349.941569941876" />
+      <HeatBlock Key="49" Temperature="290.637123593651" HeatFlow="-36.3474626909906" />
+      <HeatBlock Key="50" Temperature="290.893472754723" HeatFlow="27.1375764697209" />
+      <HeatBlock Key="51" Temperature="290.202636469911" HeatFlow="-574.870546866863" />
+      <HeatBlock Key="52" Temperature="290.395425541008" HeatFlow="-602.676165578894" />
+      <HeatBlock Key="53" Temperature="289.441480480366" HeatFlow="-796.44114315509" />
+      <HeatBlock Key="54" Temperature="291.783824021605" HeatFlow="13.4616978591317" />
+      <HeatBlock Key="55" Temperature="288.892811808858" HeatFlow="-191.782274176386" />
+      <HeatBlock Key="56" Temperature="297.858551058688" HeatFlow="-4.93095498616626" />
+      <HeatBlock Key="57" Temperature="288.952397526352" HeatFlow="-287.082880534366" />
+      <HeatBlock Key="58" Temperature="295.535914281526" HeatFlow="-90.2179929589139" />
+      <HeatBlock Key="59" Temperature="294.757912057628" HeatFlow="-432.183039872685" />
+      <HeatBlock Key="60" Temperature="305.161288425376" HeatFlow="-87.3390247487296" />
+      <HeatBlock Key="61" Temperature="292.464974024747" HeatFlow="-300.947203549989" />
+      <HeatBlock Key="62" Temperature="293.073762524718" HeatFlow="-61.1473254540192" />
+      <HeatBlock Key="63" Temperature="293.600824938622" HeatFlow="-117.520051081268" />
+      <HeatBlock Key="64" Temperature="289.389002487026" HeatFlow="-212.863998841933" />
+      <HeatBlock Key="65" Temperature="291.633820225444" HeatFlow="-1.44031210932342" />
+      <HeatBlock Key="66" Temperature="289.73468240147" HeatFlow="-361.785948111018" />
+      <HeatBlock Key="67" Temperature="294.69414735077" HeatFlow="-4.05487691348951" />
+      <HeatBlock Key="68" Temperature="290.750343263412" HeatFlow="27.0780450742311" />
+      <HeatBlock Key="69" Temperature="292.046727775812" HeatFlow="-167.937849971857" />
+      <HeatBlock Key="70" Temperature="292.666251543775" HeatFlow="-1106.58865173834" />
+      <HeatBlock Key="71" Temperature="291.158443624821" HeatFlow="6.77373352593936" />
+      <HeatBlock Key="72" Temperature="290.626169121626" HeatFlow="-893.69091756852" />
+      <HeatBlock Key="73" Temperature="291.169400181227" HeatFlow="-12.5287737616091" />
+      <HeatBlock Key="74" Temperature="291.120969081249" HeatFlow="-1.18421944646251" />
+      <HeatBlock Key="75" Temperature="293.474349750243" HeatFlow="-90.3135973989959" />
+      <HeatBlock Key="76" Temperature="293.068034410444" HeatFlow="-21.8940420261395" />
+      <HeatBlock Key="77" Temperature="290.500779548772" HeatFlow="-0.545694205632867" />
+      <HeatBlock Key="78" Temperature="292.246995729944" HeatFlow="-373.829734017789" />
+      <HeatBlock Key="79" Temperature="289.15330476537" HeatFlow="-195.292431373656" />
+      <HeatBlock Key="80" Temperature="289.817414108671" HeatFlow="40.868518902201" />
+      <HeatBlock Key="81" Temperature="291.054251839332" HeatFlow="-44.4135910903694" />
+      <HeatBlock Key="82" Temperature="289.426432984192" HeatFlow="12.7129133792795" />
+      <HeatBlock Key="83" Temperature="291.441344994746" HeatFlow="1.42342045184649" />
+      <HeatBlock Key="84" Temperature="290.538050141664" HeatFlow="3.08958477612582" />
+      <HeatBlock Key="85" Temperature="290.174183084048" HeatFlow="-2.95276234665793" />
+      <HeatBlock Key="86" Temperature="290.703362584522" HeatFlow="-1.21862727670066" />
+      <HeatBlock Key="87" Temperature="290.010616099174" HeatFlow="-0.775855941288287" />
+      <HeatBlock Key="88" Temperature="290.750941108892" HeatFlow="-0.909113839213575" />
+      <HeatBlock Key="89" Temperature="290.699831236775" HeatFlow="-0.0210549772842956" />
+      <HeatBlock Key="90" Temperature="290.035222652049" HeatFlow="-1.88126590099287" />
+      <HeatBlock Key="91" Temperature="290.551341939665" HeatFlow="-0.871094633450241" />
+      <HeatBlock Key="92" Temperature="292.022872447847" HeatFlow="-311.335708685693" />
+      <HeatBlock Key="93" Temperature="292.265416871171" HeatFlow="-214.371412258238" />
+      <HeatBlock Key="94" Temperature="291.817182936805" HeatFlow="-143.765883441106" />
+      <HeatBlock Key="95" Temperature="290.9895512743" HeatFlow="-37.4213226407129" />
+      <HeatBlock Key="96" Temperature="292.318123895786" HeatFlow="-287.594538784631" />
+      <HeatBlock Key="97" Temperature="291.204778893269" HeatFlow="-43.4371701023942" />
+      <HeatBlock Key="98" Temperature="291.130217181195" HeatFlow="-34.8639599175016" />
+      <HeatBlock Key="99" Temperature="291.331566124917" HeatFlow="-60.6277661383964" />
+      <HeatBlock Key="100" Temperature="292.337052437604" HeatFlow="-507.113557513495" />
+      <HeatBlock Key="101" Temperature="290.989773325122" HeatFlow="-29.7250605802555" />
+      <HeatBlock Key="102" Temperature="289.762932307382" HeatFlow="9.23666020732257" />
+      <HeatBlock Key="103" Temperature="289.268264428088" HeatFlow="7.21279761954399" />
+      <HeatBlock Key="104" Temperature="291.511065980448" HeatFlow="10.3579618412873" />
+      <HeatBlock Key="105" Temperature="290.014783238422" HeatFlow="-184.954041674201" />
+      <HeatBlock Key="106" Temperature="289.081277775928" HeatFlow="-257.985696043548" />
+      <HeatBlock Key="107" Temperature="289.345990082257" HeatFlow="-305.515285041325" />
+      <HeatBlock Key="108" Temperature="290.272328834702" HeatFlow="-10.2874466390028" />
+      <HeatBlock Key="109" Temperature="291.114213709068" HeatFlow="-163.557179004377" />
+      <HeatBlock Key="110" Temperature="291.225692190934" HeatFlow="-1858.0253379406" />
+      <HeatBlock Key="111" Temperature="289.234157182502" HeatFlow="15.0631247063328" />
+      <HeatBlock Key="112" Temperature="289.150256987104" HeatFlow="-413.424023773307" />
+      <HeatBlock Key="113" Temperature="289.087303228767" HeatFlow="-585.933867664722" />
+      <HeatBlock Key="114" Temperature="290.174903066606" HeatFlow="-1.68434567745823" />
+      <HeatBlock Key="115" Temperature="289.947147718817" HeatFlow="-1.32084228429405" />
+      <HeatBlock Key="116" Temperature="290.24614006349" HeatFlow="-15.3191857459625" />
+      <HeatBlock Key="117" Temperature="291.25972597743" HeatFlow="-2354.73487397174" />
+      <HeatBlock Key="118" Temperature="290.851884356453" HeatFlow="-129.786247576778" />
+      <HeatBlock Key="119" Temperature="291.191855204945" HeatFlow="-217.433208006853" />
+      <HeatBlock Key="120" Temperature="289.062603969881" HeatFlow="-361.783091478523" />
+      <HeatBlock Key="121" Temperature="289.265995252114" HeatFlow="-98.1666478687148" />
+      <HeatBlock Key="122" Temperature="291.047699897986" HeatFlow="-22.5411910123545" />
+      <HeatBlock Key="123" Temperature="290.588630161555" HeatFlow="-36.4589946220282" />
+      <HeatBlock Key="124" Temperature="290.072787196949" HeatFlow="-2925.34690254548" />
+      <HeatBlock Key="125" Temperature="289.231768814099" HeatFlow="14.7084024401651" />
+      <HeatBlock Key="126" Temperature="289.126626385955" HeatFlow="-167.470629895638" />
+      <HeatBlock Key="127" Temperature="289.141997225062" HeatFlow="-500.81053044699" />
+      <HeatBlock Key="128" Temperature="288.766967905111" HeatFlow="-1090.49812691091" />
+      <HeatBlock Key="129" Temperature="291.048864537139" HeatFlow="-261.79260540746" />
+      <HeatBlock Key="130" Temperature="289.027878702477" HeatFlow="-586.123752161587" />
+      <HeatBlock Key="131" Temperature="289.544765410221" HeatFlow="-192.200486276246" />
+      <HeatBlock Key="132" Temperature="289.632242246312" HeatFlow="-6.76915953311086" />
+      <HeatBlock Key="133" Temperature="290.187752240365" HeatFlow="-14.8614001958238" />
+      <HeatBlock Key="134" Temperature="290.144774831615" HeatFlow="7.8177737513481" />
+      <HeatBlock Key="135" Temperature="288.675879129605" HeatFlow="-72.5038159749939" />
+      <HeatBlock Key="136" Temperature="288.507256173543" HeatFlow="84.4056735329143" />
+      <HeatBlock Key="137" Temperature="290.988165975656" HeatFlow="-257.327122578543" />
+      <HeatBlock Key="138" Temperature="288.701912035161" HeatFlow="13.6381783450079" />
+      <HeatBlock Key="139" Temperature="289.07139195241" HeatFlow="-605.850031689276" />
+      <HeatBlock Key="140" Temperature="288.761714068139" HeatFlow="-216.366333580193" />
+      <HeatBlock Key="141" Temperature="289.108288267755" HeatFlow="-607.1877292775" />
+      <HeatBlock Key="142" Temperature="290.758477776405" HeatFlow="-20.5907322237982" />
+      <HeatBlock Key="143" Temperature="290.53077888857" HeatFlow="-12.5576997935905" />
+      <HeatBlock Key="144" Temperature="291.418125100191" HeatFlow="-1846.26321692892" />
+      <HeatBlock Key="145" Temperature="291.577945023274" HeatFlow="-2123.51959660239" />
+      <HeatBlock Key="146" Temperature="289.161396650812" HeatFlow="-204.460538808663" />
+      <HeatBlock Key="147" Temperature="289.694449625994" HeatFlow="14.5427342051437" />
+      <HeatBlock Key="148" Temperature="289.281871807649" HeatFlow="-184.658650647846" />
+      <HeatBlock Key="149" Temperature="289.494908413109" HeatFlow="-161.577445003746" />
+      <HeatBlock Key="150" Temperature="291.961917920546" HeatFlow="-203.410339562264" />
+      <HeatBlock Key="151" Temperature="290.325502091777" HeatFlow="-1018.91181981078" />
+      <HeatBlock Key="152" Temperature="289.406170972377" HeatFlow="-1112.75624635795" />
+      <HeatBlock Key="153" Temperature="291.706402029748" HeatFlow="8.20941748240364" />
+      <HeatBlock Key="154" Temperature="289.281007065024" HeatFlow="-833.358703169975" />
+      <HeatBlock Key="155" Temperature="290.563406196517" HeatFlow="0.116745420681115" />
+      <HeatBlock Key="156" Temperature="289.553367429194" HeatFlow="43.3980885313137" />
+      <HeatBlock Key="157" Temperature="291.114134665373" HeatFlow="16.060498582514" />
+      <HeatBlock Key="158" Temperature="290.366686295679" HeatFlow="5.88315289376705" />
+      <HeatBlock Key="159" Temperature="290.335115510557" HeatFlow="4.55429172376362" />
+      <HeatBlock Key="160" Temperature="290.203487036995" HeatFlow="6.67157986475684" />
+      <HeatBlock Key="161" Temperature="292.262121855687" HeatFlow="-215.327110209727" />
+      <HeatBlock Key="162" Temperature="290.25215762293" HeatFlow="22.7745762607681" />
+      <HeatBlock Key="163" Temperature="292.367924420803" HeatFlow="6404.97844428034" />
+      <HeatBlock Key="164" Temperature="293.003198163839" HeatFlow="-486373.588706178" />
+      <HeatBlock Key="165" Temperature="291.715349451709" HeatFlow="92487.0698791102" />
+      <HeatBlock Key="166" Temperature="293.149993896484" HeatFlow="0" />
+      <HeatBlockAir Key="0" Temperature="290.681870311348" AirPressure="102217.12369222" HeatFlow="-0.0569787323202808" />
+      <HeatBlockAir Key="1" Temperature="290.392333934924" AirPressure="102115.309377193" HeatFlow="-1.15409803961782" />
+      <HeatBlockAir Key="14" Temperature="290.353320951417" AirPressure="102101.590620294" HeatFlow="0.0534984957428448" />
+      <HeatBlockAir Key="15" Temperature="290.173738416427" AirPressure="102038.441127927" HeatFlow="0.0529908237806851" />
+      <HeatBlockAir Key="24" Temperature="291.378662478799" AirPressure="102462.147887246" HeatFlow="-3.41731947962289" />
+      <HeatBlockAir Key="33" Temperature="290.180140674446" AirPressure="102040.692460942" HeatFlow="-4.63465641925419" />
+      <HeatBlockAir Key="43" Temperature="290.78945864543" AirPressure="102254.95677013" HeatFlow="-15.0842153041056" />
+      <HeatBlockAir Key="44" Temperature="289.908427715208" AirPressure="101945.144646583" HeatFlow="-1.36879902686701" />
+      <HeatBlockAir Key="56" Temperature="297.858551058688" AirPressure="104740.774984229" HeatFlow="-4.93095498616626" />
+      <HeatBlockAir Key="65" Temperature="291.633820225444" AirPressure="102551.874097521" HeatFlow="-1.44031210932342" />
+      <HeatBlockAir Key="77" Temperature="290.500779548772" AirPressure="102153.443846014" HeatFlow="-0.545694205632867" />
+      <HeatBlockAir Key="86" Temperature="290.703362584522" AirPressure="102224.681337364" HeatFlow="-1.21862727670066" />
+      <HeatBlockAir Key="87" Temperature="290.010616099174" AirPressure="101981.080370256" HeatFlow="-0.775855941288287" />
+      <HeatBlockAir Key="88" Temperature="290.750941108892" AirPressure="102241.412357181" HeatFlow="-0.909113839213575" />
+      <HeatBlockAir Key="89" Temperature="290.699831236775" AirPressure="102223.439839309" HeatFlow="-0.0210549772842956" />
+      <HeatBlockAir Key="90" Temperature="290.035222652049" AirPressure="101989.732197486" HeatFlow="-1.88126590099287" />
+      <HeatBlockAir Key="91" Temperature="290.551341939665" AirPressure="102171.224026284" HeatFlow="-0.871094633450241" />
+      <HeatBlockAir Key="108" Temperature="290.272328834702" AirPressure="102073.110209003" HeatFlow="-10.2874466390028" />
+      <HeatBlockAir Key="114" Temperature="290.174903066606" AirPressure="102038.850479399" HeatFlow="-1.68434567745823" />
+      <HeatBlockAir Key="115" Temperature="289.947147718817" AirPressure="101958.760289597" HeatFlow="-1.32084228429405" />
+      <HeatBlockAir Key="116" Temperature="290.24614006349" AirPressure="102063.900904311" HeatFlow="-15.3191857459625" />
+      <HeatBlockAir Key="132" Temperature="289.632242246312" AirPressure="101848.025064587" HeatFlow="-6.76915953311086" />
+      <HeatBlockAir Key="133" Temperature="290.187752240365" AirPressure="102043.368806284" HeatFlow="-14.8614001958238" />
+      <HeatBlockAir Key="142" Temperature="290.758477776405" AirPressure="102244.062792189" HeatFlow="-20.5907322237982" />
+      <HeatBlockAir Key="143" Temperature="290.53077888857" AirPressure="102163.993347821" HeatFlow="-12.5576997935905" />
+      <HeatBlockAir Key="155" Temperature="290.563406196517" AirPressure="102175.466430578" HeatFlow="0.116745420681115" />
+    </HeatBlocks>
+  </HeatSolver>
+  <PasswordManager Password="" DeviceModeLocked="False" DateLocked="False" LocationLocked="False" TimeSliderLocked="False" WeatherLocked="False" />
+</HomeIO>
