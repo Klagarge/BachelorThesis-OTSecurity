@@ -13,6 +13,6 @@
 
 #heading(numbering:none)[Acknowledgements] <sec:ack>
 
-#lorem(50)
-
-#lorem(50)
+#todo[
+  #lorem(50)
+]

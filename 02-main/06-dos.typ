@@ -9,13 +9,14 @@
 }
 // END OF HEADER
 
-#pagebreak()
+= Section 1
 
-#heading(numbering:none)[Abstract] <sec:abstract>
+#lorem(50)
 
-#todo[
-  #lorem(50)
-]
+= Section 2
 
-#v(2em)
-_*Keywords*_: _keyword 1_, _keyword 2_, _keyword 3_
+#lorem(50)
+
+= Discussion
+
+#lorem(50)

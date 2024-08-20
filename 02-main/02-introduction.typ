@@ -9,6 +9,10 @@
 }
 // END OF HEADER
 
+#todo[
+  #lorem(50)
+]
+
 == Context Problem
 
 #cite(<IEEEXplore-IntrusionDetectionIndustrial2017>)
@@ -23,9 +27,5 @@ fn main() {}
 #lorem(50)
 
 == Objectives
-
-#lorem(50)
-
-== Structure of this report
 
 #lorem(50)
