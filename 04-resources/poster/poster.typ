@@ -60,13 +60,13 @@
     // - CONTEXT -
     // -----------
     == Context
-    This thesis, existe in the context of the rework of the embedded systems security course at #school.shortname. The aim is to come up with several attack scenarios which can be used as the basis for a laboratory module for students. These scenarios could also serve in industrial training partnerships with #school.shortname.
+    This thesis, exists in the context of the rework of the embedded systems security course at #school.shortname. The aim is to come up with several attack scenarios which can be used as the basis for a laboratory module for students. These scenarios could also serve in industrial training partnerships with #school.shortname.
 
     // --------------------------
     // - REPLAY ATTACK SCENARIO -
     // --------------------------
     == Replay attack scenario
-    The replay scenario involves intercepting and re-sends a wireless message for replay same effect, like a garage door opening.
+    The replay scenario involves intercepting and resending a wireless message to produce the same effect, like a garage door opening.
     #align(center)[
       #set text(size: 12pt)
       #chronos.diagram({
@@ -119,7 +119,7 @@
       
     }, width: 75%)]
 
-    To protect against this attack, the system should integrate a security in the message, like rolling code or an encrypted counter with a private key.
+    To protect against this attack, the system should integrate a security in the message, like rolling codes or an encrypted counter with a private key.
 
     // ---------
     // - STACK -
@@ -152,7 +152,7 @@
     == Man in the middle
     The Man in the Middle scenario involves intercepting, modifying and sending packets  to take control of a Modbus/TCP installation.
     #align(center)[#image("/02-main/simu-env/implementation.drawio.svg", width: 80%)]
-    The first step of the attacker is to intercept the communication between the controller and the installation. To achieve this goal, the attacker has to do an ARP poisoning attack (1). Once the attacker intercepts all packets, it is possible to modify them (2).
+    The first step of the attack is to intercept the communication between the controller and the installation. To achieve this goal, the attacker can use ARP poisoning attack (1). Once the attacker has intercepted all packets, it is possible to modify them (2).
     To protect against this attack, the system has to use Modbus over TLS (3).
 
     
