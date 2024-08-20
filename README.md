@@ -71,7 +71,6 @@ Main repo for this part are:
 <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="60" height="60"/> </a>
 <a href="https://scapy.net/" target="_blank" rel="noreferrer"><img src="https://www.kali.org/tools/scapy/images/scapy-logo.svg" alt="scapy" width="60" height="60"/> </a>
 <a href="https://go.dev/" target="_blank" rel="noreferrer"> <img src="https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_go_gopher_icon_130571.png" alt="go" width="60" height="60"/> </a>
-<a href="https://www.st.com/en/evaluation-tools/32f746gdiscovery.html" target="_blank" rel="noreferrer"> <img src="https://www.st.com/content/dam/ecosystems/stm32-gui/stm32-logo.png" alt="stm32" width="60" height="60"/> </a>
 <a href="https://www.rust-lang.org/fr" target="_blank" rel="noreferrer"> <img src="https://static-00.iconduck.com/assets.00/rust-icon-2048x2047-5s6wkmk1.png" alt="rust" width="60" height="60"/> </a>
 <a href="https://radiocrafts.com/technologies/wireless-m-bus-technology-overview/" target="_blank" rel="noreferrer"> <img src="https://www.develcoproducts.com/media/1873/wireless-m-bus-logo-800x533.png" alt="wireless m-bus" width="80" height="60"/> </a>
 </p>

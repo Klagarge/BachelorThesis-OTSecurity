@@ -7,3 +7,6 @@
 [submodule "00-packages/elegantt"]
 	path = 00-packages/elegantt
 	url = git@git.kb28.ch:Klagarge/elegantt.git
+[submodule "00-packages/summary"]
+	path = 00-packages/summary
+	url = https://git.kb28.ch/Klagarge/Thesis-HEI-summary-template.git
