@@ -56,54 +56,54 @@ It aids in selecting the appropriate attack on the right medium and simulation e
   "03-analysis",
   heading-offset: 1,
   after:<sec:analysis>,
-  before:<sec:design>,
+  before:<sec:mitm>,
+)
+
+//--------
+//- MITM -
+//--------
+#pagebreak()
+= Man in the Middle Scenario <sec:mitm>
+#todo[
+  #lorem(50)
+]
+
+#subject(
+  "04-mitm",
+  heading-offset: 1,
+  after:<sec:mitm>,
+  before: <sec:replay>,
 )
 
 //----------
-//- DESIGN -
+//- REPLAY -
 //----------
 #pagebreak()
-= Design <sec:design>
+= Replay Scenario <sec:replay>
 #todo[
   #lorem(50)
 ]
 
 #subject(
-  "04-design",
+  "05-replay",
   heading-offset: 1,
-  after:<sec:design>,
-  before: <sec:implementation>,
+  after:<sec:replay>,
+  before:<sec:dos>,
 )
 
-//------------------
-//- IMPLEMENTATION -
-//------------------
+//-------
+//- DoS -
+//-------
 #pagebreak()
-= Implementation <sec:implementation>
+= Denial of Service Scenario <sec:dos>
 #todo[
   #lorem(50)
 ]
 
 #subject(
-  "05-implementation",
+  "06-dos",
   heading-offset: 1,
-  after:<sec:implementation>,
-  before:<sec:validation>,
-)
-
-//--------------
-//- VALIDATION -
-//--------------
-#pagebreak()
-= Validation <sec:validation>
-#todo[
-  #lorem(50)
-]
-
-#subject(
-  "06-validation",
-  heading-offset: 1,
-  after: <sec:validation>,
+  after: <sec:dos>,
   before: <sec:conclusion>,
 )
 
