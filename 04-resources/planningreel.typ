@@ -79,7 +79,7 @@
       (date.start, date.submission, true),
       (datetime(year: 2024, month: 06, day: 24), 1),
       (datetime(year: 2024, month: 08, day: 26), 1),
-      //(datetime(year: 2024, month: 06, day: 21), datetime(year: 2024, month: 06, day: 26), false, true),
+      (datetime(year: 2024, month: 06, day: 21), datetime(year: 2024, month: 06, day: 26), false, true),
       //(datetime(year: 2024, month: 07, day: 02), date.submission),
     )
 
@@ -87,15 +87,6 @@
       [Independence weeks],
       (datetime(year: 2024, month: 07, day: 15), 3, false),
     )
-    
-    if planning.filip {
-      gantt.task(
-        [Filip],
-        (datetime(year: 2024, month: 07, day: 13),
-        datetime(year: 2024, month: 07, day: 16),
-        false)
-      )
-    }
 
     gantt.milestone(
       [Mid-term \ presentation],

@@ -16,6 +16,6 @@
   //flipped: true
 )
 
-#include "/04-resources/planning.typ"
+//#include "/04-resources/planning.typ"
 #include "/04-resources/planningreel.typ"
 
