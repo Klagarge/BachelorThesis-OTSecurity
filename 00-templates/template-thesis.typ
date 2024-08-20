@@ -136,6 +136,9 @@
 
   include "/04-resources/specifications.typ"
 
+  include "/02-main/summary.typ"
+  pagebreak()
+
   // Report info
   page-reportinfo(
     author: author,
