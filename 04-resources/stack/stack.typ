@@ -68,6 +68,12 @@
     size,
     [Flipper Zero], lbl
   ),
+
+  modbus: (size, lbl) => add-figure(
+    "/04-resources/stack/modbus.png",
+    size,
+    [Modbus], lbl
+  ),
 )
 
 #let def = (
@@ -101,5 +107,9 @@
 
   flipper: lbl => [
     *Flipper Zero* (#ref(lbl)) is a portable multi-tool for pentesters.\ 
+  ],
+
+  modbus: lbl => [
+    *Modbus* (#ref(lbl)) is a communication protocol used in industrial automation.\ 
   ],
 )
