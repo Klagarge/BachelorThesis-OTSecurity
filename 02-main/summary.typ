@@ -11,10 +11,13 @@
   field: school.specialisation,
   professor: professor,
   //partner: partner,
-  //objective: [] // one sentence with max. 240 characters, with spaces. 
+  objective: [
+    Produce attack scenarios that include an unsecure situation, an attack, and a solution to secure against such attack. These scenarios must be usable as the basis for a laboratory experience for students or industrial partner formation.
+  ] // one sentence with max. 240 characters, with spaces. 
 
   // body max. 1200 characters, with spaces.
 )
 
-
-#lorem(120)
+#todo([
+  Like an abstract but for open public.
+])

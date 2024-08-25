@@ -11,16 +11,24 @@
 
 = Project summary
 
-#lorem(50)
+#todo([
+  
+])
 
 = Comparison with the initial objectives
 
-#lorem(50)
+#todo([
+  
+])
 
 = Encountered difficulties
 
-#lorem(50)
+#todo([
+  
+])
 
 = Future perspectives
 
-#lorem(50)
+#todo([
+  
+])

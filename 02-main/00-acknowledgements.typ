@@ -14,5 +14,6 @@
 #heading(numbering:none)[Acknowledgements] <sec:ack>
 
 #todo[
-  #lorem(50)
+  Bien que facultatifs, les remerciements sont l'occasion d'exprimer votre gratitude envers les personnes, les institutions ou les organisations qui vous ont soutenu tout au long de votre parcours universitaire.
+  Bien qu'ils n'aient pas d'impact sur l'évaluation, les remerciements contribuent au ton général et à l'appréciation de votre thèse.
 ]
