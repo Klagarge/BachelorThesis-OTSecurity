@@ -96,7 +96,9 @@
     _seq(sender, receiver, end-tip: ">>", comment: highlight(fill:white)[#msg])
 }
 
-#let controller = {
+#let controller(
+    show-bottom: true,
+) = {
     import chronos: *
     _par("c",
         display-name: text(color.controller)[Controller],
@@ -105,11 +107,14 @@
             width: 2cm,
             height: 1.5cm,
             fit: "contain"
-        )
+        ),
+        show-bottom: show-bottom
     )
 }
 
-#let attacker = {
+#let attacker(
+    show-bottom: true,
+) = {
     import chronos: *
     _par("a",
         display-name: text(color.attacker)[Attacker],
@@ -118,11 +123,14 @@
             width: 1.5cm,
             height: 1.5cm,
             fit: "contain"
-        )
+        ),
+        show-bottom: show-bottom
     )
 }
 
-#let attacker-kali = {
+#let attacker-kali(
+    show-bottom: true,
+) = {
     import chronos: *
     _par("a",
         display-name: text(color.attacker)[Attacker],
@@ -131,11 +139,14 @@
             width: 1.5cm,
             height: 1.5cm,
             fit: "contain"
-        )
+        ),
+        show-bottom: show-bottom
     )
 }
 
-#let simulation = {
+#let simulation(
+    show-bottom: true,
+) = {
     import chronos: *
     _par("s",
         display-name: text(color.simulation)[Simulation],
@@ -144,7 +155,8 @@
             width: 1.5cm,
             height: 1.5cm,
             fit: "contain"
-        )
+        ),
+        show-bottom: show-bottom
     )
 }
 
@@ -355,46 +367,24 @@
 
 #let arp-spoofing = chronos.diagram({
     import chronos: *
-    import chronos: *
-    _par("c",
-        display-name: text(color.controller)[Controller],
-        shape: "custom",
-        custom-image: image("/04-resources/cc100.png",
-            width: 2cm,
-            height: 1.5cm,
-            fit: "contain"
-        )
-    )
-    _par("a",
-        display-name: text(color.attacker)[Attacker],
-        shape: "custom",
-        custom-image: image("/04-resources/bender.svg",
-            width: 1.5cm,
-            height: 1.5cm,
-            fit: "contain"
-        )
-    )
-    _par("s",
-        display-name: text(color.simulation)[Simulation],
-        shape: "custom",
-        custom-image: image("/04-resources/home-io.png",
-            width: 1.5cm,
-            height: 1.5cm,
-            fit: "contain"
-        )
-    )
+    controller(show-bottom: false)
+    attacker(show-bottom: false)
+    simulation(show-bottom: false)
 
-    _sync({
-        _seq("a", "c", end-tip: ">>", comment: highlight(fill:white)[
-            ARP | #get_ip("s") = #get_mac("a")
-        ], comment-align: "start")
-        _seq("a", "s", end-tip: ">>", comment: highlight(fill:white)[
-            ARP | #get_ip("c") = #get_mac("a")
-        ], comment-align: "start")
+    _grp("loop", desc: "every 20ms", {
+        _sync({
+            _seq("a", "c", end-tip: ">>", comment: highlight(fill:white)[
+                ARP | #get_ip("s") = #get_mac("a")
+            ], comment-align: "start")
+            _seq("a", "s", end-tip: ">>", comment: highlight(fill:white)[
+                ARP | #get_ip("c") = #get_mac("a")
+            ], comment-align: "start")
+        })
     })
+
 })
 
 #mitm
-//#arp-spoofing
+#arp-spoofing
 
 
