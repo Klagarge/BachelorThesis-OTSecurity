@@ -159,60 +159,61 @@
     #align(center)[
       #set text(size: 12pt)
       #chronos.diagram({
-      import chronos: *
-      controller
-      attacker-kali
-      simulation
+        import chronos: *
+        controller()
+        attacker-kali()
+        simulation()
+        
+        _sep("1. ARP poisoning")
+        _grp("loop", desc: "every 20ms", {
+          _seq("a", "c", end-tip: ">>", comment: [
+              ARP | #get_ip("s") = #get_mac("a")
+          ], comment-align: "start")
+          _seq("a", "s", end-tip: ">>", comment: [
+              ARP | #get_ip("c") = #get_mac("a")
+          ], comment-align: "start")
+        })
       
-      _sep("1. ARP poisoning")
-      _grp("loop", desc: "every 20ms", {
-        _seq("a", "c", end-tip: ">>", comment: [
-            ARP | #get_ip("s") = #get_mac("a")
-        ], comment-align: "start")
-        _seq("a", "s", end-tip: ">>", comment: [
-            ARP | #get_ip("c") = #get_mac("a")
-        ], comment-align: "start")
-      })
-    
-      _sep("2. Attack")
-      msg2("c", "a", "Ask value of sensor #15",
-        mac-sender: "c", 
-        mac-receiver: "a",
-        ip-sender: "c",
-        ip-receiver: "s"
-      )
-      msg2("a", "s", "Ask value of sensor #15",
-          mac-sender: "a", 
-          mac-receiver: "s",
+        _sep("2. Attack")
+        msg("c", "a", "Ask value of sensor #15\n",
+          mac-sender: "c", 
+          mac-receiver: "a",
           ip-sender: "c",
           ip-receiver: "s"
-      )
-      msg2("s", "a", "Value of sensor #15 = 1",
-          mac-sender: "s", 
-          mac-receiver: "a",
-          ip-sender: "s",
-          ip-receiver: "c"
-      )
-      msg2("a", "c", "Value of sensor #15 = " + text(color.attacker, weight: "bold")[0],
-          mac-sender: "a", 
-          mac-receiver: "c",
-          ip-sender: "s",
-          ip-receiver: "c"
-      )
-      _seq("c", "c", end-tip: ">>", comment: highlight(fill: white)[Ok])
+        )
+        msg("a", "s", "Ask value of sensor #15\n",
+            mac-sender: "a", 
+            mac-receiver: "s",
+            ip-sender: "c",
+            ip-receiver: "s"
+        )
+        msg("s", "a", "Value of sensor #15 = 1\n",
+            mac-sender: "s", 
+            mac-receiver: "a",
+            ip-sender: "s",
+            ip-receiver: "c"
+        )
+        msg("a", "c", "Value of sensor #15 = " + text(color.attacker, weight: "bold")[0] + "\n",
+            mac-sender: "a", 
+            mac-receiver: "c",
+            ip-sender: "s",
+            ip-receiver: "c"
+        )
+        _seq("c", "c", end-tip: ">>", comment: highlight(fill: white)[Ok])
 
-      _sep("3. TLS Handshake")
-      _seq("c", "s", end-tip: ">>", comment: "client random", comment-align: "start")
-      _seq("s", "c", end-tip: ">>", comment: "server random", comment-align: "start")
-      _seq("s", "c", end-tip: ">>", comment: "certificate", comment-align: "start")
-      _seq("c", "c", end-tip: ">>", comment: "verify certificate", comment-align: "start")
-      _seq("c", "s", end-tip: ">>", comment: "encrypted seed (pre-master)", comment-align: "start")
-      _seq("s", "s", end-tip: ">>", comment: "decrypted seed", comment-align: "start",flip: true)
-      _sync({
-        _seq("c", "c", end-tip: ">>", comment: "create master key", comment-align: "start")
-        _seq("s", "s", end-tip: ">>", comment: "create master key", comment-align: "start", flip: true)
-      })
-    }, width: 85%)] 
+        _sep("3. TLS Handshake")
+        _seq("c", "s", end-tip: ">>", comment: "client random", comment-align: "start")
+        _seq("s", "c", end-tip: ">>", comment: "server random", comment-align: "start")
+        _seq("s", "c", end-tip: ">>", comment: "certificate", comment-align: "start")
+        _seq("c", "c", end-tip: ">>", comment: "verify certificate", comment-align: "start")
+        _seq("c", "s", end-tip: ">>", comment: "encrypted seed (pre-master)", comment-align: "start")
+        _seq("s", "s", end-tip: ">>", comment: "decrypted seed", comment-align: "start",flip: true)
+        _sync({
+          _seq("c", "c", end-tip: ">>", comment: "create master key", comment-align: "start")
+          _seq("s", "s", end-tip: ">>", comment: "create master key", comment-align: "start", flip: true)
+        })
+      }, width: 85%)
+    ] 
 
   ]
 )
