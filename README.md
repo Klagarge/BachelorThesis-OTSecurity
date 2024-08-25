@@ -62,17 +62,21 @@ Main repo for this part are:
 
 [(Back to top)](#table-of-contents)
 <p align="left">
-<a href="https://typst.app/" target="_blank" rel="noreferrer"> <img src="https://typst.app/assets/favicon.ico" alt="typst" width="60" height="60"/> </a>
-<a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="60" height="60"/> </a>
-<a href="https://www.kali.org/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Kali-dragon-icon.svg/1200px-Kali-dragon-icon.svg.png" alt="kali linux" width="60" height="60"/> </a>
-<a href="https://www.wireshark.org/" target="_blank" rel="noreferrer"> <img src="https://static-00.iconduck.com/assets.00/wireshark-alt-icon-2048x2048-4ex8a9zk.png" alt="wireshark" width="60" height="60"/> </a>
-<a href="https://www.ettercap-project.org/" target="_blank" rel="noreferrer"><img src="https://www.kali.org/tools/ettercap/images/ettercap-logo.svg" alt="ettercap" width="60" height="60"/> </a>
-<a href="https://linux.die.net/man/8/iptables" target="_blank" rel="noreferrer"><img src="https://projects.task.gda.pl/uploads/-/system/project/avatar/286/iptables-logo.png" alt="iptables" width="60" height="60"/> </a>
-<a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="60" height="60"/> </a>
-<a href="https://scapy.net/" target="_blank" rel="noreferrer"><img src="https://www.kali.org/tools/scapy/images/scapy-logo.svg" alt="scapy" width="60" height="60"/> </a>
-<a href="https://go.dev/" target="_blank" rel="noreferrer"> <img src="https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_go_gopher_icon_130571.png" alt="go" width="60" height="60"/> </a>
-<a href="https://www.rust-lang.org/fr" target="_blank" rel="noreferrer"> <img src="https://static-00.iconduck.com/assets.00/rust-icon-2048x2047-5s6wkmk1.png" alt="rust" width="60" height="60"/> </a>
-<a href="https://radiocrafts.com/technologies/wireless-m-bus-technology-overview/" target="_blank" rel="noreferrer"> <img src="https://www.develcoproducts.com/media/1873/wireless-m-bus-logo-800x533.png" alt="wireless m-bus" width="80" height="60"/> </a>
+<a href="https://typst.app/" target="_blank" rel="noreferrer"> <img src="04-resources/stack/typst.png" alt="typst" width="60" height="60"/> </a>
+<a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="04-resources/stack/git-scm-icon.svg" alt="git" width="60" height="60"/> </a>
+<a href="https://www.kali.org/" target="_blank" rel="noreferrer"> <img src="04-resources/stack/Kali.png" alt="kali linux" width="60" height="60"/> </a>
+<a href="https://www.wireshark.org/" target="_blank" rel="noreferrer"> <img src="04-resources/stack/wireshark.png" alt="wireshark" width="60" height="60"/> </a>
+<a href="https://www.ettercap-project.org/" target="_blank" rel="noreferrer"><img src="04-resources/stack/ettercap.svg" alt="ettercap" width="60" height="60"/> </a>
+<a href="https://linux.die.net/man/8/iptables" target="_blank" rel="noreferrer"><img src="04-resources/stack/iptables.png" alt="iptables" width="60" height="60"/> </a>
+<a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="04-resources/stack/python.svg" alt="python" width="60" height="60"/> </a>
+<a href="https://scapy.net/" target="_blank" rel="noreferrer"><img src="04-resources/stack/scapy-logo.svg" alt="scapy" width="60" height="60"/> </a>
+<a href="https://go.dev/" target="_blank" rel="noreferrer"> <img src="04-resources/stack/golang.png" alt="go" width="60" height="60"/> </a>
+<a href="https://www.rust-lang.org/fr" target="_blank" rel="noreferrer"> <img src="04-resources/stack/rust.png" alt="rust" width="60" height="60"/> </a>
+<a href="https://radiocrafts.com/technologies/wireless-m-bus-technology-overview/" target="_blank" rel="noreferrer"> <img src="04-resources/stack/wireless-m-bus.png" alt="wireless m-bus" width="80" height="60"/> </a>
+<a href="https://flipperzero.one/" target="_blank" rel="noreferrer"> <img src="04-resources/stack/flipper.svg" alt="flipper zero" width="60" height="60"/> </a>
+<a href="https://modbus.org/" target="_blank" rel="noreferrer"> <img src="04-resources/stack/modbus.png" alt="modbus" width="188" height="60"/> </a>
+<a href="https://realgames.co/home-io/" target="_blank" rel="noreferrer"> <img src="04-resources/stack/home-io.png" alt="home io" width="60" height="60"/> </a>
+
 </p>
 
 For go programmation a nice startup is what made [cm0x4D](https://github.com/cm0x4D) for [HEI Synd ot security course](https://github.com/hei-synd-ot-security/golang). You can find it on [https://hei-synd-ot-security.github.io/golang/](https://hei-synd-ot-security.github.io/golang/)
