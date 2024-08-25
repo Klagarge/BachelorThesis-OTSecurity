@@ -115,7 +115,7 @@
     _par("s",
         display-name: text(color.simulation)[Simulation],
         shape: "custom",
-        custom-image: image("/04-resources/home-io.png",
+        custom-image: image("/04-resources/stack/home-io.png",
             width: 1.5cm,
             height: 1.5cm,
             fit: "contain"
