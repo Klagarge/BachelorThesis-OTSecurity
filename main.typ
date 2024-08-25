@@ -64,9 +64,9 @@ It aids in selecting the appropriate attack on the right medium and simulation e
 //--------
 #pagebreak()
 = Man in the Middle Scenario <sec:mitm>
-#todo[
-  #lorem(50)
-]
+
+The Man in the Middle scenario involves intercepting, modifying and sending packets to take over the control of a Modbus/TCP installation. This attack is made on a Modbus/#gls("tcp") installation, which is a widely used protocol in the industry and mainly because it was required to do an attack on it for this thesis. This attack was choosen because it is a common attack and can have big impact. It is also a complete attack, in other words, this attack includes several other attacks like sniffing and spoofing with #gls("arp", long: false) poisoning. To perform such an attack, we assume that the attacker has access to the network to be able to intercept the packets.
+
 
 #subject(
   "04-mitm",
@@ -82,30 +82,37 @@ It aids in selecting the appropriate attack on the right medium and simulation e
 = Replay Scenario <sec:replay>
 #todo[
   #lorem(50)
+  - introd
+  - pourquoi
+  - sans fils
+  - comment
+  - flipper
 ]
+
+The replay scenario involves intercepting and resending a message on a wireless connection to trigger the same effect as the original message, like for example a garage door opening remote.
 
 #subject(
   "05-replay",
   heading-offset: 1,
   after:<sec:replay>,
-  before:<sec:dos>,
+  before:<sec:conclusion>,
 )
 
 //-------
 //- DoS -
 //-------
-#pagebreak()
-= Denial of Service Scenario <sec:dos>
-#todo[
-  #lorem(50)
-]
+// #pagebreak()
+// = Denial of Service Scenario <sec:dos>
+// #todo[
+//   -toto
+// ]
 
-#subject(
-  "06-dos",
-  heading-offset: 1,
-  after: <sec:dos>,
-  before: <sec:conclusion>,
-)
+// #subject(
+//   "06-dos",
+//   heading-offset: 1,
+//   after: <sec:dos>,
+//   before: <sec:conclusion>,
+// )
 
 //--------------
 //- CONCLUSION -
@@ -113,7 +120,10 @@ It aids in selecting the appropriate attack on the right medium and simulation e
 #pagebreak()
 = Conclusion <sec:conclusion>
 #todo[
-  #lorem(50)
+  - résumé
+  - résultats
+  - usage pour un labo
+  - difficultés
 ]
 
 #subject(

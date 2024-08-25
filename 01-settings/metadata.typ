@@ -51,9 +51,9 @@
 
 #let tableof = (
   toc: true,
-  tof: false,
+  tof: true,
   tot: false,
-  tol: false,
+  tol: true,
   toe: false,
 )
 #let depth = 3
@@ -63,6 +63,8 @@
   dsg-side: left,
   attacks: 15em,
   simu-env: 70%,
+  homeio-details: 85%,
+  stack-mitm: 100%,
 )
 
 #let icons = (

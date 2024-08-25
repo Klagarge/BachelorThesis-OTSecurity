@@ -205,6 +205,24 @@
       short: "HMI",
       long: "Human-Machine Interface",
       description: [A human-machine interface (HMI) is a user interface or dashboard that connects a person to a machine, system, or device.],
+    ),
+    (
+      key: "arp",
+      short: "ARP",
+      long: "Address Resolution Protocol",
+      description: [The Address Resolution Protocol (ARP) is a communication protocol used for discovering the link layer address, such as a MAC address, associated with a given internet layer address, typically an IPv4 address.],
+    ),
+    (
+      key: "mac",
+      short: "MAC",
+      long: "Media Access Control",
+      description: [A media access control address (MAC address) is a unique identifier assigned to a network interface controller (NIC) for use as a network address in communications within a network segment.],
+    ),
+    (
+      key: "pen",
+      short: "Pen-Testing",
+      long: "Penetration Testing",
+      description: [Penetration testing, also known as pen testing, is a simulated cyber attack against your computer system to check for exploitable vulnerabilities.],
     )
 
   ),
