@@ -3,15 +3,15 @@
 // Use        : #import "../00-templates/helpers.typ": *
 // Author     : Silvan Zahno
 //
-#import "../00-templates/boxes.typ": *
-#import "../00-templates/constants.typ": *
-#import "../00-templates/items.typ": *
-#import "../00-templates/sections.typ": *
-#import "../00-templates/tablex.typ": *
-#import "../00-templates/slides_template.typ": *
-#import "../01-settings/metadata.typ": *
+#import "/00-templates/boxes.typ": *
+#import "/00-templates/constants.typ": *
+#import "/00-templates/items.typ": *
+#import "/00-templates/sections.typ": *
+#import "/00-templates/tablex.typ": *
+#import "/00-templates/slides_template.typ": *
+#import "/01-settings/metadata.typ": *
 
-#import "../00-templates/glossarium.typ": *
+#import "/00-templates/glossarium.typ": *
 #show: make-glossary
 
 // Private packages
