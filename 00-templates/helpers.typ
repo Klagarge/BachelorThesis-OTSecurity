@@ -19,6 +19,8 @@
 #import "/00-packages/chronos/src/lib.typ" as chronos
 #import "/00-packages/elegantt/src/lib.typ" as gantt
 
+#import "/04-resources/chronos-drawings.typ": *
+
 // External Plugins
 // Fancy pretty print with line numbers and stuff
 #import "@preview/codelst:2.0.1": sourcecode
