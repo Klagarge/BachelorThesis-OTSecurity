@@ -42,4 +42,16 @@
 		],
 		"description": "Add citation from bibliography"
 	},
+
+	"Add subject" : {
+		"scope": "typst",
+		"prefix": "subj",
+		"body": [
+			"#subject(",
+			"\t\"$1\",",
+			"\theading-offset: 2",
+			")"
+		],
+		"description": "Add subject"
+	},
 }
