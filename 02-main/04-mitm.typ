@@ -28,7 +28,7 @@
   heading-offset: 2
 )
 
-= Requirements
+= Requirements <subj:attack:mitm-requirements>
 This scenario is based on a #gls("mitm") attack, the attacker must adopt a man-in-the-middle position. In other words, all packets must pass through it. As Modbus/#gls("tcp") is an #gls("ip") based protocol, the attacker can use a nice tool named Ettercap (@stack:mitm-ettercap). This tool allowed you to performed easily and #gls("arp", long: false) poisoning attack.
 
 An #gls("arp", long: true) poisoning attack involves to send fake #gls("arp") message over the network. These message tell the target that the IP adress of other party is located at the attacker's #gls("mac") address like shown on @fig-arp-poisoning. The packets are then sent to the attacker, who can manipulate them before sending them back (or not) to the legitimate recipient. This attack take place at layer 3 of the OSI model #cite(<ISO-OSI_model-74981-1>).
@@ -75,23 +75,28 @@ Here are all the tools that are used for this scenario :
     (stack.fig.golang)(size-fig.stack-mitm, "mitm-golang"),
   )
 ]
-#(stack.def.kali)(<stack:mitm-kali>)
-//#(stack.def.wireshark)(<stack:mitm-wireshark>)
-#(stack.def.ettercap)(<stack:mitm-ettercap>)
-#(stack.def.iptables)(<stack:mitm-iptables>)
-#(stack.def.python)(<stack:mitm-python>)
-#(stack.def.scapy)(<stack:mitm-scapy>)
-#(stack.def.golang)(<stack:mitm-golang>)
+// #(stack.def.kali)(<stack:mitm-kali>)
+// //#(stack.def.wireshark)(<stack:mitm-wireshark>)
+// #(stack.def.ettercap)(<stack:mitm-ettercap>)
+// #(stack.def.iptables)(<stack:mitm-iptables>)
+// #(stack.def.python)(<stack:mitm-python>)
+// #(stack.def.scapy)(<stack:mitm-scapy>)
+// #(stack.def.golang)(<stack:mitm-golang>)
 
 == Closer look on Modbus <subj:comm:modbus-details>
-#todo[
-  - Request-Response
-  - Modbus TCP
-  - 
-]
+#subject(
+  "comm/modbus-details",
+  heading-offset: 2
+)
 
 = Attack on Modbus/TCP
+To modify a packet, the first step is to be on a #gls("mitm") position. This is done by using #gls("arp", long: false) poisoning as describe in @subj:attack:mitm-requirements. Once the attacker get all packets, 
+
 == Closer look on TCP
+#subject(
+  "crypto/tcp",
+  heading-offset: 3
+)
 == Modify packet on the fly
 
 = Implement Modbus/TLS <subj:attack:mitm-modbus-tls>
