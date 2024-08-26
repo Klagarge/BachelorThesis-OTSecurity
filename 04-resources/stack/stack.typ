@@ -14,6 +14,8 @@
   [
     #figure(
       image(path, width: size),
+      supplement: "Icon",
+      kind: "icon",
       caption: caption
     ) #label("stack:" + lbl)
   ]
@@ -24,55 +26,55 @@
   kali: (size, lbl) => add-figure(
     "/04-resources/stack/Kali.png",
     size,
-    [Kali Linux], lbl
+    [*Kali Linux*], lbl
   ),
 
   wireshark: (size, lbl) => add-figure(
     "/04-resources/stack/wireshark.png",
     size,
-    [Wireshark], lbl
+    [*Wireshark*], lbl
   ),
   
   ettercap: (size, lbl) => add-figure(
     "/04-resources/stack/ettercap.svg",
     size,
-    [Ettercap], lbl
+    [*Ettercap*], lbl
   ),
   
   iptables: (size, lbl) => add-figure(
     "/04-resources/stack/iptables.png",
     size,
-    [Iptables], lbl
+    [*Iptables*], lbl
   ),
   
   python: (size, lbl) => add-figure(
     "/04-resources/stack/python.svg",
     size,
-    [Python], lbl
+    [*Python*], lbl
   ),
   
   scapy: (size, lbl) => add-figure(
     "/04-resources/stack/scapy-logo.svg",
     size,
-    [Scapy], lbl
+    [*Scapy*], lbl
   ),
   
   golang: (size, lbl) => add-figure(
     "/04-resources/stack/golang.png",
     size,
-    [Golang], lbl
+    [*Golang*], lbl
   ),
 
   flipper: (size, lbl) => add-figure(
     "/04-resources/stack/flipper.png",
     size,
-    [Flipper Zero], lbl
+    [*Flipper Zero*], lbl
   ),
 
   modbus: (size, lbl) => add-figure(
     "/04-resources/stack/modbus.png",
     size,
-    [Modbus], lbl
+    [*Modbus*], lbl
   ),
 )
 
