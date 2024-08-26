@@ -25,19 +25,13 @@
 = Simulation Environnement
 #subject(
   "simu-env/homeio-details",
-  heading-offset: 1
+  heading-offset: 2
 )
 
 = Requirements
-#todo[
-  - Exigence de mitm
-  - Modification sans détection
-  - Comment fonctionne Modbus
-  - 2 étapes sans chiffrement, puis certificat
-]
-This scenario is based on a #gls("mitm") attack, the attacker must adopt a man-in-the-middle position. In other words, all packets must pass through it. For that, the attacker can use a nice tool named Ettercap (@stack:mitm-ettercap). This tool allowed you to performed easily and #gls("arp", long: false) poisoning attack.
+This scenario is based on a #gls("mitm") attack, the attacker must adopt a man-in-the-middle position. In other words, all packets must pass through it. As Modbus/#gls("tcp") is an #gls("ip") based protocol, the attacker can use a nice tool named Ettercap (@stack:mitm-ettercap). This tool allowed you to performed easily and #gls("arp", long: false) poisoning attack.
 
-An #gls("arp", long: true) poisoning attack involves to send fake #gls("arp") message over the network. These message tell the target that the IP adress of other party is located at the attacker's #gls("mac") address like shown on @fig-arp-poisoning. The packets are then sent to the attacker, who can manipulate them before sending them back (or not) to the legitimate recipient.
+An #gls("arp", long: true) poisoning attack involves to send fake #gls("arp") message over the network. These message tell the target that the IP adress of other party is located at the attacker's #gls("mac") address like shown on @fig-arp-poisoning. The packets are then sent to the attacker, who can manipulate them before sending them back (or not) to the legitimate recipient. This attack take place at layer 3 of the OSI model #cite(<ISO-OSI_model-74981-1>).
 
 #figure(
   align(center,
@@ -59,6 +53,8 @@ To use Ettercap, the attacker must know the IP address of the controller and the
 ]
 
 This command in @code:mitm-ettercap start Ettercap in text mode (`-T`) on the interface eth0 (`-i eth0`) and perform an #gls("arp") poisoning attack (`-M arp`). The IP addresses of the controller and the home io are given by `/IP_CONTROLLER//` and `/IP_HOMEIO//`. An graphical interface is also available but have to be installed as an extra package. 
+
+To perform this attack, the iptables (@stack:mitm-iptables) will also be used to redirect packet to a python script (@stack:mitm-python) that will modify the packet on the fly. The python script will use the scapy (@stack:mitm-scapy) library to modify the packet. The scapy library is a powerful tool that can be used to craft or decode packets of a wide number of protocols. The second part of this attack (see on @subj:attack:mitm-modbus-tls) will use a go (@stack:mitm-golang) script.
 
 
 == Tools
@@ -87,7 +83,7 @@ Here are all the tools that are used for this scenario :
 #(stack.def.scapy)(<stack:mitm-scapy>)
 #(stack.def.golang)(<stack:mitm-golang>)
 
-== Closer look on Modbus
+== Closer look on Modbus <subj:comm:modbus-details>
 #todo[
   - Request-Response
   - Modbus TCP
@@ -98,7 +94,7 @@ Here are all the tools that are used for this scenario :
 == Closer look on TCP
 == Modify packet on the fly
 
-= Implement Modbus/TLS
+= Implement Modbus/TLS <subj:attack:mitm-modbus-tls>
 == Closer look on TLS
 #todo([
   - encryption
