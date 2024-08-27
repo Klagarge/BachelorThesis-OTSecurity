@@ -11,17 +11,6 @@
 
 #import "/02-main/attacks/mitm/chronos-drawings.typ": *
 
-// Vue d'enssemble de home io, description, plan, hall, porte et capteur, automate
-// Exigence de mitm, modification sans détection
-// Comment fonctionne Modbus
-// 2 étapes sans chiffrement, puis certificat
-
-// 1. TCP
-// comment fonctionne TCP
-// Stack
-// on the fly
-// 
-
 = Simulation Environnement
 #subject(
   "simu-env/homeio-details",
@@ -109,6 +98,12 @@ To modify a packet, the first step is to be on a #gls("mitm") position. This is 
   heading-offset: 3
 )
 == Modify packet on the fly
+Modifications are proceed with a Python (@stack:mitm-python) script. This script will use the scapy (@stack:mitm-scapy) library to modify the packet. The scapy library is a powerful tool that can be used to craft or decode packets of a wide number of protocols.
+Scapy is really usefull to modify packet on the fly. With this library, it's easy to separate layers on the packet. To get the IP content of the IP layer, simply use ```python  scapy_packet = IP(pck.get_payload())```. Check if it's #gls("tcp") and get the #gls("tcp") payload with ```python  payload = bytes(scapy_packet.payload.payload)```. 
+
+This binary payload is the modbus message that can be checked and modified if needed. If the port is 1502, the message come from the controller and go to the server. This mean the attacker should only look if it is a request about a door sensor or the motion sensor. If it is, the attacker must save the transaction id of this request. 
+
+If the source port is 1502, the message come from the server and go to the controller. This mean the attacker should only look if it is a response about a previous transaction id saved. If it is, the attacker can look the response and modify it if needed.
 
 = Implement Modbus/TLS <subj:attack:mitm-modbus-tls>
 == Closer look on TLS
@@ -119,4 +114,4 @@ To modify a packet, the first step is to be on a #gls("mitm") position. This is 
   - 
 ])
 
-
+= Conclusion
