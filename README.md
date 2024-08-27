@@ -80,7 +80,7 @@ Main repo for this part are:
 
 </p>
 
-For go programmation a nice startup is what made [cm0x4D](https://github.com/cm0x4D) for [HEI Synd ot security course](https://github.com/hei-synd-ot-security/golang). You can find it on [https://hei-synd-ot-security.github.io/golang/](https://hei-synd-ot-security.github.io/golang/)
+For go programmation a nice startup is what made [cm0x4D](https://github.com/cm0x4D) for [HEI Synd ot security course](https://github.com/hei-synd-iiot/golang). You can find it on [https://hei-synd-iiot.github.io/golang/](https://hei-synd-iiot.github.io/golang/)
 
 
 
