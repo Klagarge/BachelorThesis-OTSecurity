@@ -45,10 +45,10 @@ To use Ettercap, the attacker must know the IP address of the controller and the
   #figure(
     align(left,
       ```bash
-      ettercap -T -i eth0 -M arp /IP_CONTROLLER// /IP_HOMEIO//
+      sudo ettercap -T -i eth0 -M arp /IP_CONTROLLER// /IP_HOMEIO//
       ```
     ),
-    caption: [Ettercap command],
+    caption: [Start an ARP poisoning with Ettercap],
   ) <code:mitm-ettercap>
 ]
 
@@ -90,7 +90,18 @@ Here are all the tools that are used for this scenario :
 )
 
 = Attack on Modbus/TCP
-To modify a packet, the first step is to be on a #gls("mitm") position. This is done by using #gls("arp", long: false) poisoning as describe in @subj:attack:mitm-requirements. Once the attacker get all packets, 
+To modify a packet, the first step is to be on a #gls("mitm") position. This is done by using #gls("arp", long: false) poisoning as describe in @subj:attack:mitm-requirements. Once the attacker get all packets, they have to be redirect to the Python (@stack:mitm-python) script for modification on the fly. To do that the attacker can use iptable to add a rules on his firewall. The idea is to put all the packets on a queue so that the Python script can retrieve and analyse them one by one. @code:mitm-iptable show how to use iptable (@stack:mitm-iptables) to put on queue `1` all packet destinated to the subnet `192.168.0.0./16`.
+#[
+  #figure(
+    align(left,
+      ```bash
+      sudo iptables -I OUTPUT -d 192.168.0.0/16 -j NFQUEUE --queue-num 1
+      ```
+    ),
+    caption: [Put packets on queue 1 with Iptables],
+  ) <code:mitm-iptable>
+]
+
 
 == Closer look on TCP
 #subject(

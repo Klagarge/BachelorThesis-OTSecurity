@@ -87,5 +87,18 @@
 }
 
 
+#let tcp = {
+    import chronos: *
+    controller(show-bottom: false)
+    //attacker(show-bottom: false)
+    simulation(show-bottom: false)
 
+    let sl = 10
+    _seq("c", "s", end-tip: ">>", comment: "Modbus request", slant: sl)
+    _seq("s", "c", end-tip: ">>", comment: "ACK", slant: sl, dashed: true)
+    _seq("s", "c", end-tip: ">>", comment: "Modbus answer", slant: sl)
+    _seq("c", "s", end-tip: ">>", comment: "ACK", slant: sl, dashed: true)
+}
+
+#chronos.diagram(tcp)
 
