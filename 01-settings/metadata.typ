@@ -64,6 +64,7 @@
   attacks: 15em,
   simu-env: 70%,
   homeio-details: 85%,
+  arp-poisoning: 75%,
   stack-mitm: 100%,
 )
 

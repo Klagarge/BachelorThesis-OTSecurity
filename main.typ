@@ -65,8 +65,7 @@ It aids in selecting the appropriate attack on the right medium and simulation e
 #pagebreak()
 = Man in the Middle Scenario <sec:mitm>
 
-The Man in the Middle scenario involves intercepting, modifying and sending packets to take over the control of a Modbus/TCP installation. This attack is made on a Modbus/#gls("tcp") installation, which is a widely used protocol in the industry and mainly because it was required to do an attack on it for this thesis. This attack was choosen because it is a common attack and can have big impact. It is also a complete attack, in other words, this attack includes several other attacks like sniffing and spoofing with #gls("arp", long: false) poisoning. To perform such an attack, we assume that the attacker has access to the network to be able to intercept the packets.
-
+The Man-in-the-Middle (MitM) scenario focuses on intercepting, modifying, and forwarding packets to gain control over a Modbus/#gls("tcp") installation. This protocol, commonly used in industrial settings, was selected for this thesis because it is widely adopted and fulfils the requirement to demonstrate an attack on it. The #gls("mitm") attack was chosen due to its prevalence and potential for significant impact. It is a comprehensive attack that encompasses several other techniques, such as sniffing and spoofing through #gls("arp", long: false) poisoning. This scenario assumes that the attacker has already gained access to the network, enabling them to intercept and manipulate the data packets.
 
 #subject(
   "04-mitm",
@@ -81,7 +80,6 @@ The Man in the Middle scenario involves intercepting, modifying and sending pack
 #pagebreak()
 = Replay Scenario <sec:replay>
 #todo[
-  #lorem(50)
   - introd
   - pourquoi
   - sans fils

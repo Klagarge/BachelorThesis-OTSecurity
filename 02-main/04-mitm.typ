@@ -11,25 +11,26 @@
 
 #import "/02-main/attacks/mitm/chronos-drawings.typ": *
 
-= Simulation Environnement
+= Simulation Environment
 #subject(
   "simu-env/homeio-details",
   heading-offset: 2
 )
 
 = Requirements <subj:attack:mitm-requirements>
-This scenario is based on a #gls("mitm") attack, the attacker must adopt a man-in-the-middle position. In other words, all packets must pass through it. As Modbus/#gls("tcp") is an #gls("ip") based protocol, the attacker can use a nice tool named Ettercap (@stack:mitm-ettercap). This tool allowed you to performed easily and #gls("arp", long: false) poisoning attack.
+This scenario centres on a #gls("mitm") attack, where the attacker must position themselves between the communication parties, ensuring that all packets pass through their system. Since Modbus/#gls("tcp") is an #gls("ip")-based protocol, the attacker can utilize a powerful tool called Ettercap (@stack:mitm-ettercap). Ettercap simplifies the execution of an #gls("arp", long: false) poisoning attack.
 
-An #gls("arp", long: true) poisoning attack involves to send fake #gls("arp") message over the network. These message tell the target that the IP adress of other party is located at the attacker's #gls("mac") address like shown on @fig-arp-poisoning. The packets are then sent to the attacker, who can manipulate them before sending them back (or not) to the legitimate recipient. This attack take place at layer 3 of the OSI model #cite(<ISO-OSI_model-74981-1>).
+An #gls("arp", long: true) poisoning attack involves sending fraudulent#gls("arp") messages across the network, tricking the target into associating the #gls("ip") address of another party with the attackers #gls("mac") address, as illustrated in @fig-arp-poisoning.
+As a result, the target's packets are sent to the attacker, who can them manipulate these packets before forwarding them (or not) to the intended recipient. This attack occurs at layer 3 of the OSI model #cite(<ISO-OSI_model-74981-1>).
 
 #figure(
   align(center,
-    chronos.diagram(arp-spoofing-sync, width: 80%)
+    chronos.diagram(arp-spoofing-sync, width: size-fig.arp-poisoning)
   ),
   caption: [#gls("arp", long: false) poisoning],
 ) <fig-arp-poisoning>
 
-To use Ettercap, the attacker must know the IP address of the controller and the home io. It can be done by sniffing the network directly with Ettercap or tool like `Wireshark`, nmap, hping3, etc. Once the IP addresses are known, the attacker can launch the following command to start the #gls("arp", long: false) poisoning attack :
+To use Ettercap, the attacker need to know the #gls("ip") address of the controller and the Home I/O simulation. This information can be obtained by sniffing the network using Ettercap itself or other tools such as `Wireshark`, `nmap`, or `hping3`. Once the #gls("ip") addresses are identified, the attacker can initiate the #gls("arp", long: false) poisoning attack with the following command:
 #[
   #figure(
     align(left,
@@ -41,9 +42,9 @@ To use Ettercap, the attacker must know the IP address of the controller and the
   ) <code:mitm-ettercap>
 ]
 
-This command in @code:mitm-ettercap start Ettercap in text mode (`-T`) on the interface eth0 (`-i eth0`) and perform an #gls("arp") poisoning attack (`-M arp`). The IP addresses of the controller and the home io are given by `/IP_CONTROLLER//` and `/IP_HOMEIO//`. An graphical interface is also available but have to be installed as an extra package. 
+This command, shown in @code:mitm-ettercap start Ettercap in text mode (`-T`) on the `eth0` network interface (`-i eth0`) and perform an #gls("arp", long: false) poisoning attack (`-M arp`). The #gls("ip") addresses of the controller and the Home I/O simulation are specified by `/IP_CONTROLLER//` and `/IP_HOMEIO//`. An graphical interface is also available but have to be installed as an extra package. 
 
-To perform this attack, the iptables (@stack:mitm-iptables) will also be used to redirect packet to a python script (@stack:mitm-python) that will modify the packet on the fly. The python script will use the scapy (@stack:mitm-scapy) library to modify the packet. The scapy library is a powerful tool that can be used to craft or decode packets of a wide number of protocols. The second part of this attack (see on @subj:attack:mitm-modbus-tls) will use a go (@stack:mitm-golang) script.
+To execute this attack, `iptables` (@stack:mitm-iptables) will be used to redirect the packet to a python (@stack:mitm-python) script that modifies them in real-time. This script employs the scapy (@stack:mitm-scapy) library, a powerful tool for crafting or decoding packets from a wide range of protocols. The second part of this attack scenario (see on @subj:attack:mitm-modbus-tls) will use a go (@stack:mitm-golang) script.
 
 
 == Tools
@@ -79,7 +80,7 @@ Here are all the tools that are used for this scenario :
 )
 
 = Attack on Modbus/TCP
-To modify a packet, the first step is to be on a #gls("mitm") position. This is done by using #gls("arp", long: false) poisoning as describe in @subj:attack:mitm-requirements. Once the attacker get all packets, they have to be redirect to the Python (@stack:mitm-python) script for modification on the fly. To do that the attacker can use iptable to add a rules on his firewall. The idea is to put all the packets on a queue so that the Python script can retrieve and analyse them one by one. @code:mitm-iptable show how to use iptable (@stack:mitm-iptables) to put on queue `1` all packet destinated to the subnet `192.168.0.0./16`.
+To modify a packet during a Modbus/#gls("tcp") attack, the first step is to establish a #gls("mitm") position. This is achieved using #gls("arp", long: false) poisoning as described in @subj:attack:mitm-requirements. Once the attacker intercepts all the packets, they need to redirect them to a Python (@stack:mitm-python) script for real-time modification. This redirection can be accomplished by configuring iptables (@stack:mitm-iptables) to add rules to the attacker's firewall. The idea is to place all the packets into a queue, enabling the Python script to retrieve and analyse them sequentially. @code:mitm-iptable demonstrates how to use iptables (@stack:mitm-iptables) to enqueue all packets destined for the `192.168.0.0/16` subnet into queue `1`.
 #[
   #figure(
     align(left,
@@ -98,12 +99,13 @@ To modify a packet, the first step is to be on a #gls("mitm") position. This is 
   heading-offset: 3
 )
 == Modify packet on the fly
-Modifications are proceed with a Python (@stack:mitm-python) script. This script will use the scapy (@stack:mitm-scapy) library to modify the packet. The scapy library is a powerful tool that can be used to craft or decode packets of a wide number of protocols.
-Scapy is really usefull to modify packet on the fly. With this library, it's easy to separate layers on the packet. To get the IP content of the IP layer, simply use ```python  scapy_packet = IP(pck.get_payload())```. Check if it's #gls("tcp") and get the #gls("tcp") payload with ```python  payload = bytes(scapy_packet.payload.payload)```. 
+The packet modifications are carried out using a Python (@stack:mitm-python) script, leveraging the scapy (@stack:mitm-scapy) library.
+Scapy is particularly useful for on-the-fly modification.
+With Scapy it is straightforward to dissect the different layers of a packet. To extract the #gls("ip") layer, one can use the command ```python scapy_packet = IP(pck.get_payload())```. To check if the packet is #gls("tcp") and retrieve its payload, the command ```python payload = bytes(scapy_packet.payload.payload)``` can be used.
 
-This binary payload is the modbus message that can be checked and modified if needed. If the port is 1502, the message come from the controller and go to the server. This mean the attacker should only look if it is a request about a door sensor or the motion sensor. If it is, the attacker must save the transaction id of this request. 
+This binary payload contains the Modbus message, which can be inspected and altered as needed. If the destination port is 1502, the packet is from the controller heading to the server. In this case, the attacker should check if the request concerns a door sensor or the motion sensor and then save the transaction ID of this request.
 
-If the source port is 1502, the message come from the server and go to the controller. This mean the attacker should only look if it is a response about a previous transaction id saved. If it is, the attacker can look the response and modify it if needed.
+If the source port is 1502, the packet is from the server and is destined for the controller. The attacker should then verify whether the response corresponds to a previously saved transaction ID and, if so, modify the response as necessary.
 
 = Implement Modbus/TLS <subj:attack:mitm-modbus-tls>
 == Closer look on TLS
