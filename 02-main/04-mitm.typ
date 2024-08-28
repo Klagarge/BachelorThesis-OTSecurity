@@ -153,25 +153,14 @@ A more effective approach would be to handle the entire connection rather than a
   ) <code:mitm-iptables-tls>
 ]
 
-#table(
-  columns: (1fr, 1fr),
-  align: left + top,
-  stroke: none,
-  [
-    This command redirects all #gls("tcp") traffic destined for port `5802` (used for #gls("tls") communication between the controller and Home I/O) to port `5803` (the port where the attacker's server is running).
+This command redirects all #gls("tcp") traffic destined for port `5802` (used for #gls("tls") communication between the controller and Home I/O) to port `5803` (the port where the attacker's server is running).
 
-    The attacker can then set up their own Modbus/#gls("tls") server to decrypt the traffic and forward it to the Home I/O simulation. If desired, the attacker can modify the response before forwarding it back to the controller. It is easy to see a trace of such an attack because the attacker has to use a dummy certificate to create the symmetric encryption key. This certificate can be seen with `Wireshark` as in @fig:modbus-tls-dummy_certificate.
-  ], 
-  [
-    #figure(
-      align(center,
-        image("/04-resources/img/dummy_certificate.png", width: 100%)
-      ),
-      caption: [Dummy certificate visible on Wireshark],
-    ) <fig:modbus-tls-dummy_certificate> 
-  ]
-)
-
+The attacker can then set up their own Modbus/#gls("tls") server to decrypt the traffic and forward it to the Home I/O simulation. If desired, the attacker can modify the response before forwarding it back to the controller. It is easy to see a trace of such an attack because the attacker has to use a dummy certificate to create the symmetric encryption key. This certificate can be seen with tool like `Wireshark`
 
 
 = Conclusion
+In summary, this chapter has outlined the simulation environment, detailed the tools required for this scenario, and demonstrated how to implement a #gls("mitm") attack on both Modbus/#gls("tcp") and Modbus/#gls("tls") communications.
+
+The thesis focused on a simple system composed of two door sensors and a motion sensor controlling an alarm. The attacker's primary goal was to gain control over this system to open the doors without triggering the alarm. The findings illustrate how easily this can be achieved when no security measures are in place. The attacker only needs access to the local network, which could potentially be obtained by compromising an external sensor.
+
+Additionally, this thesis has shown how implementing Modbus/#gls("tls") can secure the system and highlighted the critical importance of verifying certificates to ensure robust protection.
