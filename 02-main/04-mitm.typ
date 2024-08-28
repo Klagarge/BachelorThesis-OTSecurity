@@ -35,7 +35,7 @@ To use Ettercap, the attacker need to know the #gls("ip") address of the control
   #figure(
     align(left,
       ```bash
-      sudo ettercap -T -i eth0 -M arp /IP_CONTROLLER// /IP_HOMEIO//
+      ettercap -T -i eth0 -M arp /IP_CONTROLLER// /IP_HOMEIO//
       ```
     ),
     caption: [Start an ARP poisoning with Ettercap],
@@ -85,7 +85,7 @@ To modify a packet during a Modbus/#gls("tcp") attack, the first step is to esta
   #figure(
     align(left,
       ```bash
-      sudo iptables -I OUTPUT -d 192.168.0.0/16 -j NFQUEUE --queue-num 1
+      iptables -I OUTPUT -d 192.168.0.0/16 -j NFQUEUE --queue-num 1
       ```
     ),
     caption: [Put packets on queue 1 with Iptables],
@@ -131,6 +131,45 @@ While clear communication can work, it falls short when it comes to security. To
 #subject(
   "crypto/tls",
   heading-offset: 3
+)
+
+= Attack on Modbus/TLS
+This thesis demonstrated how easily Modbus/#gls("tcp") packets can be intercepted and modified. However, when Modbus/#gls("tls") is employed, the packets are encrypted, making it seemingly impossible to perform a #gls("mitm") attack to take control of the system. This is true, but only if every step of the #gls("tls") implementation has been executed correctly.
+
+The thesis also reveals that control can still be compromised if certificates are not properly verified. In test or debugging environments, it's common for certificates to be unsigned by a #gls("ca"), rendering them invalid. As a result, certificate verification is often bypassed in such environments. However, it is crucial to ensure that certificates are signed and verified in a production environment. In the #gls("ot") world, it may be advisable for a company to maintain its own internal #gls("ca") to sign all certificates. This makes it easier to install the #gls("ca") on all company devices and ensure proper certificate verification.
+
+To perform a #gls("mitm") attack on a Modbus/#gls("tls") installation that does not check certificates, the attacker must first establish a #gls("mitm") position. This can be done using the same #gls("arp") poisoning attack described in @subj:attack:mitm-requirements. During this thesis, considerable time was spent trying to modify random and certificates on the fly. This approach proved difficult because the #gls("tls") handshake (@fig:tls-handshake) must be fully implemented, and there are no tools specifically designed to modify only the #gls("tls") layer in real-time. While many tools exist for performing #gls("mitm") attacks in the #gls("it") world, such as `Burp suite`, `mitmproxy`, or `bettercap`, they are typically focused on the #gls("https") protocol.
+
+A more effective approach would be to handle the entire connection rather than attempting to modify packets on the fly. The attacker can redirect the #gls("tls") traffic from both targets to their own server, where the traffic can be decrypted. To redirect the traffic, `iptables` (@stack:mitm-iptables) can be used, as demonstrated in @code:mitm-iptables-tls.
+
+#[
+  #figure(
+    align(left,
+      ```bash
+      iptables -t nat -A PREROUTING -p tcp --dport 5802 -j REDIRECT --to-port 5803
+      ```
+    ),
+    caption: [Redirect traffic to another port with Iptables],
+  ) <code:mitm-iptables-tls>
+]
+
+#table(
+  columns: (1fr, 1fr),
+  align: left + top,
+  stroke: none,
+  [
+    This command redirects all #gls("tcp") traffic destined for port `5802` (used for #gls("tls") communication between the controller and Home I/O) to port `5803` (the port where the attacker's server is running).
+
+    The attacker can then set up their own Modbus/#gls("tls") server to decrypt the traffic and forward it to the Home I/O simulation. If desired, the attacker can modify the response before forwarding it back to the controller. It is easy to see a trace of such an attack because the attacker has to use a dummy certificate to create the symmetric encryption key. This certificate can be seen with `Wireshark` as in @fig:modbus-tls-dummy_certificate.
+  ], 
+  [
+    #figure(
+      align(center,
+        image("/04-resources/img/dummy_certificate.png", width: 100%)
+      ),
+      caption: [Dummy certificate visible on Wireshark],
+    ) <fig:modbus-tls-dummy_certificate> 
+  ]
 )
 
 

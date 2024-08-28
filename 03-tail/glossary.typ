@@ -230,6 +230,13 @@
       long: "Certificate Authority",
       description: [A certificate authority (CA) is an entity that issues digital certificates.],
       group: "Cryptography",
+    ),
+    (
+      key: "https",
+      short: "HTTPS",
+      long: "Hypertext Transfer Protocol Secure",
+      description: [Hypertext Transfer Protocol Secure (HTTPS) is an extension of the Hypertext Transfer Protocol (HTTP). HTTP is an application protocol for distributed, collaborative, hypermedia information systems. HTTPS is used for secure communication over a computer network and is widely used on the Internet.],
+      group: "Communications",
     )
 
   ),
