@@ -13,7 +13,7 @@
   set figure.caption(separator: linebreak())
   [
     #figure(
-      image(path, width: size),
+      image(path, height: size),
       supplement: "Icon",
       kind: "icon",
       caption: caption
@@ -66,7 +66,7 @@
   ),
 
   flipper: (size, lbl) => add-figure(
-    "/04-resources/stack/flipper.png",
+    "/04-resources/stack/flipper.svg",
     size,
     [*Flipper Zero*], lbl
   ),
@@ -75,6 +75,12 @@
     "/04-resources/stack/modbus.png",
     size,
     [*Modbus*], lbl
+  ),
+
+  wireless-m-bus: (size, lbl) => add-figure(
+    "/04-resources/stack/wireless-m-bus.png",
+    size,
+    [*Wireless M-Bus*], lbl
   ),
 )
 
@@ -113,5 +119,9 @@
 
   modbus: lbl => [
     *Modbus* (#ref(lbl)) is a communication protocol used in industrial automation.\ 
+  ],
+
+  wireless-m-bus: lbl => [
+    *Wireless M-Bus* (#ref(lbl)) is a communication protocol used in metering devices.\ 
   ],
 )
