@@ -81,15 +81,9 @@ The Man-in-the-Middle (MitM) scenario focuses on intercepting, modifying, and fo
 //----------
 #pagebreak()
 = Replay Scenario <sec:replay>
-#todo[
-  - introd
-  - pourquoi
-  - sans fils
-  - comment
-  - flipper
-]
 
-The replay scenario involves intercepting and resending a message on a wireless connection to trigger the same effect as the original message, like for example a garage door opening remote.
+The replay attack scenario involves intercepting and resending a message on a wireless connection to trigger the same effect as the original message, like, for example, a garage door opening remote.
+This scenario is particularly engaging because it can be easily implemented with the #gls("flipper") device, making it more interactive and enjoyable for students to witness a physical attack in action. Additionally, it highlights the significance of wireless attacks, a critical topic in the #gls("ot") world. This scenario operates at the physical layer, providing a complementary perspective to the #gls("mitm", long: false) scenario discussed in @sec:mitm.
 
 #subject(
   "05-replay",
