@@ -140,7 +140,7 @@
     attacker(show-bottom: false)
     simulation(show-bottom: false)
 
-    _grp("loop", desc: "every 20ms", {
+    _grp("loop", desc: "every 1s", {
         _sync({
             _seq("a", "c", end-tip: ">>", comment: highlight(fill:white)[
                 ARP | #get_ip("s") = #get_mac("a")
