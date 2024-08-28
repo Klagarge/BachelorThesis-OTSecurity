@@ -164,3 +164,5 @@ In summary, this chapter has outlined the simulation environment, detailed the t
 The thesis focused on a simple system composed of two door sensors and a motion sensor controlling an alarm. The attacker's primary goal was to gain control over this system to open the doors without triggering the alarm. The findings illustrate how easily this can be achieved when no security measures are in place. The attacker only needs access to the local network, which could potentially be obtained by compromising an external sensor.
 
 Additionally, this thesis has shown how implementing Modbus/#gls("tls") can secure the system and highlighted the critical importance of verifying certificates to ensure robust protection.
+
+Finally, with this scenario, many layers of the OSI model have been tackled. Layer 2 and 3 with ARP poisoning, layer 4 with the attack on Modbus/TCP and layer 5 and 6 with the attack on Modbus/TLS.
