@@ -65,7 +65,8 @@
   simu-env: 70%,
   homeio-details: 85%,
   arp-poisoning: 75%,
-  stack-mitm: 100%,
+  stack-mitm: 2cm,
+  stack-replay: 2cm,
 )
 
 #let icons = (
