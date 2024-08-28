@@ -107,6 +107,23 @@ This binary payload contains the Modbus message, which can be inspected and alte
 
 If the source port is 1502, the packet is from the server and is destined for the controller. The attacker should then verify whether the response corresponds to a previously saved transaction ID and, if so, modify the response as necessary.
 
+
+== Summary
+The entire process is summarized in @fig-modbus-tcp-attack.
+
+(1) Initially, under normal conditions, the controller sends a request to the server, the server responds, and the controller triggers the alarm if necessary.
+
+(2) However, when the attacker initiates an #gls("arp") poisoning attack, all packets are routed through the attacker.
+
+(3) This allows the attacker to perform a #gls("mitm") attack and modify the packets in real-time. In this scenario, the controller sends a request to the server, the attacker intercepts and alters the response, and the controller proceeds as if the modified response were legitimate.
+
+#figure(
+  align(center,
+    chronos.diagram(mitm, width: 100%)
+  ),
+  caption: [Modbus/TCP attack scenario],
+) <fig-modbus-tcp-attack>
+
 = Implement Modbus/TLS <subj:attack:mitm-modbus-tls>
 == Closer look on TLS
 #todo([

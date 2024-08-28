@@ -44,12 +44,12 @@
     attacker()
     simulation()
 
-    _sep("Normal")
+    _sep("1. Normal")
     msg("c", "s", "Ask value of sensor #15")
     msg("s", "c", "Value of sensor #15 = 1")
     _seq("c", "c", end-tip: ">>", comment: highlight(fill: white)[Alarm !])
 
-    _sep("ARP poisoning")
+    _sep("2. ARP poisoning")
 
     _sync({
         _seq("a", "c", end-tip: ">>", comment: highlight(fill:white)[
@@ -86,7 +86,7 @@
     )
     _seq("c", "c", end-tip: ">>", comment: highlight(fill: white)[Alarm !])
 
-    _sep("MitM attack")
+    _sep("3. MitM attack")
     msg("c", "a", "Ask value of sensor #15",
         mac-sender: "c", 
         mac-receiver: "a",
