@@ -223,6 +223,13 @@
       short: "Pen-Testing",
       long: "Penetration Testing",
       description: [Penetration testing, also known as pen testing, is a simulated cyber attack against your computer system to check for exploitable vulnerabilities.],
+    ),
+    (
+      key: "ca",
+      short: "CA",
+      long: "Certificate Authority",
+      description: [A certificate authority (CA) is an entity that issues digital certificates.],
+      group: "Cryptography",
     )
 
   ),

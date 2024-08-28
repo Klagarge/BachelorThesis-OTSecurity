@@ -125,12 +125,14 @@ The entire process is summarized in @fig-modbus-tcp-attack.
 ) <fig-modbus-tcp-attack>
 
 = Implement Modbus/TLS <subj:attack:mitm-modbus-tls>
-== Closer look on TLS
-#todo([
-  - encryption
-  - certificat
-  - handshake
-  - 
-])
+While clear communication can work, it falls short when it comes to security. To safeguard Modbus/#gls("tcp") communication, it is essential to add an encryption layer. Modbus over #gls("tls") is a secure version of Modbus/#gls("tcp"), encrypting the communication between the controller and the server. With Modbus/#gls("tls") in place, the attacker is unable to intercept and modify the packets in real-time, as they are protected by encryption.
+
+== Closer look on TLS <subj:crypto:tls>
+#subject(
+  "crypto/tls",
+  heading-offset: 3
+)
+
+
 
 = Conclusion

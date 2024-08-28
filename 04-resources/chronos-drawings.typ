@@ -85,6 +85,51 @@
         show-bottom: show-bottom
     )
 }
+#let c = "c"
+#let a = "a"
+#let s = "s"
+
+#let sync(
+    actor1,
+    actor2,
+    comment,
+    dashed: false,
+    flip: false
+) = {
+    import chronos: *
+    _seq(
+        actor1,
+        actor2,
+        comment: comment,
+        comment-align: comment-align,
+        dashed: dashed,
+        flip: flip
+    )
+}
+
+#let async(
+    actor1,
+    actor2,
+    comment,
+    flip: false,
+    dashed: false,
+    slant: auto
+) = {
+    import chronos: *
+    if actor1 == actor2 {
+        slant = none
+    }
+    _seq(
+        actor1,
+        actor2,
+        end-tip: ">>",
+        comment: comment,
+        comment-align: "start",
+        dashed: dashed,
+        flip: flip,
+        slant: slant
+    )
+}
 
 
 #let tcp = {
@@ -92,12 +137,11 @@
     controller(show-bottom: false)
     //attacker(show-bottom: false)
     simulation(show-bottom: false)
-
-    let sl = 10
-    _seq("c", "s", end-tip: ">>", comment: "Modbus request", slant: sl)
-    _seq("s", "c", end-tip: ">>", comment: "ACK", slant: sl, dashed: true)
-    _seq("s", "c", end-tip: ">>", comment: "Modbus answer", slant: sl)
-    _seq("c", "s", end-tip: ">>", comment: "ACK", slant: sl, dashed: true)
+    
+    async(c, s, "Modbus request")
+    async(s, c, "ACK", dashed: true)
+    async(s, c, "Modbus answer")
+    async(c, s, "ACK", dashed: true)
 }
 
 #chronos.diagram(tcp)

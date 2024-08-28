@@ -24,7 +24,7 @@
 
 #include "02-main/00-acknowledgements.typ"
 #include "02-main/01-abstract.typ"
-
+#pagebreak()
 //----------------
 //- INTRODUCTION -
 //----------------
@@ -37,7 +37,9 @@
 //------------
 //- PLANNING -
 //------------
-#subject("planning", heading-offset: 0)
+//#subject("planning", heading-offset: 0)
+
+#pagebreak()
 
 //------------------
 //- SUSTAINABILITY -
