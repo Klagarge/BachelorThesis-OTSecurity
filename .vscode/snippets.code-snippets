@@ -54,4 +54,34 @@
 		],
 		"description": "Add subject"
 	},
+
+	"Wrap-content" : {
+		"scope": "typst",
+		"prefix": "wrap",
+		"body": [
+			"#let body = [",
+			"\t",
+			"]",
+			"",
+			"#let fig = [",
+			"\t",
+			"]",
+			"",
+			"#wrap-content(",
+			"\tfig,",
+			"\tbody,",
+			"\talign: top + right,",
+			")"
+		],
+		"description": "Wrap content"
+	},
+
+	"OSI model": {
+		"scope": "typst",
+		"prefix": "osi",
+		"body": [
+			"OSI model #cite(<ISO-OSI_model-74981-1>)"
+		],
+		"description": "OSI model"
+	},
 }
