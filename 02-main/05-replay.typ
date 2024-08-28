@@ -14,8 +14,7 @@
   "simu-env/wmbus",
   heading-offset: 2
 )
-  
-])
+
 
 = Requirements
 This scenario focuses on a replay attack on a #gls("wmbus") system, where understanding the content of the message is unnecessary. The attacker only needs to capture the physical layer of the message and retransmit it.
@@ -47,6 +46,12 @@ Here are all the tools that are used for this scenario :
     #(stack.def.flipper)(<stack:replay-flipper>)
     #(stack.def.golang)(<stack:replay-golang>)
   ]
+)
+
+== Closer look on RC1180
+#subject(
+  "comm/wmbus_RC1180",
+  heading-offset: 3
 )
 
 = Attack on Wireless M-Bus
