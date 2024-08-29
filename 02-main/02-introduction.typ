@@ -9,46 +9,46 @@
 }
 // END OF HEADER
 
-This thesis takes place in an increasingly connected world. Where not so long ago we had a world made up of IT on one side and industrial #gls("plc") on the other, the #gls("iot") is reducing this boundary and breaking down the barriers that existed between these two worlds. 
-From the begging the #gls("it") world has been confronted with malicious individuals who have sought every means possible to take control of installations. They implement some security systems to repeal attackers.
-However, the #gls("ot") world has been less concerned with security, and the #gls("plc") systems have been designed to be robust and reliable, but not secure. The strategy for industrial systems has been to isolate them from the outside world.
-Meanwhile, in an #gls("ot") embedded systems did not have the necessary power to perform cryptographic operations. As a result of having an isolated environment where it was difficult to implement security, the #gls("ot") world was for a long time far removed from any good practice in terms of security. 
+This thesis is set in a world that is becoming increasingly interconnected. Not long ago, the #gls("it") world and industrial #gls("plc") systems were distinct and separate, with clear boundaries between them. However, the rise of the #gls("iot") has blurred these lines, breaking down the barriers that once existed between these two domains.
 
-With the advent of the #gls("iot"), the desire to interrconnect everything has become predominant. Industry want also to benefit to push live data of a production line to the cloud. The #gls("ot") world become more sensitive to attackers and must now incorporate security into its systems. In meanwhile, embeddedsystems have become more powerful and can now perform cryptographic operations.
+From the outset, the #gls("it") world has faced threats from malicious individuals intent on gaining control of systems. In response, various security measures have been developed to fend off these attackers. In contrast, the #gls("ot") world, which includes industrial systems and #gls("plc"), has traditionally focused more on robustness and reliability than on security. The prevailing strategy for industrial systems was to isolate them from external networks, assuming that physical separation would suffice for security.
 
-While industry is beginning to secure its production lines, there are still a huge number of bad practices and unsecured systems. In this context, #school.name gave security course in the 6th semester of the #school.specialisation students. This course will change with the new study plan next year to cover more specifically the security of embedded systems also call #gls("ot") Security.
+Additionally, embedded systems in the #gls("ot") world lacked the processing power needed to perform cryptographic operations, making security implementations challenging. As a result, the #gls("ot") domain remained largely disconnected from best practices in cybersecurity for many years.
+
+With the advent of #gls("iot"), the desire to interconnect everything has become a driving force. Industries now seek to push real-time production data to the cloud, making #gls("ot") systems more vulnerable to attacks. This shift has forced the #gls("ot") world to incorporate security measures into its systems. Meanwhile, advancements in technology have made embedded systems more powerful, enabling them to handle cryptographic operations that were previously out of reach.
+
+While some industries are beginning to secure their production lines, many still employ poor practices and maintain unsecured systems. In this context, #school.name has introduced a security course in the 6th semester for #school.specialisation students. With the upcoming changes in the study plan, this course will evolve to focus more specifically on the security of embedded systems, also known as #gls("ot") Security.
 
 I also chose this thesis subject due to my keen interest in Security and PEN-testing. Additionally, I already have some basic ethical hacking background and would like to specialize in security of embedded systems during the rest of my studies. This thesis presents a valuable opportunity to delve into this field, and I have already enrolled for a master's degree to continue on this path.
 
 = Objectives
 
-As this thesis is the first building block in the overhaul of the security course, it is an important element that has driven this thesis. 
-This thesis must provide scenario case that can be use in the laboratory of the #school.name. The scenarios must be realistic and feasible for the students during a laboratory exercice. A more subjective objective of having fun scenarios. 
+As the first step in overhauling the security course, this thesis plays a crucial role. It aims to develop scenario cases that can be used in the laboratory. These scenarios must be both realistic and feasible for students to perform during lab exercises, with an additional goal of making them engaging and fun.
 
-This thesis have to produce between three and four of this attack scenario. The scenario have first to include an unsecure situation that be physical or simulated. Secondly, thes must include an attack to take advantage of this insecurity. And finally the scenario must include a solution to secure the system. Ideally, students, should be able to carry out the attack or the security operation in the futur laboratory. 
+This thesis will produce between three and four attack scenarios. Each scenario will start with an unsecured situation, either physical or simulated. The scenario will then include an attack that exploits this vulnerability, followed by a solution to secure the system. Ideally, students should be able to carry out the attack or implement the security measures in future lab sessions.
 
-Ultimately, these scenarios must include at least a modbus communication and a wireless communication. Ideally, the scenarios should be able to used a Wago PLC and a #gls("flipper") device.
+The scenarios will cover at least one Modbus communication and one wireless communication. Whenever possible, the scenarios should involve a Wago PLC and a #gls("flipper") device.
 
 = Methodology and structure
 
-As the aim of the bachelor's thesis is also to be a work that serves the student who is doing it, I decided to work as autonomously as possible. In my opinion, do not asking questions (or few) allows for better learning and a better understanding of the work carried out, in return for a longer completion time. 
+As an important aspect of a bachelor's thesis is that it also serves as a valuable learning experience for author, I chose to approach this project with as much independence as possible. In my view, by working autonomously and asking fewer questions, I can gain a deeper understanding and truly benefit from the experience, even if it means the project takes longer to complete.
 
-This thesis start begin by an analysis of various attacks that can be carried ou on embedded systems, with a focus on communication. In this section, it will also be discussed the different media that can be used to carry out these attacks. And last but not least, the simulation environments that can be used to carry out these attacks.
+The thesis begins with an analysis of various attacks that can be carried out on embedded systems, with a particular focus on communication vulnerabilities. This section also explores the different media that can be used to execute these attacks and examines the simulation environments suitable for testing them.
 
-This thesis develop after 2 choosen scenarios with more details. It present the environments and the needed tools for each scenario. It after overview how to perform the attack of this scenario. And finally, it present the solution to secure the system.
+The thesis then develops two selected scenarios in greater detail. It presents the environments and tools needed for each scenario, explains how to perform the attacks, and finally, proposes solutions to secure the systems.
 
 #let space = 4em
 #v(space*2)
 
 #infobox()[
-  The main repository of this thesis is also entry point for all codes and documentation. It can be found at the following address: 
+  The main repository for this thesis, which also serves as the entry point for all code and documentation, can be found at the following address:
 
-  #align(center)[https://github.com/Klagarge/OT-Security]
+  #align(center)[https://github.com/Klagarge/BachelorThesis-OTSecurity]
 ]
 
 #v(space)
 
 #iconbox(icon:"/04-resources/stack/chatgpt.svg", linecolor:
 hei-blue)[
-  Some modern tools like AI have been used to do this thesis. AI has been used for helping to reformulate and paraphrasing this final document. All code or text in this thesis has been originaly written by the author, #author.name.
+  Some modern tools like AI were used to assist in the reformulation and paraphrasing of this final document. However, all code and text in this thesis were originally written by the author, #author.name. 
 ]
