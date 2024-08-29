@@ -9,16 +9,17 @@
 }
 // END OF HEADER
 
-The *RC1180* is a #gls("wmbus") transceiver interfaced on Serial. This chip have to be configurated to thw right mode to work properly. In this thesis case, the T-mode is used. The transceiver must also me configured has a emitter or a receiver. The configuration is done by sending serial data to the device. The device will then respond with a confirmation message. The configuration is done by sending the following characters to the device : 
+The *RC1180* is a #gls("wmbus") transceiver interfaced via a serial connection. To function correctly, this chip must be configured to appropriate mode. In the context of this thesis, T-mode is utilized. The transceiver also needs to be set up as either a transmitter or a receiver. Configuration is achieved by sending specific serial commands to the device, which will respond with a confirmation message. The following commands are used for configuration : 
+
 - `0x00`: to enter in configuration mode
 - `0x47`: to change the #gls("wmbus") mode
 - `0x01`: to configure to T-mode
 - `0x46`: to change the C-field of all futur messages
 - `0x44`/`0x04`: to set master (`0x44`) or slave (`0x04`)
 - `0x00`: to exit configuration mode
-A return message, `0x3E`, is expected between each send.
+After each command, a confirmation message 0x3E is expected.
 
-After the configuration, a message can be sent to the device to start the transmission. The message must be in the following format shown on @fig:wmbus-send-uart.
+Once the configuration is complete, a message can be sent to the device to initiate transmission. The message format is shown in @fig:wmbus-send-uart.
 #table(
   columns: (1fr, 1fr),
   stroke: none,
@@ -39,4 +40,4 @@ After the configuration, a message can be sent to the device to start the transm
     *Data*: Data to send (n bytes)
   ]
 ) 
-For this thesis, the `CI` is set to `0x80` to send a general message as this is just a demonstrator and not a real #gls("wmbus") meter.
+For this thesis, the `CI` is set to `0x80` to send a general message, as this is a demonstration setup rather than a real #gls("wmbus") meter.
