@@ -6,7 +6,7 @@
   title: title,
   student: author.name,
   //picture: "/04-resources/thesis_summary.png",
-  picture: "/04-resources/OT-Security7.png",
+  picture: "/04-resources/OT-Security.jpg",
   year: date.year,
   degree: school.orientation,
   field: school.specialisation,
