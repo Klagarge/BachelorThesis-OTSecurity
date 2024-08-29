@@ -63,11 +63,11 @@ For this thesis, the "sub-1GHz" feature of the #gls("flipper") is utilized. The 
 In read-raw mode, the #gls("flipper") needs to be configured to operate at 868.95 MHz for the #gls("wmbus") system. The modulation is set to `FM476`, which corresponds to frequency modulation with a 47.6 kHz deviation. Based on the documentation, the Flipper should ideally detect the specific type of frequency modulation used by the signal.
 
 == Modulation FSK vs GFSK
-Initial attempts at replaying the signal were unsatisfactory. While the #gls("flipper") successfully detected and recorded a signal, the replayed signal was received by the RC1180 but not understood. This indicated that the #gls("flipper") was not correctly recording or replaying the signal. To diagnose the issue, the wireless signal was analyzed using an Agilent spectrum analyzer. Although the measurements were not conducted to obtain precise quantitative results, they provided a qualitative understanding of the signal.
+Initial attempts at replaying the signal were unsatisfactory. While the #gls("flipper") successfully detected and recorded a signal, the replayed signal was received by the RC1180 but not understood. This indicated that the #gls("flipper") was not correctly recording or replaying the signal. To diagnose the issue, the wireless signal was analysed using an Agilent spectrum analyser. Although the measurements were not conducted to obtain precise quantitative results, they provided a qualitative understanding of the signal.
 
-A measurement of the original signal emitted by the #gls("wmbus") transceiver is shown in @fig:wmbus-spectrum. The signal is centered around 868.95 MHz with a 50 kHz bandwidth and uses #gls("2gfsk", long: true) modulation.
+A measurement of the original signal emitted by the #gls("wmbus") transceiver is shown in @fig:wmbus-spectrum. The signal is centred around 868.95 MHz with a 50 kHz bandwidth and uses #gls("2gfsk", long: true) modulation.
 
-In contrast, the signal replayed by the #gls("flipper"), shown in @fig:wmbus-spectrum-flipper, also centers around 868.95 MHz with a 47,6 kHz bandwidth, but the modulation appears to be #gls("2fsk", long: true) rather than #gls("2gfsk"). This difference in modulation explains why the RC1180 does not recognize the replayed signal.
+In contrast, the signal replayed by the #gls("flipper"), shown in @fig:wmbus-spectrum-flipper, also centres around 868.95 MHz with a 47,6 kHz bandwidth, but the modulation appears to be #gls("2fsk", long: true) rather than #gls("2gfsk"). This difference in modulation explains why the RC1180 does not recognize the replayed signal.
 
 #table(
   columns: (1fr, 1fr),
