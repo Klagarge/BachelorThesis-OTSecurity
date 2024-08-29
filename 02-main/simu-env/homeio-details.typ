@@ -26,6 +26,6 @@ This software simulates a Modbus server for each room. In this thesis, the archi
   caption: [#gls("mitm", long: false) scenario implementation]
 ) <fig-simu-env-homeio-implementation>
 
-In this demonstration, the controller sends requests to check the status of both door sensors and the motion sensor. If either door is open or motion is detected, the controller sends a request to the alarm to activate it. If no activity is detected, the controller sends a request to deactivate the alarm.
+In this demonstration, the controller sends requests to check the status of both door sensors and the motion sensor. If either the door is open or motion is detected, the controller sends a request to the alarm to activate it. If not irregular activity is detected, the controller sends a request to deactivate the alarm.
 
-The controller, the simulation, and an attacker are all connected to the same network via a switch. This thesis was made under a Kali Linux (@stack:mitm-kali) laptop, although it is performed on any computer with the appropriate tools. 
+The controller, the simulation and an attacker are all connected to the same network via a switch. This thesis uses a Kali Linux (@stack:mitm-kali) laptop, although the software can be execute on any device with the appropriate tools. 

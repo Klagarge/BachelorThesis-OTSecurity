@@ -18,7 +18,7 @@
 )
 
 = Requirements <subj:attack:mitm-requirements>
-This scenario centres on a #gls("mitm") attack, where the attacker must position themselves between the communication parties, ensuring that all packets pass through their system. Since Modbus/#gls("tcp") is an #gls("ip")-based protocol, the attacker can utilize a powerful tool called Ettercap (@stack:mitm-ettercap). Ettercap simplifies the execution of an #gls("arp", long: false) poisoning attack.
+This scenario centres on a #gls("mitm") attack, where the attacker must position themselves between the communication parties, ensuring that all packets pass through their system. Since Modbus/#gls("tcp") is an #gls("ip")-based protocol, the attacker can utilize a powerful tool called *Ettercap* (@stack:mitm-ettercap). Ettercap simplifies the execution of an #gls("arp", long: false) poisoning attack.
 
 An #gls("arp", long: true) poisoning attack involves sending fraudulent#gls("arp") messages across the network, tricking the target into associating the #gls("ip") address of another party with the attackers #gls("mac") address, as illustrated in @fig-arp-poisoning.
 As a result, the target's packets are sent to the attacker, who can them manipulate these packets before forwarding them (or not) to the intended recipient. This attack occurs at layer 3 of the OSI model #cite(<ISO-OSI_model-74981-1>).
@@ -30,7 +30,7 @@ As a result, the target's packets are sent to the attacker, who can them manipul
   caption: [#gls("arp", long: false) poisoning],
 ) <fig-arp-poisoning>
 
-To use Ettercap, the attacker need to know the #gls("ip") address of the controller and the Home I/O simulation. This information can be obtained by sniffing the network using Ettercap itself or other tools such as `Wireshark`, `nmap`, or `hping3`. Once the #gls("ip") addresses are identified, the attacker can initiate the #gls("arp", long: false) poisoning attack with the following command:
+To use Ettercap, the attacker needs to know the #gls("ip") address of the controller and the Home I/O simulation. This information can be obtained by sniffing the network using Ettercap itself or other tools such as `Wireshark`, `nmap`, or `hping3`. Once the #gls("ip") addresses are identified, the attacker can initiate the #gls("arp", long: false) poisoning attack with the following command:
 #[
   #figure(
     align(left,
@@ -42,9 +42,9 @@ To use Ettercap, the attacker need to know the #gls("ip") address of the control
   ) <code:mitm-ettercap>
 ]
 
-This command, shown in @code:mitm-ettercap start Ettercap in text mode (`-T`) on the `eth0` network interface (`-i eth0`) and perform an #gls("arp", long: false) poisoning attack (`-M arp`). The #gls("ip") addresses of the controller and the Home I/O simulation are specified by `/IP_CONTROLLER//` and `/IP_HOMEIO//`. An graphical interface is also available but have to be installed as an extra package. 
+This command, shown in @code:mitm-ettercap starta Ettercap in text mode (`-T`) on the `eth0` network interface (`-i eth0`) and performs an #gls("arp", long: false) poisoning attack (`-M arp`). The #gls("ip") addresses of the controller and the Home I/O simulation are specified by `/IP_CONTROLLER//` and `/IP_HOMEIO//`. A graphical user interface is also available but has to be installed as an extra package. 
 
-To execute this attack, `iptables` (@stack:mitm-iptables) will be used to redirect the packet to a python (@stack:mitm-python) script that modifies them in real-time. This script employs the scapy (@stack:mitm-scapy) library, a powerful tool for crafting or decoding packets from a wide range of protocols. The second part of this attack scenario (see on @subj:attack:mitm-modbus-tls) will use a go (@stack:mitm-golang) script.
+To execute this attack, *iptables* (@stack:mitm-iptables) will be used to redirect the packet to a python (@stack:mitm-python) script that modifies them in real-time. This script employs the *scapy* (@stack:mitm-scapy) library, a powerful tool for crafting, decoding and encoding packets from / to a wide range of protocols. The second part of this attack scenario (see @subj:attack:mitm-modbus-tls) will use a *go* (@stack:mitm-golang) script.
 
 
 == Tools
@@ -80,7 +80,7 @@ Here are all the tools that are used for this scenario :
 )
 
 = Attack on Modbus/TCP
-To modify a packet during a Modbus/#gls("tcp") attack, the first step is to establish a #gls("mitm") position. This is achieved using #gls("arp", long: false) poisoning as described in @subj:attack:mitm-requirements. Once the attacker intercepts all the packets, they need to redirect them to a Python (@stack:mitm-python) script for real-time modification. This redirection can be accomplished by configuring iptables (@stack:mitm-iptables) to add rules to the attacker's firewall. The idea is to place all the packets into a queue, enabling the Python script to retrieve and analyse them sequentially. @code:mitm-iptable demonstrates how to use iptables (@stack:mitm-iptables) to enqueue all packets destined for the `192.168.0.0/16` subnet into queue `1`.
+To modify a packet during a Modbus/#gls("tcp") attack, the first step is to establish a #gls("mitm") position. This is achieved using #gls("arp", long: false) poisoning as described in @subj:attack:mitm-requirements. Once the attacker is able to intercepts all the packets, they need to redirect them to a *Python* (@stack:mitm-python) script for real-time modification. This redirection can be accomplished by configuring *iptables* (@stack:mitm-iptables) to add rules to the attacker's firewall. The idea is to place all the packets into a queue, enabling the Python script to retrieve and analyse them sequentially. @code:mitm-iptable demonstrates how to use *iptables* (@stack:mitm-iptables) to enqueue all packets adressed to `192.168.0.0/16` sub-network into queue `1`.
 #[
   #figure(
     align(left,
@@ -98,10 +98,10 @@ To modify a packet during a Modbus/#gls("tcp") attack, the first step is to esta
   "crypto/tcp",
   heading-offset: 3
 )
-== Modify packet on the fly
-The packet modifications are carried out using a Python (@stack:mitm-python) script, leveraging the scapy (@stack:mitm-scapy) library.
+== Modify packet on the flys
+Packet modifications are carried out using a *Python* (@stack:mitm-python) script, leveraging the *scapy* (@stack:mitm-scapy) library.
 Scapy is particularly useful for on-the-fly modification.
-With Scapy it is straightforward to dissect the different layers of a packet. To extract the #gls("ip") layer, one can use the command ```python scapy_packet = IP(pck.get_payload())```. To check if the packet is #gls("tcp") and retrieve its payload, the command ```python payload = bytes(scapy_packet.payload.payload)``` can be used.
+With Scapy it is straightforward to dissect the different layers of a packet. To extract the #gls("ip") layer, one can use the statement ```python scapy_packet = IP(pck.get_payload())```. To check if the packet is #gls("tcp") and retrieve its payload, the function ```python payload = bytes(scapy_packet.payload.payload)``` can be used.
 
 This binary payload contains the Modbus message, which can be inspected and altered as needed. If the destination port is 1502, the packet is from the controller heading to the server. In this case, the attacker should check if the request concerns a door sensor or the motion sensor and then save the transaction ID of this request.
 
@@ -115,7 +115,7 @@ The entire process is summarized in @fig-modbus-tcp-attack.
 
 (2) However, when the attacker initiates an #gls("arp") poisoning attack, all packets are routed through the attacker.
 
-(3) This allows the attacker to perform a #gls("mitm") attack and modify the packets in real-time. In this scenario, the controller sends a request to the server, the attacker intercepts and alters the response, and the controller proceeds as if the modified response were legitimate.
+(3) This allows the attacker to perform a #gls("mitm") attack and modify the packets in real-time. In this scenario, the controller sends a request to the server, the attacker intercepts and alters the response, and the controller proceeds as if the modified response was legitimate.
 
 #figure(
   align(center,
@@ -134,11 +134,11 @@ While clear communication can work, it falls short when it comes to security. To
 )
 
 = Attack on Modbus/TLS
-This thesis demonstrated how easily Modbus/#gls("tcp") packets can be intercepted and modified. However, when Modbus/#gls("tls") is employed, the packets are encrypted, making it seemingly impossible to perform a #gls("mitm") attack to take control of the system. This is true, but only if every step of the #gls("tls") implementation has been executed correctly.
+This thesis demonstrated how easily Modbus/#gls("tcp") packets can be intercepted and modified. However, when Modbus/#gls("tls") is employed, the packets are encrypted, making it seemingly impossible to perform a #gls("mitm") attack to take control of the system. This is only true if every step of the #gls("tls") implementation has been executed correctly.
 
-The thesis also reveals that control can still be compromised if certificates are not properly verified. In test or debugging environments, it's common for certificates to be unsigned by a #gls("ca"), rendering them invalid. As a result, certificate verification is often bypassed in such environments. However, it is crucial to ensure that certificates are signed and verified in a production environment. In the #gls("ot") world, it may be advisable for a company to maintain its own internal #gls("ca") to sign all certificates. This makes it easier to install the #gls("ca") on all company devices and ensure proper certificate verification.
+The thesis also reveals that control can still be compromised if certificates are not properly verified. In test or debugging environments, it is common for certificates not to be signed by a #gls("ca"), rendering them invalid. As a result, certificate verification is often bypassed in such environments. However, it is crucial to ensure that certificates are signed and verified in a production environment. In the #gls("ot") world, it may be advisable for a company to maintain its own internal #gls("ca") to sign all certificates. This makes it easier to install the #gls("ca") on all company devices and ensure proper certificate verification.
 
-To perform a #gls("mitm") attack on a Modbus/#gls("tls") installation that does not check certificates, the attacker must first establish a #gls("mitm") position. This can be done using the same #gls("arp") poisoning attack described in @subj:attack:mitm-requirements. During this thesis, considerable time was spent trying to modify random and certificates on the fly. This approach proved difficult because the #gls("tls") handshake (@fig:tls-handshake) must be fully implemented, and there are no tools specifically designed to modify only the #gls("tls") layer in real-time. While many tools exist for performing #gls("mitm") attacks in the #gls("it") world, such as `Burp suite`, `mitmproxy`, or `bettercap`, they are typically focused on the #gls("https") protocol.
+To perform a #gls("mitm") attack on a Modbus/#gls("tls") installation that does not check certificates, the attacker must first establish a #gls("mitm") position. This can be done using the same #gls("arp") poisoning attack described in @subj:attack:mitm-requirements. During this thesis, considerable time was spent trying to modify the random values and certificates on the fly. This approach proved difficult because the #gls("tls") handshake (@fig:tls-handshake) must be fully implemented, and there are no tools specifically designed to modify only the #gls("tls") layer in real-time. While many tools exist for performing #gls("mitm") attacks in the #gls("it") world, such as `Burp suite`, `mitmproxy`, or `bettercap`, they are typically focused on the #gls("https") protocol.
 
 A more effective approach would be to handle the entire connection rather than attempting to modify packets on the fly. The attacker can redirect the #gls("tls") traffic from both targets to their own server, where the traffic can be decrypted. To redirect the traffic, `iptables` (@stack:mitm-iptables) can be used, as demonstrated in @code:mitm-iptables-tls.
 
@@ -155,7 +155,7 @@ A more effective approach would be to handle the entire connection rather than a
 
 This command redirects all #gls("tcp") traffic destined for port `5802` (used for #gls("tls") communication between the controller and Home I/O) to port `5803` (the port where the attacker's server is running).
 
-The attacker can then set up their own Modbus/#gls("tls") server to decrypt the traffic and forward it to the Home I/O simulation. If desired, the attacker can modify the response before forwarding it back to the controller. It is easy to see a trace of such an attack because the attacker has to use a dummy certificate to create the symmetric encryption key. This certificate can be seen with tool like `Wireshark`
+The attacker can then set up their own Modbus/#gls("tls") server to decrypt the traffic and forward it to the Home I/O simulation. If desired, the attacker can modify the response before forwarding it back to the controller. It is easy to see a trace of such an attack because the attacker has to use a dummy certificate to create the symmetric encryption key. This certificate can be seen with tools like `Wireshark`
 
 
 = Conclusion

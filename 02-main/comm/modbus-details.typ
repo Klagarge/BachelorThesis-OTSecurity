@@ -8,9 +8,9 @@
   }
 } // END OF HEADER
 
-As discussed on @subj:comm-modbus, Modbus is a straightforward protocol that was initially developed for serial communication via #gls("rtu") but is now commonly implemented over #gls("tcp")/#gls("ip").
+As discussed in @subj:comm-modbus, Modbus is a straightforward protocol that was initially developed for serial communication via #gls("rtu") but is now commonly implemented over #gls("tcp")/#gls("ip").
 This protocol operates in request-response mode, as illustrated in @fig:modbus-seq-req_repl.
-In this setup, the controller sends a request to the Home I/O to retrieve a value or alter an output. The Home I/O then replies with the requested value or an acknowledgment message, after which the controller can issue another request or close the connection.
+In this setup, the controller sends a request to the Home I/O simulation to retrieve a value or alter an output. Home I/O then replies with the requested value or an acknowledgment message, after which the controller can issue another request or close the connection.
 
 This request-response mechanism means that the attacker must capture traffic in both directions to modify packets in real-time effectively. The attacker needs to know the nature of the request to determine if the response needs alteration. Without this knowledge, it would be impossible to decide if a response needs to be modified.
 
@@ -40,7 +40,7 @@ In this thesis simulation, the controller is tasked with checking the status of 
         align: center+horizon,
         [*Sensor / Actuator*],
         rotate(-90deg, reflow: true)[*Unit ID*],
-        [*Fonction*],
+        [*Function*],
         rotate(-90deg, reflow: true)[*Address*],
         align(left)[*Door exterior*], [5], [Discrete\ Inputs], [13],
         align(left)[*Door garage*], [5], [Discrete\ Inputs], [14],

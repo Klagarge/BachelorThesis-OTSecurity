@@ -10,7 +10,7 @@
 // END OF HEADER
 
 #let body = [
-  #gls("tcp", long: true) operates at layer 4 of the OSI model #cite(<ISO-OSI_model-74981-1>) and is responsible for establishing a reliable connection between two devices. In this thesis, the primary concern is #gls("tcp")'s mechanism for ensuring packet integrity via checksums. The checksum ensures that the packet has not been corrupted during transmission; if the checksum does not match, the packet is discarded. This aspect is crucial for the attacker, who must modify the packet on the fly. If the modified packet has an incorrect checksum, it will be discarded, causing the attack to fail. An acknowledgment (ACK) is sent when the packet is received correctly, as illustrated in @fig-tcp. Within the #gls("tcp") segment, the Modbus packet is encapsulated as shown in @fig:modbus-tcp-structure. 
+  #gls("tcp", long: true) operates at layer 4 of the OSI model #cite(<ISO-OSI_model-74981-1>) and is responsible for establishing a reliable connection between two devices. In this thesis, the primary concern is #gls("tcp")'s mechanism for ensuring packet integrity via checksums. The checksum ensures that the packet has not been corrupted during transmission; i.e. if the checksum does not match, the packet is discarded. This aspect is crucial for the attacker, who must modify the packet on the fly. If the modified packet has an incorrect checksum, it will be discarded, causing the attack to fail. An acknowledgment (ACK) is sent back when the packet is received correctly, as illustrated in @fig-tcp. Within the #gls("tcp") segment, a Modbus packet is encapsulated as shown in @fig:modbus-tcp-structure. 
 ]
 
 #let fig = [
