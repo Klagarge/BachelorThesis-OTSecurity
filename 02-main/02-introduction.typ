@@ -11,15 +11,15 @@
 
 This thesis is set in a world that is becoming increasingly interconnected. Not long ago, the #gls("it") world and industrial #gls("plc") systems were distinct and separate, with clear boundaries between them. However, the rise of the #gls("iot") has blurred these lines, breaking down the barriers that once existed between these two domains.
 
-From the outset, the #gls("it") world has faced threats from malicious individuals intent on gaining control of systems. In response, various security measures have been developed to fend off these attackers. In contrast, the #gls("ot") world, which includes industrial systems and #gls("plc"), has traditionally focused more on robustness and reliability than on security. The prevailing strategy for industrial systems was to isolate them from external networks, assuming that physical separation would suffice for security.
+From the outset, the #gls("it") world has faced threats from malicious individuals wanting to gain control of systems. In response, various security measures have been developed to fend off these attackers. In contrast, the #gls("ot") world, which includes industrial systems and #glspl("plc"), has traditionally focused more on robustness and reliability rather than on security. The prevailing strategy for industrial systems was to isolate them from external networks, assuming that physical separation would suffice for security.
 
 Additionally, embedded systems in the #gls("ot") world lacked the processing power needed to perform cryptographic operations, making security implementations challenging. As a result, the #gls("ot") domain remained largely disconnected from best practices in cybersecurity for many years.
 
 With the advent of #gls("iot"), the desire to interconnect everything has become a driving force. Industries now seek to push real-time production data to the cloud, making #gls("ot") systems more vulnerable to attacks. This shift has forced the #gls("ot") world to incorporate security measures into its systems. Meanwhile, advancements in technology have made embedded systems more powerful, enabling them to handle cryptographic operations that were previously out of reach.
 
-While some industries are beginning to secure their production lines, many still employ poor practices and maintain unsecured systems. In this context, #school.name has introduced a security course in the 6th semester for #school.specialisation students. With the upcoming changes in the study plan, this course will evolve to focus more specifically on the security of embedded systems, also known as #gls("ot") Security.
+While some industries are beginning to secure their production lines, many still employ poor practices and maintain unsecured systems. In this context, the #school.name has introduced a security course in the 6th semester for #school.specialisation students. With the upcoming changes in the study plan, this course will evolve to focus more specifically on the security of embedded systems, also known as #gls("ot") Security.
 
-I also chose this thesis subject due to my keen interest in Security and PEN-testing. Additionally, I already have some basic ethical hacking background and would like to specialize in security of embedded systems during the rest of my studies. This thesis presents a valuable opportunity to delve into this field, and I have already enrolled for a master's degree to continue on this path.
+I also chose this thesis subject due to my keen interest in Security and PEN-testing. Additionally, I already have some basic ethical hacking background and would like to specialize in the security of embedded systems during the rest of my studies. This thesis presents a valuable opportunity to delve into this field, and I have already enrolled for a master's degree to continue on this path.
 
 = Objectives
 
@@ -31,7 +31,7 @@ The scenarios will cover at least one Modbus communication and one wireless comm
 
 = Methodology and structure
 
-As an important aspect of a bachelor's thesis is that it also serves as a valuable learning experience for author, I chose to approach this project with as much independence as possible. In my view, by working autonomously and asking fewer questions, I can gain a deeper understanding and truly benefit from the experience, even if it means the project takes longer to complete.
+An important aspect of a bachelor's thesis is that it also needs to serves as a valuable learning experience for author. Therefore, I chose to approach this project with as much independence as possible. In my view, by working autonomously and asking fewer questions, one can gain a deeper understanding and truly benefit from the experience, even if it means the project takes longer to complete.
 
 The thesis begins with an analysis of various attacks that can be carried out on embedded systems, with a particular focus on communication vulnerabilities. This section also explores the different media that can be used to execute these attacks and examines the simulation environments suitable for testing them.
 

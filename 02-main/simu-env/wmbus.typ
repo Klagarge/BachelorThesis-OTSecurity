@@ -11,8 +11,8 @@
 
 
 #let body = [
-  Orginial idea was to do a replay attack on a #gls("wmbus") system as shown on @fig:simu-env-wmbus-implementation.
-  Like the electrical meter where an attacker measure the power consumption of two weeks of hollidays. Then replay thoses weeks and can optionnaly add some graphical card for mining bitcoins. 
+  The orginial idea was to do a replay attack on a #gls("wmbus") system as shown on @fig:simu-env-wmbus-implementation.
+  A real world situation could be a malicious person recording the data emitted by an electrical meter during two weeks of holidays. Then they could replay thoses weeks to reduce their electrical bill.
 ]
 
 #let fig = [

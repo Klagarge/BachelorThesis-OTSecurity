@@ -9,7 +9,7 @@
 }
 // END OF HEADER
 
-= Simulation Environnement
+= Simulation Environement
 #subject(
   "simu-env/wmbus",
   heading-offset: 2

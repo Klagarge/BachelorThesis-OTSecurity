@@ -9,9 +9,9 @@
 }
 // END OF HEADER
 
-The *RC1180* is a #gls("wmbus") transceiver interfaced via a serial connection. To function correctly, this chip must be configured to appropriate mode. In the context of this thesis, T-mode is utilized. The transceiver also needs to be set up as either a transmitter or a receiver. Configuration is achieved by sending specific serial commands to the device, which will respond with a confirmation message. The following commands are used for configuration : 
+The *RC1180* is a #gls("wmbus") transceiver interfaced via a serial connection. To function correctly, this chip must be configured to the appropriate mode. In the context of this thesis, T-mode is utilized. The transceiver also needs to be set up as either a transmitter or a receiver. Configuration is achieved by sending specific serial commands to the device, which will respond with a confirmation message. The following commands are used for configuration : 
 
-- `0x00`: to enter in configuration mode
+- `0x00`: to enter configuration mode
 - `0x47`: to change the #gls("wmbus") mode
 - `0x01`: to configure to T-mode
 - `0x46`: to change the C-field of all futur messages
@@ -37,7 +37,7 @@ Once the configuration is complete, a message can be sent to the device to initi
   ], align(left)[
     *L*: Length of the message (1 byte) \
     *CI*: Control Information (1 byte) \
-    *Data*: Data to send (n bytes)
+    *Data*: Data to send (L bytes)
   ]
 ) 
 For this thesis, the `CI` is set to `0x80` to send a general message, as this is a demonstration setup rather than a real #gls("wmbus") meter.
