@@ -44,7 +44,7 @@ To use Ettercap, the attacker needs to know the #gls("ip") address of the contro
 
 This command, shown in @code:mitm-ettercap starta Ettercap in text mode (`-T`) on the `eth0` network interface (`-i eth0`) and performs an #gls("arp", long: false) poisoning attack (`-M arp`). The #gls("ip") addresses of the controller and the Home I/O simulation are specified by `/IP_CONTROLLER//` and `/IP_HOMEIO//`. A graphical user interface is also available but has to be installed as an extra package. 
 
-To execute this attack, *iptables* (@stack:mitm-iptables) will be used to redirect the packet to a python (@stack:mitm-python) script that modifies them in real-time. This script employs the *scapy* (@stack:mitm-scapy) library, a powerful tool for crafting, decoding and encoding packets from / to a wide range of protocols. The second part of this attack scenario (see @subj:attack:mitm-modbus-tls) will use a *go* (@stack:mitm-golang) script.
+To execute this attack, *Iptables* (@stack:mitm-iptables) will be used to redirect the packet to a *Ppython* (@stack:mitm-python) script that modifies them in real-time. This script employs the *Scapy* (@stack:mitm-scapy) library, a powerful tool for crafting, decoding and encoding packets from / to a wide range of protocols. The second part of this attack scenario (see @subj:attack:mitm-modbus-tls) will use a *Go* (@stack:mitm-golang) script.
 
 
 == Tools
@@ -80,7 +80,7 @@ Here are all the tools that are used for this scenario :
 )
 
 = Attack on Modbus/TCP
-To modify a packet during a Modbus/#gls("tcp") attack, the first step is to establish a #gls("mitm") position. This is achieved using #gls("arp", long: false) poisoning as described in @subj:attack:mitm-requirements. Once the attacker is able to intercepts all the packets, they need to redirect them to a *Python* (@stack:mitm-python) script for real-time modification. This redirection can be accomplished by configuring *iptables* (@stack:mitm-iptables) to add rules to the attacker's firewall. The idea is to place all the packets into a queue, enabling the Python script to retrieve and analyse them sequentially. @code:mitm-iptable demonstrates how to use *iptables* (@stack:mitm-iptables) to enqueue all packets adressed to `192.168.0.0/16` sub-network into queue `1`.
+To modify a packet during a Modbus/#gls("tcp") attack, the first step is to establish a #gls("mitm") position. This is achieved using #gls("arp", long: false) poisoning as described in @subj:attack:mitm-requirements. Once the attacker is able to intercepts all the packets, they need to redirect them to a *Python* (@stack:mitm-python) script for real-time modification. This redirection can be accomplished by configuring *Iptables* (@stack:mitm-iptables) to add rules to the attacker's firewall. The idea is to place all the packets into a queue, enabling the *Python* script to retrieve and analyse them sequentially. @code:mitm-iptable demonstrates how to use *Iptables* (@stack:mitm-iptables) to enqueue all packets adressed to `192.168.0.0/16` sub-network into queue `1`.
 #[
   #figure(
     align(left,
@@ -99,9 +99,9 @@ To modify a packet during a Modbus/#gls("tcp") attack, the first step is to esta
   heading-offset: 3
 )
 == Modify packet on the flys
-Packet modifications are carried out using a *Python* (@stack:mitm-python) script, leveraging the *scapy* (@stack:mitm-scapy) library.
-Scapy is particularly useful for on-the-fly modification.
-With Scapy it is straightforward to dissect the different layers of a packet. To extract the #gls("ip") layer, one can use the statement ```python scapy_packet = IP(pck.get_payload())```. To check if the packet is #gls("tcp") and retrieve its payload, the function ```python payload = bytes(scapy_packet.payload.payload)``` can be used.
+Packet modifications are carried out using a *Python* (@stack:mitm-python) script, leveraging the *Scapy* (@stack:mitm-scapy) library.
+*Scapy* is particularly useful for on-the-fly modification.
+With *Scapy* it is straightforward to dissect the different layers of a packet. To extract the #gls("ip") layer, one can use the statement ```python scapy_packet = IP(pck.get_payload())```. To check if the packet is #gls("tcp") and retrieve its payload, the function ```python payload = bytes(scapy_packet.payload.payload)``` can be used.
 
 This binary payload contains the Modbus message, which can be inspected and altered as needed. If the destination port is 1502, the packet is from the controller heading to the server. In this case, the attacker should check if the request concerns a door sensor or the motion sensor and then save the transaction ID of this request.
 

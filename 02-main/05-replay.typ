@@ -21,7 +21,7 @@ This scenario focuses on a replay attack on a #gls("wmbus") system, where unders
 
 The #gls("flipper") device (@stack:replay-flipper) is used to execute this attack. The device features a “read raw” mode in the “sub-ghz” section, which allows it to listen to a specific frequency with a particular modulation and record the data at the physical layer (layer 1 of the OSI model #cite(<ISO-OSI_model-74981-1>)).
 
-For transmitting messages on #gls("wmbus"), a *RC1180* transceiver from Radiocraft is employed. This device can both transmit and receive messages via a serial connection. A Go (@stack:replay-golang) program can be used to send and receive messages through the RC1180.
+For transmitting messages on #gls("wmbus"), a *RC1180* transceiver from Radiocraft is employed. This device can both transmit and receive messages via a serial connection. A *Go* (@stack:replay-golang) program can be used to send and receive messages through the RC1180.
 
 == Tools
 Here are all the tools that are used for this scenario : 
@@ -101,12 +101,12 @@ The transceiver emits a signal at 433.92 MHz when a signal is present on its dat
 
 To overcome this issue and maintain simplicity, the strategy involves transmitting a serial message with a long preamble to stabilize the signal's amplification, followed by start characters. This enables the receiver to correctly detect both the signal and the message.
 
-Given the simplicity of this modulation, the #gls("flipper") device has no trouble reading and replaying the signal. It have to be configurate on the right frequency and an `AM650` modulation preset. The demonstration conducted in this thesis involves a simple message sent by the transmitter and received by the receiver. The #gls("flipper") is used to record the message and replay it, allowing the receiver to detect the message and trigger the same action as the original signal.
+Given the simplicity of this modulation, the #gls("flipper") device has no trouble reading and replaying the signal. It has to be configurated on the right frequency and use an `AM650` modulation preset. The demonstration conducted in this thesis involves a simple message sent by the transmitter and received by the receiver. The #gls("flipper") is used to record the message and replay it, allowing the receiver to detect the message and trigger the same action as the original signal.
 
 = Security in wireless broadcast isolated devices
 A replay attack is always possible if two identical messages trigger the same action. To prevent such attacks, each message must be unique.
 
-Typically, this is achieved by adding a timestamp to the message. However, in this scenario, it's not feasible due to the isolation between the receiver and transmitter, as well as the unidirectional nature of the communication. Without the ability to perform a challenge-response, alternative methods must be considered.
+Typically, this is achieved by adding a timestamp to the message. However, in this scenario, it is not feasible due to the isolation between the receiver and transmitter, as well as the unidirectional nature of the communication. Without the ability to perform a challenge-response, alternative methods must be considered.
 
 == Closer look on rolling code
 For this thesis, a rolling code was chosen as the security measure. Rolling code security involves appending a short, changing code to each message. This code is generated using a simple pseudo-random number generator. The receiver stores the last code received and only accepts one of the next codes in the sequence.
@@ -115,10 +115,9 @@ A pseudo-random number generator relies on a seed and a function that generates 
 
 This method is straightforward and allows for easy addition of new remotes. To add a new remote, the receiver must enter learning mode, and the transmitter sends a code that the receiver adopts as the seed for the new remote.
 
-This method is not perfect for security, as if the attacker knows how works the pseudo-random number generator, he can predict the next code. But it is enough for a garage door remote.
-
 If an attacker understands how the pseudo-random number generator of this system works, they can predict future codes. While this method is not foolproof, it provides sufficient security for a garage door remote.
 
+#pagebreak()
 == Closer look on signature
 An alternative method involves signing the message with a private key, which the receiver then verifies using a public key. This approach offers greater security but requires more complex hardware and software capable of performing cryptographic operations. Additionally, adding a new remote becomes more complicated, as the receiver must be configured to recognize the new remote's public key.
 
