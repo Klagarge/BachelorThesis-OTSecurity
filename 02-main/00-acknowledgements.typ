@@ -21,7 +21,7 @@ I am also deeply grateful to Michael Clausen, who followed my progress closely a
 I would also like to thank Prof. Silvan Zahno, who introduced me to Typst and crafted a wonderful template and work for this new, fresh tool.
 My appreciation also goes to Prof. Christopher Metrailler, who presented me a lot of tools, including my new favourite code editor, ZED.
 
-My heartfelt thanks go to my family for their support, and to my best friend for his unwavering support and for his proofreading of my report.
-Finally, I am profoundly grateful to my brother, whose thorough review and incredible Typst packages played a crucial role in the final presentation of this thesis.
+My heartfelt thanks go to my family for their support, and to my friend Yann for his unwavering support and for his proofreading of my report.
+Finally, I am profoundly grateful to my brother Louis, whose thorough review and incredible Typst packages played a crucial role in the final presentation of this thesis.
 
 Thank you all for your contributions and support. This thesis would not have been possible without you.
