@@ -102,17 +102,28 @@ To overcome this issue and maintain simplicity, the strategy involves transmitti
 
 Given the simplicity of this modulation, the #gls("flipper") device has no trouble reading and replaying the signal. It have to be configurate on the right frequency and an `AM650` modulation preset. The demonstration conducted in this thesis involves a simple message sent by the transmitter and received by the receiver. The #gls("flipper") is used to record the message and replay it, allowing the receiver to detect the message and trigger the same action as the original signal.
 
-= Security in wireless brodcast isolted devices
-#todo([
-  
-])
+= Security in wireless broadcast isolated devices
+A replay attack is always possible if two identical messages trigger the same action. To prevent such attacks, each message must be unique.
+
+Typically, this is achieved by adding a timestamp to the message. However, in this scenario, it's not feasible due to the isolation between the receiver and transmitter, as well as the unidirectional nature of the communication. Without the ability to perform a challenge-response, alternative methods must be considered.
 
 == Closer look on rolling code
-#todo([
-  
-])
+For this thesis, a rolling code was chosen as the security measure. Rolling code security involves appending a short, changing code to each message. This code is generated using a simple pseudo-random number generator. The receiver stores the last code received and only accepts one of the next codes in the sequence.
+
+A pseudo-random number generator relies on a seed and a function that generates a new, seemingly random number. The seed is the last code received, and both the transmitter and receiver use the same function. The receiver must be able to compare with more than one subsequent code; otherwise, if a code is transmitted but not received, the receiver may become desynchronized and unable to decode future codes.
+
+This method is straightforward and allows for easy addition of new remotes. To add a new remote, the receiver must enter learning mode, and the transmitter sends a code that the receiver adopts as the seed for the new remote.
+
+This method is not perfect for security, as if the attacker knows how works the pseudo-random number generator, he can predict the next code. But it is enough for a garage door remote.
+
+If an attacker understands how the pseudo-random number generator of this system works, they can predict future codes. While this method is not foolproof, it provides sufficient security for a garage door remote.
 
 == Closer look on signature
-#todo([
-  
-])
+An alternative method involves signing the message with a private key, which the receiver then verifies using a public key. This approach offers greater security but requires more complex hardware and software capable of performing cryptographic operations. Additionally, adding a new remote becomes more complicated, as the receiver must be configured to recognize the new remote's public key.
+
+To sign a message, a hash of the message is created and encrypted with the private key. The receiver decrypts the signature with the public key and compares the hash with the hash of the received message. If they match, the message is considered authentic. To prevent replay attacks, a simple counter can be included in the message, as it is also authenticated.
+
+= Conclusion
+In summary, this chapter has presented the replay attack using the #gls("flipper"). This attack is relatively simple, as the #gls("flipper") has built-in functions designed to execute such attacks on unsecured systems. Initially, the plan was to conduct this attack on a #gls("wmbus") system, but due to the #gls("flipper")'s lack of preset support for #gls("2gfsk") modulation, the attack was instead performed on a basic 433 MHz transceiver.
+
+Since a wireless replay attack targets layer 1 of the OSI model #cite(<ISO-OSI_model-74981-1>), the system must implement security at a higher layer. In this thesis, a rolling code was used to secure the system. While this method is simple and effective for a garage door remote, more secure systems may benefit from a message signature approach
