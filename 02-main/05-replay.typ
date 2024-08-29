@@ -94,7 +94,13 @@ Given these challenges, it was decided to proceed with Plan B.
 
 
 = Attack on basic 433 MHz transceiver
-#todo([])
+Instead of using a complete protocol like #gls("wmbus"), a basic 433 MHz transceiver can be employed for the replay attack scenario. This approach is simpler and effectively simulates a garage door and its remote control. In this thesis, a basic #gls("ook") transceiver from `M5Stack` is used. The setup consists of two chips: a transmitter (`SYN115`) and a receiver (`SYN513R`). #gls("ook") modulation, the simplest form of #gls("ask"), represents digital data by the presence or absence of a carrier wave.
+
+The transceiver emits a signal at 433.92 MHz when a signal is present on its data pin and nothing when the data pin is low. A challenge with the receiver is detecting a varying signal; if no signal is detected, it amplifies the noise until it perceives sufficient variation to consider it as a signal. Similarly, if the signal is present for too long, the receiver reduces amplification, mistaking noise variations for the signal.
+
+To overcome this issue and maintain simplicity, the strategy involves transmitting a serial message with a long preamble to stabilize the signal's amplification, followed by start characters. This enables the receiver to correctly detect both the signal and the message.
+
+Given the simplicity of this modulation, the #gls("flipper") device has no trouble reading and replaying the signal. It have to be configurate on the right frequency and an `AM650` modulation preset. The demonstration conducted in this thesis involves a simple message sent by the transmitter and received by the receiver. The #gls("flipper") is used to record the message and replay it, allowing the receiver to detect the message and trigger the same action as the original signal.
 
 = Security in wireless brodcast isolted devices
 #todo([
