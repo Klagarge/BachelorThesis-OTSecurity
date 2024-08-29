@@ -14,6 +14,8 @@ In this setup, the controller sends a request to the Home I/O simulation to retr
 
 This request-response mechanism means that the attacker must capture traffic in both directions to modify packets in real-time effectively. The attacker needs to know the nature of the request to determine if the response needs alteration. Without this knowledge, it would be impossible to decide if a response needs to be modified.
 
+#pagebreak()
+
 In this thesis simulation, the controller is tasked with checking the status of two door sensors and a motion detector, all of which are connected to the same Modbus slave, the *Entrance Hall* (UnitID=5). The alarm system is represented as a coil on the same slave. A summary of these registers can be found in @tab:mobus-inputs_coils.
 
 #table(

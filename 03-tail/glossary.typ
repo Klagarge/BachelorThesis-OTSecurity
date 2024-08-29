@@ -9,14 +9,14 @@
 } // END OF HEADER
 
 //#pagebreak()
-// #show heading.where(level: 1): (it) => {
-//   set text(size: huge)
+// #show heading.where(level: 2): (it) => {
+//   set text(size: large)
 //   set block(above: 1.2em, below: 1.2em)
 //   unshift_prefix("", it.body)
 // }
 
 //#set page(columns: 2)
-//#set text(smaller)
+//#set text(small)
 //= Glossary <sec:glossary>
 #print-glossary(
   (
@@ -237,7 +237,6 @@
       key: "https",
       short: "HTTPS",
       long: "Hypertext Transfer Protocol Secure",
-      description: [Hypertext Transfer Protocol Secure (HTTPS) is an extension of the Hypertext Transfer Protocol (HTTP). HTTP is an application protocol for distributed, collaborative, hypermedia information systems. HTTPS is used for secure communication over a computer network and is widely used on the Internet.],
       group: "Communications",
     )
 

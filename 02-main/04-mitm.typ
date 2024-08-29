@@ -65,13 +65,13 @@ Here are all the tools that are used for this scenario :
     (stack.fig.golang)(size-fig.stack-mitm, "mitm-golang"),
   )
 ]
-// #(stack.def.kali)(<stack:mitm-kali>)
-// //#(stack.def.wireshark)(<stack:mitm-wireshark>)
-// #(stack.def.ettercap)(<stack:mitm-ettercap>)
-// #(stack.def.iptables)(<stack:mitm-iptables>)
-// #(stack.def.python)(<stack:mitm-python>)
-// #(stack.def.scapy)(<stack:mitm-scapy>)
-// #(stack.def.golang)(<stack:mitm-golang>)
+#(stack.def.kali)(<stack:mitm-kali>)
+//#(stack.def.wireshark)(<stack:mitm-wireshark>)
+#(stack.def.ettercap)(<stack:mitm-ettercap>)
+#(stack.def.iptables)(<stack:mitm-iptables>)
+#(stack.def.python)(<stack:mitm-python>)
+#(stack.def.scapy)(<stack:mitm-scapy>)
+#(stack.def.golang)(<stack:mitm-golang>)
 
 == Closer look on Modbus <subj:comm:modbus-details>
 #subject(
@@ -92,7 +92,7 @@ To modify a packet during a Modbus/#gls("tcp") attack, the first step is to esta
   ) <code:mitm-iptable>
 ]
 
-
+#pagebreak()
 == Closer look on TCP
 #subject(
   "crypto/tcp",
@@ -107,7 +107,7 @@ This binary payload contains the Modbus message, which can be inspected and alte
 
 If the source port is 1502, the packet is from the server and is destined for the controller. The attacker should then verify whether the response corresponds to a previously saved transaction ID and, if so, modify the response as necessary.
 
-
+#pagebreak()
 == Summary
 The entire process is summarized in @fig-modbus-tcp-attack.
 
@@ -124,6 +124,7 @@ The entire process is summarized in @fig-modbus-tcp-attack.
   caption: [Modbus/TCP attack scenario],
 ) <fig-modbus-tcp-attack>
 
+#pagebreak()
 = Implement Modbus/TLS <subj:attack:mitm-modbus-tls>
 While clear communication can work, it falls short when it comes to security. To safeguard Modbus/#gls("tcp") communication, it is essential to add an encryption layer. Modbus over #gls("tls") is a secure version of Modbus/#gls("tcp"), encrypting the communication between the controller and the server. With Modbus/#gls("tls") in place, the attacker is unable to intercept and modify the packets in real-time, as they are protected by encryption.
 

@@ -121,8 +121,10 @@ This scenario is particularly engaging because it can be easily implemented with
 
 
 #pagebreak()
+//#set page(columns: 2)
 = Glossary <sec:glossary>
 #include "03-tail/glossary.typ"
+#set page(columns: 1)
 
 //#include "03-tail/a-appendix.typ"
 
