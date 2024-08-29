@@ -55,24 +55,46 @@ Here are all the tools that are used for this scenario :
 )
 
 = Attack on Wireless M-Bus
-#todo([
-  
-])
+With the setup complete, the goal is to perform a replay attack on the #gls("wmbus") system using the #gls("flipper") device. As a reminder, the #gls("wmbus") in T-Mode operates at 868.95 MHz with 2GFSK modulation and a 50 kHz deviation.
 
 == Flipper Zero
-#todo([
-  
-])
+For this thesis, the "sub-1GHz" feature of the #gls("flipper") is utilized. The #gls("flipper") contains a `CC1101` chip from `Texas Instruments (TI)`, designed to operate within the 300-348 MHz, 387-464 MHz, and 779-928 MHz frequency bands. It supports various modulation schemes, including 2(G)FSK, 4(G)FSK, ASK, and OOK.
+
+In read-raw mode, the #gls("flipper") needs to be configured to operate at 868.95 MHz for the #gls("wmbus") system. The modulation is set to `FM476`, which corresponds to frequency modulation with a 47.6 kHz deviation. Based on the documentation, the Flipper should ideally detect the specific type of frequency modulation used by the signal.
 
 == Modulation FSK vs GFSK
-#todo([
-  
-])
+Initial attempts at replaying the signal were unsatisfactory. While the #gls("flipper") successfully detected and recorded a signal, the replayed signal was received by the RC1180 but not understood. This indicated that the #gls("flipper") was not correctly recording or replaying the signal. To diagnose the issue, the wireless signal was analyzed using an Agilent spectrum analyzer. Although the measurements were not conducted to obtain precise quantitative results, they provided a qualitative understanding of the signal.
+
+A measurement of the original signal emitted by the #gls("wmbus") transceiver is shown in @fig:wmbus-spectrum. The signal is centered around 868.95 MHz with a 50 kHz bandwidth and uses #gls("2gfsk", long: true) modulation.
+
+In contrast, the signal replayed by the #gls("flipper"), shown in @fig:wmbus-spectrum-flipper, also centers around 868.95 MHz with a 47,6 kHz bandwidth, but the modulation appears to be #gls("2fsk", long: true) rather than #gls("2gfsk"). This difference in modulation explains why the RC1180 does not recognize the replayed signal.
+
+#table(
+  columns: (1fr, 1fr),
+  align: center + top,
+  stroke: none,
+  [
+    #set figure.caption(separator: linebreak())
+    #figure(
+      image("/04-resources/img/spectrum_analyzer/wmb-resized.png", width: 100%),
+      caption: [Spectrum analyzer of the original #gls("wmbus") signal],
+    ) <fig:wmbus-spectrum>
+  ],[
+    #set figure.caption(separator: linebreak())
+    #figure(
+      image("/04-resources/img/spectrum_analyzer/fm476-resized.png", width: 100%),
+      caption: [Spectrum analyzer of the replayed signal in FM476 modulation],
+    ) <fig:wmbus-spectrum-flipper>
+  ]
+)
+
+The #gls("flipper") seems unable to detect the correct type of frequency modulation. Upon closer examination of the firmware, it was discovered that the `FM476` preset is configured only for #gls("2fsk") modulation. While a brief effort was made to add a configuration setting for #gls("2gfsk") with a 50 kHz deviation, the limited time remaining for the thesis made it impractical to proceed. Configuring this would require a detailed understanding of the CC1101 chip's register settings, a complex task requiring in-depth knowledge of the chip's datasheet.
+
+Given these challenges, it was decided to proceed with Plan B.
+
 
 = Attack on basic 433 MHz transceiver
-#todo([
-  
-])
+#todo([])
 
 = Security in wireless brodcast isolted devices
 #todo([
