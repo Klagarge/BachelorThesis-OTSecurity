@@ -113,12 +113,6 @@ This scenario is particularly engaging because it can be easily implemented with
 //--------------
 #pagebreak()
 = Conclusion <sec:conclusion>
-#todo[
-  - résumé
-  - résultats
-  - usage pour un labo
-  - difficultés
-]
 
 #subject(
   "07-conclusion",

@@ -211,12 +211,14 @@
       short: "ARP",
       long: "Address Resolution Protocol",
       description: [The Address Resolution Protocol (ARP) is a communication protocol used for discovering the link layer address, such as a MAC address, associated with a given internet layer address, typically an IPv4 address.],
+      group: "Communications",
     ),
     (
       key: "mac",
       short: "MAC",
       long: "Media Access Control",
       description: [A media access control address (MAC address) is a unique identifier assigned to a network interface controller (NIC) for use as a network address in communications within a network segment.],
+      group: "Communications",
     ),
     (
       key: "pen",
