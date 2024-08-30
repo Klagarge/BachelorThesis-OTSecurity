@@ -16,7 +16,7 @@
 )
 
 = Minecraft  <subj:simu-env-minecraft>
-Another suitable approach would be to use the Electrical Age world in Minecraft (#label("fig-simu-env-minecraft-eln-world")) which was previously featured in the Telecommunication course. The goal of this lab was to control a factory and energy system to maximize production. Continuing this laboratory could provide valuable opportunities for students to explore and secure communication systems. In Minecraft, security can be implemented using the Open Computers mod or by creating an extension mod for Modbus over #gls("tls"), which might be simpler than using Lua with Open Computers.
+Another suitable approach would be to use the Electrical Age world in Minecraft (@fig-simu-env-minecraft-eln-world) which was previously featured in the Telecommunication course. The goal of this lab was to control a factory and energy system to maximize production. Continuing this laboratory could provide valuable opportunities for students to explore and secure communication systems. In Minecraft, security can be implemented using the Open Computers mod or by creating an extension mod for Modbus over #gls("tls"), which might be simpler than using Lua with Open Computers.
 
 #figure(
   image("minecraft-eln-world.png", width: size-fig.simu-env),

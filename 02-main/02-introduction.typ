@@ -9,7 +9,7 @@
 }
 // END OF HEADER
 
-This thesis is set in a world that is becoming increasingly interconnected. Not long ago, the #gls("it") world and industrial #gls("plc") systems were distinct and separate, with clear boundaries between them. However, the rise of the #gls("iot") has blurred these lines, breaking down the barriers that once existed between these two domains.
+This thesis is set in a world that is becoming increasingly interconnected. Not long ago, the #gls("it") world and industrial #gls("plc") systems had clear boundaries between them. However, the rise of the #gls("iot") has blurred these lines, breaking down the barriers that once existed between these two domains.
 
 From the outset, the #gls("it") world has faced threats from malicious individuals wanting to gain control of systems. In response, various security measures have been developed to fend off these attackers. In contrast, the #gls("ot") world, which includes industrial systems and #glspl("plc"), has traditionally focused more on robustness and reliability rather than on security. The prevailing strategy for industrial systems was to isolate them from external networks, assuming that physical separation would suffice for security.
 

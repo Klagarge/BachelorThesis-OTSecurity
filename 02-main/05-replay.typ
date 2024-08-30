@@ -59,16 +59,16 @@ Here are all the tools that are used for this scenario :
 With the setup complete, the goal is to perform a replay attack on the #gls("wmbus") system using the #gls("flipper") device. As a reminder, the #gls("wmbus") in T-Mode operates at 868.95 MHz with 2GFSK modulation and a 50 kHz deviation.
 
 == Flipper Zero
-For this thesis, the "sub-1GHz" feature of the #gls("flipper") is utilized. The #gls("flipper") contains a `CC1101` chip from `Texas Instruments (TI)`, designed to operate within the 300-348 MHz, 387-464 MHz, and 779-928 MHz frequency bands. It supports various modulation schemes, including 2(G)FSK, 4(G)FSK, ASK, and OOK.
+For this thesis, the _sub-1GHz_ feature of the #gls("flipper") is utilized. The #gls("flipper") contains a *CC1101* chip from *Texas Instruments (TI)*, designed to operate within the _300-348 MHz_, _387-464 MHz_, and _779-928 MHz_ frequency bands. It supports various modulation schemes, including _2(G)FSK_, _4(G)FSK_, _ASK_, and _OOK_.
 
 In read-raw mode, the #gls("flipper") needs to be configured to operate at 868.95 MHz for the #gls("wmbus") system. The modulation is set to `FM476`, which corresponds to frequency modulation with a 47.6 kHz deviation. Based on the documentation, the Flipper should ideally detect the specific type of frequency modulation used by the signal.
 
 == Modulation FSK vs GFSK
-Initial attempts at replaying the signal were unsatisfactory. While the #gls("flipper") successfully detected and recorded a signal, the replayed signal was received by the RC1180 but not understood. This indicated that the #gls("flipper") was not correctly recording or replaying the signal. To diagnose the issue, the wireless signal was analysed using an Agilent spectrum analyser. Although the measurements were not conducted to obtain precise quantitative results, they provided a qualitative understanding of the signal.
+Initial attempts at replaying the signal were unsatisfactory. While the #gls("flipper") successfully detected and recorded a signal, the replayed signal was received by the *RC1180* but not understood. This indicated that the #gls("flipper") was not correctly recording or replaying the signal. To diagnose the issue, the wireless signal was analysed using an Agilent spectrum analyser. Although the measurements were not conducted to obtain precise quantitative results, they provided a qualitative understanding of the signal.
 
 A measurement of the original signal emitted by the #gls("wmbus") transceiver is shown in @fig:wmbus-spectrum. The signal is centred around 868.95 MHz with a 50 kHz bandwidth and uses #gls("2gfsk", long: true) modulation.
 
-In contrast, the signal replayed by the #gls("flipper"), shown in @fig:wmbus-spectrum-flipper, also centres around 868.95 MHz with a 47,6 kHz bandwidth, but the modulation appears to be #gls("2fsk", long: true) rather than #gls("2gfsk"). This difference in modulation explains why the RC1180 does not recognize the replayed signal.
+In contrast, the signal replayed by the #gls("flipper"), shown in @fig:wmbus-spectrum-flipper, also centres around 868.95 MHz with a 47.6 kHz bandwidth, but the modulation appears to be #gls("2fsk", long: true) rather than #gls("2gfsk"). This difference in modulation explains why the *RC1180* does not recognize the replayed signal.
 
 #table(
   columns: (1fr, 1fr),
@@ -89,13 +89,13 @@ In contrast, the signal replayed by the #gls("flipper"), shown in @fig:wmbus-spe
   ]
 )
 
-The #gls("flipper") seems unable to detect the correct type of frequency modulation. Upon closer examination of the firmware, it was discovered that the `FM476` preset is configured only for #gls("2fsk") modulation. While a brief effort was made to add a configuration setting for #gls("2gfsk") with a 50 kHz deviation, the limited time remaining for the thesis made it impractical to proceed. Configuring this would require a detailed understanding of the CC1101 chip's register settings, a complex task requiring in-depth knowledge of the chip's datasheet.
+The #gls("flipper") seems unable to detect the correct type of frequency modulation. Upon closer examination of the firmware, it was discovered that the `FM476` preset is configured only for #gls("2fsk") modulation. While a brief effort was made to add a configuration setting for #gls("2gfsk") with a 50 kHz deviation, the limited time remaining for the thesis made it impractical to proceed. Configuring this would require a detailed understanding of the *CC1101* chip's register settings, a complex task requiring in-depth knowledge of the chip's datasheet.
 
 Given these challenges, it was decided to proceed with Plan B.
 
 
 = Attack on basic 433 MHz transceiver
-Instead of using a complete protocol like #gls("wmbus"), a basic 433 MHz transceiver can be employed for the replay attack scenario. This approach is simpler and effectively simulates a garage door and its remote control. In this thesis, a basic #gls("ook") transceiver from `M5Stack` is used. The setup consists of two chips: a transmitter (`SYN115`) and a receiver (`SYN513R`). #gls("ook") modulation, the simplest form of #gls("ask"), represents digital data by the presence or absence of a carrier wave.
+Instead of using a complete protocol like #gls("wmbus"), a basic 433 MHz transceiver can be employed for the replay attack scenario. This approach is simpler and effectively simulates a garage door and its remote control. In this thesis, a basic #gls("ook") transceiver from `M5Stack` is used. The setup consists of two chips: a transmitter (`SYN115`) and a receiver (`SYN513R`). #gls("ook", long: true) modulation, the simplest form of #gls("ask", long: true), represents digital data by the presence or absence of a carrier wave.
 
 The transceiver emits a signal at 433.92 MHz when a signal is present on its data pin and nothing when the data pin is low. A challenge with the receiver is detecting a varying signal; if no signal is detected, it amplifies the noise until it perceives sufficient variation to consider it as a signal. Similarly, if the signal is present for too long, the receiver reduces amplification, mistaking noise variations for the signal.
 

@@ -119,11 +119,11 @@
 
 #let arp-spoofing = {
     import chronos: *
-    controller(show-bottom: false)
-    attacker(show-bottom: false)
-    simulation(show-bottom: false)
+    controller(show-bottom: true)
+    attacker(show-bottom: true)
+    simulation(show-bottom: true)
 
-    _grp("loop", desc: "every 20ms", {
+    _grp("loop", desc: "every 1s", {
         _seq("a", "c", end-tip: ">>", comment: highlight(fill:white)[
             ARP | #get_ip("s") = #get_mac("a")
         ], comment-align: "start")

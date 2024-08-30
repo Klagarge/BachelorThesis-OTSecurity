@@ -42,7 +42,7 @@ As this thesis is part of the preparation of a new laboratory, the simulation en
 = Conclusion <sec:analysis-conclusion>
 This section presented various attacks that can be performed on #gls("ot") systems. The communication media discussed during the preliminary phase of this work were also outlined. Additionally, potential simulation environments for laboratory use were evaluated.
 
-Based on this information, M.Rieder and M. Clausen have decided on the simulation environment. The chosen platform is Home I/O, as it could benefit ETE students.
+Based on this information, M. Rieder and M. Clausen have decided on the simulation environment. The chosen platform is Home I/O, as it could benefit ETE students.
 
 The planned attacks include a replay attack on a wireless control or sensor, a #gls("dos") attack on an external sensor with valid data (overloading the controller rather than the communication medium) and a #gls("mitm") attack on the Modbus/#gls("tcp", long: false) communication. The #gls("mitm") attack will be conducted in two phases. The first phase will involve an unencrypted Modbus/#gls("tcp", long: false) communication while the second phase will involve encrypted Modbus/#gls("tcp", long: false) communication with a symmetrical key exchanged by #gls("d-h").
 

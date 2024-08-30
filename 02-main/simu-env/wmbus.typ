@@ -16,6 +16,7 @@
 ]
 
 #let fig = [
+  //#set figure.caption(separator: linebreak())
   #figure(
     image("/02-main/simu-env/wmbus_implementation.drawio.svg", width: 5.5cm),
     caption: [Replay scenario implementation]

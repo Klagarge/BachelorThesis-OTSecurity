@@ -37,7 +37,7 @@ These challenges meant that I did not have an opportunity to implement the #gls(
 
 = Future perspectives
 
-Finally, what can be learned from this Bachelor's thesis, and how can it be useful in the creation of the course and the laboratory?
+//Finally, what can be learned from this Bachelor's thesis, and how can it be useful in the creation of the course and the laboratory?
 
 This thesis provides a comprehensive environment for conducting a #gls("mitm") attack. For the laboratory, it would be beneficial to encapsulate the Home I/O simulation and its *Go* interface in a Docker container, making it more portable and easier for students to use. The controller could be implemented on the Wago CC100, with its functionality extended to cover the entire house for a more realistic scenario. Additionally, the Kali attacker could be deployed on a Raspberry Pi, demonstrating to students that even a small device can carry out significant attacks.
 

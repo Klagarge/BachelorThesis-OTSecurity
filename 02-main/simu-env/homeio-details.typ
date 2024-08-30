@@ -15,11 +15,11 @@ For the Man-in-the-Middle attack scenario, the entrance hall within this simulat
 
 #figure(
   image("homeio-door.png", width: size-fig.homeio-details),
-  caption: [Home I/O scene]
+  caption: [Home I/O - Entrance Hall]
 ) <fig-simu-env-homeio-hall-doors>
 
-Since Home I/O does not natively support Modbus communication, a custom Go software was developed by Michael Clausen to convert Modbus requests into the REST requests required by the simulation.
-This software simulates a Modbus server for each room. In this thesis, the architecture consists of one computer running the simulation and another acting as the house controller, as shown in @fig-simu-env-homeio-implementation. The controller, functioning as a Modbus client, is implemented using another Go program that could be deployed on a Wago CC100 PLC in a real-world scenario. For the purposes of this thesis, the controller is intentionally kept simple.
+Since Home I/O does not natively support Modbus communication, a custom *Go* software was developed by Michael Clausen to convert Modbus requests into the REST requests required by the simulation.
+This software simulates a Modbus server for each room. In this thesis, the architecture consists of one computer running the simulation and another acting as the house controller, as shown in @fig-simu-env-homeio-implementation. The controller, functioning as a Modbus client, is implemented using another *Go* program that could be deployed on a Wago CC100 PLC in a real-world scenario. For the purposes of this thesis, the controller is intentionally kept simple.
 
 #figure(
   image("implementation.drawio.svg", width: size-fig.homeio-details),
