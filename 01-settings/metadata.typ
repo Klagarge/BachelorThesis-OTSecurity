@@ -6,7 +6,7 @@
 
 #let title= "OT Security"
 #let subtitle= "PEN-testing and security about embedded devices"
-#let version= "v0.1"
+#let version= "v1"
 
 #let author= (
   name: "Rémi Heredero",
