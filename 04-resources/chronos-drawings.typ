@@ -101,7 +101,7 @@
         actor1,
         actor2,
         comment: comment,
-        comment-align: comment-align,
+        comment-align: "start",
         dashed: dashed,
         flip: flip
     )
