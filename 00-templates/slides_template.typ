@@ -1,4 +1,4 @@
-#import "@preview/polylux:0.3.1": *
+#import "/00-packages/polylux/polylux.typ": *
 #import themes.clean: *
 #import "../00-templates/constants.typ": *
 

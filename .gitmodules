@@ -10,3 +10,6 @@
 [submodule "00-packages/summary"]
 	path = 00-packages/summary
 	url = https://git.kb28.ch/Klagarge/Thesis-HEI-summary-template.git
+[submodule "00-packages/polylux"]
+	path = 00-packages/polylux
+	url = git@github.com:andreasKroepelin/polylux.git
