@@ -15,7 +15,9 @@
   
   //set text(font: "Inria Sans")
 
-  let date-text = if date.day() == 1 {
+  let date-text = if true {
+    date.display("[weekday], [month repr:long] [day padding:none] [year]")
+  } else if date.day() == 1 {
     date.display("[weekday] the [day padding:none]st of [month repr:long] [year]")
   } else if date.day() == 2 {
     date.display("[weekday] the [day padding:none]nd of [month repr:long] [year]")
