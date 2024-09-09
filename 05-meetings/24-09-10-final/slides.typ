@@ -27,13 +27,23 @@
     #uncover("6-")[=== Security]
     #uncover("7-")[- Before: IT wall]
     #uncover("8-")[- Now: IoT everywhere]
-    #uncover("9-")[$=>$ Time for put Security in OT]
+    #uncover("9-")[$=>$ Time to put Security in OT]
 
   ]
 
   #pdfpc.speaker-note(
     ```md
-    
+    - IT: CPU, ordi, serveur, le monde des ISC
+    - OT: MCU, embarqué, infotronic
+    - ICI, monde des systèmes embarqués
+
+    - Avant: mur IT
+      - < P calcul
+    - Maintenant: IoT
+      - Attaquant plus proche
+      - + P calcul
+    - Début de la sécurité
+    - Mauvaise pratiques
     ```
   )
 ]
@@ -49,7 +59,7 @@
       - Labo OT Security - I6
     ][
       
-      - Securitys scenarios
+      - Security scenarios
         - Unsecure situation
         - Attack
         - Safe solution 
@@ -61,10 +71,18 @@
 
   #pdfpc.speaker-note(
     ```md
-    - refonte labo OT Security
+    - HEI cours sécurité générique
+    - refonte labo *OT* Security
     - 3e année infotronic
-    - x scénario sécurité
-    - pour labo et partenaires
+    - scénarios sécurité
+      - Situation non sécurisé
+      - Attaque
+      - Solution
+    
+    - Présentation scénario
+      - replay système sans fils
+      - deuxième MitM sur Modbus/TCP
+      - Évolution avec flasification, attaque et mise en garde limties TLS
     ```
   )
 ]
@@ -77,38 +95,78 @@
 
 #new-section-slide("Replay scenario")
 
-#slide(title: [Environnement])[
+#slide(title: [Environment])[
   #side-by-side(gutter: 3mm, columns: (1fr, 1fr))[
     //#align(center,image("/02-main/attacks/replay/abm.png", width: 90%))
     #only("2")[#align(center,image("/02-main/simu-env/wmbus_implementation-no_attack.drawio.svg", width: 90%))]
-    #only("3-")[#align(center,image("/02-main/simu-env/wmbus_implementation.drawio.svg", width: 90%))]
+    #only("3")[#align(center,image("/02-main/simu-env/wmbus_implementation-flipper.drawio.svg", width: 90%))]
+    #only("4-")[#align(center,image("/02-main/simu-env/wmbus_implementation.drawio.svg", width: 90%))]
     
   ][
-    #uncover("4-")[#align(center)[#layer(1)]]
+    #uncover("5-")[#align(center)[#layer(1)]]
   ]
 
   #pdfpc.speaker-note(
     ```md
-
+    - initiallement Wireless M-Bus
+    - mode T pour compteurs
+    - Flipper Zero
+    - Attaque sur couche physique
     ```
   )
 ]
 
-#slide(title: [GFSK vs FSK])[
+#slide(title: [The Flipper modulation])[
   #side-by-side(gutter: 3mm, columns: (1fr, 1fr))[
-    #uncover("2-")[#align(center)[#image("/04-resources/img/spectrum_analyzer/wmb-resized.png", width: 80%)]]
+    #uncover("2-")[#align(center)[
+      #image("/04-resources/img/spectrum_analyzer/wmb-resized.png", width: 80%)
+    ]]
   ][
-    #uncover("3-")[#align(center)[#image("/04-resources/img/spectrum_analyzer/fm476-resized.png", width: 80%)]]
+    #uncover("3-")[#align(center)[
+      #image("/04-resources/img/spectrum_analyzer/fm476-resized.png", width: 80%)
+    ]]
   ]
 
   #pdfpc.speaker-note(
     ```md
-
+    - mais c'était l'idée initial 
+    - Flipper large gamme modulation
+    - mais pas implémenté
+    - WM-bus 2GFSK
+    - Flipper en FM: 2FSK
+    - TI: caca -> pas assez temps
     ```
   )
 ]
 
-#slide(title: [Transceiver 433 MHz])[
+#slide(title: [Plan B & Security])[
+  #side-by-side(gutter: 3mm, columns: (1fr, 1fr))[
+    #uncover("2-")[=== Transceiver 433 MHz]
+    #uncover("3-")[- OOK]
+    #uncover("4-")[- Serial]
+    #uncover("5-")[- Preamble]
+    #uncover("6-")[- Start & Stop characters]
+  ][
+    #uncover("7-")[=== Security]
+    #uncover("8-")[- Different messages]
+    #uncover("9-")[- Rolling code]
+    #uncover("10-")[- Signature]
+  ]
+
+  #pdfpc.speaker-note(
+    ```md
+    - Plan B: transceiver OOK
+      - Parfait pour Flipper mode AM
+    - Comm serial 
+    - amplification no signal
+      - prambule
+      - star + stop charactères
+
+    - sécurité
+      - pseudo aléatoire
+      - compteur + signature
+    ```
+  )
 
 ]
 
@@ -125,7 +183,8 @@
 
   #pdfpc.speaker-note(
     ```md
-
+    - maquette physique trop cher
+    - 
     ```
   )
 ]
@@ -255,7 +314,7 @@
 //- MITM Modbus/TLS SCENARIO -
 //----------------------------
 
-#slide(title: [#gls("tls", long: false) and #gls("x509")])[
+#slide(title: [#gls("tls", long: false) & #gls("x509")])[
   #side-by-side(gutter: 3mm, columns: (1fr, 1fr))[
     #uncover("2-")[- Encrypt session]
     #uncover("2-")[#align(center)[#layer(5, 6)]]
@@ -301,25 +360,31 @@
   ]]
   #only("4-")[#align(center)[
     #set quote(block: true)
-    #quote(attribution: [Martin Georgiev - October 2012])[
+    #quote(attribution: [Martin Georgiev - 2012])[
       The most dangerous code in the world: \ validating SSL certificates in non-browser software
     ]
   ]]
   #only("5-")[#align(center)[
-    Aapo Oksman prove it still the case #text(weight: "bold")[last year]
+    Aapo Oksman proved it still holds #uncover("6-")[#text(weight: "bold")[last year]]
     #table(
       columns: (1fr, 1fr, 1fr),
       rows: 80pt,
       stroke: none,
       [
-        #only("6-")[#image("Samsung_Email_icon.png", height: 100%)]
+        #uncover("7-")[#image("Samsung_Email_icon.png", height: 100%)]
       ],[
-        #only("7-")[#image("playstation.svg", height: 100%)]
+        #uncover("8-")[#image("playstation.svg", height: 100%)]
       ],[
-        #only("8-")[#image("App_Store_(iOS).png", height: 100%)]
+        #uncover("9-")[#image("App_Store_(iOS).png", height: 100%)]
       ]
     )
   ]]
+
+  #pdfpc.speaker-note(
+    ```md
+
+    ```
+  )
 ]
 
 
@@ -327,6 +392,6 @@
   foreground: white,
   background: rgb("#ea366a")
 )[
-  Questions ?
+    Questions?
   #set text(size: 0pt);#include "/03-tail/glossary.typ"
 ]
