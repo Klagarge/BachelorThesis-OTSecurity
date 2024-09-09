@@ -358,24 +358,33 @@
     //#set text(size: 20pt)
     #chronos.diagram(tls2, width: 70%)
   ]]
-  #only("4-")[#align(center)[
+
+  #pdfpc.speaker-note(
+    ```md
+
+    ```
+  )
+]
+
+#slide(title: [Warning about TLS])[
+  #uncover("2-")[#align(center)[
     #set quote(block: true)
     #quote(attribution: [Martin Georgiev - 2012])[
       The most dangerous code in the world: \ validating SSL certificates in non-browser software
     ]
   ]]
-  #only("5-")[#align(center)[
-    Aapo Oksman proved it still holds #uncover("6-")[#text(weight: "bold")[last year]]
+  #uncover("3-")[#align(center)[
+    Aapo Oksman proved it still holds #uncover("4-")[#text(weight: "bold")[last year]]
     #table(
       columns: (1fr, 1fr, 1fr),
       rows: 80pt,
       stroke: none,
       [
-        #uncover("7-")[#image("Samsung_Email_icon.png", height: 100%)]
+        #uncover("5-")[#image("Samsung_Email_icon.png", height: 100%)]
       ],[
-        #uncover("8-")[#image("playstation.svg", height: 100%)]
+        #uncover("6-")[#image("playstation.svg", height: 100%)]
       ],[
-        #uncover("9-")[#image("App_Store_(iOS).png", height: 100%)]
+        #uncover("7-")[#image("App_Store_(iOS).png", height: 100%)]
       ]
     )
   ]]
@@ -385,6 +394,7 @@
 
     ```
   )
+
 ]
 
 
@@ -394,4 +404,5 @@
 )[
     Questions?
   #set text(size: 0pt);#include "/03-tail/glossary.typ"
+  //#pdfpc.end-slide  
 ]
